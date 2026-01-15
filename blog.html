@@ -20,7 +20,7 @@
 <body class="font-sans text-gray-800"> 
 <!-- ================= HEADER ================= -->
 <!-- ================= HEADER ================= -->
-<header class="bg-[#1b1b2f] text-white relative z-50">
+ <header class="bg-[#1b1b2f] text-white fixed top-0 left-0 w-full z-50">
   <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
 
     <!-- LOGO -->
@@ -167,6 +167,12 @@
     </div>
   </div>
 </header>
+
+<!-- Add padding to the top of the page so content is not hidden under the fixed header -->
+<div class="pt-18">
+  <!-- Your page content goes here -->
+</div>
+
 
 <!-- ================= MOBILE TOGGLE SCRIPT ================= -->
 <script>
