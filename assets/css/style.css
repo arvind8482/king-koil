@@ -69,7 +69,9 @@ h1, h2, h3, h4, h5, h6 {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-
+footer{
+  background-color:#1b1b2f
+}
 
   .tags-popular-text, a.tags-popular-text {
 font-family: "Figtree", sans-serif;
