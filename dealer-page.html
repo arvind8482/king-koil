@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>King Koil | Where to buy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <!-- ===== SWIPER CDN ===== -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+       <link rel="stylesheet"
+      href="assets/css/style.css">
+
+</head>
+<body class="font-sans text-gray-800"> 
+<!-- ================= HEADER ================= -->
+<!-- ================= HEADER ================= -->
+ <header class="bg-[#1b1b2f] text-white fixed top-0 left-0 w-full z-50">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+
+    <!-- LOGO -->
+    <a href="/" class="flex items-center">
+      <img src="assets/images/logo.png" alt="King Koil" class="h-8">
+    </a>
+
+    <!-- DESKTOP NAV -->
+    <nav class="hidden lg:flex items-center gap-6 text-lg">
+
+      <a href="#" class="hover:text-gray-300">Why King Koil?</a>
+
+      <!-- Mattresses Dropdown -->
+      <div class="relative group">
+        <button class="flex items-center gap-1 hover:text-gray-300">
+          Mattresses
+          <svg class="w-4 h-4 transition-transform group-hover:rotate-180"
+               fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </button>
+
+        <!-- Hover buffer -->
+        <div class="absolute inset-x-0 top-full h-3"></div>
+
+        <div
+          class="absolute top-full left-0 w-52 bg-white text-[#1E1E31]
+                 rounded-lg shadow-xl opacity-0 invisible
+                 group-hover:opacity-100 group-hover:visible
+                 transition pt-2">
+
+          <a href="#" class="block px-4 py-2 hover:bg-light-gray rounded-t-lg">
+            Luxury Mattresses
+          </a>
+          <a href="#" class="block px-4 py-2 hover:bg-light-gray">
+            Memory Foam
+          </a>
+          <a href="#" class="block px-4 py-2 hover:bg-light-gray rounded-b-lg">
+            Back Support
+          </a>
+        </div>
+      </div>
+
+      <!-- Accessories Dropdown -->
+      <div class="relative group">
+        <button class="flex items-center gap-1 hover:text-gray-300">
+          Accessories
+          <svg class="w-4 h-4 transition-transform group-hover:rotate-180"
+               fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </button>
+
+        <div class="absolute inset-x-0 top-full h-3"></div>
+
+        <div
+          class="absolute top-full left-0 w-48 bg-white text-[#1E1E31]
+                 rounded-lg shadow-xl opacity-0 invisible
+                 group-hover:opacity-100 group-hover:visible
+                 transition pt-2">
+
+          <a href="#" class="block px-4 py-2 hover:bg-light-gray rounded-t-lg">
+            Pillows
+          </a>
+          <a href="#" class="block px-4 py-2 hover:bg-light-gray rounded-b-lg">
+            Protectors
+          </a>
+        </div>
+      </div>
+
+      <a href="#" class="hover:text-gray-300">SleepID</a>
+      <a href="#" class="hover:text-gray-300">Hospitality</a>
+      <a href="#" class="hover:text-gray-300">Blogs</a>
+    </nav>
+
+    <!-- DESKTOP CTA -->
+    <a href="#"
+       class="hidden lg:inline-block border px-4 py-2 text-sm
+              bg-white text-[#1E1E31] rounded hover:bg-light-gray">
+      Where to Buy
+    </a>
+
+    <!-- MOBILE MENU BUTTON -->
+    <button id="menuBtn" class="lg:hidden focus:outline-none">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- ================= MOBILE MENU ================= -->
+  <div id="mobileMenu"
+       class="hidden lg:hidden bg-[#1b1b2f] border-t border-gray-700">
+
+    <div class="px-4 py-4 space-y-2 text-base">
+
+      <a href="#" class="block py-2 border-b border-gray-700">
+        Why King Koil?
+      </a>
+
+      <!-- Mobile Mattresses -->
+      <details class="border-b border-gray-700">
+        <summary class="py-2 flex justify-between items-center cursor-pointer">
+          Mattresses
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </summary>
+        <div class="pl-4 pb-2 text-sm space-y-1">
+          <a href="#" class="block">Luxury Mattresses</a>
+          <a href="#" class="block">Memory Foam</a>
+          <a href="#" class="block">Back Support</a>
+        </div>
+      </details>
+
+      <!-- Mobile Accessories -->
+      <details class="border-b border-gray-700">
+        <summary class="py-2 flex justify-between items-center cursor-pointer">
+          Accessories
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </summary>
+        <div class="pl-4 pb-2 text-sm space-y-1">
+          <a href="#" class="block">Pillows</a>
+          <a href="#" class="block">Protectors</a>
+        </div>
+      </details>
+
+      <a href="#" class="block py-2 border-b border-gray-700">SleepID</a>
+      <a href="#" class="block py-2 border-b border-gray-700">Hospitality</a>
+      <a href="#" class="block py-2 border-b border-gray-700">Blogs</a>
+
+      <a href="#"
+         class="block mt-4 text-center border px-4 py-2
+                bg-white text-[#1E1E31] rounded">
+        Where to Buy
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- Add padding to the top of the page so content is not hidden under the fixed header -->
+<div class="pt-18">
+  <!-- Your page content goes here -->
+</div>
+
+
+<!-- ================= MOBILE TOGGLE SCRIPT ================= -->
+<script>
+  document.getElementById("menuBtn").addEventListener("click", () => {
+    document.getElementById("mobileMenu").classList.toggle("hidden");
+  });
+</script>
+
+
+  
+<!-- ================= BLOGS HERO ================= -->
+<section class="relative h-[360px] md:h-[420px] lg:h-[460px] flex items-center justify-center text-white overflow-hidden">
+
+  <!-- Background Image -->
+  <img src="assets/images/where-to-buy-hero-bg.webp"
+       alt="Blogs"
+       class="absolute inset-0 w-full h-full object-cover">
+
+ 
+
+  <!-- Vertical Shade Lines (Figma Style) -->
+  <div class="absolute inset-0 pointer-events-none
+              bg-[repeating-linear-gradient(
+                to_right,
+                rgba(0,0,0,0.35) 0px,
+                rgba(0,0,0,0.35) 80px,
+                rgba(0,0,0,0.15) 80px,
+                rgba(0,0,0,0.15) 160px
+              )]">
+  </div>
+
+  <!-- CONTENT -->
+  <div class="relative z-10 w-full max-w-4xl px-4 text-center">
+
+    <!-- Title -->
+    <h1 class="text-3xl md:text-4xl lg:text-5xl  -3">
+      King Koil Store in AHMEDABAD
+    </h1>
+
+    <!-- Breadcrumb -->
+    <p class="text-xs md:text-sm mb-8 flex justify-center items-center gap-2 opacity-90">
+      Home
+      <span class="text-lg">›</span>
+      <span>Where To Buy</span>
+    </p> 
+
+  </div>
+</section>  
+<section class="section-top-pad ">
+  <div class="container mx-auto px-4"> 
+      <div class="text-center">
+          <h2 class="text-playfair-display reveal">Our Store In Ahmedabad</h2>
+          <p class="text-figtree text-20 reveal">
+            Over <strong> 600+</strong> Retailers across India are proudly selling King Koil products.Please find retailers<br class="hidden xl:block"/>nearest to your location from Retailer-Finder below.
+          </p>
+      </div>
+      <div class="section-pad-90">
+ <!-- LOCATION FILTER BAR -->
+ <div class="max-w-7xl mx-auto bg-light-gray shadow-sm rounded-lg p-4 reveal">
+  
+  <form class="grid grid-cols-1 md:grid-cols-[1fr_1fr_1fr_auto] gap-4 items-center">
+
+    <!-- Country -->
+    <div class="md:border-r md:border-gray-300 md:pr-4">
+      <label class="block text-xs text-gray-500 mb-1">
+        Choose Country
+      </label>
+
+      <div class="relative">
+       <select
+          class="w-full appearance-none bg-transparent text-sm font-medium text-gray-900
+                 focus:outline-none cursor-pointer
+                 pr-4 pl-0 leading-tight">
+          <option>India</option>
+          <option>USA</option>
+          <option>UK</option>
+        </select>
+
+        <svg
+          class="absolute left-20 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600 pointer-events-none"
+          fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 9l-7 7-7-7"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- State -->
+    <div class="md:border-r md:border-gray-300 md:pr-4">
+      <label class="block text-xs text-gray-500 mb-1">
+        Choose State
+      </label>
+
+      <div class="relative">
+       <select
+          class="w-full appearance-none bg-transparent text-sm font-medium text-gray-900
+                 focus:outline-none cursor-pointer
+                 pr-4 pl-0 leading-tight">
+          <option>Gujarat</option>
+          <option>Maharashtra</option>
+          <option>Rajasthan</option>
+        </select>
+
+        <svg
+          class="absolute left-20 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600 pointer-events-none"
+          fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 9l-7 7-7-7"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- City -->
+    <div>
+      <label class="block text-xs text-gray-500 mb-1">
+        Choose City
+      </label>
+
+      <div class="relative">
+      <select
+          class="w-full appearance-none bg-transparent text-sm font-medium text-gray-900
+                 focus:outline-none cursor-pointer
+                 pr-4 pl-0 leading-tight">
+          <option>Ahmedabad</option>
+          <option>Surat</option>
+          <option>Vadodara</option>
+        </select>
+
+        <svg
+          class="absolute left-20 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600 pointer-events-none"
+          fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 9l-7 7-7-7"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Search Button -->
+    <div class="flex md:justify-end">
+      <button
+        type="submit"
+        class="flex items-center justify-center gap-2 bg-gray-900 text-white
+               px-6 py-3 rounded-md text-sm font-medium
+               hover:bg-gray-800 transition whitespace-nowrap">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z"/>
+        </svg>
+        SEARCH
+      </button>
+    </div>
+
+  </form>
+</div>
+
+
+      </div>
+  </div>
+</section>
+<section class="bottom-pad-88">
+    <div class="max-w-7xl mx-auto">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[40px]">
+
+    <!-- CARD -->
+    <div class="bg-light-gray-pad-20"> 
+      <!-- Header -->
+         <span class="flex items-center gap-1  text-16 bg-gray-900 text-white px-2 py-1  exclusive-btn">
+           <img src="assets/images/icon-dealer-star.png" alt="EXCLUSIVE"> EXCLUSIVE
+        </span>
+      <!-- Details -->
+      <ul class="space-y-3 text-sm text-gray-700"> 
+        <li class="flex items-end text-20 uppercase gap-3">
+          <span><img src="assets/images/icon-dealer-name.png" alt=""></span>
+          <span class="border-b pb-3 grow">Aanal Trading Co</span>
+        </li> 
+         <li class="flex items-end text-18 gap-3">
+          <span><img src="assets/images/icon-dealer-owner.png" alt=""></span>
+          <span class="border-b pb-3 grow">Mr.manish Doshi</span>
+        </li> 
+        <li class="flex items-end text-18 gap-3">
+          <span><img src="assets/images/icon-dealer-contact.png" alt=""></span>
+          <span class="border-b pb-3 grow">+91 9327279009</span>
+        </li>
+        <li class="flex items-end text-18 gap-3">
+          <span><img src="assets/images/icon-dealer-location.png" alt=""></span>
+          <span class="border-b pb-3 grow">14/15 RUDRA ARCADE ahmedabad</span>
+        </li>
+      </ul>
+
+      <!-- Actions -->
+      <div class="mt-6 flex gap-3">
+   <a
+  href="dealer-details.html"
+  class="flex-1 text-center border border-gray-900 text-gray-900 text-[12px] py-2
+         hover:bg-gray-100 transition">
+  CONTACT DEALER
+</a>
+
+<a
+  href="tel:+919327790009"
+  class="flex-1 bg-gray-900 text-white text-[12px] py-2
+         hover:bg-gray-800 transition flex items-center justify-center gap-2">
+  <img src="assets/images/icon-dealer-call-now.png" alt="CALL NOW" class="w-4 h-4">
+  CALL NOW
+</a>
+      </div>
+
+    </div> 
+     <div class="bg-light-gray-pad-20"> 
+      <!-- Header -->
+         <span class="flex items-center gap-1  text-16 bg-gray-900 text-white px-2 py-1  exclusive-btn">
+           <img src="assets/images/icon-dealer-star.png" alt="EXCLUSIVE"> EXCLUSIVE
+        </span>
+      <!-- Details -->
+      <ul class="space-y-3 text-sm text-gray-700"> 
+        <li class="flex items-end text-20 uppercase gap-3">
+          <span><img src="assets/images/icon-dealer-name.png" alt=""></span>
+          <span class="border-b pb-3 grow">Aanal Trading Co</span>
+        </li> 
+         <li class="flex items-end text-18 gap-3">
+          <span><img src="assets/images/icon-dealer-owner.png" alt=""></span>
+          <span class="border-b pb-3 grow">Mr.manish Doshi</span>
+        </li> 
+        <li class="flex items-end text-18 gap-3">
+          <span><img src="assets/images/icon-dealer-contact.png" alt=""></span>
+          <span class="border-b pb-3 grow">+91 9327279009</span>
+        </li>
+        <li class="flex items-end text-18 gap-3">
+          <span><img src="assets/images/icon-dealer-location.png" alt=""></span>
+          <span class="border-b pb-3 grow">14/15 RUDRA ARCADE ahmedabad</span>
+        </li>
+      </ul>
+
+      <!-- Actions -->
+      <div class="mt-6 flex gap-3">
+   <a
+  href="dealer-details.html"
+  class="flex-1 text-center border border-gray-900 text-gray-900 text-[12px] py-2
+         hover:bg-gray-100 transition">
+  CONTACT DEALER
+</a>
+
+<a
+  href="tel:+919327790009"
+  class="flex-1 bg-gray-900 text-white text-[12px] py-2
+         hover:bg-gray-800 transition flex items-center justify-center gap-2">
+  <img src="assets/images/icon-dealer-call-now.png" alt="CALL NOW" class="w-4 h-4">
+  CALL NOW
+</a>
+      </div>
+
+    </div> 
+     <div class="bg-light-gray-pad-20"> 
+      <!-- Header -->
+         <span class="flex items-center gap-1  text-16 bg-gray-900 text-white px-2 py-1  exclusive-btn">
+           <img src="assets/images/icon-dealer-star.png" alt="EXCLUSIVE"> EXCLUSIVE
+        </span>
+      <!-- Details -->
+      <ul class="space-y-3 text-sm text-gray-700"> 
+        <li class="flex items-end text-20 uppercase gap-3">
+          <span><img src="assets/images/icon-dealer-name.png" alt=""></span>
+          <span class="border-b pb-3 grow">Aanal Trading Co</span>
+        </li> 
+         <li class="flex items-end text-18 gap-3">
+          <span><img src="assets/images/icon-dealer-owner.png" alt=""></span>
+          <span class="border-b pb-3 grow">Mr.manish Doshi</span>
+        </li> 
+        <li class="flex items-end text-18 gap-3">
+          <span><img src="assets/images/icon-dealer-contact.png" alt=""></span>
+          <span class="border-b pb-3 grow">+91 9327279009</span>
+        </li>
+        <li class="flex items-end text-18 gap-3">
+          <span><img src="assets/images/icon-dealer-location.png" alt=""></span>
+          <span class="border-b pb-3 grow">14/15 RUDRA ARCADE ahmedabad</span>
+        </li>
+      </ul>
+
+      <!-- Actions -->
+      <div class="mt-6 flex gap-3">
+   <a
+  href="dealer-details.html"
+  class="flex-1 text-center border border-gray-900 text-gray-900 text-[12px] py-2
+         hover:bg-gray-100 transition">
+  CONTACT DEALER
+</a>
+
+<a
+  href="tel:+919327790009"
+  class="flex-1 bg-gray-900 text-white text-[12px] py-2
+         hover:bg-gray-800 transition flex items-center justify-center gap-2">
+  <img src="assets/images/icon-dealer-call-now.png" alt="CALL NOW" class="w-4 h-4">
+  CALL NOW
+</a>
+      </div>
+
+    </div> 
+     <div class="bg-light-gray-pad-20"> 
+      <!-- Header -->
+         <span class="flex items-center gap-1  text-16 bg-gray-900 text-white px-2 py-1  exclusive-btn">
+           <img src="assets/images/icon-dealer-star.png" alt="EXCLUSIVE"> EXCLUSIVE
+        </span>
+      <!-- Details -->
+      <ul class="space-y-3 text-sm text-gray-700"> 
+        <li class="flex items-end text-20 uppercase gap-3">
+          <span><img src="assets/images/icon-dealer-name.png" alt=""></span>
+          <span class="border-b pb-3 grow">Aanal Trading Co</span>
+        </li> 
+         <li class="flex items-end text-18 gap-3">
+          <span><img src="assets/images/icon-dealer-owner.png" alt=""></span>
+          <span class="border-b pb-3 grow">Mr.manish Doshi</span>
+        </li> 
+        <li class="flex items-end text-18 gap-3">
+          <span><img src="assets/images/icon-dealer-contact.png" alt=""></span>
+          <span class="border-b pb-3 grow">+91 9327279009</span>
+        </li>
+        <li class="flex items-end text-18 gap-3">
+          <span><img src="assets/images/icon-dealer-location.png" alt=""></span>
+          <span class="border-b pb-3 grow">14/15 RUDRA ARCADE ahmedabad</span>
+        </li>
+      </ul>
+
+      <!-- Actions -->
+      <div class="mt-6 flex gap-3">
+   <a
+  href="dealer-details.html"
+  class="flex-1 text-center border border-gray-900 text-gray-900 text-[12px] py-2
+         hover:bg-gray-100 transition">
+  CONTACT DEALER
+</a>
+
+<a
+  href="tel:+919327790009"
+  class="flex-1 bg-gray-900 text-white text-[12px] py-2
+         hover:bg-gray-800 transition flex items-center justify-center gap-2">
+  <img src="assets/images/icon-dealer-call-now.png" alt="CALL NOW" class="w-4 h-4">
+  CALL NOW
+</a>
+      </div>
+
+    </div> 
+     <div class="bg-light-gray-pad-20"> 
+      <!-- Header -->
+         <span class="flex items-center gap-1  text-16 bg-gray-900 text-white px-2 py-1  exclusive-btn">
+           <img src="assets/images/icon-dealer-star.png" alt="EXCLUSIVE"> EXCLUSIVE
+        </span>
+      <!-- Details -->
+      <ul class="space-y-3 text-sm text-gray-700"> 
+        <li class="flex items-end text-20 uppercase gap-3">
+          <span><img src="assets/images/icon-dealer-name.png" alt=""></span>
+          <span class="border-b pb-3 grow">Aanal Trading Co</span>
+        </li> 
+         <li class="flex items-end text-18 gap-3">
+          <span><img src="assets/images/icon-dealer-owner.png" alt=""></span>
+          <span class="border-b pb-3 grow">Mr.manish Doshi</span>
+        </li> 
+        <li class="flex items-end text-18 gap-3">
+          <span><img src="assets/images/icon-dealer-contact.png" alt=""></span>
+          <span class="border-b pb-3 grow">+91 9327279009</span>
+        </li>
+        <li class="flex items-end text-18 gap-3">
+          <span><img src="assets/images/icon-dealer-location.png" alt=""></span>
+          <span class="border-b pb-3 grow">14/15 RUDRA ARCADE ahmedabad</span>
+        </li>
+      </ul>
+
+      <!-- Actions -->
+      <div class="mt-6 flex gap-3">
+   <a
+  href="dealer-details.html"
+  class="flex-1 text-center border border-gray-900 text-gray-900 text-[12px] py-2
+         hover:bg-gray-100 transition">
+  CONTACT DEALER
+</a>
+
+<a
+  href="tel:+919327790009"
+  class="flex-1 bg-gray-900 text-white text-[12px] py-2
+         hover:bg-gray-800 transition flex items-center justify-center gap-2">
+  <img src="assets/images/icon-dealer-call-now.png" alt="CALL NOW" class="w-4 h-4">
+  CALL NOW
+</a>
+      </div>
+
+    </div> 
+     <div class="bg-light-gray-pad-20"> 
+      <!-- Header -->
+         <span class="flex items-center gap-1  text-16 bg-gray-900 text-white px-2 py-1  exclusive-btn">
+           <img src="assets/images/icon-dealer-star.png" alt="EXCLUSIVE"> EXCLUSIVE
+        </span>
+      <!-- Details -->
+      <ul class="space-y-3 text-sm text-gray-700"> 
+        <li class="flex items-end text-20 uppercase gap-3">
+          <span><img src="assets/images/icon-dealer-name.png" alt=""></span>
+          <span class="border-b pb-3 grow">Aanal Trading Co</span>
+        </li> 
+         <li class="flex items-end text-18 gap-3">
+          <span><img src="assets/images/icon-dealer-owner.png" alt=""></span>
+          <span class="border-b pb-3 grow">Mr.manish Doshi</span>
+        </li> 
+        <li class="flex items-end text-18 gap-3">
+          <span><img src="assets/images/icon-dealer-contact.png" alt=""></span>
+          <span class="border-b pb-3 grow">+91 9327279009</span>
+        </li>
+        <li class="flex items-end text-18 gap-3">
+          <span><img src="assets/images/icon-dealer-location.png" alt=""></span>
+          <span class="border-b pb-3 grow">14/15 RUDRA ARCADE ahmedabad</span>
+        </li>
+      </ul>
+
+      <!-- Actions -->
+      <div class="mt-6 flex gap-3">
+   <a
+  href="dealer-details.html"
+  class="flex-1 text-center border border-gray-900 text-gray-900 text-[12px] py-2
+         hover:bg-gray-100 transition">
+  CONTACT DEALER
+</a>
+
+<a
+  href="tel:+919327790009"
+  class="flex-1 bg-gray-900 text-white text-[12px] py-2
+         hover:bg-gray-800 transition flex items-center justify-center gap-2">
+  <img src="assets/images/icon-dealer-call-now.png" alt="CALL NOW" class="w-4 h-4">
+  CALL NOW
+</a>
+      </div>
+
+    </div> 
+
+  </div>
+</div>
+</section>
+ <section class="bg-light-gray-with-pad reveal">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="block md:flex gap-[30px] items-start">
+
+      <!-- LEFT CONTENT -->
+      <div class="md:w-3/5">
+        <h2 class=" font-semibold text-20-heading mb-1">
+          Find a King Koil Mattress Showroom Near You
+        </h2>
+
+        <p class="text-17  mb-6 leading-relaxed text-figtree">
+      Looking for a mattress showroom near you? King Koil, a trusted name in luxury and orthopedic mattresses, is available at 600+ retail locations across India. Experience superior comfort, advanced sleep technology, and premium craftsmanship by visiting a store near you.
+        </p>
+
+        <h3 class=" font-semibold text-20-heading mb-1">
+          Locate a King Koil Mattress Store Near You
+        </h3>
+        <p class="text-17 mb-6 leading-relaxed text-figtree">
+         <a href="#" class="underline">Finding the perfect mattress</a> is easy with our retailer-finder tool. Simply search for the nearest King Koil mattress showroom and explore our wide range of <a href="#" class="underline">mattresses designed for better sleep</a> and spinal support.
+        </p>
+
+        <h3 class=" font-semibold text-20-heading mb-1">
+       Why Choose King Koil?
+        </h3>
+
+        <ul class="space-y-2 text-17  text-figtree list-star">
+          <li><strong>Orthopedic Comfort – </strong>Luxurious mattresses designed for deep, restful sleep.</li>
+          <li><strong>Orthopedic Support – </strong>Engineered for proper spinal alignment and pressure relief.</li>
+          <li><strong>Advanced Technology – </strong>Featuring memory foam, latex, hybrid, and more.</li>
+          <li><strong>Trusted by Experts – </strong>Over 125 years of excellence in sleep solutions.</li>
+        </ul>
+
+        <p class="text-17  text-figtree mt-6">
+          Visit a King Koil mattress store near you today and find the perfect mattress for your needs!
+          <strong>Find your nearest retailer now!</strong>
+        </p>
+      </div>
+
+      <!-- RIGHT CONTACT FORM -->
+      <div class="bg-white shadow-md rounded-lg p-6 md:w-2/5">
+        <h3 class="text-20-heading-black font-semibold  mb-4">
+          Contact Us
+        </h3>
+
+    <form class="space-y-4">
+
+  <!-- Name -->
+  <div>
+    <label class="block text-14 text-figtree mb-1">Name</label>
+    <input
+      type="text"
+      placeholder="Enter your name"
+      class="w-full rounded-md bg-light-gray px-4 py-3 text-14 text-figtree ">
+  </div>
+
+  <!-- Mobile Number -->
+  <div>
+    <label class="block text-14 text-figtree mb-1">Mobile Number</label>
+
+    <div class="flex items-center bg-light-gray rounded-md overflow-hidden">
+
+      <!-- Country Code Select -->
+      <div class="relative">
+        <select
+          class="appearance-none bg-transparent text-14 text-figtree
+                 pl-3 pr-7 py-3 cursor-pointer ">
+          <option value="+91">+91</option>
+          <option value="+1">+1</option>
+          <option value="+44">+44</option>
+          <option value="+61">+61</option>
+        </select>
+
+        <!-- Arrow -->
+        <svg
+          class="w-3.5 h-3.5 text-gray-500 absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none"
+          fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+
+      <!-- Number Input -->
+      <input
+        type="tel"
+        placeholder="Enter your mobile number"
+        class="w-full bg-transparent px-4 py-3 text-14 text-figtree">
+    </div>
+  </div>
+
+  <!-- Email -->
+  <div>
+    <label class="block text-14 text-figtree mb-1">Email</label>
+    <input
+      type="email"
+      placeholder="Enter your email address"
+      class="w-full rounded-md bg-light-gray px-4 py-3  text-14 text-figtree">
+  </div>
+
+  <!-- Message -->
+  <div>
+    <label class="block text-14 text-figtree mb-1">Message</label>
+    <textarea
+      rows="4"
+      placeholder="write your query"
+      class="w-full rounded-md bg-light-gray px-4 py-3 text-14 text-figtree"></textarea>
+  </div>
+
+  <!-- Submit -->
+  <button
+    type="submit"
+    class="w-full bg-gray-900 text-white py-3 rounded-md text-sm font-medium
+           hover:bg-gray-800 transition">
+    SEND MESSAGE
+  </button>
+
+</form>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+  <section class="bottom-pad-88 top-pad-88  reveal">
+        <div class="max-w-7xl mx-auto reveal">
+
+                  <!-- Section Header -->
+                <div class="flex items-center justify-between mb-8 reveal">
+                    <h2 class="text-2xl font-semibold text-gray-900">
+                        Kingkoil Mattress - Your SLEEP is our Priority!
+                    </h2>
+                    <a href="products.html"
+                        class="text-sm font-medium tracking-wide hover:underline">
+                        VIEW ALL
+                    </a>
+                </div>
+                <div >
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+    <!-- CARD 1 : TEXT ONLY -->
+    <div class="bg-[#1c1b2f] text-white flex flex-col justify-center items-center text-center rounded-lg min-h-[360px] p-6">
+      <span class="uppercase text-xs tracking-widest mb-3">Shop Now</span>
+      <h3 class="text-xl font-medium leading-snug mb-6">
+        Memory Foam<br/>Mattresses
+      </h3>
+      <a href="#" class="text-3xl">
+        <i class="fa-solid fa-circle-chevron-right"></i>
+      </a>
+    </div>
+
+    <!-- CARD 2 -->
+    <a href="#" class="relative group rounded-lg overflow-hidden min-h-[360px]">
+      <img src="assets/images/peiority-image-1.png" class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/30"></div>
+
+      <div class="relative z-10 h-full flex flex-col justify-end items-center text-white text-center p-6">
+        <span class="uppercase text-xs tracking-widest mb-1">Shop</span>
+        <h3 class="text-lg font-medium leading-snug">
+          Back Support<br/>Mattresses
+        </h3>
+      </div>
+    </a>
+
+    <!-- CARD 3 -->
+    <a href="#"  class="relative group rounded-lg overflow-hidden min-h-[360px]">
+      <img src="assets/images/peiority-image-2.png" class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/30"></div>
+
+      <div class="relative z-10 h-full flex flex-col justify-end items-center text-white text-center p-6">
+        <span class="uppercase text-xs tracking-widest mb-1">Shop</span>
+        <h3 class="text-lg font-medium leading-snug">
+          Stay Energized<br/>Mattresses
+        </h3>
+      </div>
+    </a>
+
+    <!-- CARD 4 -->
+    <a href="#"  class="relative group rounded-lg overflow-hidden min-h-[360px]">
+      <img src="assets/images/peiority-image-3.png" class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/30"></div>
+
+      <div class="relative z-10 h-full flex flex-col justify-end items-center text-white text-center p-6">
+        <span class="uppercase text-xs tracking-widest mb-1">Shop</span>
+        <h3 class="text-lg font-medium leading-snug">
+          Luxury<br/>Mattresses
+        </h3>
+      </div>
+    </a>
+
+  </div>
+</div>
+       </div>
+</section>
+ <section class="bottom-pad-88 reveal">
+        <div class="max-w-7xl mx-auto">
+              <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-8 reveal">
+      Frequently Asked Questions (FAQs)
+    </h2>
+         <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-cols-[3fr_2fr] gap-[30px] ">
+
+    <!-- LEFT : FAQ -->
+    <div>
+    
+
+    <div class="space-y-4" id="faqAccordion">
+
+      <!-- FAQ ITEM -->
+      <div class="bg-faq-item-block reveal">
+        <button class="faq-btn flex justify-between items-center w-full text-left pb-1">
+          <span class="font-medium text-18 text-black">
+            What is the best mattress firmness for heavy people?
+          </span>
+        <span class="icon transition-transform duration-300 shadow faq-icon rotate-180">⌃</span>
+        </button>
+        <div class="faq-content  leading-relaxed">
+          For individuals weighing over 90–100 kg, a medium-firm to firm mattress (6–8 on the firmness scale) is ideal. Medium-firm works well for heavy side sleepers by cushioning pressure points, while firm mattresses suit back and stomach sleepers by supporting spinal alignment and reducing sinkage.
+        </div>
+      </div>
+
+      <!-- FAQ ITEM -->
+      <div class="bg-faq-item-block reveal">
+        <button class="faq-btn flex justify-between items-center w-full text-left pb-1">
+          <span class="font-medium text-18 text-black">
+            How thick should a mattress be for heavy individuals?
+          </span>
+          <span class="icon transition-transform duration-300 shadow faq-icon">⌃</span>
+        </button>
+        <div class="faq-content  hidden leading-relaxed">
+          A mattress thickness of 10–14 inches is recommended for heavier individuals to provide better durability, support, and comfort.
+        </div>
+      </div>
+
+      <!-- FAQ ITEM -->
+      <div class="bg-faq-item-block reveal">
+        <button class="faq-btn flex justify-between items-center w-full text-left pb-1">
+         <span class="font-medium text-18 text-black">
+            Are orthopedic mattresses good for heavy people with back pain?
+          </span>
+          <span class="icon transition-transform duration-300 shadow faq-icon">⌃</span>
+        </button>
+        <div class="faq-content  hidden  leading-relaxed">
+          Yes. Orthopedic mattresses are designed to provide enhanced lumbar support, making them suitable for heavy sleepers with chronic back pain.
+        </div>
+      </div>
+
+      <!-- FAQ ITEM -->
+      <div class="bg-faq-item-block reveal">
+        <button class="faq-btn flex justify-between items-center w-full text-left pb-1">
+         <span class="font-medium text-18 text-black">
+            Do heavy people need a firm mattress or a soft mattress?
+          </span>
+          <span class="icon transition-transform duration-300 shadow faq-icon">⌃</span>
+        </button>
+        <div class="faq-content  hidden leading-relaxed">
+          Heavy people generally benefit from medium-firm to firm mattresses, which prevent excessive sinking and maintain spinal alignment.
+        </div>
+      </div>
+
+      <!-- FAQ ITEM -->
+      <div class="bg-faq-item-block reveal">
+        <button class="faq-btn flex justify-between items-center w-full text-left pb-1">
+          <span class="font-medium text-18 text-black">
+            Is memory foam suitable for heavy sleepers?
+          </span>
+          <span class="icon transition-transform duration-300 shadow faq-icon">⌃</span>
+        </button>
+        <div class="faq-content  hidden   leading-relaxed">
+          High-density memory foam can work well, but low-density foam may sag faster under higher body weight.
+        </div>
+      </div>
+
+      <!-- FAQ ITEM -->
+      <div class="bg-faq-item-block reveal">
+        <button class="faq-btn flex justify-between items-center w-full text-left pb-1">
+          <span class="font-medium text-18 text-black">
+            Are hybrid mattresses better for heavy people?
+          </span>
+          <span class="icon transition-transform duration-300 shadow faq-icon">⌃</span>
+        </button>
+        <div class="faq-content  hidden  leading-relaxed">
+          Yes. Hybrid mattresses combine foam comfort with coil support, making them durable and supportive for heavier sleepers.
+        </div>
+      </div> 
+
+    </div>
+    </div>
+
+    <!-- RIGHT : IMAGE -->
+    <div class="w-full">
+      <img
+        src="assets/images/dealer-page-faq-image.png"
+        alt="Mattress"
+        class="w-full h-full object-cover rounded-lg"
+      />
+    </div>
+
+  </div>
+</div>
+
+ </section>
+<section class="relative bottom-pad-88 reveal ">
+  <div class="max-w-7xl mx-auto reveal">
+    <div class="relative bg-cover bg-center rounded-xl overflow-hidden"
+         style="background-image: url('assets/images/banner-bg.png');"> 
+      
+      <!-- Content -->
+      <div class="relative z-10 flex flex-col lg:flex-row items-center lg:items-start justify-between py-12 px-6 lg:px-12">
+        
+        <!-- Text -->
+        <div class="text-white max-w-lg lg:max-w-md text-center lg:text-left mb-6 lg:mb-0">
+          <h2 class="text-3xl font-bold mb-4 text-playfair-display">Know Your SleepID</h2>
+          <p class="mb-6 text-sm lg:text-base">
+            Whether you want to feel more energized, improve focus, or build healthier routines,
+            Know Your SleepID empowers you with knowledge about your sleep so you can rest better 
+            and live better — starting tonight.
+          </p>
+
+          <!-- Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#"
+               class="px-6 py-2 bg-white text-[#1E1E31] font-semibold rounded hover:bg-gray-200 transition">
+               CHECK NOW
+            </a>
+            <a href="#"
+               class="px-6 py-2 border border-white text-white font-semibold rounded hover:bg-white hover:text-[#1E1E31] transition">
+               VISIT OUR STORE
+            </a>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="reveal">
+  <div class="max-w-7xl mx-auto reveal">
+
+    <!-- Section Header -->
+    <div class="flex items-center justify-between mb-8 reveal">
+      <h2 class="text-2xl font-semibold text-gray-900">
+        Recents Blogs 
+      </h2>
+      <a href="blog-category.html"
+         class="text-sm font-medium tracking-wide hover:underline">
+        VIEW ALL
+      </a>
+    </div>
+
+    <!-- Cards Wrapper -->
+    <div
+      class="flex gap-6 overflow-x-auto pb-4 scrollbar-hide
+             lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-visible reveal">
+
+      <!-- Card 1 -->
+      <a href="blog-category.html"
+         class="min-w-[260px] lg:min-w-0 bg-white overflow-hidden
+                transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+
+        <img src="assets/images/img-blog-category-1.png"
+             alt="Blog Category"
+             class="w-full h-48 object-cover">
+
+        <div class="p-4">
+          <h3 class="font-medium text-gray-900 line-clamp-2">
+            How Blue Light affects.
+          </h3>
+
+          <p class="text-sm text-gray-600 mt-2 line-clamp-3">
+            Do you find yourself feeling tired and groggy in the morning? Do you struggle to fall asleep at night or wake up
+          </p>
+
+          <div class="flex items-center gap-2 text-xs text-gray-500 mt-3">
+           <img src="assets/images/blogs/calender-icon.png" class="me-2" alt=""> May 27, 2025
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 2 -->
+      <a href="blog-category.html"
+         class="min-w-[260px] lg:min-w-0 bg-white overflow-hidden
+                transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+
+        <img src="assets/images/img-blog-category-2.png"
+             alt="Blog Category"
+             class="w-full h-48 object-cover">
+
+        <div class="p-4">
+          <h3 class="font-medium text-gray-900 line-clamp-2">
+            Diwali Mattress Deals and
+          </h3>
+
+          <p class="text-sm text-gray-600 mt-2 line-clamp-3">
+            Whether you're looking to revamp your bedroom or gift a loved one the comfort of a good night's sleep,..Whether you're looking to 
+          </p>
+
+          <div class="flex items-center gap-2 text-xs text-gray-500 mt-3">
+            <img src="assets/images/blogs/calender-icon.png" class="me-2" alt=""> March 15, 2025
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="blog-category.html"
+         class="min-w-[260px] lg:min-w-0 bg-white overflow-hidden
+                transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+
+        <img src="assets/images/img-blog-category-3.png"
+             alt="Blog Category"
+             class="w-full h-48 object-cover">
+
+        <div class="p-4">
+          <h3 class="font-medium text-gray-900 line-clamp-2">
+           Why 7 Hours of Sleep is
+          </h3>
+
+          <p class="text-sm text-gray-600 mt-2 line-clamp-3">
+            In our fast-paced world, the pursuit of success often leads us to overlook one of life's fundamental necessities.
+          </p>
+
+          <div class="flex items-center gap-2 text-xs text-gray-500 mt-3">
+            <img src="assets/images/blogs/calender-icon.png" class="me-2" alt=""> May 21, 2025
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 4 -->
+      <a href="blog-category.html"
+         class="min-w-[260px] lg:min-w-0 bg-white overflow-hidden
+                transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+
+        <img src="assets/images/img-blog-category-4.png"
+             alt="Blog Category"
+             class="w-full h-48 object-cover">
+
+        <div class="p-4">
+          <h3 class="font-medium text-gray-900 line-clamp-2">
+            How Blue Light affects...
+          </h3>
+
+        <p class="text-sm text-gray-600 mt-2 line-clamp-3">
+           Do you find yourself feeling tired and groggy in the morning? Do you struggle to fall asleep at night or wake up
+          </p>
+
+          <div class="flex items-center gap-2 text-xs text-gray-500 mt-3">
+            <img src="assets/images/blogs/calender-icon.png" class="me-2" alt=""> May 27, 2025
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 5 -->
+      <a href="blog-category.html"
+         class="min-w-[260px] lg:min-w-0 bg-white overflow-hidden
+                transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+
+        <img src="assets/images/img-blog-category-5.png"
+             alt="Blog Category"
+             class="w-full h-48 object-cover">
+
+        <div class="p-4">
+          <h3 class="font-medium text-gray-900 line-clamp-2">
+            How Blue Light affects...
+          </h3>
+
+          <p class="text-sm text-gray-600 mt-2 line-clamp-3">
+           Do you find yourself feeling tired and groggy in the morning? Do you struggle to fall asleep at night or wake up
+          </p>
+
+          <div class="flex items-center gap-2 text-xs text-gray-500 mt-3">
+            <img src="assets/images/blogs/calender-icon.png" class="me-2" alt=""> April 30, 2025
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="section-pad-90 reveal">
+  <div class="max-w-7xl mx-auto px-4">
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+
+      <!-- Item 1 -->
+      <div class="flex flex-col items-center">
+        <img
+          src="assets/images/icon-global-standard.png"
+          alt="Global Standard"
+          class="w-12 h-12 mb-3 object-contain"
+        />
+        <p class="text-xs sm:text-sm tracking-wide text-gray-800 uppercase">
+          Global Standard
+        </p>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="flex flex-col items-center">
+        <img
+          src="assets/images/icon-leadership.png"
+          alt="Leaders in Quality"
+          class="w-12 h-12 mb-3 object-contain"
+        />
+        <p class="text-xs sm:text-sm tracking-wide text-gray-800 uppercase">
+          Leaders in Quality
+        </p>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="flex flex-col items-center">
+        <img
+          src="assets/images/icon-innovation.png"
+          alt="Innovation & Research"
+          class="w-12 h-12 mb-3 object-contain"
+        />
+        <p class="text-xs sm:text-sm tracking-wide text-gray-800 uppercase">
+          Innovation & Research
+        </p>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="flex flex-col items-center">
+        <img
+          src="assets/images/icon-global-brand.png"
+          alt="Iconic Brand"
+          class="w-12 h-12 mb-3 object-contain"
+        />
+        <p class="text-xs sm:text-sm tracking-wide text-gray-800 uppercase">
+          Iconic Brand
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="text-white text-sm relative reveal">
+        <div class="border-b border-[#3D3B3B]">
+ <div class="container mx-auto px-4">
+  <div class="max-w-7xl mx-auto py-6 flex flex-col lg:flex-row items-center justify-between gap-4">
+
+    <!-- LEFT: Logo -->
+    <div class="flex justify-center lg:justify-start w-full lg:w-auto">
+      <img src="assets/images/logo.png" alt="King Koil" class="h-7">
+    </div>
+
+    <!-- CENTER: Contact Info -->
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-center lg:text-left">
+      <span class="flex items-center gap-2">
+        <img src="assets/images/icon-location.png" alt="Suite 614, 6th Floor, DLF Downtown Meadows, Rajarhat, NT 15256">
+        Suite 614, 6th Floor, DLF Downtown Meadows, Rajarhat, NT 15256
+      </span>
+
+      <span class="flex items-center gap-2 mx-4">
+      <img src="assets/images/icon-call.png" alt=" +91 56323 1256">
+        +91 56323 1256
+      </span>
+
+      <span class="flex items-center gap-2">
+        <img src="assets/images/icon-mail.png" alt=" +91 56323 1256">
+        example001@gmail.com
+      </span>
+    </div>
+
+    <!-- RIGHT: Scroll to top -->
+    <div class="flex justify-center lg:justify-end w-full lg:w-auto">
+      <button onclick="window.scrollTo({top:0,behavior:'smooth'})"
+              class="flex items-center gap-2 text-sm hover:text-white">
+        SCROLL TO TOP
+        <i class="fa-solid fa-circle-chevron-up"></i>
+      </button>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+        </div>
+  <!-- TOP INFO BAR -->
+  
+
+  <!-- MAIN FOOTER -->
+  <div class="max-w-7xl mx-auto px-4 py-12
+              grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+
+    <!-- COMPANY -->
+    <div>
+      <h4 class="text-white font-semibold mb-4">COMPANY</h4>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-white">Why King Koil</a></li>
+        <li><a href="#" class="hover:text-white">Know Your SleepID</a></li>
+        <li><a href="#" class="hover:text-white">Where to Buy</a></li>
+        <li><a href="#" class="hover:text-white">Contact Us</a></li>
+        <li><a href="#" class="hover:text-white">FAQs</a></li>
+      </ul>
+    </div>
+
+    <!-- MATTRESS FOR HOME -->
+    <div>
+      <h4 class="text-white font-semibold mb-4">MATTRESS FOR HOME</h4>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-white">Memory Foam Mattresses</a></li>
+        <li><a href="#" class="hover:text-white">Back Support Mattresses</a></li>
+        <li><a href="#" class="hover:text-white">Stay Energized Mattresses</a></li>
+        <li><a href="#" class="hover:text-white">Luxury Mattresses</a></li>
+        <li><a href="#" class="hover:text-white">Ultra Luxury Mattresses</a></li>
+      </ul>
+    </div>
+
+    <!-- MATTRESS FOR HOTELS -->
+    <div>
+      <h4 class="text-white font-semibold mb-4">MATTRESS FOR HOTELS</h4>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-white">Hospitality Bedding Solution</a></li>
+        <li><a href="#" class="hover:text-white">Maharaja Grand</a></li>
+        <li><a href="#" class="hover:text-white">Euro Soft</a></li>
+        <li><a href="#" class="hover:text-white">Foldable Roll Away Bed</a></li>
+        <li><a href="#" class="hover:text-white">Non-Foldable Rollaway Bed</a></li>
+      </ul>
+    </div>
+
+    <!-- SUBSCRIBE -->
+    <div>
+      <h4 class="text-white font-semibold mb-4">SUBMIT FOR SUBSCRIPTION</h4>
+      <p class="mb-4">
+        Subscribe to get updates about new products and sales
+      </p>
+
+      <form class="flex mb-4">
+        <input type="email"
+               placeholder="Enter your email address"
+               class="w-full px-3 py-2 text-gray-800 rounded-l focus:outline-none">
+        <button class="bg-white text-[#1b1b2f] px-4 font-semibold rounded-r">
+          SUBSCRIBE
+        </button>
+      </form>
+
+      <!-- SOCIAL ICONS -->
+      <div class="flex gap-4 text-lg">
+        <a href="#" class="hover:text-white"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" class="hover:text-white"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="hover:text-white"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 py-4
+                flex flex-col md:flex-row gap-3
+                justify-between items-center text-xs">
+
+      <p>
+        © 2026 King Koil India by Real Inspiring Technologies Pvt. Ltd.
+        All Rights Reserved
+      </p>
+
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-white">Terms & Conditions</a>
+        <a href="#" class="hover:text-white">Warranty</a>
+        <a href="#" class="hover:text-white">Privacy Policy</a>
+        <a href="#" class="hover:text-white">Sitemap</a>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+ 
+ <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".reveal");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0,
+      rootMargin: "0px 0px 0px 0px",
+    }
+  );
+
+  elements.forEach(el => {
+    observer.observe(el);
+
+    // 🔥 Force check for elements already in view
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 200) {
+      el.classList.add("is-visible");
+      observer.unobserve(el);
+    }
+  });
+});
+</script>
+<script>
+  document.querySelectorAll('.faq-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('.icon');
+
+      document.querySelectorAll('.faq-content').forEach(item => {
+        if (item !== content) {
+          item.classList.add('hidden');
+          item.previousElementSibling.querySelector('.icon').classList.remove('rotate-180');
+        }
+      });
+
+      content.classList.toggle('hidden');
+      icon.classList.toggle('rotate-180');
+    });
+  });
+</script>
+
+
+</body>
+</html>
