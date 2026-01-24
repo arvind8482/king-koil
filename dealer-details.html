@@ -17,24 +17,25 @@
       href="assets/css/style.css">
 
 </head>
-<body class="text-figtree"> 
+<body class="text-figtree text-14">  
 <!-- ================= HEADER ================= -->
- <header class="bg-[#1E1E31] text-white fixed top-0 left-0 w-full z-50">
- <div class="max-w-[1658px] md:mx-auto px-4 md:px-0 md:px-0 py-4 flex items-center justify-between">
+<header id="siteHeader"
+  class="bg-[#1E1E31] text-white w-full z-50 transition-all duration-300">
+ <div class="max-w-[1650px] md:mx-auto px-4 py-[30px] flex items-center justify-between">
 
     <!-- LOGO -->
     <a href="/" class="flex items-center">
-      <img src="assets/images/logo.png" alt="King Koil" class="h-8">
+      <img src="assets/images/logo.png" alt="King Koil" class="h-[32px]">
     </a>
 
     <!-- DESKTOP NAV -->
-    <nav class="hidden lg:flex items-center gap-6 text-lg">
+    <nav class="hidden lg:flex items-center gap-6 text-14">
 
-      <a href="#" class="hover:text-gray-300">Why King Koil?</a>
+      <a href="#"  >Why King Koil?</a>
 
       <!-- Mattresses Dropdown -->
       <div class="relative group">
-        <button class="flex items-center gap-1 hover:text-gray-300">
+        <button class="flex items-center gap-1 ">
           Mattresses
           <svg class="w-4 h-4 transition-transform group-hover:rotate-180"
                fill="none" stroke="currentColor" stroke-width="2"
@@ -48,17 +49,17 @@
 
         <div
           class="absolute top-full left-0 w-52 bg-white text-[#1E1E31]
-                    shadow-xl opacity-0 invisible
+                 rounded-lg shadow-xl opacity-0 invisible
                  group-hover:opacity-100 group-hover:visible
                  transition pt-2">
 
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-t-lg">
+          <a href="#" class="block px-4 py-2  rounded-t-lg">
             Luxury Mattresses
           </a>
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100">
+          <a href="#" class="block px-4 py-2 ">
             Memory Foam
           </a>
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-b-lg">
+          <a href="#" class="block px-4 py-2 rounded-b-lg">
             Back Support
           </a>
         </div>
@@ -66,7 +67,7 @@
 
       <!-- Accessories Dropdown -->
       <div class="relative group">
-        <button class="flex items-center gap-1 hover:text-gray-300">
+        <button class="flex items-center gap-1 ">
           Accessories
           <svg class="w-4 h-4 transition-transform group-hover:rotate-180"
                fill="none" stroke="currentColor" stroke-width="2"
@@ -79,22 +80,22 @@
 
         <div
           class="absolute top-full left-0 w-48 bg-white text-[#1E1E31]
-                    shadow-xl opacity-0 invisible
+                 rounded-lg shadow-xl opacity-0 invisible
                  group-hover:opacity-100 group-hover:visible
                  transition pt-2">
 
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-t-lg">
+          <a href="#" class="block px-4 py-2 rounded-t-lg">
             Pillows
           </a>
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-b-lg">
+          <a href="#" class="block px-4 py-2 rounded-b-lg">
             Protectors
           </a>
         </div>
       </div>
 
-      <a href="#" class="hover:text-gray-300">SleepID</a>
-      <a href="#" class="hover:text-gray-300">Hospitality</a>
-      <a href="#" class="hover:text-gray-300">Blogs</a>
+      <a href="#" >SleepID</a>
+      <a href="#" >Hospitality</a>
+      <a href="#" >Blogs</a>
     </nav>
 
     <!-- DESKTOP CTA -->
@@ -132,7 +133,7 @@
             <path d="M6 9l6 6 6-6" />
           </svg>
         </summary>
-        <div class="pl-4 pb-2 text-sm space-y-1">
+        <div class="pl-4 pb-2 text-14 space-y-1">
           <a href="#" class="block">Luxury Mattresses</a>
           <a href="#" class="block">Memory Foam</a>
           <a href="#" class="block">Back Support</a>
@@ -148,7 +149,7 @@
             <path d="M6 9l6 6 6-6" />
           </svg>
         </summary>
-        <div class="pl-4 pb-2 text-sm space-y-1">
+        <div class="pl-4 pb-2 text-14 space-y-1">
           <a href="#" class="block">Pillows</a>
           <a href="#" class="block">Protectors</a>
         </div>
@@ -165,12 +166,8 @@
       </a>
     </div>
   </div>
-</header>
-
-<!-- Add padding to the top of the page so content is not hidden under the fixed header -->
-<div class="pt-36">
-  <!-- Your page content goes here -->
-</div>
+</header> 
+ 
 
 
 <!-- ================= MOBILE TOGGLE SCRIPT ================= -->
@@ -181,8 +178,8 @@
 </script>
 
   
-<section class="bottom-pad-76">
-<div class="max-w-[1490px] px-4 md:px-0 md:mx-automax-w-[1490px] px-4 md:px-0 md:mx-auto">
+<section class="bottom-pad-76 pt-[88px]">
+<div class="max-w-[1490px] px-4  mx-auto ">
       <div class="text-center bottom-pad-88">
           <h2 class="text-38-heading reveal">BANWARILALS WOODS CRAFTS PVT LTD</h2>
           <img src="assets/images/dealer-details-star.png" class="mx-auto my-4 reveal" alt="BANWARILALS WOODS CRAFTS PVT LTD">
@@ -259,11 +256,61 @@
 
       <!-- RIGHT BANNER -->
       <div class="relative overflow-hidden">
+        
+    <!-- SLIDER -->
+    <div id="imageSlider" class="flex transition-transform duration-700 ease-in-out">
+
+      <!-- Slide 1 -->
+      <div class="min-w-full relative">
         <img
           src="assets/images/dealer-details-img.png"
-          alt="Mattress Fest"
-          class="w-full   lg:h-full object-cover"
-        /> 
+          class="w-full object-cover"
+          alt=""
+        />
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="min-w-full relative">
+        <img
+          src="assets/images/dealer-details-img.png"
+          class="w-full object-cover"
+          alt=""
+        />
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="min-w-full relative">
+        <img
+          src="assets/images/dealer-details-img.png"
+          class="w-full object-cover"
+          alt=""
+        />
+      </div>
+
+    </div>
+
+    <!-- NAV BUTTONS -->
+    <button id="prevSlide"
+      class="absolute left-4 top-1/2 -translate-y-1/2 z-20
+             w-[40px] h-[40px] rounded-full bg-white/80 hover:bg-white
+             flex items-center justify-center text-[24px]">
+     <img src="assets/images/slider-prev.png" alt="">
+    </button>
+
+    <button id="nextSlide"
+      class="absolute right-4 top-1/2 -translate-y-1/2 z-20
+             w-[40px] h-[40px] rounded-full bg-white/80 hover:bg-white
+             flex items-center justify-center  ">
+        <img src="assets/images/slider-next.png" alt="">
+    </button>
+
+    <!-- DOTS -->
+    <div id="dots" class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+      <button class="dot w-2.5 h-2.5 rounded-full bg-white"></button>
+      <button class="dot w-2.5 h-2.5 rounded-full bg-white/40"></button>
+      <button class="dot w-2.5 h-2.5 rounded-full bg-white/40"></button>
+    </div>
+
       </div>
 
     </div>
@@ -271,53 +318,53 @@
   </div>
 </section>
 <section class="bg-white section-pad-90">
-  <div class="max-w-[1490px] px-4 md:px-0 md:mx-automax-w-[1490px] px-4 md:px-0 md:mx-auto">
+<div class="max-w-[1490px] px-4  mx-auto  ">
     <div class="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-6 ">
 
       <!-- Item 1 -->
-      <div class="flex items-center gap-3 bg-light-gray-pad-20 reveal">
+         <div class="flex items-center gap-[24px] bg-light-gray-pad-20 reveal">
         <img
           src="assets/images/icon-dealer-details-quality-1.png"
           alt="Best Price Guarantee"
           class="h-8 w-auto"
         />
-        <p class="text-sm tracking-wide text-gray-800 uppercase">
+        <p class="text-12 tracking-wide text-gray-800 uppercase">
           Best Price Guarantee
         </p>
       </div>
 
       <!-- Item 2 -->
-      <div class="flex items-center gap-3 bg-light-gray-pad-20 reveal">
+          <div class="flex items-center gap-[24px] bg-light-gray-pad-20 reveal">
         <img
           src="assets/images/icon-dealer-details-quality-2.png"
           alt="Expert Sleep Advice"
           class="h-8 w-auto"
         />
-        <p class="text-sm tracking-wide text-gray-800 uppercase">
+        <p class="text-12 tracking-wide text-gray-800 uppercase">
           Expert Sleep Advice
         </p>
       </div>
 
        <!-- Item 3 -->
-      <div class="flex items-center gap-3 bg-light-gray-pad-20 reveal">
+          <div class="flex items-center gap-[24px] bg-light-gray-pad-20 reveal">
         <img
           src="assets/images/icon-dealer-details-quality-3.png"
           alt="Try Before You Buy"
           class="h-8 w-auto"
         />
-        <p class="text-sm tracking-wide text-gray-800 uppercase">
+        <p class="text-12 tracking-wide text-gray-800 uppercase">
           Try Before You Buy
         </p>
       </div>
 
             <!-- Item 4 -->
-      <div class="flex items-center gap-3 bg-light-gray-pad-20 reveal">
+         <div class="flex items-center gap-[24px] bg-light-gray-pad-20 reveal">
         <img
           src="assets/images/icon-dealer-details-quality-4.png"
           alt=" Genuine King Koil Products"
           class="h-8 w-auto"
         />
-        <p class="text-sm tracking-wide text-gray-800 uppercase">
+        <p class="text-12 tracking-wide text-gray-800 uppercase">
            Genuine King Koil Products
         </p>
       </div>
@@ -326,7 +373,7 @@
   </div>
 </section>
 <section class="bottom-pad-88">
-   <div class="max-w-[1490px] px-4 md:px-0 md:mx-automax-w-[1490px] px-4 md:px-0 md:mx-auto">
+<div class="max-w-[1490px] px-4 mx-auto ">
             <div class="text-center">
                     <h2 class="text-28-heading font-semibold mb-2 reveal">Why Choose Us</h2>
                     <p class="text-20 reveal">
@@ -336,7 +383,7 @@
     </div>
 </section>
 <section class="bottom-pad-88">
-   <div class="max-w-[1490px] px-4 md:px-0 md:mx-automax-w-[1490px] px-4 md:px-0 md:mx-auto">
+   <div class="max-w-[1490px] px-4  mx-auto">
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 lg:grid-cols-[2.5fr_1.1fr] gap-[40px] items-stretch">
     <div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.4064655933867!2d72.53930017531455!3d23.045555279157583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e850f9e3262bd%3A0xa62a37062b73f6b4!2sRudra%20arcade!5e0!3m2!1sen!2sin!4v1768744429927!5m2!1sen!2sin" width="100%" height="340" style="border:0;" allowfullscreen="" loading="lazy" class="reveal" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -352,7 +399,7 @@
            <img src="assets/images/icon-dealer-star.png" alt="EXCLUSIVE"> EXCLUSIVE
         </span>
       <!-- Details -->
-      <ul class="space-y-3 text-sm text-gray-700">  
+      <ul class="space-y-3 text-12 text-gray-700">  
          <li class="flex items-end text-18 gap-3 pt-3">
           <span><img src="assets/images/icon-dealer-owner.png" alt=""></span>
           <span class="border-b pb-3 grow">Mr.manish Doshi</span>
@@ -396,12 +443,12 @@
 </div>
 </section>
 <section  class="bottom-pad-88">
-     <div class="max-w-[1490px] px-4 md:px-0 md:mx-automax-w-[1490px] px-4 md:px-0 md:mx-auto">
+     <div class="max-w-[1490px] px-4  mx-auto">
             <h2 class="text-28-heading font-semibold mb-16 reveal  text-center">What our customers says</h2>
  
     <!-- Header -->
     <div class="flex items-center justify-between mb-8 bg-light-gray-pad-20">
-      <div class="flex flex-col ">
+      <div class="flex flex-col">
         <img src="assets/images/img-google-rating.png" alt="Google">
         <div>
           <div class="flex items-center text-16">
@@ -416,12 +463,12 @@
     </div>
 
     <!-- Slider -->
-    <div class="relative">
+    <div class="relative overflow-x-hidden">
 
       <!-- Left Arrow -->
       <button
         id="reviewPrev"
-        class="hidden md:flex absolute -left-6 top-1/2 -translate-y-1/2
+        class="hidden md:flex absolute left-2 xl:-left-6 top-1/2  -translate-y-1/2
                w-10 h-10 rounded-full border bg-white shadow
                items-center justify-center z-10">
         ‹
@@ -437,7 +484,7 @@
           <div class="flex items-center gap-3 mb-3">
             <img src="assets/images/img-google-thumb.png" class="w-8 h-8 rounded-full">
             <div>
-              <p class="text-sm font-medium">Mukuk Dave</p>
+              <p class="text-12 font-medium">Mukuk Dave</p>
               <p class="text-xs text-gray-500">10 days ago</p>
             </div>
           </div>
@@ -466,7 +513,7 @@
           <div class="flex items-center gap-3 mb-3">
             <img src="assets/images/img-google-thumb.png" class="w-8 h-8 rounded-full">
             <div>
-              <p class="text-sm font-medium">Mukuk Dave</p>
+              <p class="text-12 font-medium">Mukuk Dave</p>
               <p class="text-xs text-gray-500">10 days ago</p>
             </div>
           </div>
@@ -494,7 +541,7 @@
           <div class="flex items-center gap-3 mb-3">
             <img src="assets/images/img-google-thumb.png" class="w-8 h-8 rounded-full">
             <div>
-              <p class="text-sm font-medium">Mukuk Dave</p>
+              <p class="text-12 font-medium">Mukuk Dave</p>
               <p class="text-xs text-gray-500">10 days ago</p>
             </div>
           </div>
@@ -522,7 +569,7 @@
           <div class="flex items-center gap-3 mb-3">
             <img src="assets/images/img-google-thumb.png" class="w-8 h-8 rounded-full">
             <div>
-              <p class="text-sm font-medium">Mukuk Dave</p>
+              <p class="text-12 font-medium">Mukuk Dave</p>
               <p class="text-xs text-gray-500">10 days ago</p>
             </div>
           </div>
@@ -550,7 +597,7 @@
           <div class="flex items-center gap-3 mb-3">
             <img src="assets/images/img-google-thumb.png" class="w-8 h-8 rounded-full">
             <div>
-              <p class="text-sm font-medium">Mukuk Dave</p>
+              <p class="text-12 font-medium">Mukuk Dave</p>
               <p class="text-xs text-gray-500">10 days ago</p>
             </div>
           </div>
@@ -578,7 +625,7 @@
           <div class="flex items-center gap-3 mb-3">
             <img src="assets/images/img-google-thumb.png" class="w-8 h-8 rounded-full">
             <div>
-              <p class="text-sm font-medium">Mukuk Dave</p>
+              <p class="text-12 font-medium">Mukuk Dave</p>
               <p class="text-xs text-gray-500">10 days ago</p>
             </div>
           </div>
@@ -606,7 +653,7 @@
           <div class="flex items-center gap-3 mb-3">
             <img src="assets/images/img-google-thumb.png" class="w-8 h-8 rounded-full">
             <div>
-              <p class="text-sm font-medium">Mukuk Dave</p>
+              <p class="text-12 font-medium">Mukuk Dave</p>
               <p class="text-xs text-gray-500">10 days ago</p>
             </div>
           </div>
@@ -634,7 +681,7 @@
           <div class="flex items-center gap-3 mb-3">
             <img src="assets/images/img-google-thumb.png" class="w-8 h-8 rounded-full">
             <div>
-              <p class="text-sm font-medium">Mukuk Dave</p>
+              <p class="text-12 font-medium">Mukuk Dave</p>
               <p class="text-xs text-gray-500">10 days ago</p>
             </div>
           </div>
@@ -662,7 +709,7 @@
           <div class="flex items-center gap-3 mb-3">
             <img src="assets/images/img-google-thumb.png" class="w-8 h-8 rounded-full">
             <div>
-              <p class="text-sm font-medium">Mukuk Dave</p>
+              <p class="text-12 font-medium">Mukuk Dave</p>
               <p class="text-xs text-gray-500">10 days ago</p>
             </div>
           </div>
@@ -690,7 +737,7 @@
           <div class="flex items-center gap-3 mb-3">
             <img src="assets/images/img-google-thumb.png" class="w-8 h-8 rounded-full">
             <div>
-              <p class="text-sm font-medium">Mukuk Dave</p>
+              <p class="text-12 font-medium">Mukuk Dave</p>
               <p class="text-xs text-gray-500">10 days ago</p>
             </div>
           </div>
@@ -718,7 +765,7 @@
           <div class="flex items-center gap-3 mb-3">
             <img src="assets/images/img-google-thumb.png" class="w-8 h-8 rounded-full">
             <div>
-              <p class="text-sm font-medium">Mukuk Dave</p>
+              <p class="text-12 font-medium">Mukuk Dave</p>
               <p class="text-xs text-gray-500">10 days ago</p>
             </div>
           </div>
@@ -746,7 +793,7 @@
           <div class="flex items-center gap-3 mb-3">
             <img src="assets/images/img-google-thumb.png" class="w-8 h-8 rounded-full">
             <div>
-              <p class="text-sm font-medium">Mukuk Dave</p>
+              <p class="text-12 font-medium">Mukuk Dave</p>
               <p class="text-xs text-gray-500">10 days ago</p>
             </div>
           </div>
@@ -774,7 +821,7 @@
           <div class="flex items-center gap-3 mb-3">
             <img src="assets/images/img-google-thumb.png" class="w-8 h-8 rounded-full">
             <div>
-              <p class="text-sm font-medium">Mukuk Dave</p>
+              <p class="text-12 font-medium">Mukuk Dave</p>
               <p class="text-xs text-gray-500">10 days ago</p>
             </div>
           </div>
@@ -802,7 +849,7 @@
           <div class="flex items-center gap-3 mb-3">
             <img src="assets/images/img-google-thumb.png" class="w-8 h-8 rounded-full">
             <div>
-              <p class="text-sm font-medium">Mukuk Dave</p>
+              <p class="text-12 font-medium">Mukuk Dave</p>
               <p class="text-xs text-gray-500">10 days ago</p>
             </div>
           </div>
@@ -830,7 +877,7 @@
           <div class="flex items-center gap-3 mb-3">
             <img src="assets/images/img-google-thumb.png" class="w-8 h-8 rounded-full">
             <div>
-              <p class="text-sm font-medium">Mukuk Dave</p>
+              <p class="text-12 font-medium">Mukuk Dave</p>
               <p class="text-xs text-gray-500">10 days ago</p>
             </div>
           </div>
@@ -859,7 +906,7 @@
       <!-- Right Arrow -->
       <button
         id="reviewNext"
-        class="hidden md:flex absolute -right-6 top-1/2 -translate-y-1/2
+        class="hidden md:flex absolute right-2 xl:-right-6 top-1/2   -translate-y-1/2
                w-10 h-10 rounded-full border bg-white shadow
                items-center justify-center z-10">
         ›
@@ -868,46 +915,46 @@
     </div>
         </div>
 </section> 
-  <section class="bg-light-gray-with-pad reveal">
-<div class="max-w-[1490px] px-4 md:px-0 md:mx-automax-w-[1490px] px-4 md:px-0 md:mx-auto">
+ <section class="bg-light-gray-with-pad reveal">
+<div class="max-w-[1490px] px-4 mx-auto">
     <div class="block md:flex gap-[30px] items-start">
 
       <!-- LEFT CONTENT -->
       <div class="md:w-3/5">
-        <h2 class=" font-semibold text-20-heading mb-1">
+        <h2 class=" font-semibold text-24 mb-[33px]">
           Find a King Koil Mattress Showroom Near You
         </h2>
 
-        <p class="text-17  mb-6 leading-relaxed text-figtree">
+        <p class="text-20  mb-[33px]  leading-relaxed text-figtree">
       Looking for a mattress showroom near you? King Koil, a trusted name in luxury and orthopedic mattresses, is available at 600+ retail locations across India. Experience superior comfort, advanced sleep technology, and premium craftsmanship by visiting a store near you.
         </p>
 
-        <h3 class=" font-semibold text-20-heading mb-1">
+        <h3 class=" font-semibold text-24 mb-[33px]">
           Locate a King Koil Mattress Store Near You
         </h3>
-        <p class="text-17 mb-6 leading-relaxed text-figtree">
+        <p class="text-20  mb-[33px]  leading-relaxed text-figtree">
          <a href="#" class="underline">Finding the perfect mattress</a> is easy with our retailer-finder tool. Simply search for the nearest King Koil mattress showroom and explore our wide range of <a href="#" class="underline">mattresses designed for better sleep</a> and spinal support.
         </p>
 
-        <h3 class=" font-semibold text-20-heading mb-1">
+           <h3 class=" font-semibold text-24 mb-[33px]">
        Why Choose King Koil?
         </h3>
 
-        <ul class="space-y-2 text-17  text-figtree list-star">
+        <ul class="space-y-[6px] text-20  text-figtree list-star">
           <li><strong>Orthopedic Comfort – </strong>Luxurious mattresses designed for deep, restful sleep.</li>
           <li><strong>Orthopedic Support – </strong>Engineered for proper spinal alignment and pressure relief.</li>
           <li><strong>Advanced Technology – </strong>Featuring memory foam, latex, hybrid, and more.</li>
           <li><strong>Trusted by Experts – </strong>Over 125 years of excellence in sleep solutions.</li>
         </ul>
 
-        <p class="text-17  text-figtree mt-6">
-          Visit a King Koil mattress store near you today and find the perfect mattress for your needs!
-          <br/><strong>Find your nearest retailer now!</strong>
+        <p class="text-20  text-figtree mt-6">
+          Visit a King Koil mattress store near you today and find the perfect mattress for your needs!<br/>
+          <strong>Find your nearest retailer now!</strong>
         </p>
       </div>
 
       <!-- RIGHT CONTACT FORM -->
-      <div class="bg-white shadow-md    p-6 md:w-2/5">
+      <div class="bg-white shadow-md rounded-lg p-6 md:w-2/5">
         <h3 class="text-20-heading-black font-semibold  mb-4">
           Contact Us
         </h3>
@@ -916,18 +963,18 @@
 
   <!-- Name -->
   <div>
-    <label class="block text-14 text-figtree mb-1">Name</label>
+    <label class="block text-14 text-figtree mb-[13px]">Name</label>
     <input
       type="text"
       placeholder="Enter your name"
-      class="w-full    bg-light-gray px-4 py-3 text-14 text-figtree ">
+      class="w-full   bg-light-gray px-4 py-3 text-14 text-figtree ">
   </div>
 
   <!-- Mobile Number -->
   <div>
-    <label class="block text-14 text-figtree mb-1">Mobile Number</label>
+    <label class="block text-14 text-figtree mb-[13px]">Mobile Number</label>
 
-    <div class="flex items-center bg-light-gray    overflow-hidden">
+    <div class="flex items-center bg-light-gray   overflow-hidden">
 
       <!-- Country Code Select -->
       <div class="relative">
@@ -959,26 +1006,26 @@
 
   <!-- Email -->
   <div>
-    <label class="block text-14 text-figtree mb-1">Email</label>
+    <label class="block text-14 text-figtree mb-[13px]">Email</label>
     <input
       type="email"
       placeholder="Enter your email address"
-      class="w-full    bg-light-gray px-4 py-3  text-14 text-figtree">
+      class="w-full   bg-light-gray px-4 py-3  text-14 text-figtree">
   </div>
 
   <!-- Message -->
   <div>
-    <label class="block text-14 text-figtree mb-1">Message</label>
+    <label class="block text-14 text-figtree mb-[13px]">Message</label>
     <textarea
       rows="4"
       placeholder="write your query"
-      class="w-full    bg-light-gray px-4 py-3 text-14 text-figtree"></textarea>
+      class="w-full   bg-light-gray px-4 py-3 text-14 text-figtree"></textarea>
   </div>
 
   <!-- Submit -->
   <button
     type="submit"
-    class="w-full bg-gray-900 text-white py-3    text-sm font-medium
+    class="w-full bg-[#1E1E31] text-white btn-pad-header  text-10 font-medium
            hover:bg-gray-800 transition">
     SEND MESSAGE
   </button>
@@ -991,77 +1038,212 @@
   </div>
 </section>
   <section class="bottom-pad-88 top-pad-88  reveal">
-       <div class="max-w-[1490px] px-4 md:px-0 md:mx-automax-w-[1490px] px-4 md:px-0 md:mx-auto">
+      <div class="max-w-[1490px] px-4  mx-auto">
 
                   <!-- Section Header -->
-                <div class="flex items-center justify-between mb-8 reveal">
-                    <h2 class="text-2xl font-semibold text-gray-900">
+             <div class="flex flex-col xl:flex-row items-start xl:items-center gap-2  justify-between mb-8 reveal">
+                     <h2 class="text-[28px] font-normal text-black">
                         Kingkoil Mattress - Your SLEEP is our Priority!
                     </h2>
                     <a href="products.html"
-                        class="text-sm font-medium tracking-wide hover:underline">
+                        class="text-12 font-medium tracking-wide hover:underline">
                         VIEW ALL
                     </a>
                 </div>
                 <div >
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"> 
 
-    <!-- CARD 1 : TEXT ONLY -->
-    <div class="bg-[#1c1b2f] text-white flex flex-col justify-center items-center text-center      min-h-[433px]  p-6">
-      <span class="uppercase text-xs tracking-widest mb-3">Shop Now</span>
-      <h3 class="text-xl font-medium leading-snug mb-6">
-        Memory Foam<br/>Mattresses
-      </h3>
-      <a href="#" class="text-3xl">
-        <i class="fa-solid fa-circle-chevron-right"></i>
+      <!-- ================= IMAGE CARD ================= -->
+      <a href="#" class="relative group overflow-hidden min-h-[433px]">
+
+        <!-- Image -->
+        <img
+          src="assets/images/peiority-image-3.png"
+          class="absolute inset-0 w-full h-full object-cover
+                 transition-transform duration-700 group-hover:scale-105"
+          alt="" />
+
+        <!-- Default overlay -->
+        <div class="absolute inset-0 bg-black/30"></div>
+
+        <!-- Hover overlay -->
+        <div
+          class="absolute inset-0 bg-black
+                 translate-y-full
+                 group-hover:translate-y-0
+                 transition-transform duration-500 ease-out">
+        </div>
+
+        <!-- CONTENT -->
+        <div class="relative z-10 h-full">
+
+          <!-- Bottom content (default) -->
+          <div
+            class="absolute inset-x-0 bottom-0
+                   flex flex-col items-center text-white text-center
+                   transition-all duration-500
+                   group-hover:bottom-1/2
+                   group-hover:translate-y-1/2">
+
+             <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP NOW</span>
+
+              <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+                Memory Foam<br />Mattresses
+              </h3>
+
+            <i
+              class="fa-solid fa-circle-chevron-right text-[40px]
+                     opacity-0 translate-y-2
+                     group-hover:opacity-100
+                     group-hover:translate-y-0
+                     transition-all duration-500">
+            </i>
+
+          </div>
+
+        </div>
+
       </a>
+        <!-- ================= IMAGE CARD ================= -->
+      <a href="#" class="relative group overflow-hidden min-h-[433px]">
+
+        <!-- Image -->
+        <img
+          src="assets/images/peiority-image-1.png"
+          class="absolute inset-0 w-full h-full object-cover
+                 transition-transform duration-700 group-hover:scale-105"
+          alt="" />
+
+        <!-- Default overlay -->
+        <div class="absolute inset-0 bg-black/30"></div>
+
+        <!-- Hover overlay -->
+        <div
+          class="absolute inset-0 bg-black
+                 translate-y-full
+                 group-hover:translate-y-0
+                 transition-transform duration-500 ease-out">
+        </div>
+
+        <!-- CONTENT -->
+        <div class="relative z-10 h-full">
+
+          <!-- Bottom content (default) -->
+          <div
+            class="absolute inset-x-0 bottom-6
+                   flex flex-col items-center text-white text-center
+                   transition-all duration-500
+                   group-hover:bottom-1/2
+                   group-hover:translate-y-1/2">
+ <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP</span>
+         <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+              Back Support<br />Mattresses
+            </h3>
+
+              <i
+              class="fa-solid fa-circle-chevron-right text-[40px]
+                     opacity-0 translate-y-2
+                     group-hover:opacity-100
+                     group-hover:translate-y-0
+                     transition-all duration-500">
+            </i>
+
+          </div>
+
+        </div>
+
+      </a>
+
+      <!-- ================= CARD 3 ================= -->
+      <a href="#" class="relative group overflow-hidden min-h-[433px]">
+
+        <img
+          src="assets/images/peiority-image-2.png"
+          class="absolute inset-0 w-full h-full object-cover
+                 transition-transform duration-700 group-hover:scale-105"
+          alt="" />
+
+        <div class="absolute inset-0 bg-black/30"></div>
+
+        <div
+          class="absolute inset-0 bg-black
+                 translate-y-full
+                 group-hover:translate-y-0
+                 transition-transform duration-500 ease-out">
+        </div>
+
+        <div class="relative z-10 h-full">
+          <div
+            class="absolute inset-x-0 bottom-6
+                   flex flex-col items-center text-white text-center
+                   transition-all duration-500
+                   group-hover:bottom-1/2
+                   group-hover:translate-y-1/2">
+ <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP</span>
+                 <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+              Stay Energized<br />Mattresses
+            </h3>
+
+               <i
+              class="fa-solid fa-circle-chevron-right text-[40px]
+                     opacity-0 translate-y-2
+                     group-hover:opacity-100
+                     group-hover:translate-y-0
+                     transition-all duration-500">
+            </i>
+          </div>
+        </div>
+
+      </a>
+
+      <!-- ================= CARD 4 ================= -->
+      <a href="#" class="relative group overflow-hidden min-h-[433px]">
+
+        <img
+          src="assets/images/peiority-image-3.png"
+          class="absolute inset-0 w-full h-full object-cover
+                 transition-transform duration-700 group-hover:scale-105"
+          alt="" />
+
+        <div class="absolute inset-0 bg-black/30"></div>
+
+        <div
+          class="absolute inset-0 bg-black
+                 translate-y-full
+                 group-hover:translate-y-0
+                 transition-transform duration-500 ease-out">
+        </div>
+
+        <div class="relative z-10 h-full">
+          <div
+            class="absolute inset-x-0 bottom-6
+                   flex flex-col items-center text-white text-center
+                   transition-all duration-500
+                   group-hover:bottom-1/2
+                   group-hover:translate-y-1/2">
+ <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP</span>
+              <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+              Luxury<br />Mattresses
+            </h3>
+
+                <i
+              class="fa-solid fa-circle-chevron-right text-[40px]
+                     opacity-0 translate-y-2
+                     group-hover:opacity-100
+                     group-hover:translate-y-0
+                     transition-all duration-500">
+            </i>
+          </div>
+        </div>
+
+      </a>
+
     </div>
-
-    <!-- CARD 2 -->
-    <a href="#" class="relative group    overflow-hidden   min-h-[433px] ">
-      <img src="assets/images/peiority-image-1.png" class="absolute inset-0 w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-black/30"></div>
-
-      <div class="relative z-10 h-full flex flex-col justify-end items-center text-white text-center p-6">
-        <span class="uppercase text-xs tracking-widest mb-1">Shop</span>
-        <h3 class="text-lg font-medium leading-snug">
-          Back Support<br/>Mattresses
-        </h3>
-      </div>
-    </a>
-
-    <!-- CARD 3 -->
-    <a href="#"  class="relative group    overflow-hidden   min-h-[433px] ">
-      <img src="assets/images/peiority-image-2.png" class="absolute inset-0 w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-black/30"></div>
-
-      <div class="relative z-10 h-full flex flex-col justify-end items-center text-white text-center p-6">
-        <span class="uppercase text-xs tracking-widest mb-1">Shop</span>
-        <h3 class="text-lg font-medium leading-snug">
-          Stay Energized<br/>Mattresses
-        </h3>
-      </div>
-    </a>
-
-    <!-- CARD 4 -->
-    <a href="#"  class="relative group    overflow-hidden   min-h-[433px] ">
-      <img src="assets/images/peiority-image-3.png" class="absolute inset-0 w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-black/30"></div>
-
-      <div class="relative z-10 h-full flex flex-col justify-end items-center text-white text-center p-6">
-        <span class="uppercase text-xs tracking-widest mb-1">Shop</span>
-        <h3 class="text-lg font-medium leading-snug">
-          Luxury<br/>Mattresses
-        </h3>
-      </div>
-    </a>
-
-  </div>
 </div>
        </div>
 </section>
  <section class="bottom-pad-88 reveal">
-       <div class="max-w-[1490px] px-4 md:px-0 md:mx-automax-w-[1490px] px-4 md:px-0 md:mx-auto">
+       <div class="max-w-[1490px] px-4 mx-auto">
               <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-8 reveal">
       Frequently Asked Questions (FAQs)
     </h2>
@@ -1075,7 +1257,7 @@
 
       <!-- FAQ ITEM -->
       <div class="bg-faq-item-block reveal">
-        <button class="faq-btn flex justify-between items-center w-full text-left pb-1">
+        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
           <span class="font-medium text-18 text-black">
             What is the best mattress firmness for heavy people?
           </span>
@@ -1088,7 +1270,7 @@
 
       <!-- FAQ ITEM -->
       <div class="bg-faq-item-block reveal">
-        <button class="faq-btn flex justify-between items-center w-full text-left pb-1">
+        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
           <span class="font-medium text-18 text-black">
             How thick should a mattress be for heavy individuals?
           </span>
@@ -1101,7 +1283,7 @@
 
       <!-- FAQ ITEM -->
       <div class="bg-faq-item-block reveal">
-        <button class="faq-btn flex justify-between items-center w-full text-left pb-1">
+        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
          <span class="font-medium text-18 text-black">
             Are orthopedic mattresses good for heavy people with back pain?
           </span>
@@ -1114,7 +1296,7 @@
 
       <!-- FAQ ITEM -->
       <div class="bg-faq-item-block reveal">
-        <button class="faq-btn flex justify-between items-center w-full text-left pb-1">
+        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
          <span class="font-medium text-18 text-black">
             Do heavy people need a firm mattress or a soft mattress?
           </span>
@@ -1127,7 +1309,7 @@
 
       <!-- FAQ ITEM -->
       <div class="bg-faq-item-block reveal">
-        <button class="faq-btn flex justify-between items-center w-full text-left pb-1">
+        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
           <span class="font-medium text-18 text-black">
             Is memory foam suitable for heavy sleepers?
           </span>
@@ -1140,7 +1322,7 @@
 
       <!-- FAQ ITEM -->
       <div class="bg-faq-item-block reveal">
-        <button class="faq-btn flex justify-between items-center w-full text-left pb-1">
+        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
           <span class="font-medium text-18 text-black">
             Are hybrid mattresses better for heavy people?
           </span>
@@ -1167,26 +1349,23 @@
 </div>
 
  </section>
-<section class="relative py-12 ">
-  <div class="max-w-[1490px] px-4 md:px-0 md:mx-auto reveal">
-    <div class="relative bg-cover bg-center overflow-hidden"
-         style="background-image: url('assets/images/banner-bg.png');">
-
-      
+ <section class="relative pb-24 ">
+<div class="max-w-[1490px] px-4  mx-auto">
+    <div class="relative bg-cover bg-center  overflow-hidden"
+         style="background-image: url('assets/images/banner-bg.png');"> 
       <!-- Content -->
-      <div class="relative z-10 flex flex-col lg:flex-row items-center lg:items-start justify-between py-12 px-6 lg:px-12">
-        
+      <div class="relative z-10 flex flex-col lg:flex-row items-center lg:items-start justify-between p-[60px]  "> 
         <!-- Text -->
-        <div class="text-white max-w-lg lg:max-w-md text-center lg:text-left mb-6 lg:mb-0">
-          <h2 class="text-3xl font-bold mb-4 text-playfair-display">Know Your SleepID</h2>
-          <p class="mb-6 text-sm lg:text-base">
+        <div class="text-white  lg:max-w-[715px] text-center lg:text-left mb-6 lg:mb-0">
+          <h2 class="text-[40px] font-bold mb-[36px] text-playfair-display">Know Your SleepID</h2>
+          <p class="mb-[45px] text-20">
             Whether you want to feel more energized, improve focus, or build healthier routines,
             Know Your SleepID empowers you with knowledge about your sleep so you can rest better 
             and live better — starting tonight.
           </p>
 
           <!-- Buttons -->
-          <div class="flex flex-col sm:flex-row gap-4">
+               <div class="flex flex-col items-center xl:items-start justify-center xl:justify-start sm:flex-row gap-4">
             <a href="#"
                class="btn-pad-header bg-white text-10 text-[#1E1E31]  uppercase  hover:bg-whitetransition">
                CHECK NOW
@@ -1204,22 +1383,22 @@
   </div>
 </section>
   
-   <section class="bottom-pad-88">
-  <div class="max-w-[1468px] px-4 md:px-0 md:mx-auto reveal">
+  <section >
+  <div class="max-w-[1490px] px-4  mx-auto reveal">
 
     <!-- Section Header -->
-    <div class="flex items-center justify-between mb-8 reveal">
-      <h2 class="text-2xl font-semibold text-gray-900">
+<div class="flex flex-col xl:flex-row items-start xl:items-center gap-2  justify-between mb-8 reveal">
+          <h2 class="text-[28px] font-normal text-black">
         Recents Blogs 
       </h2>
       <a href="blog-category.html"
-         class="text-sm font-medium tracking-wide hover:underline">
+         class="text-14 font-medium tracking-wide hover:underline">
         VIEW ALL
       </a>
     </div>
 
     <!-- Cards Wrapper -->
-    <div
+       <div
       class="flex gap-6 overflow-x-auto pb-4 scrollbar-hide
              lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-visible reveal">
 
@@ -1230,18 +1409,18 @@
 
         <img src="assets/images/img-blog-category-1.png"
              alt="Blog Category"
-             class="w-full h-[230px] object-cover">
+             class="w-full  h-[230px] object-cover">
 
         <div class="py-4">
-          <h3 class="font-medium text-gray-900 line-clamp-2">
+  <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
             How Blue Light affects.
           </h3>
 
-          <p class="text-sm text-gray-600 mt-2 line-clamp-3">
-            Do you find yourself feeling tired and groggy in the morning? Do you struggle to fall asleep at night or wake up
+           <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+            Do you find yourself feeling tired and groggy in the morning? Do you struggle 
           </p>
 
-          <div class="flex items-center text-10 text-black mt-3">
+          <div class="flex items-center text-black">
            <img src="assets/images/blogs/calender-icon.png" class="me-[7px]" alt=""> May 27, 2025
           </div>
         </div>
@@ -1257,15 +1436,14 @@
              class="w-full  h-[230px] object-cover">
 
         <div class="py-4">
-          <h3 class="font-medium text-gray-900 line-clamp-2">
+  <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
             Diwali Mattress Deals and
           </h3>
-
-          <p class="text-sm text-gray-600 mt-2 line-clamp-3">
-            Whether you're looking to revamp your bedroom or gift a loved one the comfort of a good night's sleep,..Whether you're looking to 
+             <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+            Whether you're looking to revamp your bedroom or gift a loved one the comfort 
           </p>
 
-             <div class="flex items-center text-10 text-black mt-3">
+                  <div class="flex items-center text-black">
             <img src="assets/images/blogs/calender-icon.png" class="me-[7px]" alt=""> March 15, 2025
           </div>
         </div>
@@ -1281,14 +1459,14 @@
              class="w-full  h-[230px] object-cover">
 
         <div class="py-4">
-          <h3 class="font-medium text-gray-900 line-clamp-2">
+  <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
            Why 7 Hours of Sleep is
           </h3>
 
-          <p class="text-sm text-gray-600 mt-2 line-clamp-3">
-            In our fast-paced world, the pursuit of success often leads us to overlook one of life's fundamental necessities.
+             <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+            In our fast-paced world, the pursuit of success often leads us to overlook 
           </p>
-          <div class="flex items-center text-10 text-black mt-3">
+        <div class="flex items-center text-black">
             <img src="assets/images/blogs/calender-icon.png" class="me-[7px]" alt=""> May 21, 2025
           </div>
         </div>
@@ -1304,15 +1482,15 @@
              class="w-full  h-[230px] object-cover">
 
        <div class="py-4">
-          <h3 class="font-medium text-gray-900 line-clamp-2">
+  <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
             How Blue Light affects...
           </h3>
 
-        <p class="text-sm text-gray-600 mt-2 line-clamp-3">
-           Do you find yourself feeling tired and groggy in the morning? Do you struggle to fall asleep at night or wake up
+                <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+           Do you find yourself feeling tired and groggy in the morning? Do you struggle 
           </p>
 
-          <div class="flex items-center text-10 text-black mt-3">
+           <div class="flex items-center text-black">
             <img src="assets/images/blogs/calender-icon.png" class="me-[7px]" alt=""> May 27, 2025
           </div>
         </div>
@@ -1328,15 +1506,14 @@
              class="w-full  h-[230px] object-cover">
 
         <div class="py-4">
-          <h3 class="font-medium text-gray-900 line-clamp-2">
+       <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
             How Blue Light affects...
-          </h3>
-
-          <p class="text-sm text-gray-600 mt-2 line-clamp-3">
-           Do you find yourself feeling tired and groggy in the morning? Do you struggle to fall asleep at night or wake up
+          </h3> 
+          <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+           Do you find yourself feeling tired and groggy in the morning? Do you struggle 
           </p>
 
-             <div class="flex items-center text-10 text-black mt-3">
+             <div class="flex items-center text-black">
             <img src="assets/images/blogs/calender-icon.png" class="me-[7px]" alt=""> April 30, 2025
           </div>
         </div>
@@ -1345,8 +1522,8 @@
     </div>
   </div>
 </section>
-<section class="bottom-pad-88 reveal">
-  <div class="max-w-7xl mx-auto px-4">
+<section class="section-pad-90 reveal">
+ <div class="max-w-[1490px] px-4  mx-auto reveal">
 
     <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
 
@@ -1355,9 +1532,9 @@
         <img
           src="assets/images/icon-global-standard.png"
           alt="Global Standard"
-          class="w-12 h-12 mb-3 object-contain"
+            class="w-auro h-[60px] mb-[24px] object-contain"
         />
-        <p class="text-xs sm:text-sm tracking-wide text-gray-800 uppercase">
+        <p class="text-14 xl:text-20 text-black text-center uppercase">
           Global Standard
         </p>
       </div>
@@ -1367,9 +1544,9 @@
         <img
           src="assets/images/icon-leadership.png"
           alt="Leaders in Quality"
-          class="w-12 h-12 mb-3 object-contain"
+          class="w-auro h-[60px] mb-[24px] object-contain"
         />
-        <p class="text-xs sm:text-sm tracking-wide text-gray-800 uppercase">
+        <p class="text-14 xl:text-20 text-black text-center uppercase">
           Leaders in Quality
         </p>
       </div>
@@ -1379,9 +1556,9 @@
         <img
           src="assets/images/icon-innovation.png"
           alt="Innovation & Research"
-          class="w-12 h-12 mb-3 object-contain"
+          class="w-auro h-[60px] mb-[24px] object-contain"
         />
-        <p class="text-xs sm:text-sm tracking-wide text-gray-800 uppercase">
+       <p class="text-14 xl:text-20 text-black text-center uppercase">
           Innovation & Research
         </p>
       </div>
@@ -1391,9 +1568,9 @@
         <img
           src="assets/images/icon-global-brand.png"
           alt="Iconic Brand"
-          class="w-12 h-12 mb-3 object-contain"
+          class="w-auro h-[60px] mb-[24px] object-contain"
         />
-        <p class="text-xs sm:text-sm tracking-wide text-gray-800 uppercase">
+   <p class="text-14 xl:text-20 text-black text-center uppercase">
           Iconic Brand
         </p>
       </div>
@@ -1404,31 +1581,30 @@
 </section>
 
 
-
-<!-- ================= FOOTER ================= -->
-<footer class="text-white text-sm relative reveal">
+  <!-- ================= FOOTER ================= -->
+<footer class="text-white text-14 relative reveal">
         <div class="border-b border-[#3D3B3B]">
- <div class=" md:mx-auto px-4">
-  <div class="max-w-[1658px] px-4 md:px-0 md:mx-auto py-6 flex flex-col lg:flex-row items-center justify-between gap-4">
+ <div  >
+  <div class="max-w-[1650px] px-4  mx-auto py-[32px] flex flex-col lg:flex-row items-center justify-between gap-4">
 
     <!-- LEFT: Logo -->
     <div class="flex justify-center lg:justify-start w-full lg:w-auto">
-      <img src="assets/images/logo.png" alt="King Koil" class="h-7">
+      <img src="assets/images/logo.png" alt="King Koil" class="h-[44px]">
     </div>
 
     <!-- CENTER: Contact Info -->
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-center lg:text-left">
-      <span class="flex items-center gap-2">
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-12 text-center lg:text-left">
+      <span class="flex items-center gap-[14px]">
         <img src="assets/images/icon-location.png" alt="Suite 614, 6th Floor, DLF Downtown Meadows, Rajarhat, NT 15256">
         Suite 614, 6th Floor, DLF Downtown Meadows, Rajarhat, NT 15256
       </span>
 
-      <span class="flex items-center gap-2 mx-4">
+      <span class="flex items-center gap-[14px] mx-4 md:mx-[118px]">
       <img src="assets/images/icon-call.png" alt=" +91 56323 1256">
         +91 56323 1256
       </span>
 
-      <span class="flex items-center gap-2">
+      <span class="flex items-center gap-[14px] line-clamp-1">
         <img src="assets/images/icon-mail.png" alt=" +91 56323 1256">
         example001@gmail.com
       </span>
@@ -1437,29 +1613,25 @@
     <!-- RIGHT: Scroll to top -->
     <div class="flex justify-center lg:justify-end w-full lg:w-auto">
       <button onclick="window.scrollTo({top:0,behavior:'smooth'})"
-              class="flex items-center gap-2 text-sm hover:text-white">
+              class="flex items-center gap-[16px] text-12 hover:text-white">
         SCROLL TO TOP
-        <i class="fa-solid fa-circle-chevron-up"></i>
+        <i class="fa-solid fa-circle-chevron-up text-30"></i>
       </button>
     </div>
 
   </div>
-</div>
-
-
-
-
+</div> 
         </div>
   <!-- TOP INFO BAR -->
   
 
   <!-- MAIN FOOTER -->
-  <div class="max-w-[1658px] px-4 md:px-0 md:mx-auto  py-12
+  <div class="max-w-[1650px] px-4  mx-auto py-12
               grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
 
     <!-- COMPANY -->
     <div>
-      <h4 class="text-white font-semibold mb-[31px] uppercase text-16">COMPANY</h4>
+    <h4 class="text-white font-semibold mb-[31px] uppercase text-16">COMPANY</h4>
      <ul class="space-y-[13px]">
         <li><a href="#" class="text-14 text-white">Why King Koil</a></li>
         <li><a href="#" class="text-14 text-white">Know Your SleepID</a></li>
@@ -1500,7 +1672,7 @@
         Subscribe to get updates about new products and sales
       </p>
 
-      <form class="flex mb-4">
+      <form class="flex mb-[20px]">
         <input type="email"
                placeholder="Enter your email address"
                class="w-full px-3 py-2 text-[#C3C3C3] bg-transparent border border-white">
@@ -1511,25 +1683,22 @@
 
       <!-- SOCIAL ICONS -->
       <div class="flex gap-4 ">
-        <a href="#" class="text-14 text-white"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="#" class="text-14 text-white"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#" class="text-14 text-white"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" class="text-14 text-white"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" class="text-20 text-white"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" class="text-20 text-white"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="text-20 text-white"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="text-20 text-white"><i class="fa-brands fa-youtube"></i></a>
       </div>
     </div>
 
   </div>
 
   <!-- BOTTOM BAR -->
-  <div class="border-t border-white/10">
-    <div class="max-w-[1658px] mx-4 md:mx-auto px-4 md:px-0 py-4
+  <div class="border-t border-[#3D3B3B]">
+    <div class="max-w-[1650px] px-4  mx-auto   py-[22px]
                 flex flex-col md:flex-row gap-3
                 justify-between items-center text-12">
 
-      <p>
-        © 2026 King Koil India by Real Inspiring Technologies Pvt. Ltd.
-        All Rights Reserved
-      </p>
+      <p>© 2026 King Koil India by Real Inspiring Technologies Pvt. Ltd. All Rights Reserved </p>
 
       <div class="flex justify-end text-white gap-3">
         <a href="#" class="text-12 text-white">Terms & Conditions</a> | 
@@ -1542,6 +1711,7 @@
   </div>
 
 </footer>
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -1611,6 +1781,54 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 </script>
 
+<script>
+  const slider = document.getElementById("imageSlider");
+  const slides = slider.children.length;
+  const dots = document.querySelectorAll(".dot");
+  let index = 0;
+  let interval;
+
+  function updateSlider() {
+    slider.style.transform = `translateX(-${index * 100}%)`;
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("bg-white", i === index);
+      dot.classList.toggle("bg-white/40", i !== index);
+    });
+  }
+
+  function nextSlide() {
+    index = (index + 1) % slides;
+    updateSlider();
+  }
+
+  function prevSlide() {
+    index = (index - 1 + slides) % slides;
+    updateSlider();
+  }
+
+  function startAutoSlide() {
+    interval = setInterval(nextSlide, 4000);
+  }
+
+  function stopAutoSlide() {
+    clearInterval(interval);
+  }
+
+  document.getElementById("nextSlide").onclick = nextSlide;
+  document.getElementById("prevSlide").onclick = prevSlide;
+
+  dots.forEach((dot, i) => {
+    dot.onclick = () => {
+      index = i;
+      updateSlider();
+    };
+  });
+
+  slider.parentElement.addEventListener("mouseenter", stopAutoSlide);
+  slider.parentElement.addEventListener("mouseleave", startAutoSlide);
+
+  startAutoSlide();
+</script>
 
 </body>
 </html>

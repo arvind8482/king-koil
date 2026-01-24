@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | King Koil</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <!-- ===== SWIPER CDN ===== -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+       <link rel="stylesheet"
+      href="assets/css/style.css">
+
+</head>
+<body class="text-figtree text-14">  
+<div class="absolute top-0 left-0 w-full h-[900px] 
+            bg-gradient-to-b from-[#1B2D3D] to-transparent
+            -z-10">
+</div>
+ <!-- ================= HEADER ================= -->
+<header id="siteHeader"
+  class="text-white w-full z-50 transition-all duration-300">
+
+  <div class="max-w-[1650px] md:mx-auto px-4 py-[30px] flex items-center justify-between">
+
+    <!-- LOGO -->
+    <a href="index.html" class="flex items-center">
+      <img src="assets/images/logo.png" alt="King Koil" class="h-[32px]">
+    </a>
+
+    <!-- DESKTOP NAV -->
+    <nav class="hidden lg:flex items-center gap-6 text-14">
+
+      <a href="#">Why King Koil?</a>
+
+      <!-- Mattresses -->
+      <div class="relative group">
+        <button class="flex items-center gap-1">
+          Mattresses
+          <svg class="w-4 h-4 transition-transform group-hover:rotate-180"
+               fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </button>
+
+        <div class="absolute inset-x-0 top-full h-3"></div>
+
+        <div
+          class="absolute top-full left-0 w-52 bg-white text-[#1E1E31]
+                 rounded-lg shadow-xl opacity-0 invisible
+                 group-hover:opacity-100 group-hover:visible
+                 transition pt-2 z-50">
+
+          <a href="#" class="block px-4 py-2 rounded-t-lg">Luxury Mattresses</a>
+          <a href="#" class="block px-4 py-2">Memory Foam</a>
+          <a href="#" class="block px-4 py-2 rounded-b-lg">Back Support</a>
+        </div>
+      </div>
+
+      <!-- Accessories -->
+      <div class="relative group">
+        <button class="flex items-center gap-1">
+          Accessories
+          <svg class="w-4 h-4 transition-transform group-hover:rotate-180"
+               fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </button>
+
+        <div class="absolute inset-x-0 top-full h-3"></div>
+
+        <div
+          class="absolute top-full left-0 w-48 bg-white text-[#1E1E31]
+                 rounded-lg shadow-xl opacity-0 invisible
+                 group-hover:opacity-100 group-hover:visible
+                 transition pt-2 z-50">
+
+          <a href="#" class="block px-4 py-2 rounded-t-lg">Pillows</a>
+          <a href="#" class="block px-4 py-2 rounded-b-lg">Protectors</a>
+        </div>
+      </div>
+
+      <a href="#">SleepID</a>
+      <a href="#">Hospitality</a>
+      <a href="#">Blogs</a>
+    </nav>
+
+    <!-- DESKTOP CTA -->
+    <a href="#"
+       class="hidden lg:inline-block btn-pad-header
+              bg-white text-[#1E1E31] uppercase text-figtree text-10">
+      Where to Buy
+    </a>
+
+    <!-- MOBILE MENU BUTTON -->
+    <button id="menuBtn" class="lg:hidden">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- ================= MOBILE MENU (FULLSCREEN) ================= -->
+<div id="mobileMenu"
+  class="fixed inset-0 z-[999] bg-[#1b1b2f] text-white
+         transform translate-x-full transition-transform duration-300
+         lg:hidden">
+
+  <!-- Mobile Header -->
+  <div class="flex items-center justify-between px-4 py-4 border-b border-gray-700">
+    <span class="text-lg font-medium"><img src="assets/images/logo.png" alt=""></span>
+    <button id="closeMenu">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24">
+        <path d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Links -->
+  <div class="px-4 py-6 space-y-2 text-base">
+
+    <a href="#" class="block py-2 border-b border-gray-700">Why King Koil?</a>
+
+    <details class="border-b border-gray-700">
+      <summary class="py-2 flex justify-between items-center cursor-pointer">
+        Mattresses
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      </summary>
+      <div class="pl-4 pb-2 space-y-1">
+        <a href="#" class="block">Luxury Mattresses</a>
+        <a href="#" class="block">Memory Foam</a>
+        <a href="#" class="block">Back Support</a>
+      </div>
+    </details>
+
+    <details class="border-b border-gray-700">
+      <summary class="py-2 flex justify-between items-center cursor-pointer">
+        Accessories
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      </summary>
+      <div class="pl-4 pb-2 space-y-1">
+        <a href="#" class="block">Pillows</a>
+        <a href="#" class="block">Protectors</a>
+      </div>
+    </details>
+
+    <a href="#" class="block py-2 border-b border-gray-700">SleepID</a>
+    <a href="#" class="block py-2 border-b border-gray-700">Hospitality</a>
+    <a href="#" class="block py-2 border-b border-gray-700">Blogs</a>
+
+    <a href="#"
+       class="block mt-6 text-center btn-pad-header
+              bg-white text-[#1E1E31] uppercase text-figtree text-10">
+      Where to Buy
+    </a>
+  </div>
+</div>
+
+ <!-- ================= MOBILE MENU SCRIPT ================= -->
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const closeMenu = document.getElementById('closeMenu');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  // OPEN MENU
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('translate-x-full');
+    mobileMenu.classList.add('translate-x-0');
+    document.body.style.overflow = 'hidden';
+  });
+
+  // CLOSE MENU
+  closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.add('translate-x-full');
+    mobileMenu.classList.remove('translate-x-0');
+    document.body.style.overflow = '';
+  });
+
+  // OPTIONAL: Close menu on link click
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('translate-x-full');
+      mobileMenu.classList.remove('translate-x-0');
+      document.body.style.overflow = '';
+    });
+  });
+</script>
+ 
+ <section>
+  <div class="max-w-[1650px] px-4 mx-auto reveal">
+
+    <!-- SLIDER WRAPPER -->
+    <div class="relative overflow-hidden rounded-tl-[20px] rounded-tr-[20px]">
+
+      <!-- SLIDER TRACK -->
+      <div id="heroSlider"
+        class="flex transition-transform duration-700 ease-in-out">
+
+        <!-- SLIDE 1 -->
+        <div class="min-w-full relative aspect-[16/9] sm:aspect-[21/9]">
+          <img
+            src="assets/images/home/banner-1.png"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover object-left-top">
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="min-w-full relative aspect-[16/9] sm:aspect-[21/9]">
+          <img
+            src="assets/images/home/banner-1.png"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover object-left-top">
+        </div>
+
+      </div>
+
+      <!-- PREV BUTTON -->
+      <button id="prev"
+        type="button"
+        class="absolute left-6 top-1/2 -translate-y-1/2 z-30
+               w-[40px] h-[40px] rounded-full bg-white/80 hover:bg-white
+               flex items-center justify-center">
+        <img src="assets/images/slider-prev.png" alt="Previous">
+      </button>
+
+      <!-- NEXT BUTTON -->
+      <button id="next"
+        type="button"
+        class="absolute right-6 top-1/2 -translate-y-1/2 z-30
+               w-[40px] h-[40px] rounded-full bg-white/80 hover:bg-white
+               flex items-center justify-center">
+        <img src="assets/images/slider-next.png" alt="Next">
+      </button>
+
+      <!-- DOTS -->
+      <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex gap-2">
+        <button class="dot w-2.5 h-2.5 rounded-full bg-white"></button>
+        <button class="dot w-2.5 h-2.5 rounded-full bg-white/40"></button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+ 
+<section class="section-pad-90">
+<div class="max-w-[1490px] px-4  mx-auto  ">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-6 ">
+
+      <!-- Item 1 -->
+      <div class="flex flex-col xl:flex-row text-center xl:text-start items-center gap-[20px] bg-light-gray-pad-20 reveal">
+        <img
+          src="assets/images/home/icon-sleepId.png"
+          alt="Best Price Guarantee"
+          class="h-[44px] w-auto"
+        />
+         <div class="text-16 tracking-wide text-gray-800 uppercase flex flex-col">
+              <h4 class="text-20 font-bold">SleepId</h4>
+             <span class="text-16 text-black"> Body Match Technology</span>
+        </div> 
+      </div>
+       <!-- Item 2 -->
+ <div class="flex flex-col xl:flex-row text-center xl:text-start items-center gap-[20px] bg-light-gray-pad-20 reveal">
+        <img
+          src="assets/images/home/icon-oremium.png"
+          alt="Best Price Guarantee"
+          class="h-[44px] w-auto"
+        />
+         <div class="text-16 tracking-wide text-gray-800 uppercase flex flex-col">
+            <h4 class="text-20 font-bold counter" data-count="40">0</h4>
+             <span class="text-16 text-black">Premium Products</span>
+        </div> 
+      </div>
+       <!-- Item 1 -->
+      <div class="flex flex-col xl:flex-row text-center xl:text-start items-center gap-[20px] bg-light-gray-pad-20 reveal">
+        <img
+          src="assets/images/home/icon-dealer.png"
+          alt="Best Price Guarantee"
+          class="h-[44px] w-auto"
+        />
+         <div class="text-16 tracking-wide text-gray-800 uppercase flex flex-col">
+            <h4 class="text-20 font-bold counter" data-count="600">0</h4>
+             <span class="text-16 text-black">Dealer Network</span>
+        </div> 
+      </div>
+       <!-- Item 1 -->
+    <div class="flex flex-col xl:flex-row text-center xl:text-start items-center gap-[20px] bg-light-gray-pad-20 reveal">
+        <img
+          src="assets/images/home/icon-R&D.png"
+          alt="Best Price Guarantee"
+          class="h-[44px] w-auto"
+        />
+         <div class="text-16 tracking-wide text-gray-800 uppercase flex flex-col">
+          <h4 class="text-20 font-bold counter" data-count="1500">0</h4>
+             <span class="text-16 text-black">R&D Hours</span>
+        </div> 
+      </div>
+
+  
+   
+    </div>
+  </div>
+</section>
+  
+    <section class="bottom-pad-88">
+      <div class="max-w-[1490px] px-4  mx-auto reveal">
+
+                  <!-- Section Header -->
+            <div class="flex flex-col xl:flex-row items-start xl:items-center gap-2  justify-between mb-8 reveal">
+                      <h2 class="text-[28px] font-normal text-black">
+                        Kingkoil Mattress - Your SLEEP is our Priority!
+                    </h2>
+                    <a href="products.html"
+                        class="text-12 font-medium tracking-wide hover:underline">
+                        VIEW ALL
+                    </a>
+                </div>
+                <div >
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"> 
+
+      <!-- ================= IMAGE CARD ================= -->
+      <a href="#" class="relative group overflow-hidden min-h-[433px]">
+
+        <!-- Image -->
+        <img
+          src="assets/images/peiority-image-3.png"
+          class="absolute inset-0 w-full h-full object-cover
+                 transition-transform duration-700 group-hover:scale-105"
+          alt="" />
+
+        <!-- Default overlay -->
+        <div class="absolute inset-0 bg-black/30"></div>
+
+        <!-- Hover overlay -->
+        <div
+          class="absolute inset-0 bg-black
+                 translate-y-full
+                 group-hover:translate-y-0
+                 transition-transform duration-500 ease-out">
+        </div>
+
+        <!-- CONTENT -->
+        <div class="relative z-10 h-full">
+
+          <!-- Bottom content (default) -->
+          <div
+            class="absolute inset-x-0 bottom-0
+                   flex flex-col items-center text-white text-center
+                   transition-all duration-500
+                   group-hover:bottom-1/2
+                   group-hover:translate-y-1/2">
+
+             <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP NOW</span>
+
+              <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+                Memory Foam<br />Mattresses
+              </h3>
+
+            <i
+              class="fa-solid fa-circle-chevron-right text-[40px]
+                     opacity-0 translate-y-2
+                     group-hover:opacity-100
+                     group-hover:translate-y-0
+                     transition-all duration-500">
+            </i>
+
+          </div>
+
+        </div>
+
+      </a>
+        <!-- ================= IMAGE CARD ================= -->
+      <a href="#" class="relative group overflow-hidden min-h-[433px]">
+
+        <!-- Image -->
+        <img
+          src="assets/images/peiority-image-1.png"
+          class="absolute inset-0 w-full h-full object-cover
+                 transition-transform duration-700 group-hover:scale-105"
+          alt="" />
+
+        <!-- Default overlay -->
+        <div class="absolute inset-0 bg-black/30"></div>
+
+        <!-- Hover overlay -->
+        <div
+          class="absolute inset-0 bg-black
+                 translate-y-full
+                 group-hover:translate-y-0
+                 transition-transform duration-500 ease-out">
+        </div>
+
+        <!-- CONTENT -->
+        <div class="relative z-10 h-full">
+
+          <!-- Bottom content (default) -->
+          <div
+            class="absolute inset-x-0 bottom-6
+                   flex flex-col items-center text-white text-center
+                   transition-all duration-500
+                   group-hover:bottom-1/2
+                   group-hover:translate-y-1/2">
+ <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP</span>
+         <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+              Back Support<br />Mattresses
+            </h3>
+
+              <i
+              class="fa-solid fa-circle-chevron-right text-[40px]
+                     opacity-0 translate-y-2
+                     group-hover:opacity-100
+                     group-hover:translate-y-0
+                     transition-all duration-500">
+            </i>
+
+          </div>
+
+        </div>
+
+      </a>
+
+      <!-- ================= CARD 3 ================= -->
+      <a href="#" class="relative group overflow-hidden min-h-[433px]">
+
+        <img
+          src="assets/images/peiority-image-2.png"
+          class="absolute inset-0 w-full h-full object-cover
+                 transition-transform duration-700 group-hover:scale-105"
+          alt="" />
+
+        <div class="absolute inset-0 bg-black/30"></div>
+
+        <div
+          class="absolute inset-0 bg-black
+                 translate-y-full
+                 group-hover:translate-y-0
+                 transition-transform duration-500 ease-out">
+        </div>
+
+        <div class="relative z-10 h-full">
+          <div
+            class="absolute inset-x-0 bottom-6
+                   flex flex-col items-center text-white text-center
+                   transition-all duration-500
+                   group-hover:bottom-1/2
+                   group-hover:translate-y-1/2">
+ <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP</span>
+                 <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+              Stay Energized<br />Mattresses
+            </h3>
+
+               <i
+              class="fa-solid fa-circle-chevron-right text-[40px]
+                     opacity-0 translate-y-2
+                     group-hover:opacity-100
+                     group-hover:translate-y-0
+                     transition-all duration-500">
+            </i>
+          </div>
+        </div>
+
+      </a>
+
+      <!-- ================= CARD 4 ================= -->
+      <a href="#" class="relative group overflow-hidden min-h-[433px]">
+
+        <img
+          src="assets/images/peiority-image-3.png"
+          class="absolute inset-0 w-full h-full object-cover
+                 transition-transform duration-700 group-hover:scale-105"
+          alt="" />
+
+        <div class="absolute inset-0 bg-black/30"></div>
+
+        <div
+          class="absolute inset-0 bg-black
+                 translate-y-full
+                 group-hover:translate-y-0
+                 transition-transform duration-500 ease-out">
+        </div>
+
+        <div class="relative z-10 h-full">
+          <div
+            class="absolute inset-x-0 bottom-6
+                   flex flex-col items-center text-white text-center
+                   transition-all duration-500
+                   group-hover:bottom-1/2
+                   group-hover:translate-y-1/2">
+ <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP</span>
+              <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+              Luxury<br />Mattresses
+            </h3>
+
+                <i
+              class="fa-solid fa-circle-chevron-right text-[40px]
+                     opacity-0 translate-y-2
+                     group-hover:opacity-100
+                     group-hover:translate-y-0
+                     transition-all duration-500">
+            </i>
+          </div>
+        </div>
+
+      </a>
+
+    </div>
+</div>
+       </div>
+</section>
+<section class="bottom-pad-88 ">
+  <div class="max-w-[1490px] px-4 mx-auto reveal">
+    <div class="relative bg-cover bg-center overflow-hidden"
+         style="background-image: url('assets/images/banner-bg.png');">
+
+      
+      <!-- Content -->
+      <div class="relative z-10 flex flex-col lg:flex-row items-center lg:items-start justify-between p-[54px]">
+        
+        <!-- Text -->
+        <div class="text-white max-w-lg lg:max-w-md text-center lg:text-left ">
+          <h2 class="text-3xl font-bold mb-4 text-playfair-display">Know Your SleepID</h2>
+          <p class="mb-6 text-12 lg:text-base">
+            Whether you want to feel more energized, improve focus, or build healthier routines,
+            Know Your SleepID empowers you with knowledge about your sleep so you can rest better 
+            and live better — starting tonight.
+          </p>
+
+          <!-- Buttons -->
+          <div class="flex flex-col items-center xl:items-start justify-center sm:flex-row gap-4">
+            <a href="#"
+               class="btn-pad-header w-full xl:width-auto bg-white text-10 text-[#1E1E31]  uppercase  hover:bg-whitetransition">
+               CHECK NOW
+            </a>
+            <a href="#"
+               class="btn-pad-header w-full xl:width-auto border border-white text-white  text-10 uppercase hover:bg-white hover:text-[#1E1E31] transition">
+               VISIT OUR STORE
+            </a>
+          </div>
+        </div>
+
+    
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="bottom-pad-88">
+  <div class="max-w-[1490px] px-4  mx-auto reveal">
+
+    <!-- Section Header -->
+<div class="flex flex-col xl:flex-row items-start xl:items-center gap-2  justify-between mb-8 reveal">
+       <h2 class="text-[28px] font-normal text-black">
+       Top Picks For You
+      </h2>
+      <a href="blog-category.html"
+         class="text-14 font-medium tracking-wide hover:underline">
+        VIEW ALL
+      </a>
+    </div>
+
+    <!-- Cards Wrapper -->
+    <div
+      class="flex gap-6 overflow-x-auto pb-4 scrollbar-hide
+             lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-visible reveal">
+
+      <!-- Card 1 -->
+      <div
+         class="group  min-w-[260px] border border-[#F0F0F0] px-[12px] pt-[12px] pb-0 lg:min-w-0 bg-white overflow-hidden overflow-hidden
+         transition-all duration-300 reveal">
+
+        <img src="assets/images/home/top-picks/pick-1.png"
+             alt="Blog Category"
+         class="w-full h-[230px] object-cover
+           transition-transform duration-500 ease-out
+           group-hover:scale-105">
+
+        <div class="py-4">
+          <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
+             Dr Mattress Euro HR
+          </h3>
+
+       <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+           Experience ultimate comfort with King Koil's Euro HR mattress...
+          </p>
+          <p class="text-10 text-black line-clamp-2 pb-[28px] text-figtree uppercase">MRP: 18299-61599/-</p> 
+            <div class="flex flex-col md:flex-row items-center justify-between gap-2 flex mb-0">
+                <a href="#" class="btn-pad-regular 
+            bg-[#1E1E31] text-white uppercase text-figtree text-center text-10 w-full md:w-auto block">Learn More</a>
+             <a href="#" class="btn-pad-regular border border-[#1E1E31] 
+            bg-white text-[#1E1E31] uppercase text-figtree text-center text-10 w-full md:w-auto  block">Locate A Store</a>
+            </div> 
+        </div>
+    </div>
+
+           <!-- Card 2 -->
+         <div
+         class="group  min-w-[260px] border border-[#F0F0F0] px-[12px] pt-[12px] pb-0 lg:min-w-0 bg-white overflow-hidden overflow-hidden
+         transition-all duration-300 reveal">
+
+        <img src="assets/images/home/top-picks/pick-2.png"
+             alt="Blog Category"
+             class="w-full h-[230px] object-cover
+           transition-transform duration-500 ease-out
+           group-hover:scale-105">
+
+        <div class="py-4">
+         <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
+             Dr Mattress Euro HR
+          </h3>
+
+        <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+           Experience ultimate comfort with King Koil's Euro HR mattress...
+          </p>
+          <p class="text-10 text-black line-clamp-2 pb-[28px] text-figtree uppercase">MRP: 18299-61599/-</p> 
+            <div class="flex flex-col md:flex-row items-center justify-between gap-2 flex mb-0">
+                <a href="#" class="btn-pad-regular 
+            bg-[#1E1E31] text-white uppercase text-figtree text-center text-10 w-full md:w-auto block">Learn More</a>
+             <a href="#" class="btn-pad-regular border border-[#1E1E31] 
+            bg-white text-[#1E1E31] uppercase text-figtree text-center text-10 w-full md:w-auto  block">Locate A Store</a>
+            </div> 
+        </div>
+    </div>
+         <!-- Card 3 -->
+      <div
+         class="group  min-w-[260px] border border-[#F0F0F0] px-[12px] pt-[12px] pb-0 lg:min-w-0 bg-white overflow-hidden overflow-hidden
+         transition-all duration-300 reveal">
+
+        <img src="assets/images/home/top-picks/pick-3.png"
+             alt="Blog Category"
+            class="w-full h-[230px] object-cover
+           transition-transform duration-500 ease-out
+           group-hover:scale-105">
+
+        <div class="py-4">
+         <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
+             Dr Mattress Euro HR
+          </h3>
+
+          <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+           Experience ultimate comfort with King Koil's Euro HR mattress...
+          </p>
+          <p class="text-10 text-black line-clamp-2 pb-[28px] text-figtree uppercase">MRP: 18299-61599/-</p> 
+           <div class="flex flex-col md:flex-row items-center justify-between gap-2 flex mb-0">
+                <a href="#" class="btn-pad-regular 
+            bg-[#1E1E31] text-white uppercase text-figtree text-center text-10 w-full md:w-auto block">Learn More</a>
+             <a href="#" class="btn-pad-regular border border-[#1E1E31] 
+            bg-white text-[#1E1E31] uppercase text-figtree text-center text-10 w-full md:w-auto  block">Locate A Store</a>
+            </div> 
+        </div>
+    </div>
+         <!-- Card 4 -->
+      <div
+         class="group  min-w-[260px] border border-[#F0F0F0] px-[12px] pt-[12px] pb-0 lg:min-w-0 bg-white overflow-hidden overflow-hidden
+         transition-all duration-300 reveal">
+
+        <img src="assets/images/home/top-picks/pick-4.png"
+             alt="Blog Category"
+            class="w-full h-[230px] object-cover
+           transition-transform duration-500 ease-out
+           group-hover:scale-105">
+
+        <div class="py-4">
+    <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
+             CloudPillo PU Foam PillowR
+          </h3>
+           <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]"></p>
+           Cloudpillo is the best premium PU foam pillow available in the market 
+          </p>
+          <p class="text-10 text-black line-clamp-2 pb-[28px] text-figtree uppercase">MRP: 2,799/-</p> 
+           <div class="flex flex-col md:flex-row items-center justify-between gap-2 flex mb-0">
+                <a href="#" class="btn-pad-regular 
+            bg-[#1E1E31] text-white uppercase text-figtree text-center text-10 w-full md:w-auto block">Learn More</a>
+             <a href="#" class="btn-pad-regular border border-[#1E1E31] 
+            bg-white text-[#1E1E31] uppercase text-figtree text-center text-10 w-full md:w-auto  block">Locate A Store</a>
+            </div> 
+        </div>
+    </div>
+         <!-- Card 5 -->
+      <div
+         class="group  min-w-[260px] border border-[#F0F0F0] px-[12px] pt-[12px] pb-0 lg:min-w-0 bg-white overflow-hidden overflow-hidden
+         transition-all duration-300 reveal">
+
+        <img src="assets/images/home/top-picks/pick-5.png"
+             alt="Blog Category"
+            class="w-full h-[230px] object-cover
+           transition-transform duration-500 ease-out
+           group-hover:scale-105">
+
+        <div class="py-4">
+            <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
+            Dr Mattress Euro HR
+          </h3>
+          <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+
+           Experience ultimate comfort with King Koil's Euro HR mattress...
+          </p>
+          <p class="text-10 text-black line-clamp-2 pb-[28px] text-figtree uppercase">MRP: 18299-61599/-</p> 
+          <div class="flex flex-col md:flex-row items-center justify-between gap-2 flex mb-0">
+                <a href="#" class="btn-pad-regular 
+            bg-[#1E1E31] text-white uppercase text-figtree text-center text-10 w-full md:w-auto block">Learn More</a>
+             <a href="#" class="btn-pad-regular border border-[#1E1E31] 
+            bg-white text-[#1E1E31] uppercase text-figtree text-center text-10 w-full md:w-auto  block">Locate A Store</a>
+            </div> 
+        </div>
+    </div>
+
+    </div>
+  </div>
+</section>
+ <section class="bottom-pad-88">
+     <div class="max-w-[1490px] bg-[#FAFAFA] px-4 mx-auto   reveal">
+         <div class=" flex flex-col lg:flex-row gap-[30px]  items-center lg:items-center justify-between p-[14px] md:p-[30px]">
+        
+        <!-- Text -->
+        <div class="text-black lg:max-w-[600px] text-center lg:text-left ">
+          <h2 class="text-[40px] font-bold mb-[20px] text-playfair-display">Choose Better, Choose Wisely <br/>with  Sleep ID</h2>
+          <p class="mb-[20px] text-14">
+           Research-based body match technology to find you a mattress that is the perfect fit for you and your partner. Revolutionary SleepID takes Body Composition, Body type, Posture into consideration and recommends a mattress that would be the perfect fit.
+          </p>
+
+          <!-- Buttons -->
+          <div class="flex flex-col justify-center xl:justify-start sm:flex-row gap-4">
+            <a href="#"
+               class="btn-pad-header bg-[#1E1E31] text-10 text-white  uppercase  hover:bg-whitetransition">
+               Check Sleep ID
+            </a>
+            <a href="#"
+               class="btn-pad-header border border-[#1E1E31] text-[#1E1E31]  text-10 uppercase hover:bg-white hover:text-[#1E1E31] transition">
+               Browse Mattress
+            </a>
+          </div>
+        </div>
+        <div class="lg:max-w-[700px]"> 
+  <iframe
+class="w-[300px] h-full xl:w-[700px] xl:h-[434px]"
+  src="https://youtu.be/9RiPCHl85rI?si=KVFDrjI1aUjxYlSN"
+  title="YouTube video player"
+  frameborder="0"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen>
+</iframe>
+        </div>
+
+    
+      </div>
+  </div>
+</section>
+ <section class="bottom-pad-88">
+   <div class="max-w-[1490px] px-4  mx-auto ">
+  <div >
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-[30px] text-center">
+      
+      <!-- Item -->
+      <div class="flex flex-col items-center p-[40px] reveal bg-[#FAFAFA]">
+        <img src="assets/images/home/features/feature-1.png" alt="" class="h-[60px] w-auto">
+        <h4 class="text-[20px] font-bold text-black pt-[20px]">
+          Pressure Mapping
+        </h4>
+      </div>
+        <!-- Item -->
+      <div class="flex flex-col items-center p-[40px] reveal bg-[#FAFAFA]">
+        <img src="assets/images/home/features/feature-2.png" alt="" class="h-[60px] w-auto">
+        <h4 class="text-[20px] font-bold text-black pt-[20px]">
+         Sleep Tracker
+        </h4>
+      </div>
+        <!-- Item -->
+      <div class="flex flex-col items-center p-[40px] reveal bg-[#FAFAFA]">
+        <img src="assets/images/home/features/feature-3.png" alt="" class="h-[60px] w-auto">
+        <h4 class="text-[20px] font-bold text-black pt-[20px]">
+Body Discomfort
+        </h4>
+      </div>
+        <!-- Item -->
+      <div class="flex flex-col items-center p-[40px] reveal bg-[#FAFAFA]">
+        <img src="assets/images/home/features/feature-4.png" alt="" class="h-[60px] w-auto">
+        <h4 class="text-[20px] font-bold text-black pt-[20px]">
+       Posture Analysis
+        </h4>
+      </div>
+        <!-- Item -->
+      <div class="flex flex-col items-center p-[40px] reveal bg-[#FAFAFA]">
+        <img src="assets/images/home/features/feature-5.png" alt="" class="h-[60px] w-auto">
+        <h4 class="text-[20px] font-bold text-black pt-[20px]">
+       Spinal Alignment
+        </h4>
+      </div>
+        <!-- Item -->
+      <div class="flex flex-col items-center p-[40px] reveal bg-[#FAFAFA]">
+        <img src="assets/images/home/features/feature-6.png" alt="" class="h-[60px] w-auto">
+        <h4 class="text-[20px] font-bold text-black pt-[20px]">
+          Body Composition
+        </h4>
+      </div>
+  
+
+    </div>
+  </div>
+</div>
+
+</section>
+
+ <section class="bottom-pad-88">
+<div class="max-w-[1490px] px-4  mx-auto ">
+
+    <!-- HEADER -->
+<div class="flex flex-col xl:flex-row items-start xl:items-center gap-2  justify-between mb-8 reveal">
+      <h2 class="text-2xl font-normal text-black">
+        Real Voices, Real Experiences
+      </h2>
+
+      <div class="flex gap-2">
+        <button id="prevBtn"
+          class="w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center
+                 hover:bg-gray-100 transition">
+           <img src="assets/images/slider-prev.png" alt="">
+        </button>
+        <button id="nextBtn"
+          class="w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center
+                 hover:bg-gray-100 transition">
+        <img src="assets/images/slider-next.png" alt="">
+        </button>
+      </div>
+    </div>
+
+    <!-- SLIDER -->
+    <div class="overflow-hidden">
+      <div id="videoSlider" class="flex transition-transform duration-500 ease-out"> 
+        <!-- CARD -->
+        <div class="shrink-0 px-2 w-1/2 sm:w-1/3 lg:w-1/5">
+          <div
+            class="rounded-xl overflow-hidden bg-black cursor-pointer"
+            onclick="openVideo('https://cdn.shopify.com/s/files/1/0786/7803/2702/files/reelUp_5930777820251010082911_short.mp4')">
+            <video class="w-full aspect-[9/16] object-cover"
+              autoplay muted loop playsinline
+              poster="https://cdn.shopify.com/s/files/1/0786/7803/2702/files/preview_images/9d3a146493be4c219594a318c4e145b0.thumbnail.0000000000.jpg">
+              <source src="https://cdn.shopify.com/s/files/1/0786/7803/2702/files/reelUp_5930777820251010082911_short.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p class="mt-2 text-sm text-gray-800">Women's Shorts Sleep Set</p>
+        </div>
+
+        <!-- DUPLICATE 4+ MORE -->
+        <div class="shrink-0 px-2 w-1/2 sm:w-1/3 lg:w-1/5">
+          <div class="rounded-xl overflow-hidden bg-black cursor-pointer"
+               onclick="openVideo('https://cdn.shopify.com/s/files/1/0786/7803/2702/files/reelUp_5930907520251010085143_short.mp4')">
+            <video class="w-full aspect-[9/16] object-cover" autoplay muted loop playsinline>
+              <source src="https://cdn.shopify.com/s/files/1/0786/7803/2702/files/reelUp_5930907520251010085143_short.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p class="mt-2 text-sm text-gray-800">Men Tee + Shorts Set</p>
+        </div>
+        <div class="shrink-0 px-2 w-1/2 sm:w-1/3 lg:w-1/5">
+          <div
+            class="rounded-xl overflow-hidden bg-black cursor-pointer"
+            onclick="openVideo('https://cdn.shopify.com/s/files/1/0786/7803/2702/files/reelUp_5930777820251010082911_short.mp4')">
+            <video class="w-full aspect-[9/16] object-cover"
+              autoplay muted loop playsinline
+              poster="https://cdn.shopify.com/s/files/1/0786/7803/2702/files/preview_images/9d3a146493be4c219594a318c4e145b0.thumbnail.0000000000.jpg">
+              <source src="https://cdn.shopify.com/s/files/1/0786/7803/2702/files/reelUp_5930777820251010082911_short.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p class="mt-2 text-sm text-gray-800">Women's Shorts Sleep Set</p>
+        </div>
+
+        <!-- DUPLICATE 4+ MORE -->
+        <div class="shrink-0 px-2 w-1/2 sm:w-1/3 lg:w-1/5">
+          <div class="rounded-xl overflow-hidden bg-black cursor-pointer"
+               onclick="openVideo('https://cdn.shopify.com/s/files/1/0786/7803/2702/files/reelUp_5930907520251010085143_short.mp4')">
+            <video class="w-full aspect-[9/16] object-cover" autoplay muted loop playsinline>
+              <source src="https://cdn.shopify.com/s/files/1/0786/7803/2702/files/reelUp_5930907520251010085143_short.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p class="mt-2 text-sm text-gray-800">Men Tee + Shorts Set</p>
+        </div>
+        <div class="shrink-0 px-2 w-1/2 sm:w-1/3 lg:w-1/5">
+          <div
+            class="rounded-xl overflow-hidden bg-black cursor-pointer"
+            onclick="openVideo('https://cdn.shopify.com/s/files/1/0786/7803/2702/files/reelUp_5930777820251010082911_short.mp4')">
+            <video class="w-full aspect-[9/16] object-cover"
+              autoplay muted loop playsinline
+              poster="https://cdn.shopify.com/s/files/1/0786/7803/2702/files/preview_images/9d3a146493be4c219594a318c4e145b0.thumbnail.0000000000.jpg">
+              <source src="https://cdn.shopify.com/s/files/1/0786/7803/2702/files/reelUp_5930777820251010082911_short.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p class="mt-2 text-sm text-gray-800">Women's Shorts Sleep Set</p>
+        </div>
+
+        <!-- DUPLICATE 4+ MORE -->
+        <div class="shrink-0 px-2 w-1/2 sm:w-1/3 lg:w-1/5">
+          <div class="rounded-xl overflow-hidden bg-black cursor-pointer"
+               onclick="openVideo('https://cdn.shopify.com/s/files/1/0786/7803/2702/files/reelUp_5930907520251010085143_short.mp4')">
+            <video class="w-full aspect-[9/16] object-cover" autoplay muted loop playsinline>
+              <source src="https://cdn.shopify.com/s/files/1/0786/7803/2702/files/reelUp_5930907520251010085143_short.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p class="mt-2 text-sm text-gray-800">Men Tee + Shorts Set</p>
+        </div>
+        <div class="shrink-0 px-2 w-1/2 sm:w-1/3 lg:w-1/5">
+          <div
+            class="rounded-xl overflow-hidden bg-black cursor-pointer"
+            onclick="openVideo('https://cdn.shopify.com/s/files/1/0786/7803/2702/files/reelUp_5930777820251010082911_short.mp4')">
+            <video class="w-full aspect-[9/16] object-cover"
+              autoplay muted loop playsinline
+              poster="https://cdn.shopify.com/s/files/1/0786/7803/2702/files/preview_images/9d3a146493be4c219594a318c4e145b0.thumbnail.0000000000.jpg">
+              <source src="https://cdn.shopify.com/s/files/1/0786/7803/2702/files/reelUp_5930777820251010082911_short.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p class="mt-2 text-sm text-gray-800">Women's Shorts Sleep Set</p>
+        </div>
+
+        <!-- DUPLICATE 4+ MORE -->
+        <div class="shrink-0 px-2 w-1/2 sm:w-1/3 lg:w-1/5">
+          <div class="rounded-xl overflow-hidden bg-black cursor-pointer"
+               onclick="openVideo('https://cdn.shopify.com/s/files/1/0786/7803/2702/files/reelUp_5930907520251010085143_short.mp4')">
+            <video class="w-full aspect-[9/16] object-cover" autoplay muted loop playsinline>
+              <source src="https://cdn.shopify.com/s/files/1/0786/7803/2702/files/reelUp_5930907520251010085143_short.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p class="mt-2 text-sm text-gray-800">Men Tee + Shorts Set</p>
+        </div>
+        <div class="shrink-0 px-2 w-1/2 sm:w-1/3 lg:w-1/5">
+          <div
+            class="rounded-xl overflow-hidden bg-black cursor-pointer"
+            onclick="openVideo('https://cdn.shopify.com/s/files/1/0786/7803/2702/files/reelUp_5930777820251010082911_short.mp4')">
+            <video class="w-full aspect-[9/16] object-cover"
+              autoplay muted loop playsinline
+              poster="https://cdn.shopify.com/s/files/1/0786/7803/2702/files/preview_images/9d3a146493be4c219594a318c4e145b0.thumbnail.0000000000.jpg">
+              <source src="https://cdn.shopify.com/s/files/1/0786/7803/2702/files/reelUp_5930777820251010082911_short.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p class="mt-2 text-sm text-gray-800">Women's Shorts Sleep Set</p>
+        </div>
+
+        <!-- DUPLICATE 4+ MORE -->
+        <div class="shrink-0 px-2 w-1/2 sm:w-1/3 lg:w-1/5">
+          <div class="rounded-xl overflow-hidden bg-black cursor-pointer"
+               onclick="openVideo('https://cdn.shopify.com/s/files/1/0786/7803/2702/files/reelUp_5930907520251010085143_short.mp4')">
+            <video class="w-full aspect-[9/16] object-cover" autoplay muted loop playsinline>
+              <source src="https://cdn.shopify.com/s/files/1/0786/7803/2702/files/reelUp_5930907520251010085143_short.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p class="mt-2 text-sm text-gray-800">Men Tee + Shorts Set</p>
+        </div>
+
+        <!-- Add more cards same way -->
+
+      </div>
+    </div>
+  </div>
+
+  <!-- VIDEO POPUP -->
+  <div id="videoModal"
+    class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50"
+    onclick="closeVideo()">
+
+    <div class="relative bg-black rounded-xl max-w-md w-full mx-4"
+         onclick="event.stopPropagation()">
+      <button onclick="closeVideo()"
+        class="absolute -top-4 -right-4 bg-white w-8 h-8 rounded-full text-black">
+        ✕
+      </button>
+
+      <video id="popupVideo"
+        class="w-full aspect-[9/16] rounded-xl"
+        controls autoplay></video>
+    </div>
+  </div>
+</section>
+
+<script>
+  const slider = document.getElementById("videoSlider");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+  const modal = document.getElementById("videoModal");
+  const popupVideo = document.getElementById("popupVideo");
+
+  let index = 0;
+
+  function visibleItems() {
+    if (window.innerWidth >= 1024) return 5;
+    if (window.innerWidth >= 640) return 3;
+    return 2;
+  }
+
+  function slide(dir) {
+    const itemWidth = slider.children[0].offsetWidth;
+    const maxIndex = slider.children.length - visibleItems();
+    index = Math.max(0, Math.min(index + dir, maxIndex));
+    slider.style.transform = `translateX(-${index * itemWidth}px)`;
+  }
+
+  nextBtn.onclick = () => slide(1);
+  prevBtn.onclick = () => slide(-1);
+
+  function openVideo(src) {
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+    popupVideo.src = src;
+    popupVideo.play();
+  }
+
+  function closeVideo() {
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+    popupVideo.pause();
+    popupVideo.src = "";
+  }
+
+  window.addEventListener("resize", () => slide(0));
+</script>
+
+  <section class="bottom-pad-88">
+  <div class="max-w-[1490px] px-4  mx-auto reveal">
+
+    <!-- Section Header -->
+  <div class="flex flex-col xl:flex-row items-start xl:items-center gap-2  justify-between mb-8 reveal">
+    <h2 class="text-[28px] font-normal text-black">
+        News & Articles
+      </h2>
+      <a href="blog-category.html"
+         class="text-14 font-medium tracking-wide hover:underline">
+        VIEW ALL
+      </a>
+    </div>
+
+    <!-- Cards Wrapper -->
+    <div
+      class="flex gap-6 overflow-x-auto pb-4 scrollbar-hide
+             lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-visible reveal">
+
+      <!-- Card 1 -->
+      <a href="blog-category.html"
+         class="min-w-[260px] lg:min-w-0 bg-white overflow-hidden
+                transition-all duration-300 ">
+
+        <img src="assets/images/img-blog-category-1.png"
+             alt="Blog Category"
+             class="w-full  h-[230px] object-cover">
+
+        <div class="py-4">
+        <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
+            How Blue Light affects.
+          </h3>
+
+                   <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+            Do you find yourself feeling tired and groggy in the morning? Do you struggle 
+          </p>
+
+          <div class="flex items-center text-black">
+           <img src="assets/images/blogs/calender-icon.png" class="me-[7px]" alt=""> May 27, 2025
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 2 -->
+      <a href="blog-category.html"
+         class="min-w-[260px] lg:min-w-0 bg-white overflow-hidden
+                transition-all duration-300 ">
+
+        <img src="assets/images/img-blog-category-2.png"
+             alt="Blog Category"
+             class="w-full  h-[230px] object-cover">
+
+        <div class="py-4">
+        <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
+            Diwali Mattress Deals and
+          </h3>
+               <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+            Whether you're looking to revamp your bedroom or gift a loved one the comfort 
+          </p>
+
+                  <div class="flex items-center text-black">
+            <img src="assets/images/blogs/calender-icon.png" class="me-[7px]" alt=""> March 15, 2025
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="blog-category.html"
+         class="min-w-[260px] lg:min-w-0 bg-white overflow-hidden
+                transition-all duration-300 ">
+
+        <img src="assets/images/img-blog-category-3.png"
+             alt="Blog Category"
+             class="w-full  h-[230px] object-cover">
+
+        <div class="py-4">
+        <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
+           Why 7 Hours of Sleep is
+          </h3>
+
+               <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+            In our fast-paced world, the pursuit of success often leads us to overlook 
+          </p>
+        <div class="flex items-center text-black">
+            <img src="assets/images/blogs/calender-icon.png" class="me-[7px]" alt=""> May 21, 2025
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 4 -->
+      <a href="blog-category.html"
+         class="min-w-[260px] lg:min-w-0 bg-white overflow-hidden
+                transition-all duration-300 ">
+
+        <img src="assets/images/img-blog-category-4.png"
+             alt="Blog Category"
+             class="w-full  h-[230px] object-cover">
+
+       <div class="py-4">
+        <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
+            How Blue Light affects...
+          </h3>
+
+           <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+           Do you find yourself feeling tired and groggy in the morning? Do you struggle 
+          </p>
+
+           <div class="flex items-center text-black">
+            <img src="assets/images/blogs/calender-icon.png" class="me-[7px]" alt=""> May 27, 2025
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 5 -->
+      <a href="blog-category.html"
+         class="min-w-[260px] lg:min-w-0 bg-white overflow-hidden
+                transition-all duration-300 ">
+
+        <img src="assets/images/img-blog-category-5.png"
+             alt="Blog Category"
+             class="w-full  h-[230px] object-cover">
+
+        <div class="py-4">
+        <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
+            How Blue Light affects...
+          </h3> 
+         <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+           Do you find yourself feeling tired and groggy in the morning? Do you struggle 
+          </p>
+
+             <div class="flex items-center text-black">
+            <img src="assets/images/blogs/calender-icon.png" class="me-[7px]" alt=""> April 30, 2025
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+  <section class="bottom-pad-88">
+  <div class="max-w-[1490px] px-4 mx-auto reveal">
+    <div class="relative bg-cover bg-center overflow-hidden h-[298px]"
+         style="background-image: url('assets/images/home/find-store.png');"> 
+      
+      <!-- Content -->
+      <div class="relative z-10 flex flex-end  h-[298px] items-center flex-row  justify-end px-[54px] pb-[54px] pt-[30px]"> 
+        <!-- Text -->
+        <div class="text-white max-w-lg lg:max-w-md text-center  md:text-end ">
+          <h2 class="text-3xl font-bold mb-4 text-playfair-display">Locate our store near you</h2>
+          <p class="mb-6 text-12  text-center md:text-end">
+           Over 600+ Retailers across India are proudly selling King Koil products. Please find retailers nearest to your location from Retailer-Finder below.
+          </p>
+
+          <!-- Buttons -->
+          <div class="text-center xl:text-end"> 
+            <a href="#"
+               class="btn-pad-header  text-10 uppercase bg-white text-[#1E1E31] transition ">
+              Find Store Near you
+            </a>
+          </div>
+        </div>
+
+    
+      </div>
+    </div>
+  </div>
+</section>
+   <section class="bottom-pad-88">
+  <div class="max-w-[1490px] px-4  mx-auto reveal">
+
+    <!-- Section Header -->
+   <div class="flex flex-col xl:flex-row items-start xl:items-center gap-2  justify-between mb-8 reveal">
+          <h2 class="text-[28px] font-normal text-black">
+        King Koil Mattresses for your Hotel
+      </h2>
+      <a href="blog-category.html"
+         class="text-14 font-medium tracking-wide hover:underline">
+        VIEW ALL
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1  lg:grid-cols-3 gap-6">
+
+      <!-- CARD 1 -->
+      <div class="group relative overflow-hidden">
+        <img
+          src="assets/images/home/hotel-1.png"
+          alt="Hotel Mattresses"
+          class="w-full h-[433px] object-cover transition-transform duration-500 group-hover:scale-105"
+        /> 
+        <!-- Content -->
+        <div class="absolute bottom-0 p-[32px] text-white text-center">
+          <h3 class="text-30 text-center font-bold mb-[10px]">
+            Hotel Mattresses by<br/>King Koil.
+          </h3>
+          <p class="text-white text-center">
+          Comfortable, ultra durable and engineered to perfection, is what you get when you choose King Koil Mattresses for your hotel. The hospital industry..
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+     <div class="group relative overflow-hidden">
+        <img
+          src="assets/images/home/hotel-2.png"
+          alt="Hotel Mattresses"
+          class="w-full h-[433px] object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+
+      <div class="absolute bottom-0 p-[32px] text-white text-center">
+          <h3 class="text-30 font-bold mb-[10px]">
+            Customized Bedding<br/>Solutions for Hotels.
+          </h3>
+          <p class="text-white text-center">
+            King Koil offers fully customizable hospitality bedding
+            solutions to suit premium hotel needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+ <div class="group relative overflow-hidden">
+        <img
+          src="assets/images/home/hotel-3.png"
+          alt="Hotel Mattresses"
+          class="w-full h-[433px] object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+
+   <div class="absolute bottom-0 p-[32px] text-white text-center">
+          <h3 class="text-30 font-bold mb-[10px]">
+            Rollaway Bed for<br/>Hotels.
+          </h3>
+          <p class="text-white">
+            Engineered for convenience and comfort, ideal for space
+            efficient hospitality environments.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="bottom-pad-88">
+  <div class="max-w-[1490px] px-4 mx-auto overflow-hidden">
+
+    <!-- Desktop: 7 logos in a row -->
+    <div class="hidden 2xl:flex justify-between items-center ">
+      <img src="assets/images/partners/img-1.png" alt="Partner 1" class="object-contain">
+      <img src="assets/images/partners/img-2.png" alt="Partner 2" class="object-contain">
+      <img src="assets/images/partners/img-3.png" alt="Partner 3" class="object-contain">
+      <img src="assets/images/partners/img-4.png" alt="Partner 4" class="object-contain">
+      <img src="assets/images/partners/img-5.png" alt="Partner 5" class="object-contain">
+      <img src="assets/images/partners/img-6.png" alt="Partner 6" class="object-contain">
+      <img src="assets/images/partners/img-7.png" alt="Partner 7" class="object-contain">
+    </div>
+
+    <!-- Mobile: Swiper Slider -->
+    <div class="2xl:hidden">
+      <div class="swiper partnersSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="assets/images/partners/img-1.png" class="object-contain" alt=""></div>
+          <div class="swiper-slide"><img src="assets/images/partners/img-2.png" class="object-contain" alt=""></div>
+          <div class="swiper-slide"><img src="assets/images/partners/img-3.png" class="object-contain" alt=""></div>
+          <div class="swiper-slide"><img src="assets/images/partners/img-4.png" class="object-contain" alt=""></div>
+          <div class="swiper-slide"><img src="assets/images/partners/img-5.png" class="object-contain" alt=""></div>
+          <div class="swiper-slide"><img src="assets/images/partners/img-6.png" class="object-contain" alt=""></div>
+          <div class="swiper-slide"><img src="assets/images/partners/img-7.png" class="object-contain" alt=""></div>
+        </div>
+        <!-- Optional arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+  </div>
+</section>  
+  <!-- ================= FOOTER ================= -->
+<footer class="text-white text-14">
+        <div class="border-b border-[#3D3B3B]">
+ <div >
+  <div class="max-w-[1650px] px-4  mx-auto py-[32px] flex flex-col lg:flex-row items-center justify-between gap-4">
+
+    <!-- LEFT: Logo -->
+    <div class="flex justify-center lg:justify-start w-full lg:w-auto">
+      <img src="assets/images/logo.png" alt="King Koil" class="h-[44px]">
+    </div>
+
+    <!-- CENTER: Contact Info -->
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-12 text-center lg:text-left">
+      <span class="flex items-center gap-[14px]">
+        <img src="assets/images/icon-location.png" alt="Suite 614, 6th Floor, DLF Downtown Meadows, Rajarhat, NT 15256">
+        Suite 614, 6th Floor, DLF Downtown Meadows, Rajarhat, NT 15256
+      </span>
+
+      <span class="flex items-center gap-[14px] mx-4 md:mx-[118px]">
+      <img src="assets/images/icon-call.png" alt=" +91 56323 1256">
+        +91 56323 1256
+      </span>
+
+      <span class="flex items-center gap-[14px] line-clamp-1">
+        <img src="assets/images/icon-mail.png" alt=" +91 56323 1256">
+        example001@gmail.com
+      </span>
+    </div>
+
+    <!-- RIGHT: Scroll to top -->
+    <div class="flex justify-center lg:justify-end w-full lg:w-auto">
+      <button onclick="window.scrollTo({top:0,behavior:'smooth'})"
+              class="flex items-center gap-[16px] text-12 hover:text-white">
+        SCROLL TO TOP
+        <i class="fa-solid fa-circle-chevron-up text-30"></i>
+      </button>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+        </div>
+  <!-- TOP INFO BAR -->
+  
+
+  <!-- MAIN FOOTER -->
+  <div class="max-w-[1650px] px-4  mx-auto py-12
+              grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+
+    <!-- COMPANY -->
+    <div>
+    <h4 class="text-white font-semibold mb-[31px] uppercase text-16">COMPANY</h4>
+     <ul class="space-y-[13px]">
+        <li><a href="#" class="text-14 text-white">Why King Koil</a></li>
+        <li><a href="#" class="text-14 text-white">Know Your SleepID</a></li>
+        <li><a href="#" class="text-14 text-white">Where to Buy</a></li>
+        <li><a href="#" class="text-14 text-white">Contact Us</a></li>
+        <li><a href="#" class="text-14 text-white">FAQs</a></li>
+      </ul>
+    </div>
+
+    <!-- MATTRESS FOR HOME -->
+    <div>
+      <h4 class="text-white font-semibold  mb-[31px] uppercase text-16">MATTRESS FOR HOME</h4>
+       <ul class="space-y-[13px]">
+        <li><a href="#" class="text-14 text-white">Memory Foam Mattresses</a></li>
+        <li><a href="#" class="text-14 text-white">Back Support Mattresses</a></li>
+        <li><a href="#" class="text-14 text-white">Stay Energized Mattresses</a></li>
+        <li><a href="#" class="text-14 text-white">Luxury Mattresses</a></li>
+        <li><a href="#" class="text-14 text-white">Ultra Luxury Mattresses</a></li>
+      </ul>
+    </div>
+
+    <!-- MATTRESS FOR HOTELS -->
+    <div>
+      <h4 class="text-white font-semibold   mb-[31px] uppercase text-16">MATTRESS FOR HOTELS</h4>
+      <ul class="space-y-[13px]">
+        <li><a href="#" class="text-14 text-white">Hospitality Bedding Solution</a></li>
+        <li><a href="#" class="text-14 text-white">Maharaja Grand</a></li>
+        <li><a href="#" class="text-14 text-white">Euro Soft</a></li>
+        <li><a href="#" class="text-14 text-white">Foldable Roll Away Bed</a></li>
+        <li><a href="#" class="text-14 text-white">Non-Foldable Rollaway Bed</a></li>
+      </ul>
+    </div>
+
+    <!-- SUBSCRIBE -->
+    <div>
+      <h4 class="text-white font-semibold mb-[31px] uppercase text-16">SUBMIT FOR SUBSCRIPTION</h4>
+      <p class="mb-4 text-14">
+        Subscribe to get updates about new products and sales
+      </p>
+
+      <form class="flex mb-[20px]">
+        <input type="email"
+               placeholder="Enter your email address"
+               class="w-full px-3 py-2 text-[#C3C3C3] bg-transparent border border-white">
+        <button class="bg-white text-[#1b1b2f] px-4 font-semibold  ">
+          SUBSCRIBE
+        </button>
+      </form>
+
+      <!-- SOCIAL ICONS -->
+      <div class="flex gap-4 ">
+        <a href="#" class="text-20 text-white"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" class="text-20 text-white"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="text-20 text-white"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="text-20 text-white"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div class="border-t border-[#3D3B3B]">
+    <div class="max-w-[1650px] px-4  mx-auto   py-[22px]
+                flex flex-col md:flex-row gap-3
+                justify-between items-center text-12">
+
+      <p>© 2026 King Koil India by Real Inspiring Technologies Pvt. Ltd. All Rights Reserved </p>
+
+      <div class="flex justify-end text-white gap-3">
+        <a href="#" class="text-12 text-white">Terms & Conditions</a> | 
+        <a href="#" class="text-12 text-white">Warranty</a> | 
+        <a href="#" class="text-12 text-white">Privacy Policy</a> | 
+        <a href="#" class="text-12 text-white">Sitemap</a>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper(".partnersSwiper", {
+    slidesPerView: 2,       // visible slides on mobile
+    spaceBetween: 16,       // space between slides
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      480: { slidesPerView: 3 },
+      640: { slidesPerView: 4 },
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script> 
+ <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".reveal");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0,
+      rootMargin: "0px 0px 0px 0px",
+    }
+  );
+
+  elements.forEach(el => {
+    observer.observe(el);
+
+    // 🔥 Force check for elements already in view
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 200) {
+      el.classList.add("is-visible");
+      observer.unobserve(el);
+    }
+  });
+});
+</script>
+<script>
+  const header = document.getElementById('siteHeader');
+  const headerHeight = header.offsetHeight;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > headerHeight) {
+      header.classList.add('header-fixed');
+      document.body.style.paddingTop = headerHeight + 'px';
+    } else {
+      header.classList.remove('header-fixed');
+      document.body.style.paddingTop = '0px';
+    }
+  });
+</script>
+<script>
+  const counters = document.querySelectorAll('.counter');
+
+  const animateCounter = (el) => {
+    const target = +el.dataset.count;
+    let current = 0;
+
+    // Slower animation (higher divisor = slower)
+    const increment = Math.max(1, Math.floor(target / 140));
+
+    const update = () => {
+      current += increment;
+
+      if (current >= target) {
+        el.textContent = target + '+';
+        return;
+      }
+
+      el.textContent = current;
+      requestAnimationFrame(update);
+    };
+
+    update();
+  };
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+          entry.target.classList.add('counted');
+          animateCounter(entry.target);
+        }
+      });
+    },
+    { threshold: 0.4 }
+  );
+
+  counters.forEach(counter => observer.observe(counter));
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const slider = document.getElementById("heroSlider");
+  const prevBtn = document.getElementById("prev");
+  const nextBtn = document.getElementById("next");
+
+  if (!slider || !prevBtn || !nextBtn) {
+    console.error("Slider elements missing");
+    return;
+  }
+
+  const slides = slider.children;
+  let index = 0;
+  let autoPlayInterval = null;
+  const delay = 4000;
+
+  function updateSlider() {
+    slider.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() {
+    index = (index + 1) % slides.length;
+    updateSlider();
+  }
+
+  function prevSlide() {
+    index = (index - 1 + slides.length) % slides.length;
+    updateSlider();
+  }
+
+  function startAutoplay() {
+    clearInterval(autoPlayInterval);
+    autoPlayInterval = setInterval(nextSlide, delay);
+  }
+
+  nextBtn.addEventListener("click", () => {
+    nextSlide();
+    startAutoplay();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    prevSlide();
+    startAutoplay();
+  });
+
+  startAutoplay();
+});
+</script>
+
+
+
+
+</body>
+</html>

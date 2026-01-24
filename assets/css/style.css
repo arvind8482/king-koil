@@ -1,5 +1,11 @@
-  @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
- @font-face {
+   
+   @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+   *{
+    padding: 0; margin: 0;
+   }
+
+   @font-face {
     font-family: 'Helvetica';
     font-style: normal;
     font-weight: normal;
@@ -58,21 +64,28 @@
     background-color: #FFFFFF!important;
 }
 h1, h2, h3, h4, h5, h6 {
-             font-family: 'Helvetica bold';
+  font-family: 'Helvetica bold';
  }
 
  .btn-pad-header{
-  padding: 17px 44px;
+  padding: 14px 60px; text-align: center;  
+ }
+
+ .btn-pad-regular{
+  padding: 10px 20px; height: 34px;text-align: center;
  }
  .text-figtree{
-  font-family: 'Helvetica';
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto; 
+  font-weight:500;
+  font-style: normal;
 }
  
 
-.badge-view{
-  background-color: rgba(30, 30, 60, 0.6); border-radius: 35px; font-size: 16px; color: #FFF;font-family: "Figtree", sans-serif; padding: 6px 18px;
-}
 
+.text-heading{
+  font-family: 'Helvetica';
+}
 
 
 .list-star li{
@@ -82,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-10{
-  font-size: 10px; line-height: 10px;
+  font-size: 10px; line-height: 14px;
 }
 .text-12{
   font-size: 12px;
@@ -103,6 +116,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-20{
+  font-size: 20px;
+}
+
+.text-30{
+  font-size: 30px;
+}
+
+.text-24{
   font-size: 20px;
 }
 
@@ -144,7 +165,7 @@ color: #4C4C4C;
 }
 
 .text-playfair-display{
-  font-family: "Playfair Display", serif!important; font-size: 48px; font-weight: 800;
+  font-family: "Playfair Display", serif!important; font-size: 40px; line-height: 56px; font-weight: 800;
 }
 
 
@@ -153,11 +174,11 @@ color: #4C4C4C;
 }
 
 .faq-icon{
-  width: 40px; height: 40px; align-items: center; justify-content: center; display: flex; background-color: #FFFFFF; border-radius: 100%;
+  padding: 15px 12px 15px 12px; align-items: center; justify-content: center; display: flex; background-color: #FFFFFF; border-radius: 100%; 
 }
 
 .bg-faq-item-block{
-  background-color: #FAFAFA; padding: 18px;
+  background-color: #FAFAFA; padding: 18px 15px 18px 15px; margin-bottom: 15px;
 }
 .icon-dark{
   color: #1E1E31;
@@ -167,6 +188,25 @@ color: #4C4C4C;
   font-size: 14px; color: #000000;
 }
 
+
+
+.recentblogs-badges{
+  padding: 5px; border-radius: 300px; background-color: rgba(30, 30, 49, 0.6);
+} 
+  .header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    background-color: #1E1E31;
+  }
+ 
+
+.badge-view{
+  background-color: rgba(30, 30, 60, 0.6); border-radius: 300px; font-size: 16px; color: #FFF;font-family: "Figtree", sans-serif; padding: 12px 15px; top: 15px; right: 21px;
+
+}
 .para-txt{
   color: #4C4C4C; font-size: 20px; line-height: 28px;
 }
@@ -183,7 +223,7 @@ color: #4C4C4C;
     scrollbar-width: none;
   }
 footer{
-  background-color:#1b1b2f
+  background-color:#1E1E31
 }
 
   .tags-popular-text, a.tags-popular-text {
@@ -232,6 +272,11 @@ font-family: "Figtree", sans-serif;
   padding-bottom:90px;
 }
 
+.section-pad-50{
+  padding-top:50;
+  padding-bottom:50;
+}
+
 .bg-light-gray{
   background-color: #FAFAFA;
 }
@@ -261,8 +306,30 @@ font-family: "Figtree", sans-serif;
 }
 
 
-    @media (max-width: 768px) {
+    @media (min-width: 769px) and (max-width: 1400px) {
+.btn-pad-regular{
+  padding: 6px 10px; height: auto;
+ }
 
+}
+
+    @media (max-width: 768px) {
+      
+ .btn-pad-header{
+  padding: 14px 46px; 
+ }
+
+
+
+      .faq-icon{
+  padding: 12px 10px 12px 10px; align-items: center; justify-content: center; display: flex; background-color: #FFFFFF; border-radius: 100%; 
+}
+      .text-playfair-display{
+  font-family: "Playfair Display", serif!important; font-size: 32px; line-height:48px; font-weight: 800;
+}
+.text-55{
+  font-size: 36px;font-family: 'Helvetica';
+}
       .bg-light-gray-pad-50{
   background-color: #FAFAFA; padding: 32px 24px;
 }

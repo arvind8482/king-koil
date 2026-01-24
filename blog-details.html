@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blogs | King Koil</title>
+  <title>King Koil | Blog Details</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -17,24 +17,25 @@
       href="assets/css/style.css">
 
 </head>
-<body class="text-figtree">  
+<body class="text-figtree text-14">  
 <!-- ================= HEADER ================= -->
- <header class="bg-[#1E1E31] text-white fixed top-0 left-0 w-full z-50">
- <div class="max-w-[1658px] md:mx-auto px-4 md:px-0 md:px-0 py-4 flex items-center justify-between">
+<header id="siteHeader"
+  class="bg-[#1E1E31] text-white w-full z-50 transition-all duration-300">
+ <div class="max-w-[1650px] md:mx-auto px-4 py-[30px] flex items-center justify-between">
 
     <!-- LOGO -->
     <a href="/" class="flex items-center">
-      <img src="assets/images/logo.png" alt="King Koil" class="h-8">
+      <img src="assets/images/logo.png" alt="King Koil" class="h-[32px]">
     </a>
 
     <!-- DESKTOP NAV -->
-    <nav class="hidden lg:flex items-center gap-6 text-lg">
+    <nav class="hidden lg:flex items-center gap-6 text-14">
 
-      <a href="#" class="hover:text-gray-300">Why King Koil?</a>
+      <a href="#"  >Why King Koil?</a>
 
       <!-- Mattresses Dropdown -->
       <div class="relative group">
-        <button class="flex items-center gap-1 hover:text-gray-300">
+        <button class="flex items-center gap-1 ">
           Mattresses
           <svg class="w-4 h-4 transition-transform group-hover:rotate-180"
                fill="none" stroke="currentColor" stroke-width="2"
@@ -52,13 +53,13 @@
                  group-hover:opacity-100 group-hover:visible
                  transition pt-2">
 
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-t-lg">
+          <a href="#" class="block px-4 py-2  rounded-t-lg">
             Luxury Mattresses
           </a>
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100">
+          <a href="#" class="block px-4 py-2 ">
             Memory Foam
           </a>
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-b-lg">
+          <a href="#" class="block px-4 py-2 rounded-b-lg">
             Back Support
           </a>
         </div>
@@ -66,7 +67,7 @@
 
       <!-- Accessories Dropdown -->
       <div class="relative group">
-        <button class="flex items-center gap-1 hover:text-gray-300">
+        <button class="flex items-center gap-1 ">
           Accessories
           <svg class="w-4 h-4 transition-transform group-hover:rotate-180"
                fill="none" stroke="currentColor" stroke-width="2"
@@ -83,18 +84,18 @@
                  group-hover:opacity-100 group-hover:visible
                  transition pt-2">
 
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-t-lg">
+          <a href="#" class="block px-4 py-2 rounded-t-lg">
             Pillows
           </a>
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-b-lg">
+          <a href="#" class="block px-4 py-2 rounded-b-lg">
             Protectors
           </a>
         </div>
       </div>
 
-      <a href="#" class="hover:text-gray-300">SleepID</a>
-      <a href="#" class="hover:text-gray-300">Hospitality</a>
-      <a href="#" class="hover:text-gray-300">Blogs</a>
+      <a href="#" >SleepID</a>
+      <a href="#" >Hospitality</a>
+      <a href="#" >Blogs</a>
     </nav>
 
     <!-- DESKTOP CTA -->
@@ -132,7 +133,7 @@
             <path d="M6 9l6 6 6-6" />
           </svg>
         </summary>
-        <div class="pl-4 pb-2 text-sm space-y-1">
+        <div class="pl-4 pb-2 text-14 space-y-1">
           <a href="#" class="block">Luxury Mattresses</a>
           <a href="#" class="block">Memory Foam</a>
           <a href="#" class="block">Back Support</a>
@@ -148,7 +149,7 @@
             <path d="M6 9l6 6 6-6" />
           </svg>
         </summary>
-        <div class="pl-4 pb-2 text-sm space-y-1">
+        <div class="pl-4 pb-2 text-14 space-y-1">
           <a href="#" class="block">Pillows</a>
           <a href="#" class="block">Protectors</a>
         </div>
@@ -165,13 +166,7 @@
       </a>
     </div>
   </div>
-</header>
-
-<!-- Add padding to the top of the page so content is not hidden under the fixed header -->
-<div class="pt-24">
-  <!-- Your page content goes here -->
-</div>
-
+</header> 
  
 
 <!-- ================= MOBILE TOGGLE SCRIPT ================= -->
@@ -180,25 +175,26 @@
     document.getElementById("mobileMenu").classList.toggle("hidden");
   });
 </script>
-<main  >
-  <div class="max-w-[1468px] px-4 md:px-0 md:mx-auto pb-10">
+<main  class="pt-[64px]" >
+  <div class="max-w-[1490px] px-4  mx-auto pb-10">
 
     <!-- GRID -->
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 mt-4 xl:mt-10">
 
       <!-- LEFT CONTENT -->
-      <article class="lg:col-span-8">
+      <article class="lg:col-span-8 ">
 
+ <div class="flex flex-col-reverse xl:flex-col ">
     <!-- META -->
-    <div class="flex flex-col xl:flex-row flex-wrap xl:flex-nowrap justify-between gap-4 text-sm text-gray-500 mb-4">
-      <div class="flex items-center reveal gap-4"><span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-2" alt=""> May 27, 2025</span>
-        <span  class="flex items-center"></span> <img src="assets/images/icon-eye.png"   alt="eye"> 3000</span>
+    <div class="flex flex-col xl:flex-row flex-wrap xl:flex-nowrap justify-between gap-4 text-14 text-[#919191] mb-[54px]">
+      <div class="flex items-center text-black reveal gap-4"><span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-2" alt=""> May 27, 2025</span>
+        <span  class="flex items-center text-black"></span> <img src="assets/images/icon-eye.png"   alt="eye"> 3000</span>
       </div>
 
       <div class="flex flex-col xl:flex-row items-start xl:items-center gap-4 ">
         <div class="flex items-center gap-4 reveal">
-                    <span>By: <strong class="text-gray-700">King Koil India</strong></span>
-                  <span>Category: <strong class="text-gray-700">Luxury Mattress</strong></span>
+                    <span>By: <span class="text-black">King Koil India</span></span>
+                  <span>Category: <span class="text-black">Luxury Mattress</span></span>
         </div>
 
         <div class="flex gap-2 reveal">
@@ -212,23 +208,23 @@
     </div>
 
     <!-- TITLE -->
-    <h1 class="text-3xl md:text-4xl font-semibold text-gray-900 max-w-4xl leading-tight reveal">
+    <h1 class="text-[32px] md:text-[40px] font-semibold text-black max-w-4xl leading-tight reveal mb-[34px]">
       Best Mattress for Heavy People: Firmness, Thickness & Support
-    </h1>
+    </h1>    
+ </div>
 
     <!-- BREADCRUMB -->
-    <nav class="text-14 mt-2 flex items-center gap-[9px] reveal">
+    <nav class="text-14 flex items-center gap-[9px] reveal mb-[50px]">
       Home  <img src="assets/images/black-right-arrow.png" alt="Blogs"> Blogs  <img src="assets/images/black-right-arrow.png" alt="Blogs">
       <span >Blog Details</span>
     </nav>
 
         <!-- FEATURE IMAGE -->
-        <div class="relative rounded-xl overflow-hidden mb-8 mt-5 reveal">
+        <div class="relative overflow-hidden mb-[50px]   reveal">
           <img src="assets/images/img-blog-details.png"
                class="w-full h-[320px] md:h-[420px] object-cover"
                alt="Blog Image">
-
-          <div class="absolute inset-0 bg-gradient-to-r from-black/20 to-black/60"></div>
+ 
 
           <div class="absolute right-6 bottom-8 text-white max-w-sm">
             <h2 class="text-2xl font-semibold leading-snug reveal">
@@ -239,42 +235,42 @@
 
         <!-- CONTENT -->
         <div class="space-y-5 text-gray-700 leading-relaxed">
-          <p class="para-txt reveal">
+          <p class="para-txt reveal pb-[20px]">
 Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress sagging within months? If you weigh over 90-100 kg, finding the right mattress isn't just about comfort; it's essential for your health, spine alignment, and quality sleep.
           </p>
 
-               <p class="para-txt reveal">
+               <p class="para-txt reveal pb-[38px]">
             This expert guide explains firmness levels, thickness, and robust support
             layers required for long-lasting comfort and spinal alignment.
           </p>
 
-          <h3 class=" text-20-heading reveal">
+          <h3 class=" text-20-heading reveal pb-[19px]">
             Why Heavy People Need Specialised Mattresses
           </h3>
 
-         <p class="para-txt reveal">
+         <p class="para-txt reveal pb-[19px]">
             Standard mattresses designed for average body weights (60-80 kg) simply cannot provide adequate support for heavier individuals. Here's why specialised considerations matter:
           </p>
-  <h3 class="text-20-heading reveal">
+  <h3 class="text-20-heading reveal pb-[29px]">
             Common Problems with Wrong Mattress Selection
           </h3>
-          <h4 class="text-20-heading reveal">Physical Issues</h4>
-          <ul class="list-disc pl-5 space-y-1 ul-li-text reveal">
+          <h4 class="text-20-heading reveal m-0 pb-[10px]">Physical Issues</h4>
+          <ul class="list-disc pl-5 space-y-[10px]  ul-li-text reveal">
             <li>Chronic back, neck, and shoulder pain</li>
             <li>Pressure point soreness at the hips and shoulders</li>
             <li>Morning stiffness and reduced mobility</li>
             <li>Body aches throughout the day</li>
           </ul>
 
-          <h4 class="text-20-heading reveal">Sleep Quality Problems</h4>
-          <ul class="list-disc pl-5 space-y-1 ul-li-text reveal">
+          <h4 class="text-20-heading reveal pb-[10px]">Sleep Quality Problems</h4>
+          <ul class="list-disc pl-5 space-y-[10px] ul-li-text reveal">
             <li>Frequent nighttime awakenings</li>
             <li>Difficulty finding comfortable positions</li>
             <li>Overheating due to deep body impressions</li>
             <li>Partner disturbance from motion transfer</li>
           </ul> 
-          <h4 class="text-20-heading reveal">Financial Concerns:</h4>
-          <ul class="list-disc pl-5 space-y-1 ul-li-text reveal">
+          <h4 class="text-20-heading reveal pb-[10px]">Financial Concerns:</h4>
+          <ul class="list-disc pl-5 space-y-[10px]  ul-li-text reveal">
             <li>Premature sagging (often within 1-2 years)</li>
             <li>Frequent replacements costing thousands</li>
             <li>Frequent replacements costing thousands</li>
@@ -292,7 +288,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
 
       <!-- FAQ ITEM -->
       <div class="bg-faq-item-block reveal">
-        <button class="faq-btn flex justify-between items-center w-full text-left pb-1">
+        <button class="faq-btn flex justify-between items-start w-full text-left ">
           <span class="font-medium text-18 text-black">
             What is the best mattress firmness for heavy people?
           </span>
@@ -305,7 +301,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
 
       <!-- FAQ ITEM -->
       <div class="bg-faq-item-block reveal">
-        <button class="faq-btn flex justify-between items-center w-full text-left pb-1">
+        <button class="faq-btn flex justify-between items-start w-full text-left ">
           <span class="font-medium text-18 text-black">
             How thick should a mattress be for heavy individuals?
           </span>
@@ -318,7 +314,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
 
       <!-- FAQ ITEM -->
       <div class="bg-faq-item-block reveal">
-        <button class="faq-btn flex justify-between items-center w-full text-left pb-1">
+        <button class="faq-btn flex justify-between items-start w-full text-left ">
          <span class="font-medium text-18 text-black">
             Are orthopedic mattresses good for heavy people with back pain?
           </span>
@@ -331,7 +327,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
 
       <!-- FAQ ITEM -->
       <div class="bg-faq-item-block reveal">
-        <button class="faq-btn flex justify-between items-center w-full text-left pb-1">
+        <button class="faq-btn flex justify-between items-start w-full text-left">
          <span class="font-medium text-18 text-black">
             Do heavy people need a firm mattress or a soft mattress?
           </span>
@@ -344,7 +340,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
 
       <!-- FAQ ITEM -->
       <div class="bg-faq-item-block reveal">
-        <button class="faq-btn flex justify-between items-center w-full text-left pb-1">
+        <button class="faq-btn flex justify-between items-start w-full text-left">
           <span class="font-medium text-18 text-black">
             Is memory foam suitable for heavy sleepers?
           </span>
@@ -357,7 +353,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
 
       <!-- FAQ ITEM -->
       <div class="bg-faq-item-block reveal">
-        <button class="faq-btn flex justify-between items-center w-full text-left pb-1">
+        <button class="faq-btn flex justify-between items-start w-full text-left">
           <span class="font-medium text-18 text-black">
             Are hybrid mattresses better for heavy people?
           </span>
@@ -370,7 +366,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
 
       <!-- FAQ ITEM -->
       <div class="bg-faq-item-block reveal">
-        <button class="faq-btn flex justify-between items-center w-full text-left pb-1">
+        <button class="faq-btn flex justify-between items-start w-full text-left">
           <span class="font-medium text-18 text-black">
             How long does a mattress last for someone over 100 kg?
           </span>
@@ -383,7 +379,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
 
       <!-- FAQ ITEM -->
       <div class="bg-faq-item-block reveal">
-        <button class="faq-btn flex justify-between items-center w-full text-left pb-1">
+        <button class="faq-btn flex justify-between items-start w-full text-left">
           <span class="font-medium text-18 text-black">
             What type of mattress is best for heavy couples?
           </span>
@@ -396,7 +392,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
 
       <!-- FAQ ITEM -->
       <div class="bg-faq-item-block reveal">
-        <button class="faq-btn flex justify-between items-center w-full text-left pb-1">
+        <button class="faq-btn flex justify-between items-start w-full text-left">
           <span class="font-medium text-18 text-black">
             Why do mattresses sag faster for heavy people?
           </span>
@@ -435,71 +431,71 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
 
         <!-- RECENT BLOGS -->
         <div class="side-block-bg">
-          <h3 class="font-semibold text-20-heading-sidebar mb-4 reveal">Recent Blogs</h3> 
+          <h3 class="font-semibold text-20-heading-sidebar mb-[20px] reveal">Recent Blogs</h3> 
           
-            <div class="space-y-2">
-            <div class="flex gap-3 mb-2 bg-white p-3 item-start reveal">
+            <div class="space-y-[8px] relative">
+            <div class="flex gap-3 mb-[10px] bg-white p-[8x] item-start reveal">
               <img src="assets/images/img-recent-blog.png"
-                   class="w-16 h-14 rounded object-cover">
+                   class="w-16 h-14 m-2 object-cover">
               <div>
-                <p class="text-sm font-medium line-clamp-2">
+                <p class="text-14 font-medium line-clamp-2 pt-2">
                   How Screen Time Before Bed Is Ruining Your Sleep
                 </p>
                 
               </div>
-              <span class="text-xs text-white bg-gray-600 rounded-2xl flex flex-nowrap  py-1 px-4 self-end"> 300</span>
+              <span class="text-10 text-white flex flex-nowrap items-center recentblogs-badges absolute right-[4px] bottom-[4px]"><img src="assets/images/recent-blog-eye.png" class="h-[8px] me-[4px]" alt="">&nbsp;300</span>
             </div>
-              <div class="flex gap-3 mb-2 bg-white p-3 item-start reveal">
+              <div class="flex gap-3 mb-[10px] bg-white p-[8x] item-start reveal">
               <img src="assets/images/img-recent-blog.png"
-                   class="w-16 h-14 rounded object-cover">
+                   class="w-16 h-14 m-2 object-cover">
               <div>
-                <p class="text-sm font-medium line-clamp-2">
+                <p class="text-14 font-medium line-clamp-2 pt-2">
                   How Screen Time Before Bed Is Ruining Your Sleep
                 </p>
                 
               </div>
-              <span class="text-xs text-white bg-gray-600 rounded-2xl flex flex-nowrap  py-1 px-4 self-end"> 300</span>
+              <span class="text-10 text-white flex flex-nowrap items-center recentblogs-badges absolute right-[4px] bottom-[4px]"><img src="assets/images/recent-blog-eye.png" class="h-[8px] me-[4px]" alt="">&nbsp;300</span>
             </div>
-              <div class="flex gap-3 mb-2 bg-white p-3 item-start reveal">
+               <div class="flex gap-3 mb-[10px] bg-white p-[8x] item-start reveal">
               <img src="assets/images/img-recent-blog.png"
-                   class="w-16 h-14 rounded object-cover">
+                   class="w-16 h-14 m-2 object-cover">
               <div>
-                <p class="text-sm font-medium line-clamp-2">
+                <p class="text-14 font-medium line-clamp-2 pt-2">
                   How Screen Time Before Bed Is Ruining Your Sleep
                 </p>
                 
               </div>
-              <span class="text-xs text-white bg-gray-600 rounded-2xl flex flex-nowrap  py-1 px-4 self-end"> 300</span>
+              <span class="text-10 text-white flex flex-nowrap items-center recentblogs-badges absolute right-[4px] bottom-[4px]"><img src="assets/images/recent-blog-eye.png" class="h-[8px] me-[4px]" alt="">&nbsp;300</span>
             </div>
-              <div class="flex gap-3 mb-2 bg-white p-3 item-start reveal">
+             <div class="flex gap-3 mb-[10px] bg-white p-[8x] item-start reveal">
               <img src="assets/images/img-recent-blog.png"
-                   class="w-16 h-14 rounded object-cover">
+                   class="w-16 h-14 m-2 object-cover">
               <div>
-                <p class="text-sm font-medium line-clamp-2">
+                <p class="text-14 font-medium line-clamp-2 pt-2">
                   How Screen Time Before Bed Is Ruining Your Sleep
                 </p>
                 
               </div>
-              <span class="text-xs text-white bg-gray-600 rounded-2xl flex flex-nowrap  py-1 px-4 self-end"> 300</span>
+              <span class="text-10 text-white flex flex-nowrap items-center recentblogs-badges absolute right-[4px] bottom-[4px]"><img src="assets/images/recent-blog-eye.png" class="h-[8px] me-[4px]" alt="">&nbsp;300</span>
             </div>
-              <div class="flex gap-3 mb-2 bg-white p-3 item-start reveal">
+     <div class="flex gap-3 mb-[10px] bg-white p-[8x] item-start reveal">
               <img src="assets/images/img-recent-blog.png"
-                   class="w-16 h-14 rounded object-cover">
+                   class="w-16 h-14 m-2 object-cover">
               <div>
-                <p class="text-sm font-medium line-clamp-2">
+                <p class="text-14 font-medium line-clamp-2 pt-2">
                   How Screen Time Before Bed Is Ruining Your Sleep
                 </p>
                 
               </div>
-              <span class="text-xs text-white bg-gray-600 rounded-2xl flex flex-nowrap  py-1 px-4  self-end"> 300</span>
+              <span class="text-10 text-white flex flex-nowrap items-center recentblogs-badges absolute right-[4px] bottom-[4px]"><img src="assets/images/recent-blog-eye.png" class="h-[8px] me-[4px]" alt="">&nbsp;300</span>
             </div>
           </div>
         </div>
 
         <!-- BLOG CATEGORIES -->
         <div class="side-block-bg reveal">
-          <h3 class="font-semibold text-20-heading-sidebar mb-4">Blog Categories</h3>
-          <a href="blog-category.html" class="flex items-center justify-between gap-4 p-4 mb-2  rounded-lg
+          <h3 class="font-semibold text-20-heading-sidebar mb-[20px]">Blog Categories</h3>
+          <a href="blog-category.html" class="flex items-center justify-between gap-[12px] p-[10px] mb-[10px] 
           hover:bg-gray-50 transition bg-white"> 
             <!-- Left: Icon + Text -->
             <div class="flex items-center  ">
@@ -509,7 +505,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
                   alt="Back Support Mattresses"
                   class="w-6 h-6 object-contain me-[11px]"> 
               <!-- Title -->
-              <span class="text-gray-800 font-medium">
+              <span class="text-14 text-[#4C4C4C] font-medium">
                 Back Support Mattresses
               </span>
             </div>
@@ -520,7 +516,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
             </span>
 
           </a>
-                  <a href="blog-category.html" class="flex items-center justify-between gap-4 p-4 mb-2  rounded-lg
+          <a href="blog-category.html" class="flex items-center justify-between gap-[12px] p-[10px] mb-[10px] 
           hover:bg-gray-50 transition bg-white"> 
             <!-- Left: Icon + Text -->
       <div class="flex items-center  ">
@@ -530,7 +526,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
                   alt="Back Support Mattresses"
                   class="w-6 h-6 object-contain me-[11px]"> 
               <!-- Title -->
-              <span class="text-gray-800 font-medium">
+            <span class="text-14 text-[#4C4C4C] font-medium">
                Latex Foam Mattresses
               </span>
             </div>
@@ -541,7 +537,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
             </span>
 
           </a>
-                  <a href="blog-category.html" class="flex items-center justify-between gap-4 p-4 mb-2  rounded-lg
+     <a href="blog-category.html" class="flex items-center justify-between gap-[12px] p-[10px] mb-[10px] 
           hover:bg-gray-50 transition bg-white"> 
             <!-- Left: Icon + Text -->
           <div class="flex items-center  ">
@@ -551,7 +547,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
                   alt="Back Support Mattresses"
                   class="w-6 h-6 object-contain me-[11px]"> 
               <!-- Title -->
-              <span class="text-gray-800 font-medium">
+            <span class="text-14 text-[#4C4C4C] font-medium">
                 Luxury Mattresses
               </span>
             </div>
@@ -562,7 +558,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
             </span>
 
           </a>
-                  <a href="blog-category.html" class="flex items-center justify-between gap-4 p-4 mb-2  rounded-lg
+  <a href="blog-category.html" class="flex items-center justify-between gap-[12px] p-[10px] mb-[10px] 
           hover:bg-gray-50 transition bg-white"> 
             <!-- Left: Icon + Text -->
           <div class="flex items-center  ">
@@ -572,7 +568,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
                   alt="Back Support Mattresses"
                   class="w-6 h-6 object-contain me-[11px]"> 
               <!-- Title -->
-              <span class="text-gray-800 font-medium">
+            <span class="text-14 text-[#4C4C4C] font-medium">
                 Memory Foam Mattresses
               </span>
             </div>
@@ -583,7 +579,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
             </span>
 
           </a>
-       <a href="blog-category.html" class="flex items-center justify-between gap-4 p-4 mb-2  rounded-lg
+   <a href="blog-category.html" class="flex items-center justify-between gap-[12px] p-[10px] mb-[10px] 
           hover:bg-gray-50 transition bg-white"> 
             <!-- Left: Icon + Text -->
          <div class="flex items-center  ">
@@ -593,7 +589,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
                   alt="Back Support Mattresses"
                   class="w-6 h-6 object-contain me-[11px]"> 
               <!-- Title -->
-              <span class="text-gray-800 font-medium">
+        <span class="text-14 text-[#4C4C4C] font-medium">
                 Orthopedic Mattresses
               </span>
             </div>
@@ -604,7 +600,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
             </span>
 
           </a>
-            <a href="blog-category.html" class="flex items-center justify-between gap-4 p-4 mb-2 rounded-lg
+      <a href="blog-category.html" class="flex items-center justify-between gap-[12px] p-[10px] mb-[10px] 
           hover:bg-gray-50 transition bg-white"> 
             <!-- Left: Icon + Text -->
            <div class="flex items-center  ">
@@ -614,7 +610,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
                   alt="Back Support Mattresses"
                   class="w-6 h-6 object-contain me-[11px]"> 
               <!-- Title -->
-              <span class="text-gray-800 font-medium">
+          <span class="text-14 text-[#4C4C4C] font-medium">
                 Stay Energized Mattresses
               </span>
             </div>
@@ -625,7 +621,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
             </span>
 
           </a>
-            <a href="blog-category.html" class="flex items-center justify-between gap-4 p-4 rounded-lg
+      <a href="blog-category.html" class="flex items-center justify-between gap-[12px] p-[10px] mb-[10px] 
           hover:bg-gray-50 transition bg-white"> 
             <!-- Left: Icon + Text -->
      <div class="flex items-center  ">
@@ -635,7 +631,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
                   alt="Back Support Mattresses"
                   class="w-6 h-6 object-contain me-[11px]"> 
               <!-- Title -->
-              <span class="text-gray-800 font-medium">
+        <span class="text-14 text-[#4C4C4C] font-medium">
                Ultra Luxury Mattresses
               </span>
             </div>
@@ -650,24 +646,24 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
 
         <!-- CONTACT -->
         <div class="side-block-bg reveal">
-          <h3 class="font-semibold text-20-heading-sidebar mb-4">Contact Us</h3>
+          <h3 class="font-semibold text-20-heading-sidebarmb-[20px]">Contact Us</h3>
            <form class="space-y-5">
 
     <!-- Name -->
-    <div>
-      <label class="block text-sm font-medium text-gray-800 mb-2">
+    <div class="mb-[18px]">
+     <label class="block text-14 font-medium text-black mb-[14px]">
         Name
       </label>
       <input type="text"
              placeholder="Enter your name"
              class="w-full bg-white border border-transparent
-                    px-4 py-3 text-sm
+                    px-4 py-3 text-14
                     focus:outline-none focus:ring-2 focus:ring-gray-300">
     </div>
 
     <!-- Mobile Number -->
-    <div>
-      <label class="block text-sm font-medium text-gray-800 mb-2">
+  <div class="mb-[18px]">
+      <label class="block text-14 font-medium text-black mb-[14px]">
         Mobile Number
       </label>
 
@@ -675,7 +671,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
                   focus-within:ring-2 focus-within:ring-gray-300">
 
         <!-- Country Code -->
-        <select class="bg-transparent text-sm px-3 py-3 focus:outline-none">
+        <select class="bg-transparent text-14 px-3 py-3 focus:outline-none">
           <option>+91</option>
           <option>+1</option>
           <option>+44</option>
@@ -686,38 +682,38 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
         <!-- Number -->
         <input type="tel"
                placeholder="Enter your mobile number"
-               class="w-full bg-transparent px-4 py-3 text-sm focus:outline-none">
+               class="w-full bg-transparent px-4 py-3 text-14 focus:outline-none">
       </div>
     </div>
 
     <!-- Email -->
-    <div>
-      <label class="block text-sm font-medium text-gray-800 mb-2">
+  <div class="mb-[18px]">
+     <label class="block text-14 font-medium text-black mb-[14px]">
         Email
       </label>
       <input type="email"
              placeholder="Enter your email address"
              class="w-full bg-white border border-transparent
-                    px-4 py-3 text-sm
+                    px-4 py-3 text-14
                     focus:outline-none focus:ring-2 focus:ring-gray-300">
     </div>
 
     <!-- Message -->
-    <div>
-      <label class="block text-sm font-medium text-gray-800 mb-2">
+  <div class="mb-[18px]">
+     <label class="block text-14 font-medium text-black mb-[14px]">
         Message
       </label>
       <textarea rows="5"
                 placeholder="write your query"
                 class="w-full  bg-white border border-transparent
-                       px-4 py-3 text-sm resize-none
+                       px-4 py-3 text-14 resize-none
                        focus:outline-none focus:ring-2 focus:ring-gray-300"></textarea>
     </div>
 
     <!-- Button -->
     <button type="submit"
-            class="w-full bg-gray-900 text-white py-3 
-                   tracking-wider text-sm font-medium
+            class="w-full bg-[#1E1E31] text-white  
+                   tracking-wider text-14 btn-pad-header
                    hover:bg-gray-800 transition">
       SEND MESSAGE
     </button>
@@ -727,15 +723,15 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
 
         <!-- TAGS -->
         <div class="side-block-bg reveal">
-          <h3 class="font-semibold text-20-heading-sidebar mb-4">Popular Tag</h3>
+          <h3 class="font-semibold text-20-heading-sidebar mb-[20px]">Popular Tag</h3>
           <div class="flex flex-wrap gap-2">
-            <a href="blog-category.html" class="px-3 py-2 bg-white rounded-full tags-popular-text">Back Support Mattresses</a>
-            <a  href="blog-category.html"  class="px-3 py-2 bg-white rounded-full tags-popular-text">Luxury Mattresses</a>
-            <a  href="blog-category.html"  class="px-3 py-2 bg-white rounded-full tags-popular-text">Latex Foam Mattresses</a>
-             <a href="blog-category.html" class="px-3 py-2 bg-white rounded-full tags-popular-text">Memory Foam Mattresses</a>
-            <a  href="blog-category.html"  class="px-3 py-2 bg-white rounded-full tags-popular-text">Orthopedic Mattresses</a>
-            <a  href="blog-category.html"  class="px-3 py-2 bg-white rounded-full tags-popular-text">Ultra Luxury Mattresses</a>
-            <a  href="blog-category.html"  class="px-3 py-2 bg-white rounded-full tags-popular-text">Stay Energized Mattresses</a>
+            <a href="blog-category.html" class="p-[14px] bg-white rounded-full tags-popular-text">Back Support Mattresses</a>
+            <a  href="blog-category.html"  class="p-[14px] bg-white rounded-full tags-popular-text">Luxury Mattresses</a>
+            <a  href="blog-category.html"  class="p-[14px] bg-white rounded-full tags-popular-text">Latex Foam Mattresses</a>
+             <a href="blog-category.html" class="p-[14px] bg-white rounded-full tags-popular-text">Memory Foam Mattresses</a>
+            <a  href="blog-category.html"  class="p-[14px] bg-white rounded-full tags-popular-text">Orthopedic Mattresses</a>
+            <a  href="blog-category.html"  class="p-[14px] bg-white rounded-full tags-popular-text">Ultra Luxury Mattresses</a>
+            <a  href="blog-category.html"  class="p-[14px] bg-white rounded-full tags-popular-text">Stay Energized Mattresses</a>
           </div>
         </div>
 
@@ -746,21 +742,21 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
 </main>
 
   <section class="bottom-pad-88">
-  <div class="max-w-[1468px] px-4 md:px-0 md:mx-auto reveal">
+  <div class="max-w-[1490px] px-4  mx-auto reveal">
 
     <!-- Section Header -->
-    <div class="flex items-center justify-between mb-8 reveal">
-      <h2 class="text-2xl font-semibold text-gray-900">
+<div class="flex flex-col xl:flex-row items-start xl:items-center gap-2  justify-between mb-8 reveal">
+     <h2 class="text-[28px] font-normal text-black">
         Recents Blogs 
       </h2>
       <a href="blog-category.html"
-         class="text-sm font-medium tracking-wide hover:underline">
+         class="text-14 font-medium tracking-wide hover:underline">
         VIEW ALL
       </a>
     </div>
 
     <!-- Cards Wrapper -->
-    <div
+     <div
       class="flex gap-6 overflow-x-auto pb-4 scrollbar-hide
              lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-visible reveal">
 
@@ -774,15 +770,15 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
              class="w-full  h-[230px] object-cover">
 
         <div class="py-4">
-          <h3 class="font-medium text-gray-900 line-clamp-2">
+  <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
             How Blue Light affects.
           </h3>
 
-          <p class="text-sm text-gray-600 mt-2 line-clamp-3">
-            Do you find yourself feeling tired and groggy in the morning? Do you struggle to fall asleep at night or wake up
+           <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+            Do you find yourself feeling tired and groggy in the morning? Do you struggle 
           </p>
 
-          <div class="flex items-center text-10 text-black mt-3">
+          <div class="flex items-center text-black">
            <img src="assets/images/blogs/calender-icon.png" class="me-[7px]" alt=""> May 27, 2025
           </div>
         </div>
@@ -798,15 +794,14 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
              class="w-full  h-[230px] object-cover">
 
         <div class="py-4">
-          <h3 class="font-medium text-gray-900 line-clamp-2">
+  <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
             Diwali Mattress Deals and
           </h3>
-
-          <p class="text-sm text-gray-600 mt-2 line-clamp-3">
-            Whether you're looking to revamp your bedroom or gift a loved one the comfort of a good night's sleep,..Whether you're looking to 
+   <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+            Whether you're looking to revamp your bedroom or gift a loved one the comfort 
           </p>
 
-             <div class="flex items-center text-10 text-black mt-3">
+                  <div class="flex items-center text-black">
             <img src="assets/images/blogs/calender-icon.png" class="me-[7px]" alt=""> March 15, 2025
           </div>
         </div>
@@ -822,14 +817,14 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
              class="w-full  h-[230px] object-cover">
 
         <div class="py-4">
-          <h3 class="font-medium text-gray-900 line-clamp-2">
+  <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
            Why 7 Hours of Sleep is
           </h3>
 
-          <p class="text-sm text-gray-600 mt-2 line-clamp-3">
-            In our fast-paced world, the pursuit of success often leads us to overlook one of life's fundamental necessities.
+           <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+            In our fast-paced world, the pursuit of success often leads us to overlook 
           </p>
-          <div class="flex items-center text-10 text-black mt-3">
+        <div class="flex items-center text-black">
             <img src="assets/images/blogs/calender-icon.png" class="me-[7px]" alt=""> May 21, 2025
           </div>
         </div>
@@ -845,15 +840,15 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
              class="w-full  h-[230px] object-cover">
 
        <div class="py-4">
-          <h3 class="font-medium text-gray-900 line-clamp-2">
+  <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
             How Blue Light affects...
           </h3>
 
-        <p class="text-sm text-gray-600 mt-2 line-clamp-3">
-           Do you find yourself feeling tired and groggy in the morning? Do you struggle to fall asleep at night or wake up
+       <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+           Do you find yourself feeling tired and groggy in the morning? Do you struggle 
           </p>
 
-          <div class="flex items-center text-10 text-black mt-3">
+           <div class="flex items-center text-black">
             <img src="assets/images/blogs/calender-icon.png" class="me-[7px]" alt=""> May 27, 2025
           </div>
         </div>
@@ -869,15 +864,14 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
              class="w-full  h-[230px] object-cover">
 
         <div class="py-4">
-          <h3 class="font-medium text-gray-900 line-clamp-2">
+  <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
             How Blue Light affects...
-          </h3>
-
-          <p class="text-sm text-gray-600 mt-2 line-clamp-3">
-           Do you find yourself feeling tired and groggy in the morning? Do you struggle to fall asleep at night or wake up
+          </h3> 
+          <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+           Do you find yourself feeling tired and groggy in the morning? Do you struggle 
           </p>
 
-             <div class="flex items-center text-10 text-black mt-3">
+             <div class="flex items-center text-black">
             <img src="assets/images/blogs/calender-icon.png" class="me-[7px]" alt=""> April 30, 2025
           </div>
         </div>
@@ -887,29 +881,30 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
   </div>
 </section>
 
-<footer class="text-white text-sm relative reveal">
+  <!-- ================= FOOTER ================= -->
+<footer class="text-white text-14 relative reveal">
         <div class="border-b border-[#3D3B3B]">
- <div class=" md:mx-auto px-4">
-  <div class="max-w-[1658px] px-4 md:px-0 md:mx-auto py-6 flex flex-col lg:flex-row items-center justify-between gap-4">
+ <div  >
+  <div class="max-w-[1650px] px-4  mx-auto py-[32px] flex flex-col lg:flex-row items-center justify-between gap-4">
 
     <!-- LEFT: Logo -->
     <div class="flex justify-center lg:justify-start w-full lg:w-auto">
-      <img src="assets/images/logo.png" alt="King Koil" class="h-7">
+      <img src="assets/images/logo.png" alt="King Koil" class="h-[44px]">
     </div>
 
     <!-- CENTER: Contact Info -->
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-center lg:text-left">
-      <span class="flex items-center gap-2">
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-12 text-center lg:text-left">
+      <span class="flex items-center gap-[14px]">
         <img src="assets/images/icon-location.png" alt="Suite 614, 6th Floor, DLF Downtown Meadows, Rajarhat, NT 15256">
         Suite 614, 6th Floor, DLF Downtown Meadows, Rajarhat, NT 15256
       </span>
 
-      <span class="flex items-center gap-2 mx-4">
+      <span class="flex items-center gap-[14px] mx-4 md:mx-[118px]">
       <img src="assets/images/icon-call.png" alt=" +91 56323 1256">
         +91 56323 1256
       </span>
 
-      <span class="flex items-center gap-2">
+      <span class="flex items-center gap-[14px] line-clamp-1">
         <img src="assets/images/icon-mail.png" alt=" +91 56323 1256">
         example001@gmail.com
       </span>
@@ -918,9 +913,9 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
     <!-- RIGHT: Scroll to top -->
     <div class="flex justify-center lg:justify-end w-full lg:w-auto">
       <button onclick="window.scrollTo({top:0,behavior:'smooth'})"
-              class="flex items-center gap-2 text-sm hover:text-white">
+              class="flex items-center gap-[16px] text-12 hover:text-white">
         SCROLL TO TOP
-        <i class="fa-solid fa-circle-chevron-up"></i>
+        <i class="fa-solid fa-circle-chevron-up text-30"></i>
       </button>
     </div>
 
@@ -935,12 +930,12 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
   
 
   <!-- MAIN FOOTER -->
-  <div class="max-w-[1658px] px-4 md:px-0 md:mx-auto  py-12
+  <div class="max-w-[1650px] px-4  mx-auto py-12
               grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
 
     <!-- COMPANY -->
     <div>
-      <h4 class="text-white font-semibold mb-[31px] uppercase text-16">COMPANY</h4>
+    <h4 class="text-white font-semibold mb-[31px] uppercase text-16">COMPANY</h4>
      <ul class="space-y-[13px]">
         <li><a href="#" class="text-14 text-white">Why King Koil</a></li>
         <li><a href="#" class="text-14 text-white">Know Your SleepID</a></li>
@@ -981,7 +976,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
         Subscribe to get updates about new products and sales
       </p>
 
-      <form class="flex mb-4">
+      <form class="flex mb-[20px]">
         <input type="email"
                placeholder="Enter your email address"
                class="w-full px-3 py-2 text-[#C3C3C3] bg-transparent border border-white">
@@ -992,25 +987,22 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
 
       <!-- SOCIAL ICONS -->
       <div class="flex gap-4 ">
-        <a href="#" class="text-14 text-white"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="#" class="text-14 text-white"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#" class="text-14 text-white"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" class="text-14 text-white"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" class="text-20 text-white"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" class="text-20 text-white"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="text-20 text-white"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="text-20 text-white"><i class="fa-brands fa-youtube"></i></a>
       </div>
     </div>
 
   </div>
 
   <!-- BOTTOM BAR -->
-  <div class="border-t border-white/10">
-    <div class="max-w-[1658px] mx-4 md:mx-auto px-4 md:px-0 py-4
+  <div class="border-t border-[#3D3B3B]">
+    <div class="max-w-[1650px] px-4  mx-auto   py-[22px]
                 flex flex-col md:flex-row gap-3
                 justify-between items-center text-12">
 
-      <p>
-        © 2026 King Koil India by Real Inspiring Technologies Pvt. Ltd.
-        All Rights Reserved
-      </p>
+      <p>© 2026 King Koil India by Real Inspiring Technologies Pvt. Ltd. All Rights Reserved </p>
 
       <div class="flex justify-end text-white gap-3">
         <a href="#" class="text-12 text-white">Terms & Conditions</a> | 
@@ -1023,6 +1015,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
   </div>
 
 </footer>
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

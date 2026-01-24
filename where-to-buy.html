@@ -17,10 +17,11 @@
       href="assets/css/style.css">
 
 </head>
-<body class="text-figtree"> 
+<body class="text-figtree">  
 <!-- ================= HEADER ================= -->
- <header class="bg-[#1E1E31] text-white fixed top-0 left-0 w-full z-50">
- <div class="max-w-[1658px] md:mx-auto px-4 md:px-0 md:px-0 py-4 flex items-center justify-between">
+<header id="siteHeader"
+  class="bg-[#1E1E31] text-white w-full z-50 transition-all duration-300">
+ <div class="max-w-[1658px] md:mx-auto px-4 py-4 flex items-center justify-between">
 
     <!-- LOGO -->
     <a href="/" class="flex items-center">
@@ -28,7 +29,7 @@
     </a>
 
     <!-- DESKTOP NAV -->
-    <nav class="hidden lg:flex items-center gap-6 text-lg">
+    <nav class="hidden lg:flex items-center gap-6 text-14">
 
       <a href="#" class="hover:text-gray-300">Why King Koil?</a>
 
@@ -132,7 +133,7 @@
             <path d="M6 9l6 6 6-6" />
           </svg>
         </summary>
-        <div class="pl-4 pb-2 text-sm space-y-1">
+        <div class="pl-4 pb-2 text-14 space-y-1">
           <a href="#" class="block">Luxury Mattresses</a>
           <a href="#" class="block">Memory Foam</a>
           <a href="#" class="block">Back Support</a>
@@ -148,7 +149,7 @@
             <path d="M6 9l6 6 6-6" />
           </svg>
         </summary>
-        <div class="pl-4 pb-2 text-sm space-y-1">
+        <div class="pl-4 pb-2 text-14 space-y-1">
           <a href="#" class="block">Pillows</a>
           <a href="#" class="block">Protectors</a>
         </div>
@@ -165,14 +166,7 @@
       </a>
     </div>
   </div>
-</header>
-
-<!-- Add padding to the top of the page so content is not hidden under the fixed header -->
-<div class="pt-18">
-  <!-- Your page content goes here -->
-</div>
-
-
+</header> 
 <!-- ================= MOBILE TOGGLE SCRIPT ================= -->
 <script>
   document.getElementById("menuBtn").addEventListener("click", () => {
@@ -183,7 +177,7 @@
 
   
 <!-- ================= BLOGS HERO ================= -->
-<section class="relative h-[360px] md:h-[420px] lg:h-[460px] flex items-center justify-center text-white overflow-hidden">
+<section class="relative h-[280px] md:h-[565px] lg:h-[565px] flex items-center justify-center text-white overflow-hidden ">
 
   <!-- Background Image -->
   <img src="assets/images/where-to-buy-hero-bg.webp"
@@ -192,26 +186,15 @@
 
  
 
-  <!-- Vertical Shade Lines (Figma Style) -->
-  <div class="absolute inset-0 pointer-events-none
-              bg-[repeating-linear-gradient(
-                to_right,
-                rgba(0,0,0,0.35) 0px,
-                rgba(0,0,0,0.35) 80px,
-                rgba(0,0,0,0.15) 80px,
-                rgba(0,0,0,0.15) 160px
-              )]">
-  </div>
-
   <!-- CONTENT -->
   <div class="relative z-10 w-full max-w-4xl px-4 text-center">
 
     <!-- Title -->
-      <h1 class="text-55 mb-4">
+  <h1 class="text-55 mb-4">
       Find a King Koil Store Near You!
     </h1>
  
-     <p class="text-14 text-figtree mb-8 flex justify-center items-center gap-2 m-0">
+    <p class="text-14 text-figtree mb-8 flex justify-center items-center gap-2 m-0">
        <span>Home</span>
        <span ><img src="assets/images/white-right-arrow.png" alt="Blogs"></span>
         <span>Where To Buy</span>
@@ -220,16 +203,16 @@
   </div>
 </section>  
 <section class="section-top-pad ">
-  <div class="max-w-[1490px] px-4 md:px-0 md:mx-auto"> 
+  <div class="max-w-[1490px] px-4  mx-auto"> 
       <div class="text-center">
-          <h2 class="text-playfair-display reveal">Locate Our Store Near You</h2>
+          <h2 class="text-playfair-display mb-[20px] reveal">Locate Our Store Near You</h2>
           <p class="text-figtree text-20 reveal">
             Over <strong>600+ </strong>Retailers across India are proudly selling King Koil products.Please find retailers<br class="hidden xl:block"/>nearest to your location from Retailer-Finder below.
           </p>
       </div>
       <div class="section-pad-90">
  <!-- LOCATION FILTER BAR -->
- <div class="max-w-7xl mx-auto bg-light-gray shadow-sm rounded-lg p-4 reveal">
+ <div class="max-w-[1490px] px-4  mx-auto bg-light-gray shadow-sm rounded-lg p-4 reveal">
   
   <form class="grid grid-cols-1 md:grid-cols-[1fr_1fr_1fr_auto] gap-4 items-center">
 
@@ -241,7 +224,7 @@
 
       <div class="relative">
        <select
-          class="w-full appearance-none bg-transparent text-sm font-medium text-gray-900
+          class="w-full appearance-none bg-transparent text-12 font-medium text-gray-900
                  focus:outline-none cursor-pointer
                  pr-4 pl-0 leading-tight">
           <option>India</option>
@@ -250,7 +233,7 @@
         </select>
 
         <svg
-          class="absolute left-20 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600 pointer-events-none"
+          class="absolute left-auto xl:left-20 right-0 xl:right-auto top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600 pointer-events-none"
           fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M19 9l-7 7-7-7"/>
@@ -266,7 +249,7 @@
 
       <div class="relative">
        <select
-          class="w-full appearance-none bg-transparent text-sm font-medium text-gray-900
+          class="w-full appearance-none bg-transparent text-12 font-medium text-gray-900
                  focus:outline-none cursor-pointer
                  pr-4 pl-0 leading-tight">
           <option>Gujarat</option>
@@ -275,7 +258,7 @@
         </select>
 
         <svg
-          class="absolute left-20 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600 pointer-events-none"
+          class="absolute left-auto xl:left-20 right-0 xl:right-auto top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600 pointer-events-none"
           fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M19 9l-7 7-7-7"/>
@@ -291,7 +274,7 @@
 
       <div class="relative">
       <select
-          class="w-full appearance-none bg-transparent text-sm font-medium text-gray-900
+          class="w-full appearance-none bg-transparent text-12 font-medium text-gray-900
                  focus:outline-none cursor-pointer
                  pr-4 pl-0 leading-tight">
           <option>Ahmedabad</option>
@@ -300,7 +283,7 @@
         </select>
 
         <svg
-          class="absolute left-20 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600 pointer-events-none"
+          class="absolute left-auto xl:left-20 right-0 xl:right-auto  top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600 pointer-events-none"
           fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M19 9l-7 7-7-7"/>
@@ -312,8 +295,8 @@
     <div class="flex md:justify-end">
       <button
         type="submit"
-        class="flex items-center justify-center gap-2 bg-gray-900 text-white
-               px-6 py-3  text-sm font-medium
+        class="flex items-center w-full xl:w-auto justify-center gap-2 bg-gray-900 text-white
+                btn-pad-header font-medium text-10 uppercase
                hover:bg-gray-800 transition whitespace-nowrap">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -331,31 +314,28 @@
   </div>
 </section>
 <section class="relative pb-24 ">
-  <div class="max-w-[1490px] px-4 md:px-0 md:mx-auto reveal">
+  <div class="max-w-[1490px] px-4  mx-auto reveal">
     <div class="relative bg-cover bg-center  overflow-hidden"
-         style="background-image: url('assets/images/banner-bg.png');">
-
-      
+         style="background-image: url('assets/images/banner-bg.png');"> 
       <!-- Content -->
-      <div class="relative z-10 flex flex-col lg:flex-row items-center lg:items-start justify-between py-12 px-6 lg:px-12">
-        
+      <div class="relative z-10 flex flex-col lg:flex-row items-center lg:items-start justify-between p-[60px]  "> 
         <!-- Text -->
-        <div class="text-white max-w-lg lg:max-w-md text-center lg:text-left mb-6 lg:mb-0">
-          <h2 class="text-3xl font-bold mb-4 text-playfair-display">Know Your SleepID</h2>
-          <p class="mb-6 text-sm lg:text-base">
+        <div class="text-white  lg:max-w-[715px] text-center lg:text-left mb-6 lg:mb-0">
+          <h2 class=" font-bold mb-[36px] text-playfair-display">Know Your SleepID</h2>
+          <p class="mb-[45px] text-20">
             Whether you want to feel more energized, improve focus, or build healthier routines,
             Know Your SleepID empowers you with knowledge about your sleep so you can rest better 
             and live better — starting tonight.
           </p>
 
           <!-- Buttons -->
-          <div class="flex flex-col sm:flex-row gap-4">
-            <a href="#"
-               class="btn-pad-header bg-white text-10 text-[#1E1E31]  uppercase  hover:bg-whitetransition">
+<div class="flex flex-col items-center xl:items-start justify-center xl:justify-start sm:flex-row gap-4">
+             <a href="#"
+               class="btn-pad-header w-full xl:width-auto bg-white text-10 text-[#1E1E31]  uppercase  hover:bg-whitetransition">
                CHECK NOW
             </a>
             <a href="#"
-               class="btn-pad-header border border-white text-white  text-10 uppercase hover:bg-white hover:text-[#1E1E31] transition">
+               class="btn-pad-header w-full xl:width-auto border border-white text-white  text-10 uppercase hover:bg-white hover:text-[#1E1E31] transition">
                VISIT OUR STORE
             </a>
           </div>
@@ -367,39 +347,39 @@
   </div>
 </section>
  <section class="bg-light-gray-with-pad reveal">
-  <div class="max-w-7xl mx-auto px-4">
+  <div class="max-w-[1490px] px-4 mx-auto reveal">
     <div class="block md:flex gap-[30px] items-start">
 
       <!-- LEFT CONTENT -->
       <div class="md:w-3/5">
-        <h2 class=" font-semibold text-20-heading mb-1">
+        <h2 class=" font-semibold text-24 mb-[33px]">
           Find a King Koil Mattress Showroom Near You
         </h2>
 
-        <p class="text-17  mb-6 leading-relaxed text-figtree">
+        <p class="text-20  mb-[33px]  leading-relaxed text-figtree">
       Looking for a mattress showroom near you? King Koil, a trusted name in luxury and orthopedic mattresses, is available at 600+ retail locations across India. Experience superior comfort, advanced sleep technology, and premium craftsmanship by visiting a store near you.
         </p>
 
-        <h3 class=" font-semibold text-20-heading mb-1">
+        <h3 class=" font-semibold text-24 mb-[33px]">
           Locate a King Koil Mattress Store Near You
         </h3>
-        <p class="text-17 mb-6 leading-relaxed text-figtree">
+        <p class="text-20  mb-[33px]  leading-relaxed text-figtree">
          <a href="#" class="underline">Finding the perfect mattress</a> is easy with our retailer-finder tool. Simply search for the nearest King Koil mattress showroom and explore our wide range of <a href="#" class="underline">mattresses designed for better sleep</a> and spinal support.
         </p>
 
-        <h3 class=" font-semibold text-20-heading mb-1">
+           <h3 class=" font-semibold text-24 mb-[33px]">
        Why Choose King Koil?
         </h3>
 
-        <ul class="space-y-2 text-17  text-figtree list-star">
+        <ul class="space-y-[6px] text-20  text-figtree list-star">
           <li><strong>Orthopedic Comfort – </strong>Luxurious mattresses designed for deep, restful sleep.</li>
           <li><strong>Orthopedic Support – </strong>Engineered for proper spinal alignment and pressure relief.</li>
           <li><strong>Advanced Technology – </strong>Featuring memory foam, latex, hybrid, and more.</li>
           <li><strong>Trusted by Experts – </strong>Over 125 years of excellence in sleep solutions.</li>
         </ul>
 
-        <p class="text-17  text-figtree mt-6">
-          Visit a King Koil mattress store near you today and find the perfect mattress for your needs!
+        <p class="text-20  text-figtree mt-6">
+          Visit a King Koil mattress store near you today and find the perfect mattress for your needs!<br/>
           <strong>Find your nearest retailer now!</strong>
         </p>
       </div>
@@ -414,7 +394,7 @@
 
   <!-- Name -->
   <div>
-    <label class="block text-14 text-figtree mb-1">Name</label>
+    <label class="block text-14 text-figtree mb-[13px]">Name</label>
     <input
       type="text"
       placeholder="Enter your name"
@@ -423,7 +403,7 @@
 
   <!-- Mobile Number -->
   <div>
-    <label class="block text-14 text-figtree mb-1">Mobile Number</label>
+    <label class="block text-14 text-figtree mb-[13px]">Mobile Number</label>
 
     <div class="flex items-center bg-light-gray   overflow-hidden">
 
@@ -457,7 +437,7 @@
 
   <!-- Email -->
   <div>
-    <label class="block text-14 text-figtree mb-1">Email</label>
+    <label class="block text-14 text-figtree mb-[13px]">Email</label>
     <input
       type="email"
       placeholder="Enter your email address"
@@ -466,7 +446,7 @@
 
   <!-- Message -->
   <div>
-    <label class="block text-14 text-figtree mb-1">Message</label>
+    <label class="block text-14 text-figtree mb-[13px]">Message</label>
     <textarea
       rows="4"
       placeholder="write your query"
@@ -476,7 +456,7 @@
   <!-- Submit -->
   <button
     type="submit"
-    class="w-full bg-gray-900 text-white py-3   text-sm font-medium
+    class="w-full bg-[#1E1E31] text-white btn-pad-header  text-10 font-medium
            hover:bg-gray-800 transition">
     SEND MESSAGE
   </button>
@@ -489,7 +469,7 @@
   </div>
 </section>
 <section class="section-pad-90 reveal">
-  <div class="max-w-7xl mx-auto px-4">
+ <div class="max-w-[1490px] px-4  mx-auto reveal">
 
     <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
 
@@ -498,9 +478,9 @@
         <img
           src="assets/images/icon-global-standard.png"
           alt="Global Standard"
-          class="w-12 h-12 mb-3 object-contain"
+            class="w-auro h-[60px] mb-[24px] object-contain"
         />
-        <p class="text-xs sm:text-sm tracking-wide text-gray-800 uppercase">
+        <p class="text-20 text-black text-center uppercase">
           Global Standard
         </p>
       </div>
@@ -510,9 +490,9 @@
         <img
           src="assets/images/icon-leadership.png"
           alt="Leaders in Quality"
-          class="w-12 h-12 mb-3 object-contain"
+          class="w-auro h-[60px] mb-[24px] object-contain"
         />
-        <p class="text-xs sm:text-sm tracking-wide text-gray-800 uppercase">
+       <p class="text-20 text-black text-center uppercase">
           Leaders in Quality
         </p>
       </div>
@@ -522,9 +502,9 @@
         <img
           src="assets/images/icon-innovation.png"
           alt="Innovation & Research"
-          class="w-12 h-12 mb-3 object-contain"
+          class="w-auro h-[60px] mb-[24px] object-contain"
         />
-        <p class="text-xs sm:text-sm tracking-wide text-gray-800 uppercase">
+      <p class="text-20 text-black text-center uppercase">
           Innovation & Research
         </p>
       </div>
@@ -534,9 +514,9 @@
         <img
           src="assets/images/icon-global-brand.png"
           alt="Iconic Brand"
-          class="w-12 h-12 mb-3 object-contain"
+          class="w-auro h-[60px] mb-[24px] object-contain"
         />
-        <p class="text-xs sm:text-sm tracking-wide text-gray-800 uppercase">
+    <p class="text-20 text-black text-center uppercase">
           Iconic Brand
         </p>
       </div>
@@ -544,15 +524,12 @@
     </div>
 
   </div>
-</section>
-
-
-
-<!-- ================= FOOTER ================= -->
-<footer class="text-white text-sm relative reveal">
+</section> 
+ <!-- ================= FOOTER ================= -->
+<footer class="text-white text-14 relative reveal">
         <div class="border-b border-[#3D3B3B]">
- <div class=" md:mx-auto px-4">
-  <div class="max-w-[1658px] px-4 md:px-0 md:mx-auto py-6 flex flex-col lg:flex-row items-center justify-between gap-4">
+ <div  >
+  <div class="max-w-[1658px] px-4  mx-auto py-6 flex flex-col lg:flex-row items-center justify-between gap-4">
 
     <!-- LEFT: Logo -->
     <div class="flex justify-center lg:justify-start w-full lg:w-auto">
@@ -560,7 +537,7 @@
     </div>
 
     <!-- CENTER: Contact Info -->
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-center lg:text-left">
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-12 text-center lg:text-left">
       <span class="flex items-center gap-2">
         <img src="assets/images/icon-location.png" alt="Suite 614, 6th Floor, DLF Downtown Meadows, Rajarhat, NT 15256">
         Suite 614, 6th Floor, DLF Downtown Meadows, Rajarhat, NT 15256
@@ -571,7 +548,7 @@
         +91 56323 1256
       </span>
 
-      <span class="flex items-center gap-2">
+      <span class="flex items-center gap-2 line-clamp-1">
         <img src="assets/images/icon-mail.png" alt=" +91 56323 1256">
         example001@gmail.com
       </span>
@@ -580,7 +557,7 @@
     <!-- RIGHT: Scroll to top -->
     <div class="flex justify-center lg:justify-end w-full lg:w-auto">
       <button onclick="window.scrollTo({top:0,behavior:'smooth'})"
-              class="flex items-center gap-2 text-sm hover:text-white">
+              class="flex items-center gap-2 text-12 hover:text-white">
         SCROLL TO TOP
         <i class="fa-solid fa-circle-chevron-up"></i>
       </button>
@@ -597,7 +574,7 @@
   
 
   <!-- MAIN FOOTER -->
-  <div class="max-w-[1658px] px-4 md:px-0 md:mx-auto  py-12
+  <div class="max-w-[1658px] px-4  mx-auto py-12
               grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
 
     <!-- COMPANY -->
@@ -665,7 +642,7 @@
 
   <!-- BOTTOM BAR -->
   <div class="border-t border-white/10">
-    <div class="max-w-[1658px] mx-4 md:mx-auto px-4 md:px-0 py-4
+    <div class="max-w-[1658px] px-4  mx-auto   py-4
                 flex flex-col md:flex-row gap-3
                 justify-between items-center text-12">
 
