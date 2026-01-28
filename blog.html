@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blogs | King Koil</title>
+      <link rel="icon" type="image/png" href="assets/images/fav.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -18,24 +19,25 @@
 
 </head>
 <body class="text-figtree text-14">  
-<!-- ================= HEADER ================= -->
+  <!-- ================= HEADER ================= -->
 <header id="siteHeader"
-  class="bg-[#1E1E31] text-white w-full z-50 transition-all duration-300">
- <div class="max-w-[1650px] md:mx-auto px-4 py-[30px] flex items-center justify-between">
+  class="bg-[#1E1E31] text-white w-full z-50  transition-all duration-300 ease-in-out">
+
+  <div class="max-w-[1650px] md:mx-auto px-4 py-[30px] flex items-center justify-between">
 
     <!-- LOGO -->
-    <a href="/" class="flex items-center">
+    <a href="index.html" class="flex items-center">
       <img src="assets/images/logo.png" alt="King Koil" class="h-[32px]">
     </a>
 
     <!-- DESKTOP NAV -->
     <nav class="hidden lg:flex items-center gap-6 text-14">
 
-      <a href="#"  >Why King Koil?</a>
+      <a href="#">Why King Koil?</a>
 
-      <!-- Mattresses Dropdown -->
+      <!-- Mattresses -->
       <div class="relative group">
-        <button class="flex items-center gap-1 ">
+        <button class="flex items-center gap-1">
           Mattresses
           <svg class="w-4 h-4 transition-transform group-hover:rotate-180"
                fill="none" stroke="currentColor" stroke-width="2"
@@ -44,30 +46,23 @@
           </svg>
         </button>
 
-        <!-- Hover buffer -->
         <div class="absolute inset-x-0 top-full h-3"></div>
 
         <div
           class="absolute top-full left-0 w-52 bg-white text-[#1E1E31]
                  rounded-lg shadow-xl opacity-0 invisible
                  group-hover:opacity-100 group-hover:visible
-                 transition pt-2">
+                 transition pt-2 z-50">
 
-          <a href="#" class="block px-4 py-2  rounded-t-lg">
-            Luxury Mattresses
-          </a>
-          <a href="#" class="block px-4 py-2 ">
-            Memory Foam
-          </a>
-          <a href="#" class="block px-4 py-2 rounded-b-lg">
-            Back Support
-          </a>
+          <a href="#" class="block px-4 py-2 rounded-t-lg">Luxury Mattresses</a>
+          <a href="#" class="block px-4 py-2">Memory Foam</a>
+          <a href="#" class="block px-4 py-2 rounded-b-lg">Back Support</a>
         </div>
       </div>
 
-      <!-- Accessories Dropdown -->
+      <!-- Accessories -->
       <div class="relative group">
-        <button class="flex items-center gap-1 ">
+        <button class="flex items-center gap-1">
           Accessories
           <svg class="w-4 h-4 transition-transform group-hover:rotate-180"
                fill="none" stroke="currentColor" stroke-width="2"
@@ -82,100 +77,128 @@
           class="absolute top-full left-0 w-48 bg-white text-[#1E1E31]
                  rounded-lg shadow-xl opacity-0 invisible
                  group-hover:opacity-100 group-hover:visible
-                 transition pt-2">
+                 transition pt-2 z-50">
 
-          <a href="#" class="block px-4 py-2 rounded-t-lg">
-            Pillows
-          </a>
-          <a href="#" class="block px-4 py-2 rounded-b-lg">
-            Protectors
-          </a>
+          <a href="#" class="block px-4 py-2 rounded-t-lg">Pillows</a>
+          <a href="#" class="block px-4 py-2 rounded-b-lg">Protectors</a>
         </div>
       </div>
 
-      <a href="#" >SleepID</a>
-      <a href="#" >Hospitality</a>
-      <a href="#" >Blogs</a>
+      <a href="#">SleepID</a>
+      <a href="#">Hospitality</a>
+      <a href="#">Blogs</a>
     </nav>
 
     <!-- DESKTOP CTA -->
     <a href="#"
-       class="hidden lg:inline-block  btn-pad-header 
+       class="hidden lg:inline-block btn-pad-header
               bg-white text-[#1E1E31] uppercase text-figtree text-10">
       Where to Buy
     </a>
 
     <!-- MOBILE MENU BUTTON -->
-    <button id="menuBtn" class="lg:hidden focus:outline-none">
+    <button id="menuBtn" class="lg:hidden">
       <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
            viewBox="0 0 24 24">
         <path d="M4 6h16M4 12h16M4 18h16" />
       </svg>
     </button>
   </div>
+</header>
 
-  <!-- ================= MOBILE MENU ================= -->
-  <div id="mobileMenu"
-       class="hidden lg:hidden bg-[#1b1b2f] border-t border-gray-700">
+<!-- ================= MOBILE MENU (FULLSCREEN) ================= -->
+<div id="mobileMenu"
+  class="fixed inset-0 z-[999] bg-[#1b1b2f] text-white
+         transform translate-x-full transition-transform duration-300
+         lg:hidden">
 
-    <div class="px-4 py-4 space-y-2 text-base">
-
-      <a href="#" class="block py-2 border-b border-gray-700">
-        Why King Koil?
-      </a>
-
-      <!-- Mobile Mattresses -->
-      <details class="border-b border-gray-700">
-        <summary class="py-2 flex justify-between items-center cursor-pointer">
-          Mattresses
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
-               viewBox="0 0 24 24">
-            <path d="M6 9l6 6 6-6" />
-          </svg>
-        </summary>
-        <div class="pl-4 pb-2 text-14 space-y-1">
-          <a href="#" class="block">Luxury Mattresses</a>
-          <a href="#" class="block">Memory Foam</a>
-          <a href="#" class="block">Back Support</a>
-        </div>
-      </details>
-
-      <!-- Mobile Accessories -->
-      <details class="border-b border-gray-700">
-        <summary class="py-2 flex justify-between items-center cursor-pointer">
-          Accessories
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
-               viewBox="0 0 24 24">
-            <path d="M6 9l6 6 6-6" />
-          </svg>
-        </summary>
-        <div class="pl-4 pb-2 text-14 space-y-1">
-          <a href="#" class="block">Pillows</a>
-          <a href="#" class="block">Protectors</a>
-        </div>
-      </details>
-
-      <a href="#" class="block py-2 border-b border-gray-700">SleepID</a>
-      <a href="#" class="block py-2 border-b border-gray-700">Hospitality</a>
-      <a href="#" class="block py-2 border-b border-gray-700">Blogs</a>
-
-      <a href="#"
-         class="block mt-4 text-center btn-pad-header
-                bg-white text-[#1E1E31] uppercase text-figtree text-10">
-        Where to Buy
-      </a>
-    </div>
+  <!-- Mobile Header -->
+  <div class="flex items-center justify-between px-4 py-4 border-b border-gray-700">
+    <a href="index.html" class="text-lg font-medium"><img src="assets/images/logo.png" alt=""></a>
+    <button id="closeMenu">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24">
+        <path d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
   </div>
-</header>  
- 
-<!-- ================= MOBILE TOGGLE SCRIPT ================= -->
+
+  <!-- Mobile Links -->
+  <div class="px-4 py-6 space-y-2 overflow-auto scroll-smooth 
+         max-h-[calc(100vh-120px)]">
+
+    <a href="#" class="block py-2 border-b border-gray-700">Why King Koil?</a>
+
+    <details class="border-b border-gray-700">
+      <summary class="py-2 flex justify-between items-center cursor-pointer">
+        Mattresses
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      </summary>
+      <div class="pl-4 pb-2 space-y-1">
+        <a href="#" class="block">Luxury Mattresses</a>
+        <a href="#" class="block">Memory Foam</a>
+        <a href="#" class="block">Back Support</a>
+      </div>
+    </details>
+
+    <details class="border-b border-gray-700">
+      <summary class="py-2 flex justify-between items-center cursor-pointer">
+        Accessories
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      </summary>
+      <div class="pl-4 pb-2 space-y-1">
+        <a href="#" class="block">Pillows</a>
+        <a href="#" class="block">Protectors</a>
+      </div>
+    </details>
+
+    <a href="#" class="block py-2 border-b border-gray-700">SleepID</a>
+    <a href="#" class="block py-2 border-b border-gray-700">Hospitality</a>
+    <a href="#" class="block py-2 border-b border-gray-700">Blogs</a>
+
+    <a href="#"
+       class="block mt-6 text-center btn-pad-header
+              bg-white text-[#1E1E31] uppercase text-figtree text-10">
+      Where to Buy
+    </a>
+  </div>
+</div>
+
+ <!-- ================= MOBILE MENU SCRIPT ================= -->
 <script>
-  document.getElementById("menuBtn").addEventListener("click", () => {
-    document.getElementById("mobileMenu").classList.toggle("hidden");
+  const menuBtn = document.getElementById('menuBtn');
+  const closeMenu = document.getElementById('closeMenu');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  // OPEN MENU
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('translate-x-full');
+    mobileMenu.classList.add('translate-x-0');
+    document.body.style.overflow = 'hidden';
+  });
+
+  // CLOSE MENU
+  closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.add('translate-x-full');
+    mobileMenu.classList.remove('translate-x-0');
+    document.body.style.overflow = '';
+  });
+
+  // OPTIONAL: Close menu on link click
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('translate-x-full');
+      mobileMenu.classList.remove('translate-x-0');
+      document.body.style.overflow = '';
+    });
   });
 </script>
-
-
   
 <!-- ================= BLOGS HERO ================= -->
 <section class="relative h-[280px] md:h-[565px] lg:h-[565px] flex items-center justify-center text-white overflow-hidden py-[100px] xl:py-[190px] ">
@@ -200,17 +223,23 @@
         </p>
 
     <!-- Search Bar -->
-    <div class="relative ">
-      <input type="text"
-             placeholder="Search Blogs....."
-             class="w-full py-3 md:py-4 pl-5 pr-14 bg-white/80 text-16 text-figtree 
-                    text-[#444444] placeholder-[#444444]
-                    focus:outline-none">
+<form id="blogSearchForm">
+  <div class="relative">
+    <input
+      type="text"
+      placeholder="Search Blogs....."
+      class="w-full py-3 md:py-4 pl-5 pr-14 bg-white/80 text-16 text-figtree 
+             text-[#444444] placeholder-[#444444]
+             focus:outline-none">
 
-      <span class="absolute right-5 top-1/2 -translate-y-1/2 ">
-          <img src="assets/images/icon-magnifier.png" alt="Search Blogs">
-      </span>
-    </div>
+    <button
+      type="submit"
+      class="absolute right-5 top-1/2 -translate-y-1/2">
+      <img src="assets/images/icon-magnifier.png" alt="Search Blogs">
+    </button>
+  </div>
+</form>
+
 
   </div>
 </section> 
@@ -220,18 +249,18 @@
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-[30px]">  
       <a href="blog-details.html" class="overflow-hidden reveal transition">
         <div class="relative">
-          <img src="assets/images/blogs/img-1.png" alt="Best Mattress for Heavy People:Firmness, Thickness & Support" class="w-full  h-[325px]  object-cover">
+          <img src="assets/images/blogs/img-1.png" alt="Best Mattress for Heavy People:Firmness, Thickness & Support" class="w-full h-auto  xl:h-[325px]  object-cover">
           <span class="absolute   badge-view   flex items-center gap-[7px]">
             <i class="fa-regular fa-eye"></i> 3000
           </span>
         </div>
         <div >
           <div class="flex flex-wrap text-12 text-[#919191] gap-y-1 pt-[22px] pb-[24px]">
-            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><strong class="text-black">May 27, 2025</strong></span>
-            <span class="ms-auto me-4">By <strong class="text-black">King Koil India</strong></span> 
-            <span>Category: <strong class="text-black">Luxury Mattress</strong></span>
+            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><span class="text-black">May 27, 2025</span></span>
+            <span class="ms-auto me-4">By <span class="text-black">King Koil India</span></span> 
+            <span>Category: <span class="text-black">Luxury Mattress</span></span>
           </div>
-          <h3 class="text-18 font-[800] text-black text-semibold transition  pb-[24px]">
+          <h3 class="text-18  text-black font-bold transition  pb-[24px]">
             Best Mattress for Heavy People:Firmness, Thickness & Support
           </h3>
           <p class="text-12 text-black line-clamp-3">
@@ -242,18 +271,18 @@
       <!-- Blog Card 2 -->
       <a href="blog-details.html" class="overflow-hidden reveal transition">
         <div class="relative">
-          <img src="assets/images/blogs/img-2.png" alt="Why Do I Sleep So Much? Causes of Oversleeping, Health Risks" class="w-full   h-[325px]  object-cover">
+          <img src="assets/images/blogs/img-2.png" alt="Why Do I Sleep So Much? Causes of Oversleeping, Health Risks" class="w-full h-auto  xl:h-[325px]  object-cover">
           <span class="absolute   badge-view   flex items-center gap-[7px]">
             <i class="fa-regular fa-eye"></i> 3000
           </span>
         </div>
       <div>
           <div class="flex flex-wrap text-12 text-[#919191] gap-y-1 pt-[22px] pb-[24px]">
-            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><strong  class="text-black">May 27, 2025</strong></span>
-            <span class="ms-auto me-4">By <strong  class="text-black">King Koil India</strong></span> 
-            <span>Category: <strong  class="text-black">Luxury Mattress</strong></span>
+            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><span  class="text-black">May 27, 2025</span></span>
+            <span class="ms-auto me-4">By <span  class="text-black">King Koil India</span></span> 
+            <span>Category: <span  class="text-black">Luxury Mattress</span></span>
           </div>
-                 <h3 class="text-18 font-[800] text-black text-semibold transition  pb-[24px]">
+                   <h3 class="text-18  text-black font-bold transition  pb-[24px]">
             Why Do I Sleep So Much? Causes of Oversleeping, Health Risks
           </h3>
           <p class="text-12 text-black line-clamp-3">
@@ -264,18 +293,18 @@
             <!-- Blog Card 3 -->
       <a href="blog-details.html" class="overflow-hidden reveal transition">
         <div class="relative">
-          <img src="assets/images/blogs/img-3.png" alt="Best Mattress for Kids in India 2025: Age-Wise Firmness & Safety Guide" class="w-full   h-[325px]  object-cover">
+          <img src="assets/images/blogs/img-3.png" alt="Best Mattress for Kids in India 2025: Age-Wise Firmness & Safety Guide" class="w-full h-auto  xl:h-[325px]  object-cover">
          <span class="absolute   badge-view   flex items-center gap-[7px]">
             <i class="fa-regular fa-eye"></i> 3000
           </span>
         </div>
     <div>
           <div class="flex flex-wrap text-12 text-[#919191] gap-y-1 pt-[22px] pb-[24px]">
-            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><strong  class="text-black">May 27, 2025</strong></span>
-            <span class="ms-auto me-4">By <strong  class="text-black">King Koil India</strong></span> 
-            <span>Category: <strong  class="text-black">Luxury Mattress</strong></span>
+            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><span  class="text-black">May 27, 2025</span></span>
+            <span class="ms-auto me-4">By <span  class="text-black">King Koil India</span></span> 
+            <span>Category: <span  class="text-black">Luxury Mattress</span></span>
           </div>
-   <h3 class="text-18 font-[800] text-black text-semibold transition  pb-[24px]">
+    <h3 class="text-18  text-black font-bold transition  pb-[24px]">
           Best Mattress for Kids in India 2025: Age-Wise Firmness & Safety Guide
           </h3>
           <p class="text-12 text-black line-clamp-3">
@@ -286,18 +315,18 @@
            <!-- Blog Card 1 -->
       <a href="blog-details.html" class="overflow-hidden reveal transition">
         <div class="relative">
-          <img src="assets/images/blogs/img-4.png" alt="Best Sleeping Position for Back Pain: Complete Guide" class="w-full   h-[325px]  object-cover">
+          <img src="assets/images/blogs/img-4.png" alt="Best Sleeping Position for Back Pain: Complete Guide" class="w-full h-auto  xl:h-[325px]  object-cover">
           <span class="absolute   badge-view   flex items-center gap-[7px]">
             <i class="fa-regular fa-eye"></i> 3000
           </span>
         </div>
         <div>
           <div class="flex flex-wrap text-12 text-[#919191] gap-y-1 pt-[22px] pb-[24px]">
-            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><strong  class="text-black">May 27, 2025</strong></span>
-            <span class="ms-auto me-4">By <strong  class="text-black">King Koil India</strong></span> 
-            <span>Category: <strong  class="text-black">Luxury Mattress</strong></span>
+            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><span  class="text-black">May 27, 2025</span></span>
+            <span class="ms-auto me-4">By <span  class="text-black">King Koil India</span></span> 
+            <span>Category: <span  class="text-black">Luxury Mattress</span></span>
           </div>
-                    <h3 class="text-18 font-[800] text-black text-semibold transition  pb-[24px]">
+                      <h3 class="text-18  text-black font-bold transition  pb-[24px]">
            Best Sleeping Position for Back Pain: Complete Guide
           </h3>
           <p class="text-12 text-black line-clamp-3">
@@ -308,18 +337,18 @@
       <!-- Blog Card 2 -->
       <a href="blog-details.html" class="overflow-hidden reveal transition">
         <div class="relative">
-          <img src="assets/images/blogs/img-5.png" alt="Blog 1" class="w-full   h-[325px]  object-cover">
+          <img src="assets/images/blogs/img-5.png" alt="Blog 1" class="w-full h-auto  xl:h-[325px]  object-cover">
        <span class="absolute   badge-view   flex items-center gap-[7px]">
             <i class="fa-regular fa-eye"></i> 3000
           </span>
         </div>
        <div>
           <div class="flex flex-wrap text-12 text-[#919191] gap-y-1 pt-[22px] pb-[24px]">
-            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><strong  class="text-black">May 27, 2025</strong></span>
-            <span class="ms-auto me-4">By <strong  class="text-black">King Koil India</strong></span> 
-            <span>Category: <strong  class="text-black">Luxury Mattress</strong></span>
+            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><span  class="text-black">May 27, 2025</span></span>
+            <span class="ms-auto me-4">By <span  class="text-black">King Koil India</span></span> 
+            <span>Category: <span  class="text-black">Luxury Mattress</span></span>
           </div>
-                    <h3 class="text-18 font-[800] text-black text-semibold transition  pb-[24px]">
+                      <h3 class="text-18  text-black font-bold transition  pb-[24px]">
             Best Mattress Thickness Guide: Side, Back & Stomach Sleepers
           </h3>
           <p class="text-12 text-black line-clamp-3">
@@ -330,18 +359,18 @@
             <!-- Blog Card 3 -->
       <a href="blog-details.html" class="overflow-hidden reveal transition">
         <div class="relative">
-          <img src="assets/images/blogs/img-6.png" alt="How Does Sleep Affect Your Work Productivity and Performance?" class="w-full   h-[325px]  object-cover">
+          <img src="assets/images/blogs/img-6.png" alt="How Does Sleep Affect Your Work Productivity and Performance?" class="w-full h-auto  xl:h-[325px]  object-cover">
        <span class="absolute   badge-view   flex items-center gap-[7px]">
             <i class="fa-regular fa-eye"></i> 3000
           </span>
         </div>
          <div>
           <div class="flex flex-wrap text-12 text-[#919191] gap-y-1 pt-[22px] pb-[24px]">
-            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><strong  class="text-black">May 27, 2025</strong></span>
-            <span class="ms-auto me-4">By <strong  class="text-black">King Koil India</strong></span> 
-            <span>Category: <strong  class="text-black">Luxury Mattress</strong></span>
+            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><span  class="text-black">May 27, 2025</span></span>
+            <span class="ms-auto me-4">By <span  class="text-black">King Koil India</span></span> 
+            <span>Category: <span  class="text-black">Luxury Mattress</span></span>
           </div>
-           <h3 class="text-18 font-[800] text-black text-semibold transition  pb-[24px]">
+             <h3 class="text-18  text-black font-bold transition  pb-[24px]">
             How Does Sleep Affect Your Work Productivity and Performance?
           </h3>
           <p class="text-12 text-black line-clamp-3">
@@ -352,18 +381,18 @@
            <!-- Blog Card 1 -->
       <a href="blog-details.html" class="overflow-hidden reveal transition">
         <div class="relative">
-          <img src="assets/images/blogs/img-7.png" alt="Difference Between Memory Foam and Regular Mattress: Complete Guide" class="w-full   h-[325px]  object-cover">
+          <img src="assets/images/blogs/img-7.png" alt="Difference Between Memory Foam and Regular Mattress: Complete Guide" class="w-full h-auto  xl:h-[325px]  object-cover">
         <span class="absolute   badge-view   flex items-center gap-[7px]">
             <i class="fa-regular fa-eye"></i> 3000
           </span>
         </div>
        <div>
           <div class="flex flex-wrap text-12 text-[#919191] gap-y-1 pt-[22px] pb-[24px]">
-            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><strong class="text-black">May 27, 2025</strong></span>
-            <span class="ms-auto me-4">By <strong class="text-black">King Koil India</strong></span> 
-            <span>Category: <strong class="text-black">Luxury Mattress</strong></span>
+            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><span class="text-black">May 27, 2025</span></span>
+            <span class="ms-auto me-4">By <span class="text-black">King Koil India</span></span> 
+            <span>Category: <span class="text-black">Luxury Mattress</span></span>
           </div>
-           <h3 class="text-18 font-[800] text-black text-semibold transition  pb-[24px]">
+             <h3 class="text-18  text-black font-bold transition  pb-[24px]">
          Difference Between Memory Foam and Regular Mattress: Complete Guide
           </h3>
           <p class="text-12 text-black line-clamp-3">
@@ -374,18 +403,18 @@
       <!-- Blog Card 2 -->
       <a href="blog-details.html" class="overflow-hidden reveal transition">
         <div class="relative">
-          <img src="assets/images/blogs/img-8.png" alt="Which Bed Mattresses Are Recommended for Back Pain and Why?" class="w-full   h-[325px]  object-cover">
+          <img src="assets/images/blogs/img-8.png" alt="Which Bed Mattresses Are Recommended for Back Pain and Why?" class="w-full h-auto  xl:h-[325px]  object-cover">
          <span class="absolute   badge-view   flex items-center gap-[7px]">
             <i class="fa-regular fa-eye"></i> 3000
           </span>
         </div>
         <div>
           <div class="flex flex-wrap text-12 text-[#919191] gap-y-1 pt-[22px] pb-[24px]">
-            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><strong class="text-black">May 27, 2025</strong></span>
-            <span class="ms-auto me-4">By <strong class="text-black">King Koil India</strong></span> 
-            <span>Category: <strong class="text-black">Luxury Mattress</strong></span>
+            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><span class="text-black">May 27, 2025</span></span>
+            <span class="ms-auto me-4">By <span class="text-black">King Koil India</span></span> 
+            <span>Category: <span class="text-black">Luxury Mattress</span></span>
           </div>
-           <h3 class="text-18 font-[800] text-black text-semibold transition  pb-[24px]">
+             <h3 class="text-18  text-black font-bold transition  pb-[24px]">
           Which Bed Mattresses Are Recommended for Back Pain and Why?
           </h3>
           <p class="text-12 text-black line-clamp-3">
@@ -396,18 +425,18 @@
             <!-- Blog Card 3 -->
       <a href="blog-details.html" class="overflow-hidden reveal transition">
         <div class="relative">
-          <img src="assets/images/blogs/img-9.png" alt="Memory Foam vs Orthopedic Mattress: Which Is Best for Back Pain & Comfort?" class="w-full   h-[325px]  object-cover">
+          <img src="assets/images/blogs/img-9.png" alt="Memory Foam vs Orthopedic Mattress: Which Is Best for Back Pain & Comfort?" class="w-full h-auto  xl:h-[325px]  object-cover">
      <span class="absolute   badge-view   flex items-center gap-[7px]">
             <i class="fa-regular fa-eye"></i> 3000
           </span>
         </div>
          <div>
           <div class="flex flex-wrap text-12 text-[#919191] gap-y-1 pt-[22px] pb-[24px]">
-            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><strong class="text-black">May 27, 2025</strong></span>
-            <span class="ms-auto me-4">By <strong class="text-black">King Koil India</strong></span> 
-            <span>Category: <strong class="text-black">Luxury Mattress</strong></span>
+            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><span class="text-black">May 27, 2025</span></span>
+            <span class="ms-auto me-4">By <span class="text-black">King Koil India</span></span> 
+            <span>Category: <span class="text-black">Luxury Mattress</span></span>
           </div>
-           <h3 class="text-18 font-[800] text-black text-semibold transition  pb-[24px]">
+             <h3 class="text-18  text-black font-bold transition  pb-[24px]">
            Memory Foam vs Orthopedic Mattress: Which Is Best for Back Pain & Comfort?
           </h3>
           <p class="text-12 text-black line-clamp-3">
@@ -418,18 +447,18 @@
            <!-- Blog Card 1 -->
       <a href="blog-details.html" class="overflow-hidden reveal transition">
         <div class="relative">
-          <img src="assets/images/blogs/img-10.png" alt="Which Type of Mattress Is Best for Different Body Weights" class="w-full   h-[325px]  object-cover">
+          <img src="assets/images/blogs/img-10.png" alt="Which Type of Mattress Is Best for Different Body Weights" class="w-full h-auto  xl:h-[325px]  object-cover">
        <span class="absolute   badge-view   flex items-center gap-[7px]">
             <i class="fa-regular fa-eye"></i> 3000
           </span>
         </div>
         <div>
           <div class="flex flex-wrap text-12 text-[#919191] gap-y-1 pt-[22px] pb-[24px]">
-            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><strong class="text-black">May 27, 2025</strong></span>
-            <span class="ms-auto me-4">By <strong class="text-black">King Koil India</strong></span> 
-            <span>Category: <strong class="text-black">Luxury Mattress</strong></span>
+            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><span class="text-black">May 27, 2025</span></span>
+            <span class="ms-auto me-4">By <span class="text-black">King Koil India</span></span> 
+            <span>Category: <span class="text-black">Luxury Mattress</span></span>
           </div>
-           <h3 class="text-18 font-[800] text-black text-semibold transition  pb-[24px]">
+             <h3 class="text-18  text-black font-bold transition  pb-[24px]">
             Which Type of Mattress Is Best for Different Body Weights
           </h3>
           <p class="text-12 text-black line-clamp-3">
@@ -440,18 +469,18 @@
       <!-- Blog Card 2 -->
       <a href="blog-details.html" class="overflow-hidden reveal transition">
         <div class="relative">
-          <img src="assets/images/blogs/img-11.png" alt="Which Foam Mattress Offers the Best Support for Spine Health" class="w-full   h-[325px]  object-cover">
+          <img src="assets/images/blogs/img-11.png" alt="Which Foam Mattress Offers the Best Support for Spine Health" class="w-full h-auto  xl:h-[325px]  object-cover">
           <span class="absolute   badge-view   flex items-center gap-[7px]">
             <i class="fa-regular fa-eye"></i> 3000
           </span>
         </div>
         <div>
           <div class="flex flex-wrap text-12 text-[#919191] gap-y-1 pt-[22px] pb-[24px]">
-            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><strong class="text-black">May 27, 2025</strong></span>
-            <span class="ms-auto me-4">By <strong class="text-black">King Koil India</strong></span> 
-            <span>Category: <strong class="text-black">Luxury Mattress</strong></span>
+            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><span class="text-black">May 27, 2025</span></span>
+            <span class="ms-auto me-4">By <span class="text-black">King Koil India</span></span> 
+            <span>Category: <span class="text-black">Luxury Mattress</span></span>
           </div>
-           <h3 class="text-18 font-[800] text-black text-semibold transition  pb-[24px]">
+             <h3 class="text-18  text-black font-bold transition  pb-[24px]">
             Which Foam Mattress Offers the Best Support for Spine Health
           </h3>
           <p class="text-12 text-black line-clamp-3">
@@ -462,18 +491,18 @@
             <!-- Blog Card 3 -->
       <a href="blog-details.html" class="overflow-hidden reveal transition">
         <div class="relative">
-          <img src="assets/images/blogs/img-12.png" alt="Which Foam Mattress Is Best for Spine Health? Memory Foam vs Latex" class="w-full   h-[325px]  object-cover">
+          <img src="assets/images/blogs/img-12.png" alt="Which Foam Mattress Is Best for Spine Health? Memory Foam vs Latex" class="w-full h-auto  xl:h-[325px]  object-cover">
        <span class="absolute   badge-view   flex items-center gap-[7px]">
             <i class="fa-regular fa-eye"></i> 3000
           </span>
         </div>
     <div>
           <div class="flex flex-wrap text-12 text-[#919191] gap-y-1 pt-[22px] pb-[24px]">
-            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><strong class="text-black">May 27, 2025</strong></span>
-            <span class="ms-auto me-4">By <strong class="text-black">King Koil India</strong></span> 
-            <span>Category: <strong class="text-black">Luxury Mattress</strong></span>
+            <span class="flex items-center"><img src="assets/images/blogs/calender-icon.png" class="me-[9px]" alt=""><span class="text-black">May 27, 2025</span></span>
+            <span class="ms-auto me-4">By <span class="text-black">King Koil India</span></span> 
+            <span>Category: <span class="text-black">Luxury Mattress</span></span>
           </div>
-          <h3 class="text-18 font-[800] text-black text-semibold transition  pb-[24px]">
+            <h3 class="text-18  text-black font-bold transition  pb-[24px]">
             Which Foam Mattress Is Best for Spine Health? Memory Foam vs Latex
           </h3>
           <p class="text-12 text-black line-clamp-3">
@@ -487,32 +516,32 @@
     </div>
   </div>
 </section>
-<section class="relative  bottom-pad-88 ">
+<section class="relative  pb-[40px] md:pb-[60px] xl:pb-[88px] ">
   <div class="max-w-[1490px] px-4 mx-auto reveal">
     <div class="relative bg-cover bg-center overflow-hidden"
          style="background-image: url('assets/images/banner-bg.png');">
 
       
       <!-- Content -->
-      <div class="relative z-10 flex flex-col lg:flex-row items-center lg:items-start justify-between p-[54px]">
+      <div class="relative z-10 flex flex-col lg:flex-row items-center lg:items-start justify-between p-[24px] xl:p-[54px]">
         
         <!-- Text -->
         <div class="text-white max-w-lg lg:max-w-md text-center lg:text-left ">
-          <h2 class="text-3xl font-bold mb-4 text-playfair-display">Know Your SleepID</h2>
+          <h2 class="text-[40px] font-bold mb-4 text-playfair-display">Know Your SleepID</h2>
           <p class="mb-6 text-12 lg:text-base">
             Whether you want to feel more energized, improve focus, or build healthier routines,
-            1490px empowers you with knowledge about your sleep so you can rest better 
+            Know Your SleepID empowers you with knowledge about your sleep so you can rest better 
             and live better — starting tonight.
           </p>
 
           <!-- Buttons -->
-                  <div class="flex flex-col items-center md:items-start justify-center md:justify-start sm:flex-row gap-4">
+       <div class="flex flex-col items-center xl:items-start justify-center sm:flex-row gap-4">
             <a href="#"
-               class="btn-pad-header bg-white text-10 text-[#1E1E31]  uppercase  hover:bg-whitetransition">
+               class="btn-pad-header w-full xl:width-auto bg-white text-10 text-[#1E1E31]  uppercase  hover:bg-whitetransition">
                CHECK NOW
             </a>
             <a href="#"
-               class="btn-pad-header border border-white text-white  text-10 uppercase hover:bg-white hover:text-[#1E1E31] transition">
+               class="btn-pad-header w-full xl:width-auto border border-white text-white  text-10 uppercase hover:bg-white hover:text-[#1E1E31] transition">
                VISIT OUR STORE
             </a>
           </div>
@@ -524,7 +553,7 @@
   </div>
 </section>
   
-<section class="bottom-pad-88 reveal">
+<section class="pb-[40px] md:pb-[60px] xl:pb-[88px] reveal">
   <div class="max-w-[1490px] px-4 mx-auto overflow-hidden">
 
     <!-- Desktop: 7 logos in a row -->
@@ -761,6 +790,32 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 </script>
 
+<script>
+  (function () {
+    const form = document.getElementById("blogSearchForm");
+    const input = form.querySelector("input[type='text']");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const value = input.value.trim();
+
+      if (value === "") {
+        alert("Please enter a search keyword");
+        input.focus();
+        return;
+      }
+
+      // ✅ Valid search
+      // Example actions:
+      // window.location.href = `/blogs?search=${encodeURIComponent(value)}`;
+      // OR trigger AJAX search
+
+      console.log("Search keyword:", value);
+      form.submit();
+    });
+  })();
+</script>
 
 
 </body>

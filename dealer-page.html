@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>King Koil | Dealer's Page</title>
+    <link rel="icon" type="image/png" href="assets/images/fav.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -18,24 +19,25 @@
 
 </head>
 <body class="text-figtree text-14">  
-<!-- ================= HEADER ================= -->
+    <!-- ================= HEADER ================= -->
 <header id="siteHeader"
-  class="bg-[#1E1E31] text-white w-full z-50 transition-all duration-300">
- <div class="max-w-[1650px] md:mx-auto px-4 py-[30px] flex items-center justify-between">
+  class="bg-[#1E1E31] text-white w-full z-50  transition-all duration-300 ease-in-out">
+
+  <div class="max-w-[1650px] md:mx-auto px-4 py-[30px] flex items-center justify-between">
 
     <!-- LOGO -->
-    <a href="/" class="flex items-center">
+    <a href="index.html" class="flex items-center">
       <img src="assets/images/logo.png" alt="King Koil" class="h-[32px]">
     </a>
 
     <!-- DESKTOP NAV -->
     <nav class="hidden lg:flex items-center gap-6 text-14">
 
-      <a href="#"  >Why King Koil?</a>
+      <a href="#">Why King Koil?</a>
 
-      <!-- Mattresses Dropdown -->
+      <!-- Mattresses -->
       <div class="relative group">
-        <button class="flex items-center gap-1 ">
+        <button class="flex items-center gap-1">
           Mattresses
           <svg class="w-4 h-4 transition-transform group-hover:rotate-180"
                fill="none" stroke="currentColor" stroke-width="2"
@@ -44,30 +46,23 @@
           </svg>
         </button>
 
-        <!-- Hover buffer -->
         <div class="absolute inset-x-0 top-full h-3"></div>
 
         <div
           class="absolute top-full left-0 w-52 bg-white text-[#1E1E31]
                  rounded-lg shadow-xl opacity-0 invisible
                  group-hover:opacity-100 group-hover:visible
-                 transition pt-2">
+                 transition pt-2 z-50">
 
-          <a href="#" class="block px-4 py-2  rounded-t-lg">
-            Luxury Mattresses
-          </a>
-          <a href="#" class="block px-4 py-2 ">
-            Memory Foam
-          </a>
-          <a href="#" class="block px-4 py-2 rounded-b-lg">
-            Back Support
-          </a>
+          <a href="#" class="block px-4 py-2 rounded-t-lg">Luxury Mattresses</a>
+          <a href="#" class="block px-4 py-2">Memory Foam</a>
+          <a href="#" class="block px-4 py-2 rounded-b-lg">Back Support</a>
         </div>
       </div>
 
-      <!-- Accessories Dropdown -->
+      <!-- Accessories -->
       <div class="relative group">
-        <button class="flex items-center gap-1 ">
+        <button class="flex items-center gap-1">
           Accessories
           <svg class="w-4 h-4 transition-transform group-hover:rotate-180"
                fill="none" stroke="currentColor" stroke-width="2"
@@ -82,98 +77,127 @@
           class="absolute top-full left-0 w-48 bg-white text-[#1E1E31]
                  rounded-lg shadow-xl opacity-0 invisible
                  group-hover:opacity-100 group-hover:visible
-                 transition pt-2">
+                 transition pt-2 z-50">
 
-          <a href="#" class="block px-4 py-2 rounded-t-lg">
-            Pillows
-          </a>
-          <a href="#" class="block px-4 py-2 rounded-b-lg">
-            Protectors
-          </a>
+          <a href="#" class="block px-4 py-2 rounded-t-lg">Pillows</a>
+          <a href="#" class="block px-4 py-2 rounded-b-lg">Protectors</a>
         </div>
       </div>
 
-      <a href="#" >SleepID</a>
-      <a href="#" >Hospitality</a>
-      <a href="#" >Blogs</a>
+      <a href="#">SleepID</a>
+      <a href="#">Hospitality</a>
+      <a href="#">Blogs</a>
     </nav>
 
     <!-- DESKTOP CTA -->
     <a href="#"
-       class="hidden lg:inline-block  btn-pad-header 
+       class="hidden lg:inline-block btn-pad-header
               bg-white text-[#1E1E31] uppercase text-figtree text-10">
       Where to Buy
     </a>
 
     <!-- MOBILE MENU BUTTON -->
-    <button id="menuBtn" class="lg:hidden focus:outline-none">
+    <button id="menuBtn" class="lg:hidden">
       <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
            viewBox="0 0 24 24">
         <path d="M4 6h16M4 12h16M4 18h16" />
       </svg>
     </button>
   </div>
+</header>
 
-  <!-- ================= MOBILE MENU ================= -->
-  <div id="mobileMenu"
-       class="hidden lg:hidden bg-[#1b1b2f] border-t border-gray-700">
+<!-- ================= MOBILE MENU (FULLSCREEN) ================= -->
+<div id="mobileMenu"
+  class="fixed inset-0 z-[999] bg-[#1b1b2f] text-white
+         transform translate-x-full transition-transform duration-300
+         lg:hidden">
 
-    <div class="px-4 py-4 space-y-2 text-base">
-
-      <a href="#" class="block py-2 border-b border-gray-700">
-        Why King Koil?
-      </a>
-
-      <!-- Mobile Mattresses -->
-      <details class="border-b border-gray-700">
-        <summary class="py-2 flex justify-between items-center cursor-pointer">
-          Mattresses
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
-               viewBox="0 0 24 24">
-            <path d="M6 9l6 6 6-6" />
-          </svg>
-        </summary>
-        <div class="pl-4 pb-2 text-14 space-y-1">
-          <a href="#" class="block">Luxury Mattresses</a>
-          <a href="#" class="block">Memory Foam</a>
-          <a href="#" class="block">Back Support</a>
-        </div>
-      </details>
-
-      <!-- Mobile Accessories -->
-      <details class="border-b border-gray-700">
-        <summary class="py-2 flex justify-between items-center cursor-pointer">
-          Accessories
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
-               viewBox="0 0 24 24">
-            <path d="M6 9l6 6 6-6" />
-          </svg>
-        </summary>
-        <div class="pl-4 pb-2 text-14 space-y-1">
-          <a href="#" class="block">Pillows</a>
-          <a href="#" class="block">Protectors</a>
-        </div>
-      </details>
-
-      <a href="#" class="block py-2 border-b border-gray-700">SleepID</a>
-      <a href="#" class="block py-2 border-b border-gray-700">Hospitality</a>
-      <a href="#" class="block py-2 border-b border-gray-700">Blogs</a>
-
-      <a href="#"
-         class="block mt-4 text-center btn-pad-header
-                bg-white text-[#1E1E31] uppercase text-figtree text-10">
-        Where to Buy
-      </a>
-    </div>
+  <!-- Mobile Header -->
+  <div class="flex items-center justify-between px-4 py-4 border-b border-gray-700">
+    <a href="index.html" class="text-lg font-medium"><img src="assets/images/logo.png" alt=""></a>
+    <button id="closeMenu">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24">
+        <path d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
   </div>
-</header>  
-<!-- ================= MOBILE TOGGLE SCRIPT ================= -->
+  <!-- Mobile Links -->
+  <div class="px-4 py-6 space-y-2 overflow-auto scroll-smooth 
+         max-h-[calc(100vh-120px)]">
+
+    <a href="#" class="block py-2 border-b border-gray-700">Why King Koil?</a>
+
+    <details class="border-b border-gray-700">
+      <summary class="py-2 flex justify-between items-center cursor-pointer">
+        Mattresses
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      </summary>
+      <div class="pl-4 pb-2 space-y-1">
+        <a href="#" class="block">Luxury Mattresses</a>
+        <a href="#" class="block">Memory Foam</a>
+        <a href="#" class="block">Back Support</a>
+      </div>
+    </details>
+
+    <details class="border-b border-gray-700">
+      <summary class="py-2 flex justify-between items-center cursor-pointer">
+        Accessories
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      </summary>
+      <div class="pl-4 pb-2 space-y-1">
+        <a href="#" class="block">Pillows</a>
+        <a href="#" class="block">Protectors</a>
+      </div>
+    </details>
+
+    <a href="#" class="block py-2 border-b border-gray-700">SleepID</a>
+    <a href="#" class="block py-2 border-b border-gray-700">Hospitality</a>
+    <a href="#" class="block py-2 border-b border-gray-700">Blogs</a>
+
+    <a href="#"
+       class="block mt-6 text-center btn-pad-header
+              bg-white text-[#1E1E31] uppercase text-figtree text-10">
+      Where to Buy
+    </a>
+  </div>
+</div>
+
+ <!-- ================= MOBILE MENU SCRIPT ================= -->
 <script>
-  document.getElementById("menuBtn").addEventListener("click", () => {
-    document.getElementById("mobileMenu").classList.toggle("hidden");
+  const menuBtn = document.getElementById('menuBtn');
+  const closeMenu = document.getElementById('closeMenu');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  // OPEN MENU
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('translate-x-full');
+    mobileMenu.classList.add('translate-x-0');
+    document.body.style.overflow = 'hidden';
+  });
+
+  // CLOSE MENU
+  closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.add('translate-x-full');
+    mobileMenu.classList.remove('translate-x-0');
+    document.body.style.overflow = '';
+  });
+
+  // OPTIONAL: Close menu on link click
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('translate-x-full');
+      mobileMenu.classList.remove('translate-x-0');
+      document.body.style.overflow = '';
+    });
   });
 </script>
-
 
   
 <!-- ================= BLOGS HERO ================= -->
@@ -212,107 +236,116 @@
  <!-- LOCATION FILTER BAR -->
  <div class="max-w-[1490px] mx-auto bg-light-gray shadow-sm    p-4 reveal">
   
-  
-  <form class="grid grid-cols-1 md:grid-cols-[1fr_1fr_1fr_auto] gap-4 items-center overflow-x-hidden">
+ <form
+  class="grid grid-cols-1 md:grid-cols-[1fr_1fr_1fr_auto] gap-4 items-center overflow-x-hidden"
+  id="locationSearchForm"
+>
 
-    <!-- Country -->
-    <div class="md:border-r md:border-gray-300 md:pr-4">
-      <label class="block text-xs text-gray-500 mb-1">
-        Choose Country
-      </label>
+  <!-- Country -->
+  <div class="md:border-r md:border-gray-300 md:pr-4">
+    <label class="block text-xs text-gray-500 mb-1">
+      Choose Country
+    </label>
 
-      <div class="relative">
-       <select
-          class="w-full appearance-none bg-transparent text-12 font-medium text-gray-900
-                 focus:outline-none cursor-pointer
-                 pr-4 pl-0 leading-tight">
-          <option>India</option>
-          <option>USA</option>
-          <option>UK</option>
-        </select>
-
-        <svg
-          class="absolute left-auto xl:left-20 right-0 xl:right-auto top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600 pointer-events-none"
-          fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M19 9l-7 7-7-7"/>
-        </svg>
-      </div>
-    </div>
-
-    <!-- State -->
-    <div class="md:border-r md:border-gray-300 md:pr-4">
-      <label class="block text-xs text-gray-500 mb-1">
-        Choose State
-      </label>
-
-      <div class="relative">
-       <select
-          class="w-full appearance-none bg-transparent text-12 font-medium text-gray-900
-                 focus:outline-none cursor-pointer
-                 pr-4 pl-0 leading-tight">
-          <option>Gujarat</option>
-          <option>Maharashtra</option>
-          <option>Rajasthan</option>
-        </select>
-
-        <svg
-          class="absolute left-auto xl:left-20 right-0 xl:right-auto top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600 pointer-events-none"
-          fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M19 9l-7 7-7-7"/>
-        </svg>
-      </div>
-    </div>
-
-    <!-- City -->
-    <div>
-      <label class="block text-xs text-gray-500 mb-1">
-        Choose City
-      </label>
-
-      <div class="relative">
+    <div class="relative">
       <select
-          class="w-full appearance-none bg-transparent text-12 font-medium text-gray-900
-                 focus:outline-none cursor-pointer
-                 pr-4 pl-0 leading-tight">
-          <option>Ahmedabad</option>
-          <option>Surat</option>
-          <option>Vadodara</option>
-        </select>
+        required
+        class="w-full appearance-none bg-transparent text-12 font-medium text-gray-900
+               focus:outline-none cursor-pointer
+               pr-4 pl-0 leading-tight">
+        <option value="">Select Country</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+      </select>
 
-        <svg
-          class="absolute left-auto xl:left-20 right-0 xl:right-auto  top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600 pointer-events-none"
-          fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M19 9l-7 7-7-7"/>
-        </svg>
-      </div>
+      <svg
+        class="absolute left-auto xl:left-20 right-0 xl:right-auto top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600 pointer-events-none"
+        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 9l-7 7-7-7"/>
+      </svg>
     </div>
+  </div>
 
-    <!-- Search Button -->
-    <div class="flex md:justify-end">
-      <button
-        type="submit"
-        class="flex items-center w-full xl:w-auto justify-center gap-2 bg-gray-900 text-white
-                btn-pad-header font-medium text-10 uppercase
-               hover:bg-gray-800 transition whitespace-nowrap">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z"/>
-        </svg>
-        SEARCH
-      </button>
+  <!-- State -->
+  <div class="md:border-r md:border-gray-300 md:pr-4">
+    <label class="block text-xs text-gray-500 mb-1">
+      Choose State
+    </label>
+
+    <div class="relative">
+      <select
+        required
+        class="w-full appearance-none bg-transparent text-12 font-medium text-gray-900
+               focus:outline-none cursor-pointer
+               pr-4 pl-0 leading-tight">
+        <option value="">Select State</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Rajasthan">Rajasthan</option>
+      </select>
+
+      <svg
+        class="absolute left-auto xl:left-20 right-0 xl:right-auto top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600 pointer-events-none"
+        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 9l-7 7-7-7"/>
+      </svg>
     </div>
+  </div>
 
-  </form>
+  <!-- City -->
+  <div>
+    <label class="block text-xs text-gray-500 mb-1">
+      Choose City
+    </label>
+
+    <div class="relative">
+      <select
+        required
+        class="w-full appearance-none bg-transparent text-12 font-medium text-gray-900
+               focus:outline-none cursor-pointer
+               pr-4 pl-0 leading-tight">
+        <option value="">Select City</option>
+        <option value="Ahmedabad">Ahmedabad</option>
+        <option value="Surat">Surat</option>
+        <option value="Vadodara">Vadodara</option>
+      </select>
+
+      <svg
+        class="absolute left-auto xl:left-20 right-0 xl:right-auto top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600 pointer-events-none"
+        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 9l-7 7-7-7"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Search Button -->
+  <div class="flex md:justify-end">
+    <button
+      type="submit"
+      class="flex items-center w-full xl:w-auto justify-center gap-2 bg-gray-900 text-white
+             btn-pad-header font-medium text-10 uppercase
+             hover:bg-gray-800 transition whitespace-nowrap">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z"/>
+      </svg>
+      SEARCH
+    </button>
+  </div>
+
+</form>
+
 </div>
 
 
       </div>
   </div>
 </section>
-<section class="bottom-pad-88">
+<section class="pb-[40px] md:pb-[60px] xl:pb-[88px]">
 <div class="max-w-[1490px] px-4  mx-auto">
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[40px]">
 
@@ -586,7 +619,7 @@
 </div>
 </section>
  <section class="bg-light-gray-with-pad reveal">
-  <div class="max-w-[1490px] px-4 mx-auto reveal">
+<div class="max-w-[1490px] px-4 mx-auto">
     <div class="block md:flex gap-[30px] items-start">
 
       <!-- LEFT CONTENT -->
@@ -596,14 +629,14 @@
         </h2>
 
         <p class="text-20  mb-[33px]  leading-relaxed text-figtree">
-      Looking for a mattress showroom near you? King Koil, a trusted name in luxury and orthopedic mattresses, is available at 600+ retail locations across India. Experience superior comfort, advanced sleep technology, and premium craftsmanship by visiting a store near you.
+      Looking for a mattress showroom near you? King Koil, a trusted name in luxury and orthopedic mattresses, is available at 600+ retail locations across India. Experience superior comfort, advanced sleep technology, and premium craftsmanship by visiting a store near you.
         </p>
 
         <h3 class=" font-semibold text-24 mb-[33px]">
           Locate a King Koil Mattress Store Near You
         </h3>
         <p class="text-20  mb-[33px]  leading-relaxed text-figtree">
-         <a href="#" class="underline">Finding the perfect mattress</a> is easy with our retailer-finder tool. Simply search for the nearest King Koil mattress showroom and explore our wide range of <a href="#" class="underline">mattresses designed for better sleep</a> and spinal support.
+         <a href="#" class="underline">Finding the perfect mattress</a> is easy with our retailer-finder tool. Simply search for the nearest King Koil mattress showroom and explore our wide range of <a href="#" class="underline">mattresses designed for better sleep</a> and spinal support.
         </p>
 
            <h3 class=" font-semibold text-24 mb-[33px]">
@@ -629,7 +662,7 @@
           Contact Us
         </h3>
 
-    <form class="space-y-4">
+ <form class="space-y-4" id="contactForm">
 
   <!-- Name -->
   <div>
@@ -637,27 +670,30 @@
     <input
       type="text"
       placeholder="Enter your name"
-      class="w-full   bg-light-gray px-4 py-3 text-14 text-figtree ">
+      required
+      minlength="2"
+      class="w-full bg-light-gray px-4 py-3 text-14 text-figtree">
   </div>
 
   <!-- Mobile Number -->
   <div>
     <label class="block text-14 text-figtree mb-[13px]">Mobile Number</label>
 
-    <div class="flex items-center bg-light-gray   overflow-hidden">
+    <div class="flex items-center bg-light-gray overflow-hidden">
 
       <!-- Country Code Select -->
       <div class="relative">
         <select
+          required
           class="appearance-none bg-transparent text-14 text-figtree
-                 pl-3 pr-7 py-3 cursor-pointer ">
+                 pl-3 pr-7 py-3 cursor-pointer">
+          <option value="">Code</option>
           <option value="+91">+91</option>
           <option value="+1">+1</option>
           <option value="+44">+44</option>
           <option value="+61">+61</option>
         </select>
 
-        <!-- Arrow -->
         <svg
           class="w-3.5 h-3.5 text-gray-500 absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none"
           fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -670,6 +706,9 @@
       <input
         type="tel"
         placeholder="Enter your mobile number"
+        required
+        pattern="[0-9]{10}"
+        maxlength="10"
         class="w-full bg-transparent px-4 py-3 text-14 text-figtree">
     </div>
   </div>
@@ -680,7 +719,8 @@
     <input
       type="email"
       placeholder="Enter your email address"
-      class="w-full   bg-light-gray px-4 py-3  text-14 text-figtree">
+      required
+      class="w-full bg-light-gray px-4 py-3 text-14 text-figtree">
   </div>
 
   <!-- Message -->
@@ -689,30 +729,33 @@
     <textarea
       rows="4"
       placeholder="write your query"
-      class="w-full   bg-light-gray px-4 py-3 text-14 text-figtree"></textarea>
+      required
+      minlength="5"
+      class="w-full bg-light-gray px-4 py-3 text-14 text-figtree"></textarea>
   </div>
 
   <!-- Submit -->
   <button
     type="submit"
-    class="w-full bg-[#1E1E31] text-white btn-pad-header  text-10 font-medium
+    class="w-full bg-[#1E1E31] text-white btn-pad-header text-10 font-medium
            hover:bg-gray-800 transition">
     SEND MESSAGE
   </button>
 
 </form>
 
+
       </div>
 
     </div>
   </div>
 </section>
-  <section class="bottom-pad-88 top-pad-88  reveal">
-      <div class="max-w-[1490px] px-4  mx-auto">
+<section class="py-[40px] md:py-[60px] xl:py-[88px]">
+      <div class="max-w-[1490px] px-4  mx-auto reveal">
 
                   <!-- Section Header -->
-                <div class="flex flex-col xl:flex-row items-start xl:items-center gap-2  justify-between mb-8 reveal">
-                        <h2 class="text-[28px] font-normal text-black">
+            <div class="flex flex-col xl:flex-row items-start xl:items-center gap-2  justify-between mb-8 reveal">
+                      <h2 class="text-[24px] md:text-[28px] font-normal text-black">
                         Kingkoil Mattress - Your SLEEP is our Priority!
                     </h2>
                     <a href="products.html"
@@ -721,63 +764,198 @@
                     </a>
                 </div>
                 <div >
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"> 
 
-    <!-- CARD 1 : TEXT ONLY -->
-    <div class="bg-[#1c1b2f] text-white flex flex-col justify-center items-center text-center    min-h-[433px]  p-6">
-      <span class="uppercase text-xs tracking-widest mb-3">Shop Now</span>
-      <h3 class="text-xl font-medium leading-snug mb-6">
-        Memory Foam<br/>Mattresses
-      </h3>
-      <a href="#" class="text-3xl">
-        <i class="fa-solid fa-circle-chevron-right"></i>
+      <!-- ================= IMAGE CARD ================= -->
+      <a href="#" class="relative group overflow-hidden min-h-[433px]">
+
+        <!-- Image -->
+        <img
+          src="assets/images/peiority-image-3.png"
+          class="absolute inset-0 w-full h-full object-cover
+                 transition-transform duration-700 group-hover:scale-105"
+          alt="" />
+
+        <!-- Default overlay -->
+        <div class="absolute inset-0 bg-black/30"></div>
+
+        <!-- Hover overlay -->
+        <div
+          class="absolute inset-0 bg-black
+                 translate-y-full
+                 group-hover:translate-y-0
+                 transition-transform duration-500 ease-out">
+        </div>
+
+        <!-- CONTENT -->
+        <div class="relative z-10 h-full">
+
+          <!-- Bottom content (default) -->
+          <div
+            class="absolute inset-x-0 bottom-0
+                   flex flex-col items-center text-white text-center
+                   transition-all duration-500
+                   group-hover:bottom-1/2
+                   group-hover:translate-y-1/2">
+
+             <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP NOW</span>
+
+              <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+                Memory Foam<br />Mattresses
+              </h3>
+
+            <i
+              class="fa-solid fa-circle-chevron-right text-[40px]
+                     opacity-0 translate-y-2
+                     group-hover:opacity-100
+                     group-hover:translate-y-0
+                     transition-all duration-500">
+            </i>
+
+          </div>
+
+        </div>
+
       </a>
+        <!-- ================= IMAGE CARD ================= -->
+      <a href="#" class="relative group overflow-hidden min-h-[433px]">
+
+        <!-- Image -->
+        <img
+          src="assets/images/peiority-image-1.png"
+          class="absolute inset-0 w-full h-full object-cover
+                 transition-transform duration-700 group-hover:scale-105"
+          alt="" />
+
+        <!-- Default overlay -->
+        <div class="absolute inset-0 bg-black/30"></div>
+
+        <!-- Hover overlay -->
+        <div
+          class="absolute inset-0 bg-black
+                 translate-y-full
+                 group-hover:translate-y-0
+                 transition-transform duration-500 ease-out">
+        </div>
+
+        <!-- CONTENT -->
+        <div class="relative z-10 h-full">
+
+          <!-- Bottom content (default) -->
+          <div
+            class="absolute inset-x-0 bottom-6
+                   flex flex-col items-center text-white text-center
+                   transition-all duration-500
+                   group-hover:bottom-1/2
+                   group-hover:translate-y-1/2">
+ <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP</span>
+         <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+              Back Support<br />Mattresses
+            </h3>
+
+              <i
+              class="fa-solid fa-circle-chevron-right text-[40px]
+                     opacity-0 translate-y-2
+                     group-hover:opacity-100
+                     group-hover:translate-y-0
+                     transition-all duration-500">
+            </i>
+
+          </div>
+
+        </div>
+
+      </a>
+
+      <!-- ================= CARD 3 ================= -->
+      <a href="#" class="relative group overflow-hidden min-h-[433px]">
+
+        <img
+          src="assets/images/peiority-image-2.png"
+          class="absolute inset-0 w-full h-full object-cover
+                 transition-transform duration-700 group-hover:scale-105"
+          alt="" />
+
+        <div class="absolute inset-0 bg-black/30"></div>
+
+        <div
+          class="absolute inset-0 bg-black
+                 translate-y-full
+                 group-hover:translate-y-0
+                 transition-transform duration-500 ease-out">
+        </div>
+
+        <div class="relative z-10 h-full">
+          <div
+            class="absolute inset-x-0 bottom-6
+                   flex flex-col items-center text-white text-center
+                   transition-all duration-500
+                   group-hover:bottom-1/2
+                   group-hover:translate-y-1/2">
+ <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP</span>
+                 <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+              Stay Energized<br />Mattresses
+            </h3>
+
+               <i
+              class="fa-solid fa-circle-chevron-right text-[40px]
+                     opacity-0 translate-y-2
+                     group-hover:opacity-100
+                     group-hover:translate-y-0
+                     transition-all duration-500">
+            </i>
+          </div>
+        </div>
+
+      </a>
+
+      <!-- ================= CARD 4 ================= -->
+      <a href="#" class="relative group overflow-hidden min-h-[433px]">
+
+        <img
+          src="assets/images/peiority-image-3.png"
+          class="absolute inset-0 w-full h-full object-cover
+                 transition-transform duration-700 group-hover:scale-105"
+          alt="" />
+
+        <div class="absolute inset-0 bg-black/30"></div>
+
+        <div
+          class="absolute inset-0 bg-black
+                 translate-y-full
+                 group-hover:translate-y-0
+                 transition-transform duration-500 ease-out">
+        </div>
+
+        <div class="relative z-10 h-full">
+          <div
+            class="absolute inset-x-0 bottom-6
+                   flex flex-col items-center text-white text-center
+                   transition-all duration-500
+                   group-hover:bottom-1/2
+                   group-hover:translate-y-1/2">
+ <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP</span>
+              <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+              Luxury<br />Mattresses
+            </h3>
+
+                <i
+              class="fa-solid fa-circle-chevron-right text-[40px]
+                     opacity-0 translate-y-2
+                     group-hover:opacity-100
+                     group-hover:translate-y-0
+                     transition-all duration-500">
+            </i>
+          </div>
+        </div>
+
+      </a>
+
     </div>
-
-    <!-- CARD 2 -->
-    <a href="#" class="relative group    overflow-hidden   min-h-[433px] ">
-      <img src="assets/images/peiority-image-1.png" class="absolute inset-0 w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-black/30"></div>
-
-      <div class="relative z-10 h-full flex flex-col justify-end items-center text-white text-center p-6">
-        <span class="uppercase text-xs tracking-widest mb-1">Shop</span>
-        <h3 class="text-lg font-medium leading-snug">
-          Back Support<br/>Mattresses
-        </h3>
-      </div>
-    </a>
-
-    <!-- CARD 3 -->
-    <a href="#"  class="relative group    overflow-hidden   min-h-[433px] ">
-      <img src="assets/images/peiority-image-2.png" class="absolute inset-0 w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-black/30"></div>
-
-      <div class="relative z-10 h-full flex flex-col justify-end items-center text-white text-center p-6">
-        <span class="uppercase text-xs tracking-widest mb-1">Shop</span>
-        <h3 class="text-lg font-medium leading-snug">
-          Stay Energized<br/>Mattresses
-        </h3>
-      </div>
-    </a>
-
-    <!-- CARD 4 -->
-    <a href="#"  class="relative group    overflow-hidden   min-h-[433px] ">
-      <img src="assets/images/peiority-image-3.png" class="absolute inset-0 w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-black/30"></div>
-
-      <div class="relative z-10 h-full flex flex-col justify-end items-center text-white text-center p-6">
-        <span class="uppercase text-xs tracking-widest mb-1">Shop</span>
-        <h3 class="text-lg font-medium leading-snug">
-          Luxury<br/>Mattresses
-        </h3>
-      </div>
-    </a>
-
-  </div>
 </div>
        </div>
 </section>
- <section class="bottom-pad-88 reveal">
+ <section class="pb-[40px] md:pb-[60px] xl:pb-[88px] reveal">
        <div class="max-w-[1490px] px-4  mx-auto">
               <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-8 reveal">
       Frequently Asked Questions (FAQs)
@@ -884,14 +1062,14 @@
 </div>
 
  </section>
-<section class="relative  bottom-pad-88 ">
+<section class="relative  pb-[40px] md:pb-[60px] xl:pb-[88px] ">
   <div class="max-w-[1490px] px-4 mx-auto reveal">
     <div class="relative bg-cover bg-center overflow-hidden"
          style="background-image: url('assets/images/banner-bg.png');">
 
       
       <!-- Content -->
-      <div class="relative z-10 flex flex-col lg:flex-row items-center lg:items-start justify-between p-[54px]">
+      <div class="relative z-10 flex flex-col lg:flex-row items-center lg:items-start justify-between p-[24px] xl:p-[54px]">
         
         <!-- Text -->
         <div class="text-white max-w-lg lg:max-w-md text-center lg:text-left ">
@@ -1062,7 +1240,7 @@
 <section class="section-pad-90 reveal">
  <div class="max-w-[1490px] px-4  mx-auto reveal">
 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
 
       <!-- Item 1 -->
       <div class="flex flex-col items-center">
@@ -1119,15 +1297,15 @@
 
 
   <!-- ================= FOOTER ================= -->
-<footer class="text-white text-14 relative reveal">
+<footer class="text-white text-14">
         <div class="border-b border-[#3D3B3B]">
- <div  >
+ <div >
   <div class="max-w-[1650px] px-4  mx-auto py-[32px] flex flex-col lg:flex-row items-center justify-between gap-4">
 
     <!-- LEFT: Logo -->
-    <div class="flex justify-center lg:justify-start w-full lg:w-auto">
+    <a href="index.html" class="flex justify-center lg:justify-start w-full lg:w-auto">
       <img src="assets/images/logo.png" alt="King Koil" class="h-[44px]">
-    </div>
+    </a>
 
     <!-- CENTER: Contact Info -->
     <div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-12 text-center lg:text-left">
@@ -1253,8 +1431,22 @@
 
 </footer>
 
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
- 
+ <script>
+  const header = document.getElementById('siteHeader');
+  const headerHeight = header.offsetHeight;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > headerHeight) {
+      header.classList.add('header-fixed');
+      document.body.style.paddingTop = headerHeight + 'px';
+    } else {
+      header.classList.remove('header-fixed');
+      document.body.style.paddingTop = '0px';
+    }
+  });
+</script>
  <script>
 document.addEventListener("DOMContentLoaded", () => {
   const elements = document.querySelectorAll(".reveal");
@@ -1304,7 +1496,98 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 </script>
+<script>
+  const form = document.getElementById("contactForm");
 
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = form.querySelector('input[type="text"]');
+    const code = form.querySelector("select");
+    const mobile = form.querySelector('input[type="tel"]');
+    const email = form.querySelector('input[type="email"]');
+    const message = form.querySelector("textarea");
+
+    const phoneRegex = /^[0-9]{10}$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (name.value.trim() === "") {
+      alert("Please enter your name");
+      name.focus();
+      return;
+    }
+
+    if (code.value === "") {
+      alert("Please select country code");
+      code.focus();
+      return;
+    }
+
+    if (!phoneRegex.test(mobile.value)) {
+      alert("Please enter a valid 10-digit mobile number");
+      mobile.focus();
+      return;
+    }
+
+    if (!emailRegex.test(email.value)) {
+      alert("Please enter a valid email address");
+      email.focus();
+      return;
+    }
+
+    if (message.value.trim().length < 5) {
+      alert("Message should be at least 5 characters");
+      message.focus();
+      return;
+    }
+
+    // ✅ All validations passed
+    alert("Thank you! We will contact you shortly.");
+    form.submit();
+  });
+</script>
+<script>
+  (function () {
+    const form = document.querySelector(
+      ".grid.grid-cols-1.md\\:grid-cols-\\[1fr_1fr_1fr_auto\\]"
+    );
+
+    if (!form) return;
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const country = form.querySelectorAll("select")[0];
+      const state = form.querySelectorAll("select")[1];
+      const city = form.querySelectorAll("select")[2];
+
+      // Validate Country
+      if (!country.value || country.selectedIndex === 0) {
+        alert("Please select a country");
+        country.focus();
+        return;
+      }
+
+      // Validate State
+      if (!state.value || state.selectedIndex === 0) {
+        alert("Please select a state");
+        state.focus();
+        return;
+      }
+
+      // Validate City
+      if (!city.value || city.selectedIndex === 0) {
+        alert("Please select a city");
+        city.focus();
+        return;
+      }
+
+      // ✅ All validations passed
+      // You can redirect, submit, or handle search here
+      form.submit();
+    });
+  })();
+</script>
 
 </body>
 </html>

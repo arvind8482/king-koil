@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/images/fav.png">
+  <title>Products Parallax | King Koil</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <!-- ===== SWIPER CDN ===== -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+       <link rel="stylesheet"
+      href="assets/css/style.css">
+
+</head>
+<body class="text-figtree text-14">  
+<div class="absolute top-0 left-0 w-full h-[900px] 
+            bg-gradient-to-b from-[#1B2D3D] to-transparent
+            -z-10">
+</div>
+ <!-- ================= HEADER ================= -->
+<header id="siteHeader"
+  class="text-white w-full z-50 transition-all duration-300">
+
+  <div class="max-w-[1650px] md:mx-auto px-4 py-[30px] flex items-center justify-between">
+
+    <!-- LOGO -->
+    <a href="index.html" class="flex items-center">
+      <img src="assets/images/logo.png" alt="King Koil" class="h-[32px]">
+    </a>
+
+    <!-- DESKTOP NAV -->
+    <nav class="hidden lg:flex items-center gap-6 text-14">
+
+      <a href="#">Why King Koil?</a>
+
+      <!-- Mattresses -->
+      <div class="relative group">
+        <button class="flex items-center gap-1">
+          Mattresses
+          <svg class="w-4 h-4 transition-transform group-hover:rotate-180"
+               fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </button>
+
+        <div class="absolute inset-x-0 top-full h-3"></div>
+
+        <div
+          class="absolute top-full left-0 w-52 bg-white text-[#1E1E31]
+                 rounded-lg shadow-xl opacity-0 invisible
+                 group-hover:opacity-100 group-hover:visible
+                 transition pt-2 z-50">
+
+          <a href="#" class="block px-4 py-2 rounded-t-lg">Luxury Mattresses</a>
+          <a href="#" class="block px-4 py-2">Memory Foam</a>
+          <a href="#" class="block px-4 py-2 rounded-b-lg">Back Support</a>
+        </div>
+      </div>
+
+      <!-- Accessories -->
+      <div class="relative group">
+        <button class="flex items-center gap-1">
+          Accessories
+          <svg class="w-4 h-4 transition-transform group-hover:rotate-180"
+               fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </button>
+
+        <div class="absolute inset-x-0 top-full h-3"></div>
+
+        <div
+          class="absolute top-full left-0 w-48 bg-white text-[#1E1E31]
+                 rounded-lg shadow-xl opacity-0 invisible
+                 group-hover:opacity-100 group-hover:visible
+                 transition pt-2 z-50">
+
+          <a href="#" class="block px-4 py-2 rounded-t-lg">Pillows</a>
+          <a href="#" class="block px-4 py-2 rounded-b-lg">Protectors</a>
+        </div>
+      </div>
+
+      <a href="#">SleepID</a>
+      <a href="#">Hospitality</a>
+      <a href="#">Blogs</a>
+    </nav>
+
+    <!-- DESKTOP CTA -->
+    <a href="#"
+       class="hidden lg:inline-block btn-pad-header
+              bg-white text-[#1E1E31] uppercase text-figtree text-10">
+      Where to Buy
+    </a>
+
+    <!-- MOBILE MENU BUTTON -->
+    <button id="menuBtn" class="lg:hidden">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- ================= MOBILE MENU (FULLSCREEN) ================= -->
+<div id="mobileMenu"
+  class="fixed inset-0 z-[999] bg-[#1b1b2f] text-white
+         transform translate-x-full transition-transform duration-300
+         lg:hidden">
+
+  <!-- Mobile Header -->
+  <div class="flex items-center justify-between px-4 py-4 border-b border-gray-700">
+    <a href="index.html" class="text-lg font-medium"><img src="assets/images/logo.png" alt=""></a>
+    <button id="closeMenu">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24">
+        <path d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Links -->
+  <div class="px-4 py-6 space-y-2 overflow-auto scroll-smooth 
+         max-h-[calc(100vh-120px)]">
+
+    <a href="#" class="block py-2 border-b border-gray-700">Why King Koil?</a>
+
+    <details class="border-b border-gray-700">
+      <summary class="py-2 flex justify-between items-center cursor-pointer">
+        Mattresses
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      </summary>
+      <div class="pl-4 pb-2 space-y-1">
+        <a href="#" class="block">Luxury Mattresses</a>
+        <a href="#" class="block">Memory Foam</a>
+        <a href="#" class="block">Back Support</a>
+      </div>
+    </details>
+
+    <details class="border-b border-gray-700">
+      <summary class="py-2 flex justify-between items-center cursor-pointer">
+        Accessories
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      </summary>
+      <div class="pl-4 pb-2 space-y-1">
+        <a href="#" class="block">Pillows</a>
+        <a href="#" class="block">Protectors</a>
+      </div>
+    </details>
+
+    <a href="#" class="block py-2 border-b border-gray-700">SleepID</a>
+    <a href="#" class="block py-2 border-b border-gray-700">Hospitality</a>
+    <a href="#" class="block py-2 border-b border-gray-700">Blogs</a>
+
+    <a href="#"
+       class="block mt-6 text-center btn-pad-header
+              bg-white text-[#1E1E31] uppercase text-figtree text-10">
+      Where to Buy
+    </a>
+  </div>
+</div>
+
+ <!-- ================= MOBILE MENU SCRIPT ================= -->
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const closeMenu = document.getElementById('closeMenu');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  // OPEN MENU
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('translate-x-full');
+    mobileMenu.classList.add('translate-x-0');
+    document.body.style.overflow = 'hidden';
+  });
+
+  // CLOSE MENU
+  closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.add('translate-x-full');
+    mobileMenu.classList.remove('translate-x-0');
+    document.body.style.overflow = '';
+  });
+
+  // OPTIONAL: Close menu on link click
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('translate-x-full');
+      mobileMenu.classList.remove('translate-x-0');
+      document.body.style.overflow = '';
+    });
+  });
+</script>
+ 
+ <section>
+  <div class="max-w-[1650px] px-4 mx-auto reveal">
+
+    <!-- SLIDER WRAPPER -->
+    <div class="relative overflow-hidden rounded-tl-[20px] rounded-tr-[20px]">
+
+      <!-- SLIDER TRACK -->
+      <div id="heroSlider"
+        class="flex transition-transform duration-700 ease-in-out">
+
+        <!-- SLIDE 1 -->
+        <div class="min-w-full relative aspect-[16/9] sm:aspect-[21/9]">
+          <img
+            src="assets/images/home/banner-1.png"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover object-left-top">
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="min-w-full relative aspect-[16/9] sm:aspect-[21/9]">
+          <img
+            src="assets/images/home/banner-1.png"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover object-left-top">
+        </div>
+
+      </div>
+
+      <!-- PREV BUTTON -->
+      <button id="prev"
+        type="button"
+        class="absolute left-6 top-1/2 -translate-y-1/2 z-30
+               w-[40px] h-[40px] rounded-full bg-white/80 hover:bg-white
+               flex items-center justify-center">
+        <img src="assets/images/slider-prev.png" alt="Previous">
+      </button>
+
+      <!-- NEXT BUTTON -->
+      <button id="next"
+        type="button"
+        class="absolute right-6 top-1/2 -translate-y-1/2 z-30
+               w-[40px] h-[40px] rounded-full bg-white/80 hover:bg-white
+               flex items-center justify-center">
+        <img src="assets/images/slider-next.png" alt="Next">
+      </button>
+
+      <!-- DOTS -->
+      <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex gap-2">
+        <button class="dot w-2.5 h-2.5 rounded-full bg-white"></button>
+        <button class="dot w-2.5 h-2.5 rounded-full bg-white/40"></button>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="py-[40px] md:py-[44px] xl:py-[66px]">
+    <div class="max-w-[1490px] px-4 mx-auto  ">
+            <h2 class="text-black text-[28px] font-bold mb-[28px] reveal">Premium Mattress Collection</h2>
+            <p class="text-[#4C4C4C] text-[20px] font-medium mb-[50px] reveal">What mettress are you looking for</p>
+            <div class="flex flex-col md:flex-row gap-[30px] w-full">
+                    <a href="#" class="reveal mb-[24px] flex-1">
+                        <img src="assets/images/products-parallax/premium-product-1.png" class="w-full mb-[40px]" alt="">
+                        <h3 class="text-[20px] text-center font-bold mb-[20px]">Back Support Mattresses</h3>
+                        <p class="text-center text-[20px] text-[#4C4C4C]">Deluxe Quality </p>
+                    </a>
+                    <a href="#"  class="reveal mb-[24px] flex-1">
+                        <img src="assets/images/products-parallax/premium-product-1.png" class="w-full mb-[40px]" alt="">
+                        <h3 class="text-[20px] text-center font-bold mb-[20px]">Back Support Mattresses</h3>
+                        <p class="text-center text-[20px] text-[#4C4C4C]">Deluxe Quality </p>
+                    </a>
+                    <a href="#"  class="reveal mb-[24px] flex-1">
+                        <img src="assets/images/products-parallax/premium-product-1.png" class="w-full mb-[40px]" alt="">
+                        <h3 class="text-[20px] text-center font-bold mb-[20px]">Back Support Mattresses</h3>
+                        <p class="text-center text-[20px] text-[#4C4C4C]">Deluxe Quality </p>
+                    </a>
+                    <a href="#"  class="reveal mb-[24px] flex-1">
+                        <img src="assets/images/products-parallax/premium-product-1.png" class="w-full mb-[40px]" alt="">
+                        <h3 class="text-[20px] text-center font-bold mb-[20px]">Back Support Mattresses</h3>
+                        <p class="text-center text-[20px] text-[#4C4C4C]">Deluxe Quality </p>
+                    </a>
+            </div>
+    </div>
+</section>
+ <section class="parallax-section">
+      <div class="max-w-[1490px] px-4  mx-auto">
+          <h2 class="text-black text-center text-[28px] font-bold mb-[28px] reveal">Back Support Mattresses</h2>
+            <p class="text-[#4C4C4C] text-[20px] text-center font-medium mb-[50px] reveal">Deluxe Quality </p>
+      </div>
+      <div class="parallax-sticky">
+        <img
+          src="assets/images/products-parallax/banner-1.png"
+          class="parallax-img w-full"
+          alt=""
+        />
+      </div> 
+      <div class="py-[40px] md:py-[60px] xl:py-[90px] bg-white relative z-[10]">
+          <div class="max-w-[1490px] px-4  mx-auto">
+                   <div class="flex flex-col md:flex-row gap-[30px] w-full">
+                          <a href="#" class="reveal mb-[24px] flex-1">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <div class="flex gap-[2px] mb-[28px]">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                   <span class="text-[10px] text-[#717171] ms-8px">
+                                      (15)
+                                   </span>
+                              </div>
+                              <h3 class="text-[20px]  font-bold mb-[20px]">Back Support Mattresses</h3>
+                              <p class="text-[14px] text-[#1E1E31] mb-[14px]">₹18299/-</p>
+                              <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
+                          </a>
+                         <a href="#" class="reveal mb-[24px] flex-1">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <div class="flex gap-[2px] mb-[28px]">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                   <span class="text-[10px] text-[#717171] ms-8px">
+                                      (15)
+                                   </span>
+                              </div>
+                              <h3 class="text-[20px]  font-bold mb-[20px]">Back Support Mattresses</h3>
+                              <p class="text-[14px] text-[#1E1E31] mb-[14px]">₹18299/-</p>
+                              <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
+                          </a>
+                          <a href="#" class="reveal mb-[24px] flex-1">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <div class="flex gap-[2px] mb-[28px]">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                   <span class="text-[10px] text-[#717171] ms-8px">
+                                      (15)
+                                   </span>
+                              </div>
+                              <h3 class="text-[20px]  font-bold mb-[20px]">Back Support Mattresses</h3>
+                              <p class="text-[14px] text-[#1E1E31] mb-[14px]">₹18299/-</p>
+                              <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
+                          </a>
+                          <a href="#" class="reveal mb-[24px] flex-1">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <div class="flex gap-[2px] mb-[28px]">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                   <span class="text-[10px] text-[#717171] ms-8px">
+                                      (15)
+                                   </span>
+                              </div>
+                              <h3 class="text-[20px]  font-bold mb-[20px]">Back Support Mattresses</h3>
+                              <p class="text-[14px] text-[#1E1E31] mb-[14px]">₹18299/-</p>
+                              <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
+                          </a>
+                     </div>
+                     <div class="text-center pt-[50px] reveal">
+                        <a href="#" class="underline uppercase text-10 text-[#1E1E31] ">See all collections</a>
+                     </div>
+          </div>
+      </div>
+ </section>
+  <section class="parallax-section">
+      <div class="max-w-[1490px] px-4  mx-auto">
+          <h2 class="text-black text-center text-[28px] font-bold mb-[28px] reveal">Latex Foam Mattresses</h2>
+            <p class="text-[#4C4C4C] text-[20px] text-center font-medium mb-[50px] reveal">Deluxe Quality </p>
+      </div>
+      <div class="parallax-sticky">
+        <img
+          src="assets/images/products-parallax/banner-2.png"
+          class="parallax-img w-full"
+          alt=""
+        />
+      </div> 
+      <div class="py-[40px] md:py-[60px] xl:py-[90px] bg-white relative z-[10]">
+          <div class="max-w-[1490px] px-4  mx-auto">
+                   <div class="flex flex-col md:flex-row gap-[30px] w-full">
+                          <a href="#" class="reveal mb-[24px] flex-1">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <div class="flex gap-[2px] mb-[28px]">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                   <span class="text-[10px] text-[#717171] ms-8px">
+                                      (15)
+                                   </span>
+                              </div>
+                              <h3 class="text-[20px]  font-bold mb-[20px]">Back Support Mattresses</h3>
+                              <p class="text-[14px] text-[#1E1E31] mb-[14px]">₹18299/-</p>
+                              <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
+                          </a>
+                         <a href="#" class="reveal mb-[24px] flex-1">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <div class="flex gap-[2px] mb-[28px]">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                   <span class="text-[10px] text-[#717171] ms-8px">
+                                      (15)
+                                   </span>
+                              </div>
+                              <h3 class="text-[20px]  font-bold mb-[20px]">Back Support Mattresses</h3>
+                              <p class="text-[14px] text-[#1E1E31] mb-[14px]">₹18299/-</p>
+                              <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
+                          </a>
+                          <a href="#" class="reveal mb-[24px] flex-1">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <div class="flex gap-[2px] mb-[28px]">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                   <span class="text-[10px] text-[#717171] ms-8px">
+                                      (15)
+                                   </span>
+                              </div>
+                              <h3 class="text-[20px]  font-bold mb-[20px]">Back Support Mattresses</h3>
+                              <p class="text-[14px] text-[#1E1E31] mb-[14px]">₹18299/-</p>
+                              <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
+                          </a>
+                          <a href="#" class="reveal mb-[24px] flex-1">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <div class="flex gap-[2px] mb-[28px]">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                   <span class="text-[10px] text-[#717171] ms-8px">
+                                      (15)
+                                   </span>
+                              </div>
+                              <h3 class="text-[20px]  font-bold mb-[20px]">Back Support Mattresses</h3>
+                              <p class="text-[14px] text-[#1E1E31] mb-[14px]">₹18299/-</p>
+                              <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
+                          </a>
+                     </div>
+                     <div class="text-center pt-[50px] reveal">
+                        <a href="#" class="underline uppercase text-10 text-[#1E1E31] ">See all collections</a>
+                     </div>
+          </div>
+      </div>
+ </section>
+  <section class="parallax-section">
+      <div class="max-w-[1490px] px-4  mx-auto">
+          <h2 class="text-black text-center text-[28px] font-bold mb-[28px] reveal">Luxury Mattresses</h2>
+            <p class="text-[#4C4C4C] text-[20px] text-center font-medium mb-[50px] reveal">Deluxe Quality </p>
+      </div>
+      <div class="parallax-sticky">
+        <img
+          src="assets/images/products-parallax/banner-3.png"
+          class="parallax-img w-full"
+          alt=""
+        />
+      </div> 
+      <div class="py-[40px] md:py-[60px] xl:py-[90px] bg-white relative z-[10]">
+          <div class="max-w-[1490px] px-4  mx-auto">
+                   <div class="flex flex-col md:flex-row gap-[30px] w-full">
+                          <a href="#" class="reveal mb-[24px] flex-1">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <div class="flex gap-[2px] mb-[28px]">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                   <span class="text-[10px] text-[#717171] ms-8px">
+                                      (15)
+                                   </span>
+                              </div>
+                              <h3 class="text-[20px]  font-bold mb-[20px]">Back Support Mattresses</h3>
+                              <p class="text-[14px] text-[#1E1E31] mb-[14px]">₹18299/-</p>
+                              <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
+                          </a>
+                         <a href="#" class="reveal mb-[24px] flex-1">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <div class="flex gap-[2px] mb-[28px]">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                   <span class="text-[10px] text-[#717171] ms-8px">
+                                      (15)
+                                   </span>
+                              </div>
+                              <h3 class="text-[20px]  font-bold mb-[20px]">Back Support Mattresses</h3>
+                              <p class="text-[14px] text-[#1E1E31] mb-[14px]">₹18299/-</p>
+                              <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
+                          </a>
+                          <a href="#" class="reveal mb-[24px] flex-1">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <div class="flex gap-[2px] mb-[28px]">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                   <span class="text-[10px] text-[#717171] ms-8px">
+                                      (15)
+                                   </span>
+                              </div>
+                              <h3 class="text-[20px]  font-bold mb-[20px]">Back Support Mattresses</h3>
+                              <p class="text-[14px] text-[#1E1E31] mb-[14px]">₹18299/-</p>
+                              <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
+                          </a>
+                          <a href="#" class="reveal mb-[24px] flex-1">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <div class="flex gap-[2px] mb-[28px]">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                   <span class="text-[10px] text-[#717171] ms-8px">
+                                      (15)
+                                   </span>
+                              </div>
+                              <h3 class="text-[20px]  font-bold mb-[20px]">Back Support Mattresses</h3>
+                              <p class="text-[14px] text-[#1E1E31] mb-[14px]">₹18299/-</p>
+                              <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
+                          </a>
+                     </div>
+                     <div class="text-center pt-[50px] reveal">
+                        <a href="#" class="underline uppercase text-10 text-[#1E1E31] ">See all collections</a>
+                     </div>
+          </div>
+      </div>
+ </section>
+  <section class="parallax-section">
+      <div class="max-w-[1490px] px-4  mx-auto">
+          <h2 class="text-black text-center text-[28px] font-bold mb-[28px] reveal">Memory Foam Mattresses</h2>
+            <p class="text-[#4C4C4C] text-[20px] text-center font-medium mb-[50px] reveal">Deluxe Quality </p>
+      </div>
+      <div class="parallax-sticky">
+        <img
+          src="assets/images/products-parallax/banner-4.png"
+          class="parallax-img w-full"
+          alt=""
+        />
+      </div> 
+      <div class="py-[40px] md:py-[60px] xl:py-[90px] bg-white relative z-[10]">
+          <div class="max-w-[1490px] px-4  mx-auto">
+                   <div class="flex flex-col md:flex-row gap-[30px] w-full">
+                          <a href="#" class="reveal mb-[24px] flex-1">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <div class="flex gap-[2px] mb-[28px]">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                   <span class="text-[10px] text-[#717171] ms-8px">
+                                      (15)
+                                   </span>
+                              </div>
+                              <h3 class="text-[20px]  font-bold mb-[20px]">Back Support Mattresses</h3>
+                              <p class="text-[14px] text-[#1E1E31] mb-[14px]">₹18299/-</p>
+                              <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
+                          </a>
+                         <a href="#" class="reveal mb-[24px] flex-1">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <div class="flex gap-[2px] mb-[28px]">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                   <span class="text-[10px] text-[#717171] ms-8px">
+                                      (15)
+                                   </span>
+                              </div>
+                              <h3 class="text-[20px]  font-bold mb-[20px]">Back Support Mattresses</h3>
+                              <p class="text-[14px] text-[#1E1E31] mb-[14px]">₹18299/-</p>
+                              <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
+                          </a>
+                          <a href="#" class="reveal mb-[24px] flex-1">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <div class="flex gap-[2px] mb-[28px]">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                   <span class="text-[10px] text-[#717171] ms-8px">
+                                      (15)
+                                   </span>
+                              </div>
+                              <h3 class="text-[20px]  font-bold mb-[20px]">Back Support Mattresses</h3>
+                              <p class="text-[14px] text-[#1E1E31] mb-[14px]">₹18299/-</p>
+                              <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
+                          </a>
+                          <a href="#" class="reveal mb-[24px] flex-1">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <div class="flex gap-[2px] mb-[28px]">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                   <span class="text-[10px] text-[#717171] ms-8px">
+                                      (15)
+                                   </span>
+                              </div>
+                              <h3 class="text-[20px]  font-bold mb-[20px]">Back Support Mattresses</h3>
+                              <p class="text-[14px] text-[#1E1E31] mb-[14px]">₹18299/-</p>
+                              <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
+                          </a>
+                     </div>
+                     <div class="text-center pt-[50px] reveal">
+                        <a href="#" class="underline uppercase text-10 text-[#1E1E31] ">See all collections</a>
+                     </div>
+          </div>
+      </div>
+ </section>
+  <section class="parallax-section">
+      <div class="max-w-[1490px] px-4  mx-auto">
+          <h2 class="text-black text-center text-[28px] font-bold mb-[28px] reveal">Orthopedic Mattresses</h2>
+            <p class="text-[#4C4C4C] text-[20px] text-center font-medium mb-[50px] reveal">Deluxe Quality </p>
+      </div>
+      <div class="parallax-sticky">
+        <img
+          src="assets/images/products-parallax/banner-5.png"
+          class="parallax-img w-full"
+          alt=""
+        />
+      </div> 
+      <div class="py-[40px] md:py-[60px] xl:py-[90px] bg-white relative z-[10]">
+          <div class="max-w-[1490px] px-4  mx-auto">
+                   <div class="flex flex-col md:flex-row gap-[30px] w-full">
+                          <a href="#" class="reveal mb-[24px] flex-1">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <div class="flex gap-[2px] mb-[28px]">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                   <span class="text-[10px] text-[#717171] ms-8px">
+                                      (15)
+                                   </span>
+                              </div>
+                              <h3 class="text-[20px]  font-bold mb-[20px]">Back Support Mattresses</h3>
+                              <p class="text-[14px] text-[#1E1E31] mb-[14px]">₹18299/-</p>
+                              <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
+                          </a>
+                         <a href="#" class="reveal mb-[24px] flex-1">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <div class="flex gap-[2px] mb-[28px]">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                   <span class="text-[10px] text-[#717171] ms-8px">
+                                      (15)
+                                   </span>
+                              </div>
+                              <h3 class="text-[20px]  font-bold mb-[20px]">Back Support Mattresses</h3>
+                              <p class="text-[14px] text-[#1E1E31] mb-[14px]">₹18299/-</p>
+                              <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
+                          </a>
+                          <a href="#" class="reveal mb-[24px] flex-1">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <div class="flex gap-[2px] mb-[28px]">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                   <span class="text-[10px] text-[#717171] ms-8px">
+                                      (15)
+                                   </span>
+                              </div>
+                              <h3 class="text-[20px]  font-bold mb-[20px]">Back Support Mattresses</h3>
+                              <p class="text-[14px] text-[#1E1E31] mb-[14px]">₹18299/-</p>
+                              <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
+                          </a>
+                          <a href="#" class="reveal mb-[24px] flex-1">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <div class="flex gap-[2px] mb-[28px]">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                  <img src="assets/images/products-parallax/icon-star-1.png" alt="">
+                                   <span class="text-[10px] text-[#717171] ms-8px">
+                                      (15)
+                                   </span>
+                              </div>
+                              <h3 class="text-[20px]  font-bold mb-[20px]">Back Support Mattresses</h3>
+                              <p class="text-[14px] text-[#1E1E31] mb-[14px]">₹18299/-</p>
+                              <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
+                          </a>
+                     </div>
+                     <div class="text-center pt-[50px] reveal">
+                        <a href="#" class="underline uppercase text-10 text-[#1E1E31] ">See all collections</a>
+                     </div>
+          </div>
+      </div>
+ </section>  
+  <section class="bg-light-gray-with-pad reveal">
+<div class="max-w-[1490px] px-4 mx-auto">
+    <div class="block md:flex gap-[30px] items-start">
+
+      <!-- LEFT CONTENT -->
+      <div class="md:w-3/5">
+        <h2 class=" font-semibold text-24 mb-[33px]">
+          Find a King Koil Mattress Showroom Near You
+        </h2>
+
+        <p class="text-20  mb-[33px]  leading-relaxed text-figtree">
+      Looking for a mattress showroom near you? King Koil, a trusted name in luxury and orthopedic mattresses, is available at 600+ retail locations across India. Experience superior comfort, advanced sleep technology, and premium craftsmanship by visiting a store near you.
+        </p>
+
+        <h3 class=" font-semibold text-24 mb-[33px]">
+          Locate a King Koil Mattress Store Near You
+        </h3>
+        <p class="text-20  mb-[33px]  leading-relaxed text-figtree">
+         <a href="#" class="underline">Finding the perfect mattress</a> is easy with our retailer-finder tool. Simply search for the nearest King Koil mattress showroom and explore our wide range of <a href="#" class="underline">mattresses designed for better sleep</a> and spinal support.
+        </p>
+
+           <h3 class=" font-semibold text-24 mb-[33px]">
+       Why Choose King Koil?
+        </h3>
+
+        <ul class="space-y-[6px] text-20  text-figtree list-star">
+          <li><strong>Orthopedic Comfort – </strong>Luxurious mattresses designed for deep, restful sleep.</li>
+          <li><strong>Orthopedic Support – </strong>Engineered for proper spinal alignment and pressure relief.</li>
+          <li><strong>Advanced Technology – </strong>Featuring memory foam, latex, hybrid, and more.</li>
+          <li><strong>Trusted by Experts – </strong>Over 125 years of excellence in sleep solutions.</li>
+        </ul>
+
+        <p class="text-20  text-figtree mt-6">
+          Visit a King Koil mattress store near you today and find the perfect mattress for your needs!<br/>
+          <strong>Find your nearest retailer now!</strong>
+        </p>
+      </div>
+
+      <!-- RIGHT CONTACT FORM -->
+      <div class="bg-white shadow-md rounded-lg p-6 md:w-2/5">
+        <h3 class="text-20-heading-black font-semibold  mb-4">
+          Contact Us
+        </h3>
+
+ <form class="space-y-4" id="contactForm">
+
+  <!-- Name -->
+  <div>
+    <label class="block text-14 text-figtree mb-[13px]">Name</label>
+    <input
+      type="text"
+      placeholder="Enter your name"
+      required
+      minlength="2"
+      class="w-full bg-light-gray px-4 py-3 text-14 text-figtree">
+  </div>
+
+  <!-- Mobile Number -->
+  <div>
+    <label class="block text-14 text-figtree mb-[13px]">Mobile Number</label>
+
+    <div class="flex items-center bg-light-gray overflow-hidden">
+
+      <!-- Country Code Select -->
+      <div class="relative">
+        <select
+          required
+          class="appearance-none bg-transparent text-14 text-figtree
+                 pl-3 pr-7 py-3 cursor-pointer">
+          <option value="">Code</option>
+          <option value="+91">+91</option>
+          <option value="+1">+1</option>
+          <option value="+44">+44</option>
+          <option value="+61">+61</option>
+        </select>
+
+        <svg
+          class="w-3.5 h-3.5 text-gray-500 absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none"
+          fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+
+      <!-- Number Input -->
+      <input
+        type="tel"
+        placeholder="Enter your mobile number"
+        required
+        pattern="[0-9]{10}"
+        maxlength="10"
+        class="w-full bg-transparent px-4 py-3 text-14 text-figtree">
+    </div>
+  </div>
+
+  <!-- Email -->
+  <div>
+    <label class="block text-14 text-figtree mb-[13px]">Email</label>
+    <input
+      type="email"
+      placeholder="Enter your email address"
+      required
+      class="w-full bg-light-gray px-4 py-3 text-14 text-figtree">
+  </div>
+
+  <!-- Message -->
+  <div>
+    <label class="block text-14 text-figtree mb-[13px]">Message</label>
+    <textarea
+      rows="4"
+      placeholder="write your query"
+      required
+      minlength="5"
+      class="w-full bg-light-gray px-4 py-3 text-14 text-figtree"></textarea>
+  </div>
+
+  <!-- Submit -->
+  <button
+    type="submit"
+    class="w-full bg-[#1E1E31] text-white btn-pad-header text-10 font-medium
+           hover:bg-gray-800 transition">
+    SEND MESSAGE
+  </button>
+
+</form>
+
+
+      </div>
+
+    </div>
+  </div>
+</section>
+ <section  class="py-[40px] md:py-[60px] xl:py-[88px] ">
+       <div class="max-w-[1490px] px-4 mx-auto">
+              <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-8 reveal">
+      Frequently Asked Questions (FAQs)
+    </h2>
+         <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-cols-[3fr_2fr] gap-[30px] ">
+
+    <!-- LEFT : FAQ -->
+    <div>
+    
+
+    <div class="space-y-4" id="faqAccordion">
+
+      <!-- FAQ ITEM -->
+      <div class="bg-faq-item-block reveal">
+        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
+          <span class="font-medium text-18 text-black">
+            What is the best mattress firmness for heavy people?
+          </span>
+        <span class="icon transition-transform duration-300 shadow faq-icon rotate-180"><img src="assets/images/black-down-arrow.png" alt="faq"></span>
+        </button>
+        <div class="faq-content  leading-relaxed">
+          For individuals weighing over 90–100 kg, a medium-firm to firm mattress (6–8 on the firmness scale) is ideal. Medium-firm works well for heavy side sleepers by cushioning pressure points, while firm mattresses suit back and stomach sleepers by supporting spinal alignment and reducing sinkage.
+        </div>
+      </div>
+
+      <!-- FAQ ITEM -->
+      <div class="bg-faq-item-block reveal">
+        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
+          <span class="font-medium text-18 text-black">
+            How thick should a mattress be for heavy individuals?
+          </span>
+          <span class="icon transition-transform duration-300 shadow faq-icon"><img src="assets/images/black-down-arrow.png" alt="faq"></span>
+        </button>
+        <div class="faq-content  hidden leading-relaxed">
+          A mattress thickness of 10–14 inches is recommended for heavier individuals to provide better durability, support, and comfort.
+        </div>
+      </div>
+
+      <!-- FAQ ITEM -->
+      <div class="bg-faq-item-block reveal">
+        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
+         <span class="font-medium text-18 text-black">
+            Are orthopedic mattresses good for heavy people with back pain?
+          </span>
+          <span class="icon transition-transform duration-300 shadow faq-icon"><img src="assets/images/black-down-arrow.png" alt="faq"></span>
+        </button>
+        <div class="faq-content  hidden  leading-relaxed">
+          Yes. Orthopedic mattresses are designed to provide enhanced lumbar support, making them suitable for heavy sleepers with chronic back pain.
+        </div>
+      </div>
+
+      <!-- FAQ ITEM -->
+      <div class="bg-faq-item-block reveal">
+        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
+         <span class="font-medium text-18 text-black">
+            Do heavy people need a firm mattress or a soft mattress?
+          </span>
+          <span class="icon transition-transform duration-300 shadow faq-icon"><img src="assets/images/black-down-arrow.png" alt="faq"></span>
+        </button>
+        <div class="faq-content  hidden leading-relaxed">
+          Heavy people generally benefit from medium-firm to firm mattresses, which prevent excessive sinking and maintain spinal alignment.
+        </div>
+      </div>
+
+      <!-- FAQ ITEM -->
+      <div class="bg-faq-item-block reveal">
+        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
+          <span class="font-medium text-18 text-black">
+            Is memory foam suitable for heavy sleepers?
+          </span>
+          <span class="icon transition-transform duration-300 shadow faq-icon"><img src="assets/images/black-down-arrow.png" alt="faq"></span>
+        </button>
+        <div class="faq-content  hidden   leading-relaxed">
+          High-density memory foam can work well, but low-density foam may sag faster under higher body weight.
+        </div>
+      </div>
+
+      <!-- FAQ ITEM -->
+      <div class="bg-faq-item-block reveal">
+        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
+          <span class="font-medium text-18 text-black">
+            Are hybrid mattresses better for heavy people?
+          </span>
+          <span class="icon transition-transform duration-300 shadow faq-icon"><img src="assets/images/black-down-arrow.png" alt="faq"></span>
+        </button>
+        <div class="faq-content  hidden  leading-relaxed">
+          Yes. Hybrid mattresses combine foam comfort with coil support, making them durable and supportive for heavier sleepers.
+        </div>
+      </div> 
+
+    </div>
+    </div>
+
+    <!-- RIGHT : IMAGE -->
+    <div class="w-full">
+      <img
+        src="assets/images/dealer-page-faq-image.png"
+        alt="Mattress"
+        class="w-full h-full object-cover   "
+      />
+    </div>
+
+  </div>
+</div>
+
+ </section>
+<section class="relative  pb-[40px] md:pb-[60px] xl:pb-[88px] ">
+  <div class="max-w-[1490px] px-4 mx-auto reveal">
+    <div class="relative bg-cover bg-center overflow-hidden"
+         style="background-image: url('assets/images/banner-bg.png');">
+
+      
+      <!-- Content -->
+      <div class="relative z-10 flex flex-col lg:flex-row items-center lg:items-start justify-between p-[24px] xl:p-[54px]">
+        
+        <!-- Text -->
+        <div class="text-white max-w-lg lg:max-w-md text-center lg:text-left ">
+          <h2 class="text-[40px] font-bold mb-4 text-playfair-display">Know Your SleepID</h2>
+          <p class="mb-6 text-12 lg:text-base">
+            Whether you want to feel more energized, improve focus, or build healthier routines,
+            Know Your SleepID empowers you with knowledge about your sleep so you can rest better 
+            and live better — starting tonight.
+          </p>
+
+          <!-- Buttons -->
+       <div class="flex flex-col items-center xl:items-start justify-center sm:flex-row gap-4">
+            <a href="#"
+               class="btn-pad-header w-full xl:width-auto bg-white text-10 text-[#1E1E31]  uppercase  hover:bg-whitetransition">
+               CHECK NOW
+            </a>
+            <a href="#"
+               class="btn-pad-header w-full xl:width-auto border border-white text-white  text-10 uppercase hover:bg-white hover:text-[#1E1E31] transition">
+               VISIT OUR STORE
+            </a>
+          </div>
+        </div>
+
+    
+      </div>
+    </div>
+  </div>
+</section>
+   <section class="pb-[40px] md:pb-[60px] xl:pb-[88px]">
+  <div class="max-w-[1490px] px-4  mx-auto reveal">
+
+    <!-- Section Header -->
+<div class="flex flex-col xl:flex-row items-start xl:items-center gap-2  justify-between mb-8 reveal">
+     <h2 class="text-[28px] font-normal text-black">
+        Recents Blogs 
+      </h2>
+      <a href="blog-category.html"
+         class="text-14 font-medium tracking-wide hover:underline">
+        VIEW ALL
+      </a>
+    </div>
+
+    <!-- Cards Wrapper -->
+     <div
+      class="flex gap-6 overflow-x-auto pb-4 scrollbar-hide
+             lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-visible reveal">
+
+      <!-- Card 1 -->
+      <a href="blog-category.html"
+         class="min-w-[260px] lg:min-w-0 bg-white overflow-hidden
+                transition-all duration-300 ">
+
+        <img src="assets/images/img-blog-category-1.png"
+             alt="Blog Category"
+             class="w-full  h-[230px] object-cover">
+
+        <div class="py-4">
+  <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
+            How Blue Light affects.
+          </h3>
+
+           <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+            Do you find yourself feeling tired and groggy in the morning? Do you struggle 
+          </p>
+
+          <div class="flex items-center text-black">
+           <img src="assets/images/blogs/calender-icon.png" class="me-[7px]" alt=""> May 27, 2025
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 2 -->
+      <a href="blog-category.html"
+         class="min-w-[260px] lg:min-w-0 bg-white overflow-hidden
+                transition-all duration-300 ">
+
+        <img src="assets/images/img-blog-category-2.png"
+             alt="Blog Category"
+             class="w-full  h-[230px] object-cover">
+
+        <div class="py-4">
+  <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
+            Diwali Mattress Deals and
+          </h3>
+   <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+            Whether you're looking to revamp your bedroom or gift a loved one the comfort 
+          </p>
+
+                  <div class="flex items-center text-black">
+            <img src="assets/images/blogs/calender-icon.png" class="me-[7px]" alt=""> March 15, 2025
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="blog-category.html"
+         class="min-w-[260px] lg:min-w-0 bg-white overflow-hidden
+                transition-all duration-300 ">
+
+        <img src="assets/images/img-blog-category-3.png"
+             alt="Blog Category"
+             class="w-full  h-[230px] object-cover">
+
+        <div class="py-4">
+  <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
+           Why 7 Hours of Sleep is
+          </h3>
+
+           <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+            In our fast-paced world, the pursuit of success often leads us to overlook 
+          </p>
+        <div class="flex items-center text-black">
+            <img src="assets/images/blogs/calender-icon.png" class="me-[7px]" alt=""> May 21, 2025
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 4 -->
+      <a href="blog-category.html"
+         class="min-w-[260px] lg:min-w-0 bg-white overflow-hidden
+                transition-all duration-300 ">
+
+        <img src="assets/images/img-blog-category-4.png"
+             alt="Blog Category"
+             class="w-full  h-[230px] object-cover">
+
+       <div class="py-4">
+  <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
+            How Blue Light affects...
+          </h3>
+
+       <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+           Do you find yourself feeling tired and groggy in the morning? Do you struggle 
+          </p>
+
+           <div class="flex items-center text-black">
+            <img src="assets/images/blogs/calender-icon.png" class="me-[7px]" alt=""> May 27, 2025
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 5 -->
+      <a href="blog-category.html"
+         class="min-w-[260px] lg:min-w-0 bg-white overflow-hidden
+                transition-all duration-300 ">
+
+        <img src="assets/images/img-blog-category-5.png"
+             alt="Blog Category"
+             class="w-full  h-[230px] object-cover">
+
+        <div class="py-4">
+  <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
+            How Blue Light affects...
+          </h3> 
+          <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
+           Do you find yourself feeling tired and groggy in the morning? Do you struggle 
+          </p>
+
+             <div class="flex items-center text-black">
+            <img src="assets/images/blogs/calender-icon.png" class="me-[7px]" alt=""> April 30, 2025
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+  <section class="pb-[40px] md:pb-[60px] xl:pb-[90px] reveal">
+ <div class="max-w-[1490px] px-4  mx-auto reveal">
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+
+      <!-- Item 1 -->
+      <div class="flex flex-col items-center">
+        <img
+          src="assets/images/icon-global-standard.png"
+          alt="Global Standard"
+            class="w-auro h-[60px] mb-[24px] object-contain"
+        />
+        <p class="text-20 text-black text-center uppercase">
+          Global Standard
+        </p>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="flex flex-col items-center">
+        <img
+          src="assets/images/icon-leadership.png"
+          alt="Leaders in Quality"
+          class="w-auro h-[60px] mb-[24px] object-contain"
+        />
+       <p class="text-20 text-black text-center uppercase">
+          Leaders in Quality
+        </p>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="flex flex-col items-center">
+        <img
+          src="assets/images/icon-innovation.png"
+          alt="Innovation & Research"
+          class="w-auro h-[60px] mb-[24px] object-contain"
+        />
+      <p class="text-20 text-black text-center uppercase">
+          Innovation & Research
+        </p>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="flex flex-col items-center">
+        <img
+          src="assets/images/icon-global-brand.png"
+          alt="Iconic Brand"
+          class="w-auro h-[60px] mb-[24px] object-contain"
+        />
+    <p class="text-20 text-black text-center uppercase">
+          Iconic Brand
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section> 
+  <!-- ================= FOOTER ================= -->
+<footer class="text-white text-14">
+        <div class="border-b border-[#3D3B3B]">
+ <div >
+  <div class="max-w-[1650px] px-4  mx-auto py-[32px] flex flex-col lg:flex-row items-center justify-between gap-4">
+
+    <!-- LEFT: Logo -->
+    <a href="index.html" class="flex justify-center lg:justify-start w-full lg:w-auto">
+      <img src="assets/images/logo.png" alt="King Koil" class="h-[44px]">
+    </a>
+
+    <!-- CENTER: Contact Info -->
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-12 text-center lg:text-left">
+      <span class="flex items-center gap-[14px]">
+        <img src="assets/images/icon-location.png" alt="Suite 614, 6th Floor, DLF Downtown Meadows, Rajarhat, NT 15256">
+        Suite 614, 6th Floor, DLF Downtown Meadows, Rajarhat, NT 15256
+      </span>
+
+      <span class="flex items-center gap-[14px] mx-4 md:mx-[118px]">
+      <img src="assets/images/icon-call.png" alt=" +91 56323 1256">
+        +91 56323 1256
+      </span>
+
+      <span class="flex items-center gap-[14px] line-clamp-1">
+        <img src="assets/images/icon-mail.png" alt=" +91 56323 1256">
+        example001@gmail.com
+      </span>
+    </div>
+
+    <!-- RIGHT: Scroll to top -->
+    <div class="flex justify-center lg:justify-end w-full lg:w-auto">
+      <button onclick="window.scrollTo({top:0,behavior:'smooth'})"
+              class="flex items-center gap-[16px] text-12 hover:text-white">
+        SCROLL TO TOP
+        <i class="fa-solid fa-circle-chevron-up text-30"></i>
+      </button>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+        </div>
+  <!-- TOP INFO BAR -->
+  
+
+  <!-- MAIN FOOTER -->
+  <div class="max-w-[1650px] px-4  mx-auto py-12
+              grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+
+    <!-- COMPANY -->
+    <div>
+    <h4 class="text-white font-semibold mb-[31px] uppercase text-16">COMPANY</h4>
+     <ul class="space-y-[13px]">
+        <li><a href="#" class="text-14 text-white">Why King Koil</a></li>
+        <li><a href="#" class="text-14 text-white">Know Your SleepID</a></li>
+        <li><a href="#" class="text-14 text-white">Where to Buy</a></li>
+        <li><a href="#" class="text-14 text-white">Contact Us</a></li>
+        <li><a href="#" class="text-14 text-white">FAQs</a></li>
+      </ul>
+    </div>
+
+    <!-- MATTRESS FOR HOME -->
+    <div>
+      <h4 class="text-white font-semibold  mb-[31px] uppercase text-16">MATTRESS FOR HOME</h4>
+       <ul class="space-y-[13px]">
+        <li><a href="#" class="text-14 text-white">Memory Foam Mattresses</a></li>
+        <li><a href="#" class="text-14 text-white">Back Support Mattresses</a></li>
+        <li><a href="#" class="text-14 text-white">Stay Energized Mattresses</a></li>
+        <li><a href="#" class="text-14 text-white">Luxury Mattresses</a></li>
+        <li><a href="#" class="text-14 text-white">Ultra Luxury Mattresses</a></li>
+      </ul>
+    </div>
+
+    <!-- MATTRESS FOR HOTELS -->
+    <div>
+      <h4 class="text-white font-semibold   mb-[31px] uppercase text-16">MATTRESS FOR HOTELS</h4>
+      <ul class="space-y-[13px]">
+        <li><a href="#" class="text-14 text-white">Hospitality Bedding Solution</a></li>
+        <li><a href="#" class="text-14 text-white">Maharaja Grand</a></li>
+        <li><a href="#" class="text-14 text-white">Euro Soft</a></li>
+        <li><a href="#" class="text-14 text-white">Foldable Roll Away Bed</a></li>
+        <li><a href="#" class="text-14 text-white">Non-Foldable Rollaway Bed</a></li>
+      </ul>
+    </div>
+
+    <!-- SUBSCRIBE -->
+    <div>
+      <h4 class="text-white font-semibold mb-[31px] uppercase text-16">SUBMIT FOR SUBSCRIPTION</h4>
+      <p class="mb-4 text-14">
+        Subscribe to get updates about new products and sales
+      </p>
+
+      <form class="flex mb-[20px]">
+        <input type="email"
+               placeholder="Enter your email address"
+               class="w-full px-3 py-2 text-[#C3C3C3] bg-transparent border border-white">
+        <button class="bg-white text-[#1b1b2f] px-4 font-semibold  ">
+          SUBSCRIBE
+        </button>
+      </form>
+
+      <!-- SOCIAL ICONS -->
+      <div class="flex gap-4 ">
+        <a href="#" class="text-20 text-white"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" class="text-20 text-white"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="text-20 text-white"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="text-20 text-white"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div class="border-t border-[#3D3B3B]">
+    <div class="max-w-[1650px] px-4  mx-auto   py-[22px]
+                flex flex-col md:flex-row gap-3
+                justify-between items-center text-12">
+
+      <p>© 2026 King Koil India by Real Inspiring Technologies Pvt. Ltd. All Rights Reserved </p>
+
+      <div class="flex justify-end text-white gap-3">
+        <a href="#" class="text-12 text-white">Terms & Conditions</a> | 
+        <a href="#" class="text-12 text-white">Warranty</a> | 
+        <a href="#" class="text-12 text-white">Privacy Policy</a> | 
+        <a href="#" class="text-12 text-white">Sitemap</a>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper(".partnersSwiper", {
+    slidesPerView: 2,       // visible slides on mobile
+    spaceBetween: 16,       // space between slides
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      480: { slidesPerView: 3 },
+      640: { slidesPerView: 4 },
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script> 
+ <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".reveal");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0,
+      rootMargin: "0px 0px 0px 0px",
+    }
+  );
+
+  elements.forEach(el => {
+    observer.observe(el);
+
+    // 🔥 Force check for elements already in view
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 200) {
+      el.classList.add("is-visible");
+      observer.unobserve(el);
+    }
+  });
+});
+</script>
+<script>
+  const header = document.getElementById('siteHeader');
+  const headerHeight = header.offsetHeight;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > headerHeight) {
+      header.classList.add('header-fixed');
+      document.body.style.paddingTop = headerHeight + 'px';
+    } else {
+      header.classList.remove('header-fixed');
+      document.body.style.paddingTop = '0px';
+    }
+  });
+</script>
+<script>
+  const counters = document.querySelectorAll('.counter');
+
+  const animateCounter = (el) => {
+    const target = +el.dataset.count;
+    let current = 0;
+
+    // Slower animation (higher divisor = slower)
+    const increment = Math.max(1, Math.floor(target / 140));
+
+    const update = () => {
+      current += increment;
+
+      if (current >= target) {
+        el.textContent = target + '+';
+        return;
+      }
+
+      el.textContent = current;
+      requestAnimationFrame(update);
+    };
+
+    update();
+  };
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+          entry.target.classList.add('counted');
+          animateCounter(entry.target);
+        }
+      });
+    },
+    { threshold: 0.4 }
+  );
+
+  counters.forEach(counter => observer.observe(counter));
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const slider = document.getElementById("heroSlider");
+  const prevBtn = document.getElementById("prev");
+  const nextBtn = document.getElementById("next");
+
+  if (!slider || !prevBtn || !nextBtn) {
+    console.error("Slider elements missing");
+    return;
+  }
+
+  const slides = slider.children;
+  let index = 0;
+  let autoPlayInterval = null;
+  const delay = 4000;
+
+  function updateSlider() {
+    slider.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() {
+    index = (index + 1) % slides.length;
+    updateSlider();
+  }
+
+  function prevSlide() {
+    index = (index - 1 + slides.length) % slides.length;
+    updateSlider();
+  }
+
+  function startAutoplay() {
+    clearInterval(autoPlayInterval);
+    autoPlayInterval = setInterval(nextSlide, delay);
+  }
+
+  nextBtn.addEventListener("click", () => {
+    nextSlide();
+    startAutoplay();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    prevSlide();
+    startAutoplay();
+  });
+
+  startAutoplay();
+});
+</script>
+ <script>
+(() => {
+  const sticky = document.querySelector('.parallax-sticky');
+  const img = sticky.querySelector('.parallax-img');
+
+  function animate() {
+    const rect = sticky.getBoundingClientRect();
+    const vh = window.innerHeight;
+
+    if (rect.top <= 0 && rect.bottom >= vh) {
+      const progress = Math.abs(rect.top) / vh;
+      const move = progress * 120;
+
+      img.style.transform = `translateY(${move}px)`;
+    }
+
+    requestAnimationFrame(animate);
+  }
+
+  requestAnimationFrame(animate);
+})();
+</script>
+
+<script>
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = form.querySelector('input[type="text"]');
+    const code = form.querySelector("select");
+    const mobile = form.querySelector('input[type="tel"]');
+    const email = form.querySelector('input[type="email"]');
+    const message = form.querySelector("textarea");
+
+    const phoneRegex = /^[0-9]{10}$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (name.value.trim() === "") {
+      alert("Please enter your name");
+      name.focus();
+      return;
+    }
+
+    if (code.value === "") {
+      alert("Please select country code");
+      code.focus();
+      return;
+    }
+
+    if (!phoneRegex.test(mobile.value)) {
+      alert("Please enter a valid 10-digit mobile number");
+      mobile.focus();
+      return;
+    }
+
+    if (!emailRegex.test(email.value)) {
+      alert("Please enter a valid email address");
+      email.focus();
+      return;
+    }
+
+    if (message.value.trim().length < 5) {
+      alert("Message should be at least 5 characters");
+      message.focus();
+      return;
+    }
+
+    // ✅ All validations passed
+    alert("Thank you! We will contact you shortly.");
+    form.submit();
+  });
+</script>
+
+</body>
+</html>

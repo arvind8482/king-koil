@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>King Koil | Blog Details</title>
+ <link rel="icon" type="image/png" href="assets/images/fav.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -18,24 +19,25 @@
 
 </head>
 <body class="text-figtree text-14">  
-<!-- ================= HEADER ================= -->
+   <!-- ================= HEADER ================= -->
 <header id="siteHeader"
-  class="bg-[#1E1E31] text-white w-full z-50 transition-all duration-300">
- <div class="max-w-[1650px] md:mx-auto px-4 py-[30px] flex items-center justify-between">
+  class="bg-[#1E1E31] text-white w-full z-50  transition-all duration-300 ease-in-out">
+
+  <div class="max-w-[1650px] md:mx-auto px-4 py-[30px] flex items-center justify-between">
 
     <!-- LOGO -->
-    <a href="/" class="flex items-center">
+    <a href="index.html" class="flex items-center">
       <img src="assets/images/logo.png" alt="King Koil" class="h-[32px]">
     </a>
 
     <!-- DESKTOP NAV -->
     <nav class="hidden lg:flex items-center gap-6 text-14">
 
-      <a href="#"  >Why King Koil?</a>
+      <a href="#">Why King Koil?</a>
 
-      <!-- Mattresses Dropdown -->
+      <!-- Mattresses -->
       <div class="relative group">
-        <button class="flex items-center gap-1 ">
+        <button class="flex items-center gap-1">
           Mattresses
           <svg class="w-4 h-4 transition-transform group-hover:rotate-180"
                fill="none" stroke="currentColor" stroke-width="2"
@@ -44,30 +46,23 @@
           </svg>
         </button>
 
-        <!-- Hover buffer -->
         <div class="absolute inset-x-0 top-full h-3"></div>
 
         <div
           class="absolute top-full left-0 w-52 bg-white text-[#1E1E31]
                  rounded-lg shadow-xl opacity-0 invisible
                  group-hover:opacity-100 group-hover:visible
-                 transition pt-2">
+                 transition pt-2 z-50">
 
-          <a href="#" class="block px-4 py-2  rounded-t-lg">
-            Luxury Mattresses
-          </a>
-          <a href="#" class="block px-4 py-2 ">
-            Memory Foam
-          </a>
-          <a href="#" class="block px-4 py-2 rounded-b-lg">
-            Back Support
-          </a>
+          <a href="#" class="block px-4 py-2 rounded-t-lg">Luxury Mattresses</a>
+          <a href="#" class="block px-4 py-2">Memory Foam</a>
+          <a href="#" class="block px-4 py-2 rounded-b-lg">Back Support</a>
         </div>
       </div>
 
-      <!-- Accessories Dropdown -->
+      <!-- Accessories -->
       <div class="relative group">
-        <button class="flex items-center gap-1 ">
+        <button class="flex items-center gap-1">
           Accessories
           <svg class="w-4 h-4 transition-transform group-hover:rotate-180"
                fill="none" stroke="currentColor" stroke-width="2"
@@ -82,100 +77,129 @@
           class="absolute top-full left-0 w-48 bg-white text-[#1E1E31]
                  rounded-lg shadow-xl opacity-0 invisible
                  group-hover:opacity-100 group-hover:visible
-                 transition pt-2">
+                 transition pt-2 z-50">
 
-          <a href="#" class="block px-4 py-2 rounded-t-lg">
-            Pillows
-          </a>
-          <a href="#" class="block px-4 py-2 rounded-b-lg">
-            Protectors
-          </a>
+          <a href="#" class="block px-4 py-2 rounded-t-lg">Pillows</a>
+          <a href="#" class="block px-4 py-2 rounded-b-lg">Protectors</a>
         </div>
       </div>
 
-      <a href="#" >SleepID</a>
-      <a href="#" >Hospitality</a>
-      <a href="#" >Blogs</a>
+      <a href="#">SleepID</a>
+      <a href="#">Hospitality</a>
+      <a href="#">Blogs</a>
     </nav>
 
     <!-- DESKTOP CTA -->
     <a href="#"
-       class="hidden lg:inline-block  btn-pad-header 
+       class="hidden lg:inline-block btn-pad-header
               bg-white text-[#1E1E31] uppercase text-figtree text-10">
       Where to Buy
     </a>
 
     <!-- MOBILE MENU BUTTON -->
-    <button id="menuBtn" class="lg:hidden focus:outline-none">
+    <button id="menuBtn" class="lg:hidden">
       <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
            viewBox="0 0 24 24">
         <path d="M4 6h16M4 12h16M4 18h16" />
       </svg>
     </button>
   </div>
+</header>
 
-  <!-- ================= MOBILE MENU ================= -->
-  <div id="mobileMenu"
-       class="hidden lg:hidden bg-[#1b1b2f] border-t border-gray-700">
+<!-- ================= MOBILE MENU (FULLSCREEN) ================= -->
+<div id="mobileMenu"
+  class="fixed inset-0 z-[999] bg-[#1b1b2f] text-white
+         transform translate-x-full transition-transform duration-300
+         lg:hidden">
 
-    <div class="px-4 py-4 space-y-2 text-base">
-
-      <a href="#" class="block py-2 border-b border-gray-700">
-        Why King Koil?
-      </a>
-
-      <!-- Mobile Mattresses -->
-      <details class="border-b border-gray-700">
-        <summary class="py-2 flex justify-between items-center cursor-pointer">
-          Mattresses
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
-               viewBox="0 0 24 24">
-            <path d="M6 9l6 6 6-6" />
-          </svg>
-        </summary>
-        <div class="pl-4 pb-2 text-14 space-y-1">
-          <a href="#" class="block">Luxury Mattresses</a>
-          <a href="#" class="block">Memory Foam</a>
-          <a href="#" class="block">Back Support</a>
-        </div>
-      </details>
-
-      <!-- Mobile Accessories -->
-      <details class="border-b border-gray-700">
-        <summary class="py-2 flex justify-between items-center cursor-pointer">
-          Accessories
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
-               viewBox="0 0 24 24">
-            <path d="M6 9l6 6 6-6" />
-          </svg>
-        </summary>
-        <div class="pl-4 pb-2 text-14 space-y-1">
-          <a href="#" class="block">Pillows</a>
-          <a href="#" class="block">Protectors</a>
-        </div>
-      </details>
-
-      <a href="#" class="block py-2 border-b border-gray-700">SleepID</a>
-      <a href="#" class="block py-2 border-b border-gray-700">Hospitality</a>
-      <a href="#" class="block py-2 border-b border-gray-700">Blogs</a>
-
-      <a href="#"
-         class="block mt-4 text-center btn-pad-header
-                bg-white text-[#1E1E31] uppercase text-figtree text-10">
-        Where to Buy
-      </a>
-    </div>
+  <!-- Mobile Header -->
+  <div class="flex items-center justify-between px-4 py-4 border-b border-gray-700">
+    <a href="index.html" class="text-lg font-medium"><img src="assets/images/logo.png" alt=""></a>
+    <button id="closeMenu">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24">
+        <path d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
   </div>
-</header> 
- 
 
-<!-- ================= MOBILE TOGGLE SCRIPT ================= -->
+  <!-- Mobile Links -->
+  <div class="px-4 py-6 space-y-2 overflow-auto scroll-smooth 
+         max-h-[calc(100vh-120px)]">
+
+    <a href="#" class="block py-2 border-b border-gray-700">Why King Koil?</a>
+
+    <details class="border-b border-gray-700">
+      <summary class="py-2 flex justify-between items-center cursor-pointer">
+        Mattresses
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      </summary>
+      <div class="pl-4 pb-2 space-y-1">
+        <a href="#" class="block">Luxury Mattresses</a>
+        <a href="#" class="block">Memory Foam</a>
+        <a href="#" class="block">Back Support</a>
+      </div>
+    </details>
+
+    <details class="border-b border-gray-700">
+      <summary class="py-2 flex justify-between items-center cursor-pointer">
+        Accessories
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      </summary>
+      <div class="pl-4 pb-2 space-y-1">
+        <a href="#" class="block">Pillows</a>
+        <a href="#" class="block">Protectors</a>
+      </div>
+    </details>
+
+    <a href="#" class="block py-2 border-b border-gray-700">SleepID</a>
+    <a href="#" class="block py-2 border-b border-gray-700">Hospitality</a>
+    <a href="#" class="block py-2 border-b border-gray-700">Blogs</a>
+
+    <a href="#"
+       class="block mt-6 text-center btn-pad-header
+              bg-white text-[#1E1E31] uppercase text-figtree text-10">
+      Where to Buy
+    </a>
+  </div>
+</div>
+
+ <!-- ================= MOBILE MENU SCRIPT ================= -->
 <script>
-  document.getElementById("menuBtn").addEventListener("click", () => {
-    document.getElementById("mobileMenu").classList.toggle("hidden");
+  const menuBtn = document.getElementById('menuBtn');
+  const closeMenu = document.getElementById('closeMenu');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  // OPEN MENU
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('translate-x-full');
+    mobileMenu.classList.add('translate-x-0');
+    document.body.style.overflow = 'hidden';
+  });
+
+  // CLOSE MENU
+  closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.add('translate-x-full');
+    mobileMenu.classList.remove('translate-x-0');
+    document.body.style.overflow = '';
+  });
+
+  // OPTIONAL: Close menu on link click
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('translate-x-full');
+      mobileMenu.classList.remove('translate-x-0');
+      document.body.style.overflow = '';
+    });
   });
 </script>
-<main  class="pt-[64px]" >
+<main  class="pt-[40px] xl:pt-[64px]" >
   <div class="max-w-[1490px] px-4  mx-auto pb-10">
 
     <!-- GRID -->
@@ -208,7 +232,7 @@
     </div>
 
     <!-- TITLE -->
-    <h1 class="text-[32px] md:text-[40px] font-semibold text-black max-w-4xl leading-tight reveal mb-[34px]">
+    <h1 class="text-[24px] md:text-[40px] font-semibold text-black max-w-4xl leading-tight reveal mb-[34px]">
       Best Mattress for Heavy People: Firmness, Thickness & Support
     </h1>    
  </div>
@@ -646,79 +670,96 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
 
         <!-- CONTACT -->
         <div class="side-block-bg reveal">
-          <h3 class="font-semibold text-20-heading-sidebarmb-[20px]">Contact Us</h3>
-           <form class="space-y-5">
+          <h3 class="font-semibold text-20-heading-sidebarmb-[20px] mb-[20px]">Contact Us</h3>
+            <form class="space-y-5">
 
-    <!-- Name -->
-    <div class="mb-[18px]">
-     <label class="block text-14 font-medium text-black mb-[14px]">
-        Name
-      </label>
-      <input type="text"
-             placeholder="Enter your name"
-             class="w-full bg-white border border-transparent
-                    px-4 py-3 text-14
-                    focus:outline-none focus:ring-2 focus:ring-gray-300">
-    </div>
-
-    <!-- Mobile Number -->
+  <!-- Name -->
   <div class="mb-[18px]">
-      <label class="block text-14 font-medium text-black mb-[14px]">
-        Mobile Number
-      </label>
+    <label class="block text-14 font-medium text-black mb-[14px]">
+      Name
+    </label>
+    <input
+      type="text"
+      placeholder="Enter your name"
+      required
+      minlength="2"
+      class="w-full bg-white border border-transparent
+             px-4 py-3 text-14
+             focus:outline-none focus:ring-2 focus:ring-gray-300">
+  </div>
 
-      <div class="flex items-center bg-white border border-transparent
-                  focus-within:ring-2 focus-within:ring-gray-300">
-
-        <!-- Country Code -->
-        <select class="bg-transparent text-14 px-3 py-3 focus:outline-none">
-          <option>+91</option>
-          <option>+1</option>
-          <option>+44</option>
-        </select>
-
-        <div class="h-6 w-px bg-white"></div>
-
-        <!-- Number -->
-        <input type="tel"
-               placeholder="Enter your mobile number"
-               class="w-full bg-transparent px-4 py-3 text-14 focus:outline-none">
-      </div>
-    </div>
-
-    <!-- Email -->
+  <!-- Mobile Number -->
   <div class="mb-[18px]">
-     <label class="block text-14 font-medium text-black mb-[14px]">
-        Email
-      </label>
-      <input type="email"
-             placeholder="Enter your email address"
-             class="w-full bg-white border border-transparent
-                    px-4 py-3 text-14
-                    focus:outline-none focus:ring-2 focus:ring-gray-300">
-    </div>
+    <label class="block text-14 font-medium text-black mb-[14px]">
+      Mobile Number
+    </label>
 
-    <!-- Message -->
+    <div class="flex items-center bg-white border border-transparent
+                focus-within:ring-2 focus-within:ring-gray-300">
+
+      <!-- Country Code -->
+      <select
+        required
+        class="bg-transparent text-14 px-3 py-3 focus:outline-none">
+        <option value="">Code</option>
+        <option value="+91">+91</option>
+        <option value="+1">+1</option>
+        <option value="+44">+44</option>
+      </select>
+
+      <div class="h-6 w-px bg-white"></div>
+
+      <!-- Number -->
+      <input
+        type="tel"
+        placeholder="Enter your mobile number"
+        required
+        pattern="[0-9]{10}"
+        maxlength="10"
+        class="w-full bg-transparent px-4 py-3 text-14 focus:outline-none">
+    </div>
+  </div>
+
+  <!-- Email -->
   <div class="mb-[18px]">
-     <label class="block text-14 font-medium text-black mb-[14px]">
-        Message
-      </label>
-      <textarea rows="5"
-                placeholder="write your query"
-                class="w-full  bg-white border border-transparent
-                       px-4 py-3 text-14 resize-none
-                       focus:outline-none focus:ring-2 focus:ring-gray-300"></textarea>
-    </div>
+    <label class="block text-14 font-medium text-black mb-[14px]">
+      Email
+    </label>
+    <input
+      type="email"
+      placeholder="Enter your email address"
+      required
+      class="w-full bg-white border border-transparent
+             px-4 py-3 text-14
+             focus:outline-none focus:ring-2 focus:ring-gray-300">
+  </div>
 
-    <!-- Button -->
-    <button type="submit"
-            class="w-full bg-[#1E1E31] text-white  
-                   tracking-wider text-14 btn-pad-header
-                   hover:bg-gray-800 transition">
-      SEND MESSAGE
-    </button>
+  <!-- Message -->
+  <div class="mb-[18px]">
+    <label class="block text-14 font-medium text-black mb-[14px]">
+      Message
+    </label>
+    <textarea
+      rows="5"
+      placeholder="write your query"
+      required
+      minlength="5"
+      class="w-full bg-white border border-transparent
+             px-4 py-3 text-14 resize-none
+             focus:outline-none focus:ring-2 focus:ring-gray-300"></textarea>
+  </div>
 
-  </form>
+  <!-- Button -->
+  <button
+    type="submit"
+    class="w-full bg-[#1E1E31] text-white
+           tracking-wider text-14 btn-pad-header
+           hover:bg-gray-800 transition">
+    SEND MESSAGE
+  </button>
+
+</form>
+
         </div>
 
         <!-- TAGS -->
@@ -741,7 +782,7 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
   </div>
 </main>
 
-  <section class="bottom-pad-88">
+  <section class="pb-[40px] md:pb-[60px] xl:pb-[88px]">
   <div class="max-w-[1490px] px-4  mx-auto reveal">
 
     <!-- Section Header -->
@@ -881,16 +922,16 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
   </div>
 </section>
 
-  <!-- ================= FOOTER ================= -->
-<footer class="text-white text-14 relative reveal">
+   <!-- ================= FOOTER ================= -->
+<footer class="text-white text-14">
         <div class="border-b border-[#3D3B3B]">
- <div  >
+ <div >
   <div class="max-w-[1650px] px-4  mx-auto py-[32px] flex flex-col lg:flex-row items-center justify-between gap-4">
 
     <!-- LEFT: Logo -->
-    <div class="flex justify-center lg:justify-start w-full lg:w-auto">
+    <a href="index.html" class="flex justify-center lg:justify-start w-full lg:w-auto">
       <img src="assets/images/logo.png" alt="King Koil" class="h-[44px]">
-    </div>
+    </a>
 
     <!-- CENTER: Contact Info -->
     <div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-12 text-center lg:text-left">
@@ -1018,8 +1059,22 @@ Do you wake up with back pain despite sleeping 7-8 hours? Is your mattress saggi
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const header = document.getElementById('siteHeader');
+  const headerHeight = header.offsetHeight;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > headerHeight) {
+      header.classList.add('header-fixed');
+      document.body.style.paddingTop = headerHeight + 'px';
+    } else {
+      header.classList.remove('header-fixed');
+      document.body.style.paddingTop = '0px';
+    }
+  });
+</script>
 <script>
   const swiper = new Swiper(".partnersSwiper", {
     slidesPerView: 2,       // visible slides on mobile
@@ -1087,6 +1142,56 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+</script>
+<script>
+  const form = document.querySelector("form");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = form.querySelector('input[type="text"]');
+    const countryCode = form.querySelector('select');
+    const mobile = form.querySelector('input[type="tel"]');
+    const email = form.querySelector('input[type="email"]');
+    const message = form.querySelector('textarea');
+
+    const phoneRegex = /^[0-9]{10}$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (name.value.trim() === "") {
+      alert("Please enter your name");
+      name.focus();
+      return;
+    }
+
+    if (countryCode.value === "") {
+      alert("Please select country code");
+      countryCode.focus();
+      return;
+    }
+
+    if (!phoneRegex.test(mobile.value)) {
+      alert("Please enter a valid 10-digit mobile number");
+      mobile.focus();
+      return;
+    }
+
+    if (!emailRegex.test(email.value)) {
+      alert("Please enter a valid email address");
+      email.focus();
+      return;
+    }
+
+    if (message.value.trim().length < 5) {
+      alert("Message should be at least 5 characters");
+      message.focus();
+      return;
+    }
+
+    // ✅ All validations passed
+    alert("Form submitted successfully!");
+    form.submit();
+  });
 </script>
 
 </body>
