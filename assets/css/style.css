@@ -266,6 +266,75 @@ h1, h2, h3, h4, h5, h6 {
   filter: blur(0);
 }
 
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox .box {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #1E1E31;
+  background: white;
+  position: relative;
+  display: inline-block;
+}
+
+/* Tick */
+.checkbox .box::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 12px;
+  border: solid #1E1E31;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+/* Checked State */
+.checkbox input:checked + .box::after {
+  opacity: 1;
+}
+
+
+ 
+.range-slider {
+  -webkit-appearance: none;
+  background: transparent;
+  height: 8px;
+}
+
+ #autoSlider > div:nth-of-type(even){
+  margin-top: 32px;
+ }
+
+
+
+/* Thumb */
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #1E1E31;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.range-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: #1E1E31;
+  border-radius: 50%;
+  cursor: pointer;
+} 
+
+
+
 #timeline-progress {
   transform-origin: top;
   transform: scaleY(0);
