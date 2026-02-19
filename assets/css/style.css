@@ -299,7 +299,18 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
+   /* Optional: better arrow visibility */
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #000;
+    }
 
+    @media (max-width: 768px) {
+      .swiper-button-next,
+      .swiper-button-prev {
+        display: none;
+      }
+    }
  
 .range-slider {
   -webkit-appearance: none;
@@ -459,7 +470,7 @@ color: #4C4C4C;
 }
 
 .bg-faq-item-block{
-  background-color: #FAFAFA; padding: 18px 15px 18px 15px; margin-bottom: 15px;
+  background-color: #FFFFFF; padding: 18px 15px 18px 15px; margin-bottom: 15px;
 }
 .icon-dark{
   color: #1E1E31;
@@ -468,20 +479,33 @@ color: #4C4C4C;
 .faq-content{
   font-size: 14px; color: #000000;
 }
+   #siteHeader {
+    position: relative;
+    width: 100%; 
+   transition:
+    box-shadow 0.3s ease,
+    background-color 0.3s ease,
+    transform 0.3s ease;
+     transform: translateY(0);
+  }
 
+  .header-fixed {
+  position: fixed!important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999; background-color: #1E1E31;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transform: translateY(0); 
+  }
 
+  .priority-slider {
+    height: 433px;
+  }
 
 .recentblogs-badges{
   padding: 5px; border-radius: 300px; background-color: rgba(30, 30, 49, 0.6);
 } 
-  .header-fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    background-color: #1E1E31;
-  }
  
 
 .badge-view{
@@ -494,13 +518,17 @@ color: #4C4C4C;
 
 .side-block-bg{
   background-color: #FAFAFA; padding: 20px;
-}
-
+} 
  
 footer{
   background-color:#1E1E31
 }
-
+.accordion-content {
+  color: #fff!important; opacity: 1!important;
+}
+.accordion-item a:hover {
+  color: #d1d5db;
+}
   .tags-popular-text, a.tags-popular-text {
 font-family: "Figtree", sans-serif;
   font-weight: 400; font-size: 14px;
@@ -583,6 +611,9 @@ font-family: "Figtree", sans-serif;
 }
 
     @media (max-width: 768px) {
+      .text-30{
+  font-size: 24px;
+}
 
       .exclusive-btn{
   position: relative; right: auto; top: 0px; left: 0; margin-bottom: 10px;
@@ -598,7 +629,7 @@ font-family: "Figtree", sans-serif;
   padding: 12px 10px 12px 10px; align-items: center; justify-content: center; display: flex; background-color: #FFFFFF; border-radius: 100%; 
 }
       .text-playfair-display{
-  font-family: "Playfair Display", serif!important; font-size: 32px; line-height:48px; font-weight: 800;
+  font-family: "Playfair Display", serif!important; font-size: 24px; line-height:32px; font-weight: 800;
 }
 .text-55{
   font-size: 24px;font-family: 'Helvetica';
@@ -630,3 +661,162 @@ font-family: "Figtree", sans-serif;
       display: none;
     }
   }
+
+
+  .ba-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%; /* fully responsive */
+}
+
+.ba-slider img {
+  width: 100%;
+  display: block;
+}
+
+.ba-slider .resize {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;   
+}
+.ba-slider .resize_over_color {
+  position: absolute;
+   height: 100%;
+  width: 100%;
+   background-color: #37343545;  z-index: 2;
+  pointer-events: none;
+}
+.ba-slider .resize img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: none;
+}
+
+
+
+.ba-slider .handle {
+  position: absolute;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #fff;
+  cursor: ew-resize;
+  z-index: 10;
+  transition: background 0.2s;
+}
+
+.ba-slider .handle:hover {
+  background: #ddd;
+}
+
+.ba-slider .handle::after {
+  content: '';
+    position: absolute;
+    top: 50%;
+    width: 41px;
+    height: 41px;
+    margin: -32px 0 0 -22px; 
+    background-image: url(../images/sleepId/slide/slide-btn.png); background-repeat: no-repeat; background-position: left top;
+}
+ 
+
+ /* ===== UNIQUE CORE STYLES ===== */
+.tw3d-rotator{
+  position:relative;
+  z-index:20;
+}
+.tw3d-rotator img{
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translateX(-50%) scale(.85);
+  opacity:0;
+  transition:all .65s cubic-bezier(.25,.8,.25,1);
+  z-index:1;
+  pointer-events:none;
+}
+
+/* loader reveal */
+.tw3d-rotator img.tw3d-show{
+  opacity:1;
+  transform:translateX(-50%) scale(1) rotate(var(--rot));
+}
+
+/* carousel base */
+.tw3d-rotator.tw3d-carousel img{
+  opacity:0;
+}
+
+/* CENTER */
+.tw3d-rotator.tw3d-carousel img.tw3d-active{
+  opacity:1;
+  left:50%;
+  transform:translateX(-50%) scale(1);
+  z-index:3;
+}
+
+/* RIGHT */
+.tw3d-rotator.tw3d-carousel img.tw3d-next{
+  opacity:.9;
+  left:100%;
+  transform:translateX(-95%) scale(.78);
+  filter:blur(4px);
+  z-index:2;
+}
+
+/* LEFT */
+.tw3d-rotator.tw3d-carousel img.tw3d-prev{
+  opacity:.9;
+  left:0%;
+  transform:translateX(-5%) scale(.78);
+  filter:blur(4px);
+  z-index:2;
+}
+
+/* hide buttons during loading */
+.tw3d-rotator:not(.tw3d-carousel) button{
+  opacity:0;
+  pointer-events:none;
+}
+
+/* show after ready */
+.tw3d-rotator.tw3d-carousel button{
+  opacity:1;
+}
+
+
+/* ALWAYS keep buttons above slides */
+.tw3d-rotator button{
+  position:absolute;
+  z-index:9999 !important;
+  display:flex !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  pointer-events:auto !important;
+}
+
+/* make sure icon visible */
+.tw3d-rotator button img{
+  display:block;
+  opacity:1 !important;
+}
+
+/* Hide buttons ONLY during loader */
+.tw3d-rotator:not(.tw3d-carousel) button{
+  opacity:0 !important;
+  visibility:hidden !important;
+  pointer-events:none !important;
+}
+
+/* Show buttons after carousel ready */
+.tw3d-rotator.tw3d-carousel button{
+  opacity:1 !important;
+  visibility:visible !important;
+  pointer-events:auto !important;
+}

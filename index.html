@@ -18,7 +18,7 @@
       href="assets/css/style.css">
 
 </head>
-<body class="text-figtree text-14">  
+<body class="text-figtree text-[14px]">  
 <div class="absolute top-0 left-0 w-full h-[900px] 
             bg-gradient-to-b from-[#1B2D3D] to-transparent
             -z-10">
@@ -35,7 +35,7 @@
     </a>
 
     <!-- DESKTOP NAV -->
-    <nav class="hidden lg:flex items-center gap-6 text-14">
+    <nav class="hidden lg:flex items-center gap-6 text-[14px]">
 
       <a href="#">Why King Koil?</a>
 
@@ -212,7 +212,7 @@
 
       <!-- SLIDER TRACK -->
       <div id="heroSlider"
-        class="flex transition-transform duration-700 ease-in-out">
+        class="flex transition-transform hidden sm:flex  duration-700 ease-in-out">
 
         <!-- SLIDE 1 -->
         <div class="min-w-full relative aspect-[16/9] sm:aspect-[21/9]">
@@ -230,26 +230,31 @@
             class="absolute inset-0 w-full h-full object-cover object-left-top">
         </div>
 
+      
+
       </div>
+         <div id="heroSlider2"
+        class="flex transition-transform flex sm:hidden duration-700 ease-in-out">
 
-      <!-- PREV BUTTON -->
-      <button id="prev"
-        type="button"
-        class="absolute left-6 top-1/2 -translate-y-1/2 z-30
-               w-[40px] h-[40px] rounded-full bg-white/80 hover:bg-white
-               flex items-center justify-center">
-        <img src="assets/images/slider-prev.png" alt="Previous">
-      </button>
+        <!-- SLIDE 1 -->
+        <div class="min-w-full relative aspect-square">
+          <img
+            src="assets/images/home/slider-mobile.jpg"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover object-left-top ">
+        </div>
 
-      <!-- NEXT BUTTON -->
-      <button id="next"
-        type="button"
-        class="absolute right-6 top-1/2 -translate-y-1/2 z-30
-               w-[40px] h-[40px] rounded-full bg-white/80 hover:bg-white
-               flex items-center justify-center">
-        <img src="assets/images/slider-next.png" alt="Next">
-      </button>
+        <!-- SLIDE 2 -->
+        <div class="min-w-full relative aspect-square">
+          <img
+            src="assets/images/home/slider-mobile.jpg"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover object-left-top  ">
+        </div>
 
+      
+
+      </div>  
       <!-- DOTS -->
       <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex gap-2">
         <button class="dot w-2.5 h-2.5 rounded-full bg-white"></button>
@@ -263,16 +268,16 @@
  
 <section class="py-[40px] md:py-[60px] xl:py-[90px]">
 <div class="max-w-[1490px] px-4  mx-auto  ">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-6 ">
+    <div class="grid grid-cols-4 md:grid-cols-4 gap-y-8 gap-x-6 ">
 
       <!-- Item 1 -->
       <div class="flex flex-col xl:flex-row text-center xl:text-start items-center gap-[20px] bg-light-gray-pad-20 reveal">
         <img
           src="assets/images/home/icon-sleepId.png"
           alt="Best Price Guarantee"
-          class="h-[44px] w-auto"
+          class="h-auto md:h-[44px] w-auto"
         />
-         <div class="text-16 tracking-wide text-gray-800 uppercase flex flex-col">
+         <div class="text-16 hidden md:block tracking-wide text-gray-800 uppercase flex flex-col">
               <h4 class="text-20 font-bold">SleepId</h4>
              <span class="text-16 text-black"> Body Match Technology</span>
         </div> 
@@ -282,9 +287,9 @@
         <img
           src="assets/images/home/icon-oremium.png"
           alt="Best Price Guarantee"
-          class="h-[44px] w-auto"
+          class="h-auto md:h-[44px] w-auto"
         />
-         <div class="text-16 tracking-wide text-gray-800 uppercase flex flex-col">
+         <div class="text-16 hidden md:block tracking-wide text-gray-800 uppercase flex flex-col">
             <h4 class="text-20 font-bold counter" data-count="40">0</h4>
              <span class="text-16 text-black">Premium Products</span>
         </div> 
@@ -294,9 +299,9 @@
         <img
           src="assets/images/home/icon-dealer.png"
           alt="Best Price Guarantee"
-          class="h-[44px] w-auto"
+          class="h-auto md:h-[44px] w-auto"
         />
-         <div class="text-16 tracking-wide text-gray-800 uppercase flex flex-col">
+         <div class="text-16 hidden md:block tracking-wide text-gray-800 uppercase flex flex-col">
             <h4 class="text-20 font-bold counter" data-count="600">0</h4>
              <span class="text-16 text-black">Dealer Network</span>
         </div> 
@@ -306,9 +311,9 @@
         <img
           src="assets/images/home/icon-R&D.png"
           alt="Best Price Guarantee"
-          class="h-[44px] w-auto"
+          class="h-auto md:h-[44px] w-auto"
         />
-         <div class="text-16 tracking-wide text-gray-800 uppercase flex flex-col">
+         <div class="text-16 hidden md:block tracking-wide text-gray-800 uppercase flex flex-col">
           <h4 class="text-20 font-bold counter" data-count="1500">0</h4>
              <span class="text-16 text-black">R&D Hours</span>
         </div> 
@@ -361,16 +366,16 @@
         <div class="relative z-10 h-full">
 
           <!-- Bottom content (default) -->
-          <div
-            class="absolute inset-x-0 bottom-0
+            <div
+            class="absolute inset-x-0 bottom-6
                    flex flex-col items-center text-white text-center
                    transition-all duration-500
                    group-hover:bottom-1/2
                    group-hover:translate-y-1/2">
 
-             <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP NOW</span>
+    <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP</span>
 
-              <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+              <h3 class="text-30 font-regular leading-snug  group-hover:mb-[30px]">
                 Memory Foam<br />Mattresses
               </h3>
 
@@ -419,7 +424,7 @@
                    group-hover:bottom-1/2
                    group-hover:translate-y-1/2">
  <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP</span>
-         <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+         <h3 class="text-30 font-regular leading-snug  group-hover:mb-[30px]">
               Back Support<br />Mattresses
             </h3>
 
@@ -463,7 +468,7 @@
                    group-hover:bottom-1/2
                    group-hover:translate-y-1/2">
  <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP</span>
-                 <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+                 <h3 class="text-30 font-regular leading-snug  group-hover:mb-[30px]">
               Stay Energized<br />Mattresses
             </h3>
 
@@ -505,7 +510,7 @@
                    group-hover:bottom-1/2
                    group-hover:translate-y-1/2">
  <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP</span>
-              <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+              <h3 class="text-30 font-regular leading-snug  group-hover:mb-[30px]">
               Luxury<br />Mattresses
             </h3>
 
@@ -570,7 +575,7 @@
        Top Picks For You
       </h2>
       <a href="blog-category.html"
-         class="text-14 font-medium tracking-wide hover:underline">
+         class="text-[14px] font-medium tracking-wide hover:underline">
         VIEW ALL
       </a>
     </div>
@@ -592,7 +597,7 @@
            group-hover:scale-105">
 
         <div class="py-4">
-          <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
+          <h3 class="font-semibold text-black text-18 pb-[6px] line-clamp-1">
              Dr Mattress Euro HR
           </h3>
 
@@ -621,7 +626,7 @@
            group-hover:scale-105">
 
         <div class="py-4">
-         <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
+         <h3 class="font-semibold text-black text-18 pb-[6px] line-clamp-1">
              Dr Mattress Euro HR
           </h3>
 
@@ -649,7 +654,7 @@
            group-hover:scale-105">
 
         <div class="py-4">
-         <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
+         <h3 class="font-semibold text-black text-18 pb-[6px] line-clamp-1">
              Dr Mattress Euro HR
           </h3>
 
@@ -677,7 +682,7 @@
            group-hover:scale-105">
 
         <div class="py-4">
-    <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
+    <h3 class="font-semibold text-black text-18 pb-[6px] line-clamp-1">
              CloudPillo PU Foam PillowR
           </h3>
            <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]"></p>
@@ -704,7 +709,7 @@
            group-hover:scale-105">
 
         <div class="py-4">
-            <h3 class="font-bold text-black text-18 pb-[6px] line-clamp-1">
+            <h3 class="font-semibold text-black text-18 pb-[6px] line-clamp-1">
             Dr Mattress Euro HR
           </h3>
           <p class="text-black 2xl:line-clamp-2 text-figtree pb-[10px]">
@@ -731,7 +736,7 @@
         <!-- Text -->
         <div class="text-black lg:max-w-[600px] text-center lg:text-left ">
           <h2 class="text-[24px] xl:text-[40px] font-bold mb-[20px] text-playfair-display">Choose Better, Choose Wisely <br/>with  Sleep ID</h2>
-          <p class="mb-[20px] text-14">
+          <p class="mb-[20px] text-[14px]">
            Research-based body match technology to find you a mattress that is the perfect fit for you and your partner. Revolutionary SleepID takes Body Composition, Body type, Posture into consideration and recommends a mattress that would be the perfect fit.
           </p>
 
@@ -758,47 +763,47 @@
 <section class="pb-[40px] md:pb-[60px] xl:pb-[88px]">
    <div class="max-w-[1490px] px-4  mx-auto ">
   <div >
-    <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-[30px] text-center">
+    <div class="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 gap-[30px] text-center">
       
       <!-- Item -->
-      <div class="flex flex-col items-center p-[40px] reveal bg-[#FAFAFA]">
-        <img src="assets/images/home/features/feature-1.png" alt="" class="h-[60px] w-auto">
-        <h4 class="text-[20px] font-bold text-black pt-[20px]">
+      <div class="flex flex-col items-center p-[10px] sm:p-[40px] reveal bg-[#FAFAFA]">
+        <img src="assets/images/home/features/feature-1.png" alt="" class="w-auto">
+        <h4 class="text-[20px] hidden sm:block font-bold text-black pt-[20px]">
           Pressure Mapping
         </h4>
       </div>
         <!-- Item -->
-      <div class="flex flex-col items-center p-[40px] reveal bg-[#FAFAFA]">
-        <img src="assets/images/home/features/feature-2.png" alt="" class="h-[60px] w-auto">
-        <h4 class="text-[20px] font-bold text-black pt-[20px]">
+      <div class="flex flex-col items-center p-[10px] sm:p-[40px] reveal bg-[#FAFAFA]">
+        <img src="assets/images/home/features/feature-2.png" alt="" class="w-auto">
+        <h4 class="text-[20px] hidden sm:block font-bold text-black pt-[20px]">
          Sleep Tracker
         </h4>
       </div>
         <!-- Item -->
-      <div class="flex flex-col items-center p-[40px] reveal bg-[#FAFAFA]">
-        <img src="assets/images/home/features/feature-3.png" alt="" class="h-[60px] w-auto">
-        <h4 class="text-[20px] font-bold text-black pt-[20px]">
+      <div class="flex flex-col items-center p-[10px] sm:p-[40px] reveal bg-[#FAFAFA]">
+        <img src="assets/images/home/features/feature-3.png" alt="" class="w-auto">
+        <h4 class="text-[20px] hidden sm:block font-bold text-black pt-[20px]">
 Body Discomfort
         </h4>
       </div>
         <!-- Item -->
-      <div class="flex flex-col items-center p-[40px] reveal bg-[#FAFAFA]">
-        <img src="assets/images/home/features/feature-4.png" alt="" class="h-[60px] w-auto">
-        <h4 class="text-[20px] font-bold text-black pt-[20px]">
+      <div class="flex flex-col items-center p-[10px] sm:p-[40px] reveal bg-[#FAFAFA]">
+        <img src="assets/images/home/features/feature-4.png" alt="" class="w-auto">
+        <h4 class="text-[20px] hidden sm:block font-bold text-black pt-[20px]">
        Posture Analysis
         </h4>
       </div>
         <!-- Item -->
-      <div class="flex flex-col items-center p-[40px] reveal bg-[#FAFAFA]">
-        <img src="assets/images/home/features/feature-5.png" alt="" class="h-[60px] w-auto">
-        <h4 class="text-[20px] font-bold text-black pt-[20px]">
+      <div class="flex flex-col items-center p-[10px] sm:p-[40px] reveal bg-[#FAFAFA]">
+        <img src="assets/images/home/features/feature-5.png" alt="" class="w-auto">
+        <h4 class="text-[20px] hidden sm:block font-bold text-black pt-[20px]">
        Spinal Alignment
         </h4>
       </div>
         <!-- Item -->
-      <div class="flex flex-col items-center p-[40px] reveal bg-[#FAFAFA]">
-        <img src="assets/images/home/features/feature-6.png" alt="" class="h-[60px] w-auto">
-        <h4 class="text-[20px] font-bold text-black pt-[20px]">
+      <div class="flex flex-col items-center p-[10px] sm:p-[40px] reveal bg-[#FAFAFA]">
+        <img src="assets/images/home/features/feature-6.png" alt="" class="w-auto">
+        <h4 class="text-[20px] hidden sm:block font-bold text-black pt-[20px]">
           Body Composition
         </h4>
       </div>
@@ -813,12 +818,12 @@ Body Discomfort
 <div class="max-w-[1490px] px-4  mx-auto ">
 
     <!-- HEADER -->
-<div class="flex flex-col xl:flex-row items-start xl:items-center gap-2  justify-between mb-8 reveal">
+<div class="flex flex-col items-center xl:justify-between xl:flex-row items-start xl:items-center gap-2   mb-8 reveal">
      <h2 class="text-[24px] md:text-[28px] font-normal text-black">
         Real Voices, Real Experiences
       </h2>
 
-      <div class="flex gap-2">
+      <div class="flex  gap-2">
         <button id="prevBtn"
           class="w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center
                  hover:bg-gray-100 transition">
@@ -1028,7 +1033,7 @@ Body Discomfort
         News & Articles
       </h2>
       <a href="blog-category.html"
-         class="text-14 font-medium tracking-wide hover:underline">
+         class="text-[14px] font-medium tracking-wide hover:underline">
         VIEW ALL
       </a>
     </div>
@@ -1195,7 +1200,7 @@ Body Discomfort
         King Koil Mattresses for your Hotel
       </h2>
       <a href="blog-category.html"
-         class="text-14 font-medium tracking-wide hover:underline">
+         class="text-[14px] font-medium tracking-wide hover:underline">
         VIEW ALL
       </a>
     </div>
@@ -1300,7 +1305,7 @@ Body Discomfort
   </div>
 </section>  
   <!-- ================= FOOTER ================= -->
-<footer class="text-white text-14">
+<footer class="text-white text-[14px]">
         <div class="border-b border-[#3D3B3B]">
  <div >
   <div class="max-w-[1650px] px-4  mx-auto py-[32px] flex flex-col lg:flex-row items-center justify-between gap-4">
@@ -1311,13 +1316,13 @@ Body Discomfort
     </a>
 
     <!-- CENTER: Contact Info -->
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-12 text-center lg:text-left">
+    <div class="flex flex-col sm:flex-row items-start justify-start sm:items-center sm:justify-center  gap-4 text-12 text-center lg:text-left">
       <span class="flex items-center gap-[14px]">
         <img src="assets/images/icon-location.png" alt="Suite 614, 6th Floor, DLF Downtown Meadows, Rajarhat, NT 15256">
         Suite 614, 6th Floor, DLF Downtown Meadows, Rajarhat, NT 15256
       </span>
 
-      <span class="flex items-center gap-[14px] mx-4 md:mx-[118px]">
+      <span class="flex items-center gap-[14px] sm:mx-4 md:mx-[118px]">
       <img src="assets/images/icon-call.png" alt=" +91 56323 1256">
         +91 56323 1256
       </span>
@@ -1329,7 +1334,7 @@ Body Discomfort
     </div>
 
     <!-- RIGHT: Scroll to top -->
-    <div class="flex justify-center lg:justify-end w-full lg:w-auto">
+    <div class="flex justify-end w-full lg:w-auto">
       <button onclick="window.scrollTo({top:0,behavior:'smooth'})"
               class="flex items-center gap-[16px] text-12 hover:text-white">
         SCROLL TO TOP
@@ -1349,56 +1354,77 @@ Body Discomfort
 
   <!-- MAIN FOOTER -->
   <div class="max-w-[1650px] px-4  mx-auto py-12
-              grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+              grid gap-2 lg:gap-10 sm:grid-cols-2 lg:grid-cols-4 text-white">
 
     <!-- COMPANY -->
-    <div>
-    <h4 class="text-white font-semibold mb-[31px] uppercase text-16">COMPANY</h4>
-     <ul class="space-y-[13px]">
-        <li><a href="#" class="text-14 text-white">Why King Koil</a></li>
-        <li><a href="#" class="text-14 text-white">Know Your SleepID</a></li>
-        <li><a href="#" class="text-14 text-white">Where to Buy</a></li>
-        <li><a href="#" class="text-14 text-white">Contact Us</a></li>
-        <li><a href="#" class="text-14 text-white">FAQs</a></li>
+  <div class="border-b border-gray-600 lg:border-0 accordion-item">
+    <button class="accordion-btn w-full flex justify-between items-center sm:mb-4 py-2 lg:py-0 font-semibold uppercase text-[16px] lg:cursor-default">
+      COMPANY
+      <i class="fa-solid fa-circle-chevron-down text-lg transition-transform duration-300 lg:hidden"></i>
+    </button>
+
+    <div class="accordion-content overflow-hidden max-h-0 lg:max-h-full transition-all duration-300">
+      <ul class="space-y-[13px] pb-4">
+        <li><a href="#" class="text-[14px] text-white">Why King Koil</a></li>
+        <li><a href="#" class="text-[14px] text-white">Know Your SleepID</a></li>
+        <li><a href="#" class="text-[14px] text-white">Where to Buy</a></li>
+        <li><a href="#" class="text-[14px] text-white">Contact Us</a></li>
+        <li><a href="#" class="text-[14px] text-white">FAQs</a></li>
       </ul>
     </div>
+  </div>
+
 
     <!-- MATTRESS FOR HOME -->
-    <div>
-      <h4 class="text-white font-semibold  mb-[31px] uppercase text-16">MATTRESS FOR HOME</h4>
-       <ul class="space-y-[13px]">
-        <li><a href="#" class="text-14 text-white">Memory Foam Mattresses</a></li>
-        <li><a href="#" class="text-14 text-white">Back Support Mattresses</a></li>
-        <li><a href="#" class="text-14 text-white">Stay Energized Mattresses</a></li>
-        <li><a href="#" class="text-14 text-white">Luxury Mattresses</a></li>
-        <li><a href="#" class="text-14 text-white">Ultra Luxury Mattresses</a></li>
+  <div class="border-b border-gray-600 lg:border-0 accordion-item">
+    <button class="accordion-btn w-full flex justify-between items-center sm:mb-4 py-2 lg:py-0 font-semibold uppercase text-[16px] lg:cursor-default">
+      MATTRESS FOR HOME
+      <i class="fa-solid fa-circle-chevron-down text-lg transition-transform duration-300 lg:hidden"></i>
+    </button>
+
+    <div class="accordion-content overflow-hidden max-h-0 lg:max-h-full transition-all duration-300">
+      <ul class="space-y-[13px] pb-4">
+  <li><a href="#" class="text-[14px] text-white">Memory Foam Mattresses</a></li>
+        <li><a href="#" class="text-[14px] text-white">Back Support Mattresses</a></li>
+        <li><a href="#" class="text-[14px] text-white">Stay Energized Mattresses</a></li>
+        <li><a href="#" class="text-[14px] text-white">Luxury Mattresses</a></li>
+        <li><a href="#" class="text-[14px] text-white">Ultra Luxury Mattresses</a></li>
       </ul>
     </div>
+  </div>
+
 
     <!-- MATTRESS FOR HOTELS -->
-    <div>
-      <h4 class="text-white font-semibold   mb-[31px] uppercase text-16">MATTRESS FOR HOTELS</h4>
-      <ul class="space-y-[13px]">
-        <li><a href="#" class="text-14 text-white">Hospitality Bedding Solution</a></li>
-        <li><a href="#" class="text-14 text-white">Maharaja Grand</a></li>
-        <li><a href="#" class="text-14 text-white">Euro Soft</a></li>
-        <li><a href="#" class="text-14 text-white">Foldable Roll Away Bed</a></li>
-        <li><a href="#" class="text-14 text-white">Non-Foldable Rollaway Bed</a></li>
+  <div class="border-b border-gray-600 lg:border-0 accordion-item text-white">
+    <button class="accordion-btn w-full flex justify-between items-center sm:mb-4 py-2 lg:py-0 font-semibold uppercase text-[16px] lg:cursor-default">
+      MATTRESS FOR HOTELS
+      <i class="fa-solid fa-circle-chevron-down text-lg transition-transform duration-300 lg:hidden"></i>
+    </button>
+
+    <div class="accordion-content overflow-hidden max-h-0 lg:max-h-full transition-all duration-300">
+      <ul class="space-y-[13px] pb-4">
+       <li><a href="#" class="text-[14px] text-white">Hospitality Bedding Solution</a></li>
+        <li><a href="#" class="text-[14px] text-white">Maharaja Grand</a></li>
+        <li><a href="#" class="text-[14px] text-white">Euro Soft</a></li>
+        <li><a href="#" class="text-[14px] text-white">Foldable Roll Away Bed</a></li>
+        <li><a href="#" class="text-[14px] text-white">Non-Foldable Rollaway Bed</a></li>
       </ul>
     </div>
+  </div>
+
 
     <!-- SUBSCRIBE -->
     <div>
       <h4 class="text-white font-semibold mb-[31px] uppercase text-16">SUBMIT FOR SUBSCRIPTION</h4>
-      <p class="mb-4 text-14">
+      <p class="mb-4 text-[14px]">
         Subscribe to get updates about new products and sales
       </p>
 
-      <form class="flex mb-[20px]">
+      <form class="flex mb-[20px] mt-[10px]">
         <input type="email"
                placeholder="Enter your email address"
                class="w-full px-3 py-2 text-[#C3C3C3] bg-transparent border border-white">
-        <button class="bg-white text-[#1b1b2f] px-4 font-semibold  ">
+        <button class="bg-white text-[10px] text-[#1b1b2f] px-4 font-semibold  ">
           SUBSCRIBE
         </button>
       </form>
@@ -1418,7 +1444,7 @@ Body Discomfort
   <div class="border-t border-[#3D3B3B]">
     <div class="max-w-[1650px] px-4  mx-auto   py-[22px]
                 flex flex-col md:flex-row gap-3
-                justify-between items-center text-12">
+                justify-between items-center text-center lg:text-start text-12">
 
       <p>© 2026 King Koil India by Real Inspiring Technologies Pvt. Ltd. All Rights Reserved </p>
 
@@ -1540,34 +1566,66 @@ document.addEventListener("DOMContentLoaded", () => {
 
   counters.forEach(counter => observer.observe(counter));
 </script>
-<script>
+ <script>
 document.addEventListener("DOMContentLoaded", () => {
 
-  const slider = document.getElementById("heroSlider");
-  const prevBtn = document.getElementById("prev");
-  const nextBtn = document.getElementById("next");
+  const desktopSlider = document.getElementById("heroSlider");
+  const mobileSlider  = document.getElementById("heroSlider2");
+  const dots = document.querySelectorAll(".dot");
 
-  if (!slider || !prevBtn || !nextBtn) {
-    console.error("Slider elements missing");
-    return;
-  }
-
-  const slides = slider.children;
-  let index = 0;
+  let desktopIndex = 0;
+  let mobileIndex = 0;
   let autoPlayInterval = null;
   const delay = 4000;
 
+  function isMobile() {
+    return window.innerWidth < 640;
+  }
+
+  function getActiveSlider() {
+    return isMobile() ? mobileSlider : desktopSlider;
+  }
+
+  function getSlides() {
+    const slider = getActiveSlider();
+    return slider ? slider.children : [];
+  }
+
+  function getIndex() {
+    return isMobile() ? mobileIndex : desktopIndex;
+  }
+
+  function setIndex(i) {
+    if (isMobile()) mobileIndex = i;
+    else desktopIndex = i;
+  }
+
+  function updateDots() {
+    dots.forEach((dot, i) => {
+      dot.classList.remove("bg-white");
+      dot.classList.add("bg-white/40");
+
+      if (i === getIndex()) {
+        dot.classList.remove("bg-white/40");
+        dot.classList.add("bg-white");
+      }
+    });
+  }
+
   function updateSlider() {
-    slider.style.transform = `translateX(-${index * 100}%)`;
+    const slider = getActiveSlider();
+    if (!slider) return;
+
+    slider.style.transform = `translateX(-${getIndex() * 100}%)`;
+    updateDots();
   }
 
   function nextSlide() {
-    index = (index + 1) % slides.length;
-    updateSlider();
-  }
+    const slides = getSlides();
+    if (!slides.length) return;
 
-  function prevSlide() {
-    index = (index - 1 + slides.length) % slides.length;
+    let i = (getIndex() + 1) % slides.length;
+    setIndex(i);
     updateSlider();
   }
 
@@ -1576,21 +1634,118 @@ document.addEventListener("DOMContentLoaded", () => {
     autoPlayInterval = setInterval(nextSlide, delay);
   }
 
-  nextBtn.addEventListener("click", () => {
-    nextSlide();
-    startAutoplay();
+  /* ---------- DOT CLICK ---------- */
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+      setIndex(i);
+      updateSlider();
+      startAutoplay();
+    });
   });
 
-  prevBtn.addEventListener("click", () => {
-    prevSlide();
-    startAutoplay();
-  });
+  /* ---------- RESIZE FIX ---------- */
+  window.addEventListener("resize", updateSlider);
 
+  /* ---------- INIT ---------- */
+  updateSlider();
   startAutoplay();
 });
 </script>
 
 
+
+
+ <script>
+  const prioritySlider = new Swiper('.priority-slider', {
+    loop: true,
+    speed: 800,
+    spaceBetween: 24,
+
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
+    },
+  });
+</script>
+ <script>
+const items = document.querySelectorAll(".accordion-item");
+
+function isMobile() {
+  return window.innerWidth < 1024;
+}
+
+function closeAll() {
+  items.forEach(item => {
+    const content = item.querySelector(".accordion-content");
+    const icon = item.querySelector("i");
+    content.style.maxHeight = null;
+    icon.classList.remove("rotate-180");
+  });
+}
+
+items.forEach((item, index) => {
+  const btn = item.querySelector(".accordion-btn");
+  const content = item.querySelector(".accordion-content");
+  const icon = item.querySelector("i");
+
+  btn.addEventListener("click", () => {
+    if (!isMobile()) return;
+
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      icon.classList.remove("rotate-180");
+    } else {
+      closeAll();
+      content.style.maxHeight = content.scrollHeight + "px";
+      icon.classList.add("rotate-180");
+    }
+  });
+
+  // First open by default (mobile)
+  if (index === 0 && isMobile()) {
+    content.style.maxHeight = content.scrollHeight + "px";
+    icon.classList.add("rotate-180");
+  }
+});
+
+
+/* Desktop: always open */
+function handleResize() {
+  items.forEach(item => {
+    const content = item.querySelector(".accordion-content");
+    const icon = item.querySelector("i");
+
+    if (!isMobile()) {
+      content.style.maxHeight = "none";
+      icon.classList.remove("rotate-180");
+    } else {
+      content.style.maxHeight = null;
+    }
+  });
+
+  // reopen first on mobile after resize
+  if (isMobile() && items.length) {
+    const firstContent = items[0].querySelector(".accordion-content");
+    const firstIcon = items[0].querySelector("i");
+    firstContent.style.maxHeight = firstContent.scrollHeight + "px";
+    firstIcon.classList.add("rotate-180");
+  }
+}
+
+window.addEventListener("resize", handleResize);
+</script>
 
 
 </body>

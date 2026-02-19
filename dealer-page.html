@@ -236,23 +236,23 @@
  <!-- LOCATION FILTER BAR -->
  <div class="max-w-[1490px] mx-auto bg-light-gray shadow-sm    p-4 reveal">
   
- <form
+   <form
   class="grid grid-cols-1 md:grid-cols-[1fr_1fr_1fr_auto] gap-4 items-center overflow-x-hidden"
   id="locationSearchForm"
 >
 
   <!-- Country -->
   <div class="md:border-r md:border-gray-300 md:pr-4">
-    <label class="block text-xs text-gray-500 mb-1">
+    <label class="block text-xs  text-[#1E1E31]  mb-1">
       Choose Country
     </label>
 
     <div class="relative">
       <select
         required
-        class="w-full appearance-none bg-transparent text-12 font-medium text-gray-900
-               focus:outline-none cursor-pointer
-               pr-4 pl-0 leading-tight">
+        class="w-full appearance-none bg-transparent text-12 font-medium text-[#1E1E31]
+         focus:outline-none cursor-pointer
+         px-3 py-2 leading-tight">
         <option value="">Select Country</option>
         <option value="India">India</option>
         <option value="USA">USA</option>
@@ -260,7 +260,7 @@
       </select>
 
       <svg
-        class="absolute left-auto xl:left-20 right-0 xl:right-auto top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600 pointer-events-none"
+        class="absolute left-auto xl:left-24 right-0 xl:right-auto top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600 pointer-events-none"
         fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M19 9l-7 7-7-7"/>
@@ -270,24 +270,24 @@
 
   <!-- State -->
   <div class="md:border-r md:border-gray-300 md:pr-4">
-    <label class="block text-xs text-gray-500 mb-1">
+    <label class="block text-xs  text-[#1E1E31]  mb-1">
       Choose State
     </label>
 
     <div class="relative">
-      <select
-        required
-        class="w-full appearance-none bg-transparent text-12 font-medium text-gray-900
-               focus:outline-none cursor-pointer
-               pr-4 pl-0 leading-tight">
-        <option value="">Select State</option>
-        <option value="Gujarat">Gujarat</option>
-        <option value="Maharashtra">Maharashtra</option>
-        <option value="Rajasthan">Rajasthan</option>
-      </select>
+    <select
+  required
+  class="w-full appearance-none bg-transparent text-12 font-medium text-[#1E1E31]
+         focus:outline-none cursor-pointer
+         px-3 py-2 leading-tight">
+  <option value="">Please Select an item in the list</option>
+  <option value="Gujarat">Gujarat</option>
+  <option value="Maharashtra">Maharashtra</option>
+  <option value="Rajasthan">Rajasthan</option>
+</select>
 
       <svg
-        class="absolute left-auto xl:left-20 right-0 xl:right-auto top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600 pointer-events-none"
+        class="absolute left-auto xl:left-[180px] right-0 xl:right-auto top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600 pointer-events-none"
         fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M19 9l-7 7-7-7"/>
@@ -297,16 +297,16 @@
 
   <!-- City -->
   <div>
-    <label class="block text-xs text-gray-500 mb-1">
+    <label class="block text-xs  text-[#1E1E31]  mb-1">
       Choose City
     </label>
 
     <div class="relative">
       <select
         required
-        class="w-full appearance-none bg-transparent text-12 font-medium text-gray-900
-               focus:outline-none cursor-pointer
-               pr-4 pl-0 leading-tight">
+       class="w-full appearance-none bg-transparent text-12 font-medium text-[#1E1E31]
+         focus:outline-none cursor-pointer
+         px-3 py-2 leading-tight">
         <option value="">Select City</option>
         <option value="Ahmedabad">Ahmedabad</option>
         <option value="Surat">Surat</option>
@@ -650,14 +650,104 @@
           <li><strong>Trusted by Experts – </strong>Over 125 years of excellence in sleep solutions.</li>
         </ul>
 
-        <p class="text-20  text-figtree mt-6 mb-[20px]">
+        <p class="text-20  text-figtree mt-6">
           Visit a King Koil mattress store near you today and find the perfect mattress for your needs!<br/>
           <strong>Find your nearest retailer now!</strong>
         </p>
+         <h2 class="text-[34px]  font-semibold  my-[20px] reveal">
+      Frequently Asked Questions (FAQs)
+    </h2>
+              <div>
+    
+
+    <div class="space-y-4" id="faqAccordion">
+
+      <!-- FAQ ITEM -->
+      <div class="bg-faq-item-block reveal">
+        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
+          <span class="font-medium text-18 text-black">
+            What is the best mattress firmness for heavy people?
+          </span>
+        <span class="icon transition-transform duration-300 shadow faq-icon rotate-180"><img src="assets/images/black-down-arrow.png" alt="faq"></span>
+        </button>
+        <div class="faq-content  leading-relaxed">
+          For individuals weighing over 90–100 kg, a medium-firm to firm mattress (6–8 on the firmness scale) is ideal. Medium-firm works well for heavy side sleepers by cushioning pressure points, while firm mattresses suit back and stomach sleepers by supporting spinal alignment and reducing sinkage.
+        </div>
+      </div>
+
+      <!-- FAQ ITEM -->
+      <div class="bg-faq-item-block reveal">
+        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
+          <span class="font-medium text-18 text-black">
+            How thick should a mattress be for heavy individuals?
+          </span>
+          <span class="icon transition-transform duration-300 shadow faq-icon"><img src="assets/images/black-down-arrow.png" alt="faq"></span>
+        </button>
+        <div class="faq-content  hidden leading-relaxed">
+          A mattress thickness of 10–14 inches is recommended for heavier individuals to provide better durability, support, and comfort.
+        </div>
+      </div>
+
+      <!-- FAQ ITEM -->
+      <div class="bg-faq-item-block reveal">
+        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
+         <span class="font-medium text-18 text-black">
+            Are orthopedic mattresses good for heavy people with back pain?
+          </span>
+          <span class="icon transition-transform duration-300 shadow faq-icon"><img src="assets/images/black-down-arrow.png" alt="faq"></span>
+        </button>
+        <div class="faq-content  hidden  leading-relaxed">
+          Yes. Orthopedic mattresses are designed to provide enhanced lumbar support, making them suitable for heavy sleepers with chronic back pain.
+        </div>
+      </div>
+
+      <!-- FAQ ITEM -->
+      <div class="bg-faq-item-block reveal">
+        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
+         <span class="font-medium text-18 text-black">
+            Do heavy people need a firm mattress or a soft mattress?
+          </span>
+          <span class="icon transition-transform duration-300 shadow faq-icon"><img src="assets/images/black-down-arrow.png" alt="faq"></span>
+        </button>
+        <div class="faq-content  hidden leading-relaxed">
+          Heavy people generally benefit from medium-firm to firm mattresses, which prevent excessive sinking and maintain spinal alignment.
+        </div>
+      </div>
+
+      <!-- FAQ ITEM -->
+      <div class="bg-faq-item-block reveal">
+        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
+          <span class="font-medium text-18 text-black">
+            Is memory foam suitable for heavy sleepers?
+          </span>
+          <span class="icon transition-transform duration-300 shadow faq-icon"><img src="assets/images/black-down-arrow.png" alt="faq"></span>
+        </button>
+        <div class="faq-content  hidden   leading-relaxed">
+          High-density memory foam can work well, but low-density foam may sag faster under higher body weight.
+        </div>
+      </div>
+
+      <!-- FAQ ITEM -->
+      <div class="bg-faq-item-block reveal">
+        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
+          <span class="font-medium text-18 text-black">
+            Are hybrid mattresses better for heavy people?
+          </span>
+          <span class="icon transition-transform duration-300 shadow faq-icon"><img src="assets/images/black-down-arrow.png" alt="faq"></span>
+        </button>
+        <div class="faq-content  hidden  leading-relaxed">
+          Yes. Hybrid mattresses combine foam comfort with coil support, making them durable and supportive for heavier sleepers.
+        </div>
+      </div> 
+
+    </div>
+    </div>
+
+
       </div>
 
       <!-- RIGHT CONTACT FORM -->
-      <div class="bg-white shadow-md rounded-lg p-6 md:w-2/5">
+      <div class="bg-white p-6 md:w-2/5 lg:sticky lg:top-[140px]">
         <h3 class="text-20-heading-black font-semibold  mb-4">
           Contact Us
         </h3>
@@ -763,305 +853,394 @@
                         VIEW ALL
                     </a>
                 </div>
-                <div >
-     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"> 
+                 <div class="swiper priority-slider">
+                  <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <!-- ================= IMAGE CARD ================= -->
+                    <a href="#" class="relative group overflow-hidden min-h-[433px]">
 
-      <!-- ================= IMAGE CARD ================= -->
-      <a href="#" class="relative group overflow-hidden min-h-[433px]">
+                      <!-- Image -->
+                      <img
+                        src="assets/images/peiority-image-3.png"
+                        class="absolute inset-0 w-full h-full object-cover
+                              transition-transform duration-700 group-hover:scale-105"
+                        alt="" />
 
-        <!-- Image -->
-        <img
-          src="assets/images/peiority-image-3.png"
-          class="absolute inset-0 w-full h-full object-cover
-                 transition-transform duration-700 group-hover:scale-105"
-          alt="" />
+                      <!-- Default overlay -->
+                      <div class="absolute inset-0 bg-black/30"></div>
 
-        <!-- Default overlay -->
-        <div class="absolute inset-0 bg-black/30"></div>
+                      <!-- Hover overlay -->
+                      <div
+                        class="absolute inset-0 bg-black
+                              translate-y-full
+                              group-hover:translate-y-0
+                              transition-transform duration-500 ease-out">
+                      </div>
 
-        <!-- Hover overlay -->
-        <div
-          class="absolute inset-0 bg-black
-                 translate-y-full
-                 group-hover:translate-y-0
-                 transition-transform duration-500 ease-out">
-        </div>
+                      <!-- CONTENT -->
+                      <div class="relative z-10 h-full">
 
-        <!-- CONTENT -->
-        <div class="relative z-10 h-full">
+                        <!-- Bottom content (default) -->
+                        <div
+                          class="absolute inset-x-0 bottom-0
+                                flex flex-col items-center text-white text-center
+                                transition-all duration-500
+                                group-hover:bottom-1/2
+                                group-hover:translate-y-1/2">
 
-          <!-- Bottom content (default) -->
-          <div
-            class="absolute inset-x-0 bottom-0
-                   flex flex-col items-center text-white text-center
-                   transition-all duration-500
-                   group-hover:bottom-1/2
-                   group-hover:translate-y-1/2">
+                          <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP NOW</span>
 
-             <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP NOW</span>
+                            <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+                              Memory Foam<br />Mattresses
+                            </h3>
 
-              <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
-                Memory Foam<br />Mattresses
-              </h3>
+                          <i
+                            class="fa-solid fa-circle-chevron-right text-[40px]
+                                  opacity-0 translate-y-2
+                                  group-hover:opacity-100
+                                  group-hover:translate-y-0
+                                  transition-all duration-500">
+                          </i>
 
-            <i
-              class="fa-solid fa-circle-chevron-right text-[40px]
-                     opacity-0 translate-y-2
-                     group-hover:opacity-100
-                     group-hover:translate-y-0
-                     transition-all duration-500">
-            </i>
+                        </div>
 
-          </div>
+                      </div>
 
-        </div>
+                    </a>
+                          </div>
+                          <div class="swiper-slide">
+                              <!-- ================= IMAGE CARD ================= -->
+                    <a href="#" class="relative group overflow-hidden min-h-[433px]">
 
-      </a>
-        <!-- ================= IMAGE CARD ================= -->
-      <a href="#" class="relative group overflow-hidden min-h-[433px]">
+                      <!-- Image -->
+                      <img
+                        src="assets/images/peiority-image-1.png"
+                        class="absolute inset-0 w-full h-full object-cover
+                              transition-transform duration-700 group-hover:scale-105"
+                        alt="" />
 
-        <!-- Image -->
-        <img
-          src="assets/images/peiority-image-1.png"
-          class="absolute inset-0 w-full h-full object-cover
-                 transition-transform duration-700 group-hover:scale-105"
-          alt="" />
+                      <!-- Default overlay -->
+                      <div class="absolute inset-0 bg-black/30"></div>
 
-        <!-- Default overlay -->
-        <div class="absolute inset-0 bg-black/30"></div>
+                      <!-- Hover overlay -->
+                      <div
+                        class="absolute inset-0 bg-black
+                              translate-y-full
+                              group-hover:translate-y-0
+                              transition-transform duration-500 ease-out">
+                      </div>
 
-        <!-- Hover overlay -->
-        <div
-          class="absolute inset-0 bg-black
-                 translate-y-full
-                 group-hover:translate-y-0
-                 transition-transform duration-500 ease-out">
-        </div>
+                      <!-- CONTENT -->
+                      <div class="relative z-10 h-full">
 
-        <!-- CONTENT -->
-        <div class="relative z-10 h-full">
+                        <!-- Bottom content (default) -->
+                        <div
+                          class="absolute inset-x-0 bottom-6
+                                flex flex-col items-center text-white text-center
+                                transition-all duration-500
+                                group-hover:bottom-1/2
+                                group-hover:translate-y-1/2">
+              <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP</span>
+                      <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+                            Back Support<br />Mattresses
+                          </h3>
 
-          <!-- Bottom content (default) -->
-          <div
-            class="absolute inset-x-0 bottom-6
-                   flex flex-col items-center text-white text-center
-                   transition-all duration-500
-                   group-hover:bottom-1/2
-                   group-hover:translate-y-1/2">
- <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP</span>
-         <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
-              Back Support<br />Mattresses
-            </h3>
+                            <i
+                            class="fa-solid fa-circle-chevron-right text-[40px]
+                                  opacity-0 translate-y-2
+                                  group-hover:opacity-100
+                                  group-hover:translate-y-0
+                                  transition-all duration-500">
+                          </i>
 
-              <i
-              class="fa-solid fa-circle-chevron-right text-[40px]
-                     opacity-0 translate-y-2
-                     group-hover:opacity-100
-                     group-hover:translate-y-0
-                     transition-all duration-500">
-            </i>
+                        </div>
 
-          </div>
+                      </div>
 
-        </div>
+                    </a>
+                          </div>
+                          <div class="swiper-slide">
+                              <!-- ================= CARD 3 ================= -->
+                    <a href="#" class="relative group overflow-hidden min-h-[433px]">
 
-      </a>
+                      <img
+                        src="assets/images/peiority-image-2.png"
+                        class="absolute inset-0 w-full h-full object-cover
+                              transition-transform duration-700 group-hover:scale-105"
+                        alt="" />
 
-      <!-- ================= CARD 3 ================= -->
-      <a href="#" class="relative group overflow-hidden min-h-[433px]">
+                      <div class="absolute inset-0 bg-black/30"></div>
 
-        <img
-          src="assets/images/peiority-image-2.png"
-          class="absolute inset-0 w-full h-full object-cover
-                 transition-transform duration-700 group-hover:scale-105"
-          alt="" />
+                      <div
+                        class="absolute inset-0 bg-black
+                              translate-y-full
+                              group-hover:translate-y-0
+                              transition-transform duration-500 ease-out">
+                      </div>
 
-        <div class="absolute inset-0 bg-black/30"></div>
+                      <div class="relative z-10 h-full">
+                        <div
+                          class="absolute inset-x-0 bottom-6
+                                flex flex-col items-center text-white text-center
+                                transition-all duration-500
+                                group-hover:bottom-1/2
+                                group-hover:translate-y-1/2">
+              <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP</span>
+                              <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+                            Stay Energized<br />Mattresses
+                          </h3>
 
-        <div
-          class="absolute inset-0 bg-black
-                 translate-y-full
-                 group-hover:translate-y-0
-                 transition-transform duration-500 ease-out">
-        </div>
+                            <i
+                            class="fa-solid fa-circle-chevron-right text-[40px]
+                                  opacity-0 translate-y-2
+                                  group-hover:opacity-100
+                                  group-hover:translate-y-0
+                                  transition-all duration-500">
+                          </i>
+                        </div>
+                      </div>
 
-        <div class="relative z-10 h-full">
-          <div
-            class="absolute inset-x-0 bottom-6
-                   flex flex-col items-center text-white text-center
-                   transition-all duration-500
-                   group-hover:bottom-1/2
-                   group-hover:translate-y-1/2">
- <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP</span>
-                 <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
-              Stay Energized<br />Mattresses
-            </h3>
+                    </a>
 
-               <i
-              class="fa-solid fa-circle-chevron-right text-[40px]
-                     opacity-0 translate-y-2
-                     group-hover:opacity-100
-                     group-hover:translate-y-0
-                     transition-all duration-500">
-            </i>
-          </div>
-        </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <!-- ================= CARD 4 ================= -->
+                    <a href="#" class="relative group overflow-hidden min-h-[433px]">
 
-      </a>
+                      <img
+                        src="assets/images/peiority-image-3.png"
+                        class="absolute inset-0 w-full h-full object-cover
+                              transition-transform duration-700 group-hover:scale-105"
+                        alt="" />
 
-      <!-- ================= CARD 4 ================= -->
-      <a href="#" class="relative group overflow-hidden min-h-[433px]">
+                      <div class="absolute inset-0 bg-black/30"></div>
 
-        <img
-          src="assets/images/peiority-image-3.png"
-          class="absolute inset-0 w-full h-full object-cover
-                 transition-transform duration-700 group-hover:scale-105"
-          alt="" />
+                      <div
+                        class="absolute inset-0 bg-black
+                              translate-y-full
+                              group-hover:translate-y-0
+                              transition-transform duration-500 ease-out">
+                      </div>
 
-        <div class="absolute inset-0 bg-black/30"></div>
+                      <div class="relative z-10 h-full">
+                        <div
+                          class="absolute inset-x-0 bottom-6
+                                flex flex-col items-center text-white text-center
+                                transition-all duration-500
+                                group-hover:bottom-1/2
+                                group-hover:translate-y-1/2">
+              <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP</span>
+                            <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+                            Luxury<br />Mattresses
+                          </h3>
 
-        <div
-          class="absolute inset-0 bg-black
-                 translate-y-full
-                 group-hover:translate-y-0
-                 transition-transform duration-500 ease-out">
-        </div>
+                              <i
+                            class="fa-solid fa-circle-chevron-right text-[40px]
+                                  opacity-0 translate-y-2
+                                  group-hover:opacity-100
+                                  group-hover:translate-y-0
+                                  transition-all duration-500">
+                          </i>
+                        </div>
+                      </div>
 
-        <div class="relative z-10 h-full">
-          <div
-            class="absolute inset-x-0 bottom-6
-                   flex flex-col items-center text-white text-center
-                   transition-all duration-500
-                   group-hover:bottom-1/2
-                   group-hover:translate-y-1/2">
- <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP</span>
-              <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
-              Luxury<br />Mattresses
-            </h3>
+                    </a>
+                          </div>
+                            <div class="swiper-slide">
+                              <!-- ================= IMAGE CARD ================= -->
+                    <a href="#" class="relative group overflow-hidden min-h-[433px]">
 
-                <i
-              class="fa-solid fa-circle-chevron-right text-[40px]
-                     opacity-0 translate-y-2
-                     group-hover:opacity-100
-                     group-hover:translate-y-0
-                     transition-all duration-500">
-            </i>
-          </div>
-        </div>
+                      <!-- Image -->
+                      <img
+                        src="assets/images/peiority-image-3.png"
+                        class="absolute inset-0 w-full h-full object-cover
+                              transition-transform duration-700 group-hover:scale-105"
+                        alt="" />
 
-      </a>
+                      <!-- Default overlay -->
+                      <div class="absolute inset-0 bg-black/30"></div>
 
-    </div>
-</div>
+                      <!-- Hover overlay -->
+                      <div
+                        class="absolute inset-0 bg-black
+                              translate-y-full
+                              group-hover:translate-y-0
+                              transition-transform duration-500 ease-out">
+                      </div>
+
+                      <!-- CONTENT -->
+                      <div class="relative z-10 h-full">
+
+                        <!-- Bottom content (default) -->
+                        <div
+                          class="absolute inset-x-0 bottom-0
+                                flex flex-col items-center text-white text-center
+                                transition-all duration-500
+                                group-hover:bottom-1/2
+                                group-hover:translate-y-1/2">
+
+                          <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP NOW</span>
+
+                            <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+                              Memory Foam<br />Mattresses
+                            </h3>
+
+                          <i
+                            class="fa-solid fa-circle-chevron-right text-[40px]
+                                  opacity-0 translate-y-2
+                                  group-hover:opacity-100
+                                  group-hover:translate-y-0
+                                  transition-all duration-500">
+                          </i>
+
+                        </div>
+
+                      </div>
+
+                    </a>
+                          </div>
+                          <div class="swiper-slide">
+                              <!-- ================= IMAGE CARD ================= -->
+                    <a href="#" class="relative group overflow-hidden min-h-[433px]">
+
+                      <!-- Image -->
+                      <img
+                        src="assets/images/peiority-image-1.png"
+                        class="absolute inset-0 w-full h-full object-cover
+                              transition-transform duration-700 group-hover:scale-105"
+                        alt="" />
+
+                      <!-- Default overlay -->
+                      <div class="absolute inset-0 bg-black/30"></div>
+
+                      <!-- Hover overlay -->
+                      <div
+                        class="absolute inset-0 bg-black
+                              translate-y-full
+                              group-hover:translate-y-0
+                              transition-transform duration-500 ease-out">
+                      </div>
+
+                      <!-- CONTENT -->
+                      <div class="relative z-10 h-full">
+
+                        <!-- Bottom content (default) -->
+                        <div
+                          class="absolute inset-x-0 bottom-6
+                                flex flex-col items-center text-white text-center
+                                transition-all duration-500
+                                group-hover:bottom-1/2
+                                group-hover:translate-y-1/2">
+              <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP</span>
+                      <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+                            Back Support<br />Mattresses
+                          </h3>
+
+                            <i
+                            class="fa-solid fa-circle-chevron-right text-[40px]
+                                  opacity-0 translate-y-2
+                                  group-hover:opacity-100
+                                  group-hover:translate-y-0
+                                  transition-all duration-500">
+                          </i>
+
+                        </div>
+
+                      </div>
+
+                    </a>
+                          </div>
+                          <div class="swiper-slide">
+                              <!-- ================= CARD 3 ================= -->
+                    <a href="#" class="relative group overflow-hidden min-h-[433px]">
+
+                      <img
+                        src="assets/images/peiority-image-2.png"
+                        class="absolute inset-0 w-full h-full object-cover
+                              transition-transform duration-700 group-hover:scale-105"
+                        alt="" />
+
+                      <div class="absolute inset-0 bg-black/30"></div>
+
+                      <div
+                        class="absolute inset-0 bg-black
+                              translate-y-full
+                              group-hover:translate-y-0
+                              transition-transform duration-500 ease-out">
+                      </div>
+
+                      <div class="relative z-10 h-full">
+                        <div
+                          class="absolute inset-x-0 bottom-6
+                                flex flex-col items-center text-white text-center
+                                transition-all duration-500
+                                group-hover:bottom-1/2
+                                group-hover:translate-y-1/2">
+              <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP</span>
+                              <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+                            Stay Energized<br />Mattresses
+                          </h3>
+
+                            <i
+                            class="fa-solid fa-circle-chevron-right text-[40px]
+                                  opacity-0 translate-y-2
+                                  group-hover:opacity-100
+                                  group-hover:translate-y-0
+                                  transition-all duration-500">
+                          </i>
+                        </div>
+                      </div>
+
+                    </a>
+
+                          </div>
+                          <div class="swiper-slide">
+                              <!-- ================= CARD 4 ================= -->
+                    <a href="#" class="relative group overflow-hidden min-h-[433px]">
+
+                      <img
+                        src="assets/images/peiority-image-3.png"
+                        class="absolute inset-0 w-full h-full object-cover
+                              transition-transform duration-700 group-hover:scale-105"
+                        alt="" />
+
+                      <div class="absolute inset-0 bg-black/30"></div>
+
+                      <div
+                        class="absolute inset-0 bg-black
+                              translate-y-full
+                              group-hover:translate-y-0
+                              transition-transform duration-500 ease-out">
+                      </div>
+
+                      <div class="relative z-10 h-full">
+                        <div
+                          class="absolute inset-x-0 bottom-6
+                                flex flex-col items-center text-white text-center
+                                transition-all duration-500
+                                group-hover:bottom-1/2
+                                group-hover:translate-y-1/2">
+              <span class="uppercase text-24 text-figtree  font-light tracking-widest mb-[21px]  group-hover:mb-[30px]">SHOP</span>
+                            <h3 class="text-30 font-medium leading-snug  group-hover:mb-[30px]">
+                            Luxury<br />Mattresses
+                          </h3>
+
+                              <i
+                            class="fa-solid fa-circle-chevron-right text-[40px]
+                                  opacity-0 translate-y-2
+                                  group-hover:opacity-100
+                                  group-hover:translate-y-0
+                                  transition-all duration-500">
+                          </i>
+                        </div>
+                      </div>
+
+                    </a>
+                          </div>
+                  </div> 
+              </div>
        </div>
-</section>
- <section class="pb-[40px] md:pb-[60px] xl:pb-[88px] reveal">
-       <div class="max-w-[1490px] px-4  mx-auto">
-              <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-8 reveal">
-      Frequently Asked Questions (FAQs)
-    </h2>
-         <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-cols-[3fr_2fr] gap-[30px] ">
-
-    <!-- LEFT : FAQ -->
-    <div>
-    
-
-    <div class="space-y-4" id="faqAccordion">
-
-      <!-- FAQ ITEM -->
-      <div class="bg-faq-item-block reveal">
-        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
-          <span class="font-medium text-18 text-black">
-            What is the best mattress firmness for heavy people?
-          </span>
-        <span class="icon transition-transform duration-300 shadow faq-icon rotate-180"><img src="assets/images/black-down-arrow.png" alt="faq"></span>
-        </button>
-        <div class="faq-content  leading-relaxed">
-          For individuals weighing over 90–100 kg, a medium-firm to firm mattress (6–8 on the firmness scale) is ideal. Medium-firm works well for heavy side sleepers by cushioning pressure points, while firm mattresses suit back and stomach sleepers by supporting spinal alignment and reducing sinkage.
-        </div>
-      </div>
-
-      <!-- FAQ ITEM -->
-      <div class="bg-faq-item-block reveal">
-        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
-          <span class="font-medium text-18 text-black">
-            How thick should a mattress be for heavy individuals?
-          </span>
-          <span class="icon transition-transform duration-300 shadow faq-icon"><img src="assets/images/black-down-arrow.png" alt="faq"></span>
-        </button>
-        <div class="faq-content  hidden leading-relaxed">
-          A mattress thickness of 10–14 inches is recommended for heavier individuals to provide better durability, support, and comfort.
-        </div>
-      </div>
-
-      <!-- FAQ ITEM -->
-      <div class="bg-faq-item-block reveal">
-        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
-         <span class="font-medium text-18 text-black">
-            Are orthopedic mattresses good for heavy people with back pain?
-          </span>
-          <span class="icon transition-transform duration-300 shadow faq-icon"><img src="assets/images/black-down-arrow.png" alt="faq"></span>
-        </button>
-        <div class="faq-content  hidden  leading-relaxed">
-          Yes. Orthopedic mattresses are designed to provide enhanced lumbar support, making them suitable for heavy sleepers with chronic back pain.
-        </div>
-      </div>
-
-      <!-- FAQ ITEM -->
-      <div class="bg-faq-item-block reveal">
-        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
-         <span class="font-medium text-18 text-black">
-            Do heavy people need a firm mattress or a soft mattress?
-          </span>
-          <span class="icon transition-transform duration-300 shadow faq-icon"><img src="assets/images/black-down-arrow.png" alt="faq"></span>
-        </button>
-        <div class="faq-content  hidden leading-relaxed">
-          Heavy people generally benefit from medium-firm to firm mattresses, which prevent excessive sinking and maintain spinal alignment.
-        </div>
-      </div>
-
-      <!-- FAQ ITEM -->
-      <div class="bg-faq-item-block reveal">
-        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
-          <span class="font-medium text-18 text-black">
-            Is memory foam suitable for heavy sleepers?
-          </span>
-          <span class="icon transition-transform duration-300 shadow faq-icon"><img src="assets/images/black-down-arrow.png" alt="faq"></span>
-        </button>
-        <div class="faq-content  hidden   leading-relaxed">
-          High-density memory foam can work well, but low-density foam may sag faster under higher body weight.
-        </div>
-      </div>
-
-      <!-- FAQ ITEM -->
-      <div class="bg-faq-item-block reveal">
-        <button class="faq-btn flex justify-between items-start w-full text-left pb-1">
-          <span class="font-medium text-18 text-black">
-            Are hybrid mattresses better for heavy people?
-          </span>
-          <span class="icon transition-transform duration-300 shadow faq-icon"><img src="assets/images/black-down-arrow.png" alt="faq"></span>
-        </button>
-        <div class="faq-content  hidden  leading-relaxed">
-          Yes. Hybrid mattresses combine foam comfort with coil support, making them durable and supportive for heavier sleepers.
-        </div>
-      </div> 
-
-    </div>
-    </div>
-
-    <!-- RIGHT : IMAGE -->
-    <div class="w-full">
-      <img
-        src="assets/images/dealer-page-faq-image.png"
-        alt="Mattress"
-        class="w-full h-full object-cover   "
-      />
-    </div>
-
-  </div>
-</div>
-
- </section>
+</section> 
 <section class="relative  pb-[40px] md:pb-[60px] xl:pb-[88px] ">
   <div class="max-w-[1490px] px-4 mx-auto reveal">
     <div class="relative bg-cover bg-center overflow-hidden"
@@ -1395,7 +1574,7 @@
         <input type="email"
                placeholder="Enter your email address"
                class="w-full px-3 py-2 text-[#C3C3C3] bg-transparent border border-white">
-        <button class="bg-white text-[#1b1b2f] px-4 font-semibold  ">
+        <button class="bg-white text-[10px] text-[#1b1b2f] px-4 font-semibold  ">
           SUBSCRIBE
         </button>
       </form>
@@ -1587,6 +1766,30 @@ document.addEventListener("DOMContentLoaded", () => {
       form.submit();
     });
   })();
+</script>
+ <script>
+  const prioritySlider = new Swiper('.priority-slider', {
+    loop: true,
+    speed: 800,
+    spaceBetween: 24,
+
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
+    },
+  });
 </script>
 
 </body>
