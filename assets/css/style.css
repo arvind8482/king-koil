@@ -456,6 +456,14 @@ color: #4C4C4C;
     opacity: 1;
   }
 
+  .productAccordian  .accordion-item .accordion-content{ 
+    opacity: 0!important; 
+  }
+
+    .productAccordian  .accordion-item.open .accordion-content{ 
+    opacity: 1!important; 
+  }
+
 .text-playfair-display{
   font-family: "Playfair Display", serif!important; font-size: 40px; line-height: 56px; font-weight: 800;
 }
@@ -611,6 +619,10 @@ font-family: "Figtree", sans-serif;
 }
 
     @media (max-width: 768px) {
+
+      .bg-light-gray-pad-20{
+  background-color: #FAFAFA; padding: 10px; position: relative; margin-bottom: 0px;
+}
       .text-30{
   font-size: 24px;
 }
