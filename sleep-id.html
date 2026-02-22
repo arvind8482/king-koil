@@ -20,7 +20,7 @@
 </head>
 <body class="text-figtree text-14">  
 <div class="absolute top-0 left-0 w-full h-[900px] 
-            bg-gradient-to-b from-[#1D4F79] to-transparent
+            bg-gradient-to-b   from-[#152944] lg:from-[#1D4F79] to-transparent
             -z-10">
 </div>
  <!-- ================= HEADER ================= -->
@@ -202,14 +202,65 @@
       document.body.style.overflow = '';
     });
   });
-</script>
+</script> 
  
- <section>
   <div class="max-w-[1650px] px-4 mx-auto reveal">
-   <img
+
+    <!-- SLIDER WRAPPER -->
+    <div class="relative overflow-hidden rounded-tl-[20px] rounded-tr-[20px]">
+
+      <!-- SLIDER TRACK -->
+      <div id="heroSlider"
+        class="flex transition-transform hidden sm:flex  duration-700 ease-in-out">
+
+        <!-- SLIDE 1 -->
+        <div class="min-w-full relative aspect-[16/9] sm:aspect-[21/9]">
+          <img
             src="assets/images/hospitality/hero-banner.png"
             alt=""
-            class=" w-full h-auto ">
+            class="absolute inset-0 w-full h-full object-cover object-left-top">
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="min-w-full relative aspect-[16/9] sm:aspect-[21/9]">
+          <img
+            src="assets/images/hospitality/hero-banner.png"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover object-left-top">
+        </div>
+
+      
+
+      </div>
+         <div id="heroSlider2"
+        class="flex transition-transform flex sm:hidden duration-700 ease-in-out">
+
+        <!-- SLIDE 1 -->
+        <div class="min-w-full relative aspect-square">
+          <img
+            src="assets/images/sleepId/slider-mobile.jpg"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover object-left-top ">
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="min-w-full relative aspect-square">
+          <img
+            src="assets/images/sleepId/slider-mobile-2.jpg"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover object-left-top  ">
+        </div>
+
+      
+
+      </div>  
+      <!-- DOTS -->
+      <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex gap-2">
+        <button class="dot w-2.5 h-2.5 rounded-full bg-white"></button>
+        <button class="dot w-2.5 h-2.5 rounded-full bg-white/40"></button>
+      </div>
+
+    </div>
   </div>
 </section>
  
@@ -1089,55 +1140,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   counters.forEach(counter => observer.observe(counter));
 </script>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-
-  const slider = document.getElementById("heroSlider");
-  const prevBtn = document.getElementById("prev");
-  const nextBtn = document.getElementById("next");
-
-  if (!slider || !prevBtn || !nextBtn) {
-    console.error("Slider elements missing");
-    return;
-  }
-
-  const slides = slider.children;
-  let index = 0;
-  let autoPlayInterval = null;
-  const delay = 4000;
-
-  function updateSlider() {
-    slider.style.transform = `translateX(-${index * 100}%)`;
-  }
-
-  function nextSlide() {
-    index = (index + 1) % slides.length;
-    updateSlider();
-  }
-
-  function prevSlide() {
-    index = (index - 1 + slides.length) % slides.length;
-    updateSlider();
-  }
-
-  function startAutoplay() {
-    clearInterval(autoPlayInterval);
-    autoPlayInterval = setInterval(nextSlide, delay);
-  }
-
-  nextBtn.addEventListener("click", () => {
-    nextSlide();
-    startAutoplay();
-  });
-
-  prevBtn.addEventListener("click", () => {
-    prevSlide();
-    startAutoplay();
-  });
-
-  startAutoplay();
-});
-</script>
+ 
 
 <script>
 const slides = document.getElementById("carouselSlides");
@@ -1366,6 +1369,93 @@ function handleResize() {
 }
 
 window.addEventListener("resize", handleResize);
+</script>
+
+
+   <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const desktopSlider = document.getElementById("heroSlider");
+  const mobileSlider  = document.getElementById("heroSlider2");
+  const dots = document.querySelectorAll(".dot");
+
+  let desktopIndex = 0;
+  let mobileIndex = 0;
+  let autoPlayInterval = null;
+  const delay = 4000;
+
+  function isMobile() {
+    return window.innerWidth < 640;
+  }
+
+  function getActiveSlider() {
+    return isMobile() ? mobileSlider : desktopSlider;
+  }
+
+  function getSlides() {
+    const slider = getActiveSlider();
+    return slider ? slider.children : [];
+  }
+
+  function getIndex() {
+    return isMobile() ? mobileIndex : desktopIndex;
+  }
+
+  function setIndex(i) {
+    if (isMobile()) mobileIndex = i;
+    else desktopIndex = i;
+  }
+
+  function updateDots() {
+    dots.forEach((dot, i) => {
+      dot.classList.remove("bg-white");
+      dot.classList.add("bg-white/40");
+
+      if (i === getIndex()) {
+        dot.classList.remove("bg-white/40");
+        dot.classList.add("bg-white");
+      }
+    });
+  }
+
+  function updateSlider() {
+    const slider = getActiveSlider();
+    if (!slider) return;
+
+    slider.style.transform = `translateX(-${getIndex() * 100}%)`;
+    updateDots();
+  }
+
+  function nextSlide() {
+    const slides = getSlides();
+    if (!slides.length) return;
+
+    let i = (getIndex() + 1) % slides.length;
+    setIndex(i);
+    updateSlider();
+  }
+
+  function startAutoplay() {
+    clearInterval(autoPlayInterval);
+    autoPlayInterval = setInterval(nextSlide, delay);
+  }
+
+  /* ---------- DOT CLICK ---------- */
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+      setIndex(i);
+      updateSlider();
+      startAutoplay();
+    });
+  });
+
+  /* ---------- RESIZE FIX ---------- */
+  window.addEventListener("resize", updateSlider);
+
+  /* ---------- INIT ---------- */
+  updateSlider();
+  startAutoplay();
+});
 </script>
 </body>
 </html>

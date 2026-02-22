@@ -20,7 +20,7 @@
 </head>
 <body class="text-figtree text-14">  
 <div class="absolute top-0 left-0 w-full h-[900px] 
-            bg-gradient-to-b from-[#1B2D3D] to-transparent
+            bg-gradient-to-b from-[#0c0c0c] lg:from-[#1B2D3D] to-transparent
             -z-10">
 </div>
  <!-- ================= HEADER ================= -->
@@ -212,7 +212,7 @@
 
       <!-- SLIDER TRACK -->
       <div id="heroSlider"
-        class="flex transition-transform duration-700 ease-in-out">
+        class="flex transition-transform hidden sm:flex  duration-700 ease-in-out">
 
         <!-- SLIDE 1 -->
         <div class="min-w-full relative aspect-[16/9] sm:aspect-[21/9]">
@@ -230,26 +230,31 @@
             class="absolute inset-0 w-full h-full object-cover object-left-top">
         </div>
 
+      
+
       </div>
+         <div id="heroSlider2"
+        class="flex transition-transform flex sm:hidden duration-700 ease-in-out">
 
-      <!-- PREV BUTTON -->
-      <button id="prev"
-        type="button"
-        class="absolute left-6 top-1/2 -translate-y-1/2 z-30
-               w-[40px] h-[40px] rounded-full bg-white/80 hover:bg-white
-               flex items-center justify-center">
-        <img src="assets/images/slider-prev.png" alt="Previous">
-      </button>
+        <!-- SLIDE 1 -->
+        <div class="min-w-full relative aspect-square">
+          <img
+            src="assets/images/home/slider-mobile.jpg"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover object-left-top ">
+        </div>
 
-      <!-- NEXT BUTTON -->
-      <button id="next"
-        type="button"
-        class="absolute right-6 top-1/2 -translate-y-1/2 z-30
-               w-[40px] h-[40px] rounded-full bg-white/80 hover:bg-white
-               flex items-center justify-center">
-        <img src="assets/images/slider-next.png" alt="Next">
-      </button>
+        <!-- SLIDE 2 -->
+        <div class="min-w-full relative aspect-square">
+          <img
+            src="assets/images/home/slider-mobile.jpg"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover object-left-top  ">
+        </div>
 
+      
+
+      </div>  
       <!-- DOTS -->
       <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex gap-2">
         <button class="dot w-2.5 h-2.5 rounded-full bg-white"></button>
@@ -265,22 +270,22 @@
             <p class="text-[#4C4C4C] text-[20px] font-medium mb-[50px] reveal">What mettress are you looking for</p>
             <div class="flex flex-col md:flex-row gap-[30px] w-full">
                     <a href="#" class="reveal mb-[24px] flex-1">
-                        <img src="assets/images/products-parallax/premium-product-1.png" class="w-full mb-[40px]" alt="">
+                        <img src="assets/images/products-parallax/premium-product-1.png" class="w-full aspect-square mb-[40px]" alt="">
                         <h3 class="text-[20px] text-center font-bold mb-[20px]">Back Support Mattresses</h3>
                         <p class="text-center text-[20px] text-[#4C4C4C]">Deluxe Quality </p>
                     </a>
                     <a href="#"  class="reveal mb-[24px] flex-1">
-                        <img src="assets/images/products-parallax/premium-product-1.png" class="w-full mb-[40px]" alt="">
+                        <img src="assets/images/products-parallax/premium-product-1.png" class="w-full aspect-square mb-[40px]" alt="">
                         <h3 class="text-[20px] text-center font-bold mb-[20px]">Back Support Mattresses</h3>
                         <p class="text-center text-[20px] text-[#4C4C4C]">Deluxe Quality </p>
                     </a>
                     <a href="#"  class="reveal mb-[24px] flex-1">
-                        <img src="assets/images/products-parallax/premium-product-1.png" class="w-full mb-[40px]" alt="">
+                        <img src="assets/images/products-parallax/premium-product-1.png" class="w-full aspect-square   mb-[40px]" alt="">
                         <h3 class="text-[20px] text-center font-bold mb-[20px]">Back Support Mattresses</h3>
                         <p class="text-center text-[20px] text-[#4C4C4C]">Deluxe Quality </p>
                     </a>
                     <a href="#"  class="reveal mb-[24px] flex-1">
-                        <img src="assets/images/products-parallax/premium-product-1.png" class="w-full mb-[40px]" alt="">
+                        <img src="assets/images/products-parallax/premium-product-1.png" class="w-full aspect-square   mb-[40px]" alt="">
                         <h3 class="text-[20px] text-center font-bold mb-[20px]">Back Support Mattresses</h3>
                         <p class="text-center text-[20px] text-[#4C4C4C]">Deluxe Quality </p>
                     </a>
@@ -295,15 +300,21 @@
       <div class="parallax-sticky">
         <img
           src="assets/images/products-parallax/banner-1.png"
-          class="parallax-img w-full"
+          class="parallax-img w-full hidden xl:block"
           alt=""
         />
+         <img
+          src="assets/images/products-parallax/parallax-mobile-1.jpg"
+          class="parallax-img w-full  block xl:hidden"
+          alt=""
+        />
+        
       </div> 
       <div class="py-[40px] md:py-[60px] xl:py-[90px] bg-white relative z-[10]">
           <div class="max-w-[1490px] px-4  mx-auto">
                    <div class="flex flex-col md:flex-row gap-[30px] w-full">
                           <a href="#" class="reveal mb-[24px] flex-1">
-                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full aspect-square mb-[15px]" alt="">
                               <div class="flex gap-[2px] mb-[28px]">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
@@ -319,7 +330,7 @@
                               <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
                           </a>
                          <a href="#" class="reveal mb-[24px] flex-1">
-                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full aspect-square mb-[15px]" alt="">
                               <div class="flex gap-[2px] mb-[28px]">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
@@ -335,7 +346,7 @@
                               <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
                           </a>
                           <a href="#" class="reveal mb-[24px] flex-1">
-                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full aspect-square mb-[15px]" alt="">
                               <div class="flex gap-[2px] mb-[28px]">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
@@ -351,7 +362,7 @@
                               <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
                           </a>
                           <a href="#" class="reveal mb-[24px] flex-1">
-                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full aspect-square mb-[15px]" alt="">
                               <div class="flex gap-[2px] mb-[28px]">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
@@ -379,17 +390,22 @@
             <p class="text-[#4C4C4C] text-[20px] text-center font-medium mb-[50px] reveal">Deluxe Quality </p>
       </div>
       <div class="parallax-sticky">
-        <img
+         <img
           src="assets/images/products-parallax/banner-2.png"
-          class="parallax-img w-full"
+          class="parallax-img w-full hidden xl:block"
+          alt=""
+        />
+         <img
+          src="assets/images/products-parallax/parallax-mobile-2.jpg"
+          class="parallax-img w-full  block xl:hidden"
           alt=""
         />
       </div> 
       <div class="py-[40px] md:py-[60px] xl:py-[90px] bg-white relative z-[10]">
-          <div class="max-w-[1490px] px-4  mx-auto">
-                   <div class="flex flex-col md:flex-row gap-[30px] w-full">
+          <div class="max-w-[1490px] px-4  bg-white mx-auto">
+                   <div class="flex flex-col md:flex-row gap-[30px] bg-white w-full">
                           <a href="#" class="reveal mb-[24px] flex-1">
-                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full aspect-square mb-[15px]" alt="">
                               <div class="flex gap-[2px] mb-[28px]">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
@@ -405,7 +421,7 @@
                               <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
                           </a>
                          <a href="#" class="reveal mb-[24px] flex-1">
-                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full aspect-square mb-[15px]" alt="">
                               <div class="flex gap-[2px] mb-[28px]">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
@@ -421,7 +437,7 @@
                               <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
                           </a>
                           <a href="#" class="reveal mb-[24px] flex-1">
-                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full aspect-square mb-[15px]" alt="">
                               <div class="flex gap-[2px] mb-[28px]">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
@@ -437,7 +453,7 @@
                               <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
                           </a>
                           <a href="#" class="reveal mb-[24px] flex-1">
-                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full aspect-square mb-[15px]" alt="">
                               <div class="flex gap-[2px] mb-[28px]">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
@@ -465,17 +481,22 @@
             <p class="text-[#4C4C4C] text-[20px] text-center font-medium mb-[50px] reveal">Deluxe Quality </p>
       </div>
       <div class="parallax-sticky">
-        <img
+         <img
           src="assets/images/products-parallax/banner-3.png"
-          class="parallax-img w-full"
+          class="parallax-img w-full hidden xl:block"
+          alt=""
+        />
+         <img
+          src="assets/images/products-parallax/parallax-mobile-3.jpg"
+          class="parallax-img w-full  block xl:hidden"
           alt=""
         />
       </div> 
       <div class="py-[40px] md:py-[60px] xl:py-[90px] bg-white relative z-[10]">
-          <div class="max-w-[1490px] px-4  mx-auto">
-                   <div class="flex flex-col md:flex-row gap-[30px] w-full">
+          <div class="max-w-[1490px] px-4 bg-white mx-auto">
+                   <div class="flex flex-col md:flex-row gap-[30px] bg-white w-full">
                           <a href="#" class="reveal mb-[24px] flex-1">
-                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full aspect-square mb-[15px]" alt="">
                               <div class="flex gap-[2px] mb-[28px]">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
@@ -491,7 +512,7 @@
                               <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
                           </a>
                          <a href="#" class="reveal mb-[24px] flex-1">
-                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full aspect-square mb-[15px]" alt="">
                               <div class="flex gap-[2px] mb-[28px]">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
@@ -507,7 +528,7 @@
                               <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
                           </a>
                           <a href="#" class="reveal mb-[24px] flex-1">
-                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full aspect-square mb-[15px]" alt="">
                               <div class="flex gap-[2px] mb-[28px]">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
@@ -523,7 +544,7 @@
                               <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
                           </a>
                           <a href="#" class="reveal mb-[24px] flex-1">
-                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full aspect-square mb-[15px]" alt="">
                               <div class="flex gap-[2px] mb-[28px]">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
@@ -551,17 +572,22 @@
             <p class="text-[#4C4C4C] text-[20px] text-center font-medium mb-[50px] reveal">Deluxe Quality </p>
       </div>
       <div class="parallax-sticky">
-        <img
-          src="assets/images/products-parallax/banner-4.png"
-          class="parallax-img w-full"
+       <img
+          src="assets/images/products-parallax/banner-1.png"
+          class="parallax-img w-full hidden xl:block"
+          alt=""
+        />
+         <img
+          src="assets/images/products-parallax/parallax-mobile-1.jpg"
+          class="parallax-img w-full  block xl:hidden"
           alt=""
         />
       </div> 
       <div class="py-[40px] md:py-[60px] xl:py-[90px] bg-white relative z-[10]">
-          <div class="max-w-[1490px] px-4  mx-auto">
-                   <div class="flex flex-col md:flex-row gap-[30px] w-full">
+          <div class="max-w-[1490px] px-4 bg-white  mx-auto">
+                   <div class="flex flex-col md:flex-row gap-[30px] bg-white w-full">
                           <a href="#" class="reveal mb-[24px] flex-1">
-                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full aspect-square mb-[15px]" alt="">
                               <div class="flex gap-[2px] mb-[28px]">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
@@ -577,7 +603,7 @@
                               <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
                           </a>
                          <a href="#" class="reveal mb-[24px] flex-1">
-                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full aspect-square mb-[15px]" alt="">
                               <div class="flex gap-[2px] mb-[28px]">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
@@ -593,7 +619,7 @@
                               <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
                           </a>
                           <a href="#" class="reveal mb-[24px] flex-1">
-                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full aspect-square mb-[15px]" alt="">
                               <div class="flex gap-[2px] mb-[28px]">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
@@ -609,7 +635,7 @@
                               <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
                           </a>
                           <a href="#" class="reveal mb-[24px] flex-1">
-                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full aspect-square mb-[15px]" alt="">
                               <div class="flex gap-[2px] mb-[28px]">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
@@ -637,17 +663,22 @@
             <p class="text-[#4C4C4C] text-[20px] text-center font-medium mb-[50px] reveal">Deluxe Quality </p>
       </div>
       <div class="parallax-sticky">
-        <img
-          src="assets/images/products-parallax/banner-5.png"
-          class="parallax-img w-full"
+       <img
+          src="assets/images/products-parallax/banner-2.png"
+          class="parallax-img w-full hidden xl:block"
+          alt=""
+        />
+         <img
+          src="assets/images/products-parallax/parallax-mobile-2.jpg"
+          class="parallax-img w-full  block xl:hidden"
           alt=""
         />
       </div> 
       <div class="py-[40px] md:py-[60px] xl:py-[90px] bg-white relative z-[10]">
-          <div class="max-w-[1490px] px-4  mx-auto">
-                   <div class="flex flex-col md:flex-row gap-[30px] w-full">
+          <div class="max-w-[1490px] px-4 bg-white  mx-auto">
+                   <div class="flex flex-col md:flex-row gap-[30px] bg-white w-full">
                           <a href="#" class="reveal mb-[24px] flex-1">
-                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full aspect-square mb-[15px]" alt="">
                               <div class="flex gap-[2px] mb-[28px]">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
@@ -663,7 +694,7 @@
                               <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
                           </a>
                          <a href="#" class="reveal mb-[24px] flex-1">
-                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full aspect-square mb-[15px]" alt="">
                               <div class="flex gap-[2px] mb-[28px]">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
@@ -679,7 +710,7 @@
                               <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
                           </a>
                           <a href="#" class="reveal mb-[24px] flex-1">
-                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full aspect-square mb-[15px]" alt="">
                               <div class="flex gap-[2px] mb-[28px]">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
@@ -695,7 +726,7 @@
                               <p class="text-[10px] text-black">Experience ultimate comfort with King Koil's Euro HR mattress, designed with bonded f... </p>
                           </a>
                           <a href="#" class="reveal mb-[24px] flex-1">
-                              <img src="assets/images/products-parallax/matress-1.png" class="w-full mb-[15px]" alt="">
+                              <img src="assets/images/products-parallax/matress-1.png" class="w-full aspect-square mb-[15px]" alt="">
                               <div class="flex gap-[2px] mb-[28px]">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
                                   <img src="assets/images/products-parallax/icon-star-1.png" alt="">
@@ -1434,34 +1465,66 @@ document.addEventListener("DOMContentLoaded", () => {
 
   counters.forEach(counter => observer.observe(counter));
 </script>
-<script>
+  <script>
 document.addEventListener("DOMContentLoaded", () => {
 
-  const slider = document.getElementById("heroSlider");
-  const prevBtn = document.getElementById("prev");
-  const nextBtn = document.getElementById("next");
+  const desktopSlider = document.getElementById("heroSlider");
+  const mobileSlider  = document.getElementById("heroSlider2");
+  const dots = document.querySelectorAll(".dot");
 
-  if (!slider || !prevBtn || !nextBtn) {
-    console.error("Slider elements missing");
-    return;
-  }
-
-  const slides = slider.children;
-  let index = 0;
+  let desktopIndex = 0;
+  let mobileIndex = 0;
   let autoPlayInterval = null;
   const delay = 4000;
 
+  function isMobile() {
+    return window.innerWidth < 640;
+  }
+
+  function getActiveSlider() {
+    return isMobile() ? mobileSlider : desktopSlider;
+  }
+
+  function getSlides() {
+    const slider = getActiveSlider();
+    return slider ? slider.children : [];
+  }
+
+  function getIndex() {
+    return isMobile() ? mobileIndex : desktopIndex;
+  }
+
+  function setIndex(i) {
+    if (isMobile()) mobileIndex = i;
+    else desktopIndex = i;
+  }
+
+  function updateDots() {
+    dots.forEach((dot, i) => {
+      dot.classList.remove("bg-white");
+      dot.classList.add("bg-white/40");
+
+      if (i === getIndex()) {
+        dot.classList.remove("bg-white/40");
+        dot.classList.add("bg-white");
+      }
+    });
+  }
+
   function updateSlider() {
-    slider.style.transform = `translateX(-${index * 100}%)`;
+    const slider = getActiveSlider();
+    if (!slider) return;
+
+    slider.style.transform = `translateX(-${getIndex() * 100}%)`;
+    updateDots();
   }
 
   function nextSlide() {
-    index = (index + 1) % slides.length;
-    updateSlider();
-  }
+    const slides = getSlides();
+    if (!slides.length) return;
 
-  function prevSlide() {
-    index = (index - 1 + slides.length) % slides.length;
+    let i = (getIndex() + 1) % slides.length;
+    setIndex(i);
     updateSlider();
   }
 
@@ -1470,16 +1533,20 @@ document.addEventListener("DOMContentLoaded", () => {
     autoPlayInterval = setInterval(nextSlide, delay);
   }
 
-  nextBtn.addEventListener("click", () => {
-    nextSlide();
-    startAutoplay();
+  /* ---------- DOT CLICK ---------- */
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+      setIndex(i);
+      updateSlider();
+      startAutoplay();
+    });
   });
 
-  prevBtn.addEventListener("click", () => {
-    prevSlide();
-    startAutoplay();
-  });
+  /* ---------- RESIZE FIX ---------- */
+  window.addEventListener("resize", updateSlider);
 
+  /* ---------- INIT ---------- */
+  updateSlider();
   startAutoplay();
 });
 </script>
